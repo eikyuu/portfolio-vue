@@ -1,6 +1,6 @@
 <template>
 
-    <div class="shadow-lg p-20 flex flex-col xl:flex-row items-center border-b-8 border-[#FFC800]">
+    <div class="shadow-lg p-10 flex flex-col xl:flex-row items-center border-b-8 border-[#FFC800]">
 
         <NuxtImg :src="img" width="480" height="220" />
 
