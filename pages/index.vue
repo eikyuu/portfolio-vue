@@ -232,20 +232,20 @@ Faites passer vos idées au niveau supérieur avec un site qui reflète parfaite
 <strong>🎯 Transformons vos idées en expériences uniques</strong>
 <br>Faites de votre projet une référence en design UX/UI avec des solutions modernes, accessibles, et pensées pour durer." img="design.svg" class="mt-10 mb-10 md:mt-20 md:mb-20" />
 
-  <TitleUnder title="J'ai collaboré sur de superbes projets" class="mb-10 md:mb-20" />
+  <TitleUnder title="Mes projets" class="mb-10 md:mb-20" />
 
-  <div class="relative flex justify-center mb-10 md:mb-20">
+  <div class="relative flex justify-center mb-20">
     <button class="absolute z-10 left-0  w-[50%] skew-x-[-8deg] rounded-md"
-      :class="type === 'WEB' ? 'bg-[#FFC800]' : 'bg-[#F2EBF4]'" type="button" @click="onClick('WEB')">Projet
+      :class="type === 'WEB' ? 'bg-[#FFC800] h-10' : 'bg-[#F2EBF4] h-10'" type="button" @click="onClick('WEB')">Projet
       web</button>
 
     <button class="absolute z-0 right-0 w-[51%] skew-x-[-8deg] rounded-md"
-      :class="type === 'MOBILE' ? 'bg-[#FFC800]' : 'bg-[#F2EBF4]'" type="button" @click="onClick('MOBILE')">Projet
+      :class="type === 'MOBILE' ? 'bg-[#FFC800] h-10' : 'bg-[#F2EBF4] h-10'" type="button" @click="onClick('MOBILE')">Projet
       mobile</button>
   </div>
 
 
-  <div class="">
+  <div >
     <div v-if="type === 'WEB'">
       <div v-for="(project, index) in displayedProjects" :key="index">
         <ProjectCard :title="project.title" :text="project.text" :img="project.img" :order="project.order"
@@ -275,7 +275,7 @@ Faites passer vos idées au niveau supérieur avec un site qui reflète parfaite
 
   </div>
 
-  <TitleUnder title="Contactez-moi pour discuter de votre projet" class="mb-10 md:mb-20" />
+  <TitleUnder title="Discutons de vos projets" class="mb-10 md:mb-20" />
 
   <div class="flex flex-col items-center xl:flex-row mb-10 md:mb-20">
     <div class=" bg-number bg-cover mb-4">
