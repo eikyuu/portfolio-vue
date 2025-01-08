@@ -247,13 +247,13 @@ Faites passer vos idées au niveau supérieur avec un site qui reflète parfaite
     <div v-if="type === 'WEB'">
       <div v-for="(project, index) in displayedProjects" :key="index">
         <ProjectCard :title="project.title" :text="project.text" :img="project.img" :order="project.order"
-          :btnPosition="project.btnPosition" :link="project.link" />
+          :btnPosition="project.btnPosition" :link="project.link" class="mb-20" />
       </div>
     </div>
     <div v-else>
       <div v-for="(project, index) in displayedProjectsMobile" :key="index">
         <ProjectCard :title="project.title" :text="project.text" :img="project.img" :order="project.order"
-          :btnPosition="project.btnPosition"  :link="project.link" />
+          :btnPosition="project.btnPosition"  :link="project.link" class="mb-20" />
       </div>
     </div>
 
@@ -262,7 +262,6 @@ Faites passer vos idées au niveau supérieur avec un site qui reflète parfaite
         class="relative border rounded-md border-[#5A3B5D] hover:bg-white ease-in-out duration-300 w-52 h-10 before:content-[''] before:absolute before:bg-[#F2EBF4] before:left-1 before:right-0 before:top-1 before:-z-10 before:h-10 before:w-[13rem] before:rounded">
         <span class="relative z-20">Voir plus de projets</span>
       </button>
-
 
       <button v-if="canLoadMoreMobile && type === 'MOBILE'" @click="loadMoreProjectsMobile"
         class="relative border rounded-md border-[#5A3B5D] hover:bg-white ease-in-out duration-300 w-52 h-10 before:content-[''] before:absolute before:bg-[#F2EBF4] before:left-1 before:right-0 before:top-1 before:-z-10 before:h-10 before:w-[13rem] before:rounded">
