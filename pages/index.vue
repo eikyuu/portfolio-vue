@@ -273,7 +273,7 @@ Faites passer vos idées au niveau supérieur avec un site qui reflète parfaite
 
   <TitleUnder title="Discutons de vos projets" class="mt-20 mb-20" />
 
-  <div class="flex flex-col items-center xl:flex-row mb-10 md:mb-20">
+  <div class="flex flex-col items-center xl:flex-row">
     <div class=" bg-number bg-cover mb-4">
       <p class="mt-10 xl:pr-10 ">📩 Vous avez un projet de développement web ou mobile en tête ? Vous souhaitez
         améliorer
