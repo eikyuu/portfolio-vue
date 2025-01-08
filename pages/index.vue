@@ -4,6 +4,30 @@ import ProjectCard from '~/components/ProjectCard.vue';
 import TitleUnder from '~/components/TitleUnder.vue';
 import { ref } from 'vue';
 
+useHead({
+  title: 'Vincent Duguet - Développeur Web Full Stack Freelance',
+  meta: [
+    // Meta pour le SEO
+    { name: 'description', content: 'Découvrez Vincent Duguet, développeur web Full Stack freelance spécialisé en création de sites web et d’applications mobiles sur mesure.' },
+    { name: 'keywords', content: 'Vincent Duguet, développeur web, full stack, freelance, création site web, application mobile, React, Symfony, SEO, développeur freelance' },
+    { name: 'author', content: 'Vincent Duguet' },
+
+    // Meta Open Graph (réseaux sociaux)
+    { property: 'og:title', content: 'Vincent Duguet - Développeur Web Full Stack Freelance' },
+    { property: 'og:description', content: 'Découvrez les services de Vincent Duguet, expert en développement web et mobile.' },
+    { property: 'og:image', content: '/images/portfolio-preview.jpg' }, // Remplacez par l'URL de votre image
+    { property: 'og:url', content: 'https://vincentduguet.dev' }, // Remplacez par l'URL de votre site
+    { property: 'og:type', content: 'website' },
+  ],
+  bodyAttrs: {
+    class: 'portfolio'
+  },
+  script: [
+    { innerHTML: 'console.log(\'Bienvenue sur le portfolio de Vincent Duguet !\')' },
+    // { src: 'https://www.google-analytics.com/analytics.js', async: true, defer: true } // Exemple d'ajout d'un script pour Google Analytics
+  ]
+})
+
 const type = ref("WEB");
 
 const onClick = (newType: "WEB" | "MOBILE") => {
@@ -268,8 +292,6 @@ Faites passer vos idées au niveau supérieur avec un site qui reflète parfaite
         <span class="relative z-20">Voir plus de projets</span>
       </button>
     </div>
-
-
 
   <TitleUnder title="Discutons de vos projets" class="mt-20 mb-20" />
 
