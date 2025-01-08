@@ -11,7 +11,7 @@
             }">
                 <h3 class="font-bold text-[#5A3B5D] text-xl mb-10">{{ props.title }}</h3>
                 <p class="mb-10"v-html="props.text"></p>
-                <Button v-if="link" :link="props.link" :class="`xl:${btnPosition}`" />
+                <Button v-if="link" :link="props.link ?? ''" :class="`xl:${btnPosition}`" />
             </div>
         </div>
     </div>

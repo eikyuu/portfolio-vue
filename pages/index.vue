@@ -3,6 +3,7 @@ import ExpertiseCard from '~/components/ExpertiseCard.vue';
 import ProjectCard from '~/components/ProjectCard.vue';
 import TitleUnder from '~/components/TitleUnder.vue';
 import { ref } from 'vue';
+import Contact from '~/components/Contact.vue';
 
 useHead({
   title: 'Vincent Duguet - Développeur Web Full Stack Freelance',
@@ -265,8 +266,6 @@ Faites passer vos idées au niveau supérieur avec un site qui reflète parfaite
       mobile</button>
   </div>
 
-
- 
     <div v-if="type === 'WEB'">
       <div v-for="(project, index) in displayedProjects" :key="index">
         <ProjectCard :title="project.title" :text="project.text" :img="project.img" :order="project.order"
@@ -310,5 +309,7 @@ Faites passer vos idées au niveau supérieur avec un site qui reflète parfaite
       </p>
     </div>
   </div>
+
+  <Contact />
 
 </template>
