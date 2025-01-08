@@ -15,7 +15,7 @@ useHead({
     // Meta Open Graph (réseaux sociaux)
     { property: 'og:title', content: 'Vincent Duguet - Développeur Web Full Stack Freelance' },
     { property: 'og:description', content: 'Découvrez les services de Vincent Duguet, expert en développement web et mobile.' },
-    { property: 'og:image', content: '/images/portfolio-preview.jpg' }, // Remplacez par l'URL de votre image
+    { property: 'og:image', content: 'man.png' }, // Remplacez par l'URL de votre image
     { property: 'og:url', content: 'https://vincentduguet.dev' }, // Remplacez par l'URL de votre site
     { property: 'og:type', content: 'website' },
   ],
@@ -34,7 +34,6 @@ const onClick = (newType: "WEB" | "MOBILE") => {
   type.value = newType;
   currentPage.value = 1;
 }
-
 
 interface Project {
   title: string;
@@ -296,7 +295,7 @@ Faites passer vos idées au niveau supérieur avec un site qui reflète parfaite
   <TitleUnder title="Discutons de vos projets" class="mt-20 mb-20" />
 
   <div class="flex flex-col items-center xl:flex-row">
-    <div class=" bg-number bg-cover mb-4">
+    <div class=" bg-number bg-opacity-85 bg-cover mb-4">
       <p class="mt-10 xl:pr-10 ">📩 Vous avez un projet de développement web ou mobile en tête ? Vous souhaitez
         améliorer
         l’expérience utilisateur de votre site ou application ? Vous avez besoin d’un développeur freelance pour vous

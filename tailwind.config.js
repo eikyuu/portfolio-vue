@@ -11,7 +11,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'number': "url('/number.png')",
+        'number': "url('/number-35.png')",
         'footer-texture': "url('/img/footer-texture.png')",
       }
     },
