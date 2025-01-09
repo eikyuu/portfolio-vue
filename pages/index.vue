@@ -189,7 +189,7 @@ const loadMoreProjectsMobile = () => {
         mobile</strong>, je suis à vos côtés pour transformer vos idées en réalité digitale.
       </p>
     </div>
-    <NuxtImg src="man.png" width="768" height="1060" fit="fill" />
+    <NuxtImg src="man.png" width="768" height="1060" fit="fill" alt="un homme barbu avec des lunettes qui est developpeur" />
   </div>
 
   <TitleUnder title="Je suis un expert" class="" />
