@@ -4,6 +4,7 @@ import ProjectCard from '~/components/ProjectCard.vue';
 import TitleUnder from '~/components/TitleUnder.vue';
 import { ref } from 'vue';
 import Contact from '~/components/Contact.vue';
+import { Analytics } from '@vercel/analytics/nuxt'
 
 useHead({
   title: 'Vincent Duguet - Développeur Web Full Stack Freelance',
@@ -143,7 +144,7 @@ const loadMoreProjectsMobile = () => {
 </script>
 
 <template>
-
+  <Analytics />
   <div class="flex flex-col items-center xl:flex-row mb-10 md:mb-20">
     <div class="xl:w-3/6 bg-number bg-cover mb-4">
       <h1 class="uppercase text-[#5A3B5D] text-4xl font-bold ">Salut, je suis <span class="text-[#FFC800]">vincent
