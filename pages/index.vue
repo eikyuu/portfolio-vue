@@ -261,7 +261,7 @@ Faites passer vos idées au niveau supérieur avec un site qui reflète parfaite
 <strong>🎯 Transformons vos idées en expériences uniques</strong>
 <br>Faites de votre projet une référence en design UX/UI avec des solutions modernes, accessibles, et pensées pour durer." img="design.svg" class="mt-10 mb-10 md:mt-20 md:mb-20" />
 
-  <TitleUnder title="Mes projets" class="mb-10 md:mb-20" />
+  <TitleUnder title="Mes collaborations" class="mb-10 md:mb-20" />
 
   <div class="relative flex justify-center mb-20">
     <button class="absolute z-10 left-0  w-[50%] skew-x-[-8deg] rounded-md"
