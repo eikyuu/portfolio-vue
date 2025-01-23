@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-white z-0 relative shadow-lg p-5 items-center rounded-xl mt-20">
+    <div class="bg-white z-0 relative shadow-lg pr-5 pb-5 pl-5 items-center rounded-xl mt-20">
         <h2 class="font-bold text-[#5A3B5D] text-xl mb-4">Contactez-moi</h2>
         <form @submit.prevent="handleSubmit">
             <!-- subject -->
@@ -27,9 +27,10 @@
             </div>
 
             <!-- Bouton -->
-            <button type="submit" class="relative border rounded-md border-[#5A3B5D] hover:bg-white ease-in-out duration-300 w-52 h-10 before:content-[''] before:absolute before:bg-[#FFC800] before:left-1 before:right-0 before:top-1 before:-z-10 before:h-10 before:w-[13rem] before:rounded  ">
-        Envoyer    </button>
-            
+            <button type="submit"
+                class="relative border rounded-md border-[#5A3B5D] hover:bg-white ease-in-out duration-300 w-52 h-10 before:content-[''] before:absolute before:bg-[#FFC800] before:left-1 before:right-0 before:top-1 before:-z-10 before:h-10 before:w-[13rem] before:rounded  ">
+                Envoyer </button>
+
         </form>
 
         <!-- Message de succès -->
@@ -39,7 +40,6 @@
 
 <script setup lang="ts">
 import { reactive, ref } from "vue";
-import Button from "./Button.vue";
 
 const config = useRuntimeConfig()
 

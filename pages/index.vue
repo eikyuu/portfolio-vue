@@ -287,7 +287,7 @@ Faites passer vos idées au niveau supérieur avec un site qui reflète parfaite
     </div>
   </div>
 
-  <div class="flex justify-center mt-24">
+  <div class="flex justify-center mt-20">
     <button v-if="canLoadMore && type === 'WEB'" @click="loadMoreProjects"
       class="relative border rounded-md border-[#5A3B5D] hover:bg-white ease-in-out duration-300 w-52 h-10 before:content-[''] before:absolute before:bg-[#F2EBF4] before:left-1 before:right-0 before:top-1 before:-z-10 before:h-10 before:w-[13rem] before:rounded">
       <span class="relative z-20">Voir plus de projets</span>
@@ -303,7 +303,7 @@ Faites passer vos idées au niveau supérieur avec un site qui reflète parfaite
 
   <div class="flex flex-col items-center xl:flex-row">
     <div class=" bg-number bg-opacity-85 bg-cover mb-4">
-      <p class="mt-10 xl:pr-10 ">📩 Vous avez un projet de développement web ou mobile en tête ? Vous souhaitez
+      <p class="xl:pr-10 ">📩 Vous avez un projet de développement web ou mobile en tête ? Vous souhaitez
         améliorer
         l’expérience utilisateur de votre site ou application ? Vous avez besoin d’un développeur freelance pour vous
         accompagner dans la création de votre projet ? N’hésitez pas à me contacter pour discuter de vos besoins et
