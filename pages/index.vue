@@ -152,7 +152,7 @@ const loadMoreProjectsMobile = () => {
 
 <template>
   <div class="flex flex-col items-center xl:flex-row mb-10 md:mb-20">
-    <div class="xl:w-3/6 bg-number bg-cover mb-4 pr-10">
+    <div class="xl:w-3/6 bg-number bg-cover mb-4 xl:pr-10">
 
       <h1 class="uppercase text-[#5A3B5D] text-4xl font-bold">
         Salut, je suis <span class="text-[#FFC800]">Vincent Duguet</span><br>
