@@ -152,46 +152,58 @@ const loadMoreProjectsMobile = () => {
 
 <template>
   <div class="flex flex-col items-center xl:flex-row mb-10 md:mb-20">
-    <div class="xl:w-3/6 bg-number bg-cover mb-4">
+    <div class="xl:w-3/6 bg-number bg-cover mb-4 pr-10">
+
       <h1 class="uppercase text-[#5A3B5D] text-4xl font-bold">
         Salut, je suis <span class="text-[#FFC800]">Vincent Duguet</span><br>
-        Développeur<br>
+        Développeur web & mobile <br>
         Designer UX/UI
       </h1>
-      <p class="mt-10 xl:pr-10">
-        <strong>Passionné</strong> par le
-        développement web, le design UX/UI et la création d’applications performantes, je mets mon expertise au service
-        de vos projets numériques.<br><br>
 
-        💻 <strong>Mon parcours</strong><br>
-        Depuis 2018, je fais du développement web une véritable passion, nourrie par la culture "Do-it-yourself", mon
-        intérêt pour l’informatique et mon attrait pour le monde de l’image. En 2019, j’ai rejoint la <b>Wild Code
-          School</b>, où j’ai acquis des bases solides en développement web professionnel. Depuis, j’ai mené avec succès
-        de nombreux projets variés, maîtrisant chaque étape du cycle de vie d’une application : de la conception au
-        déploiement, en passant par la maintenance.<br><br>
+      <p class="mt-10">
+        <strong>Passionné par le développement web et le design UX/UI</strong>, je mets mon expertise au service de vos
+        projets numériques en créant des <strong>sites responsives</strong>, des <strong>applications
+          performantes</strong>, et des expériences utilisateurs accessibles.
+      </p>
 
-        🎨 <b>L’UX/UI, au cœur de mes créations</b><br>
-        Je suis convaincu que <b>l’expérience utilisateur (UX)</b> et une interface intuitive sont essentielles pour
-        garantir le succès d’un projet digital. C’est pourquoi j’intègre systématiquement des pratiques
-        d’<b>accessibilité web</b>, afin de rendre mes créations inclusives et accessibles à tous.<br><br>
+      <h2 class="mt-10">💻 <strong>Développeur web & mobile depuis 2018</strong></h2>
+      <p>
+        J’ai débuté ma carrière en développement web en 2018, guidé par une passion pour l’informatique et le design. En
+        2019, j’ai consolidé mes compétences en rejoignant la <b>Wild Code School</b>, une formation en développement
+        web professionnel. Depuis, j’ai mené avec succès des <b>projets variés</b>, maîtrisant chaque étape :
+        conception, développement, déploiement, et maintenance.
+      </p>
 
-        💡 <b>Des technologies modernes au service de vos projets</b><br>
-        J’utilise des outils performants et adaptés à chaque besoin, tels que <b>React.js, Next.js, Vue.js, Symfony,
-          AdonisJS, TailwindCSS</b>, et bien plus encore.<br><br> Mon objectif ? Créer :<br>
+      <h2 class="mt-10">🎨<strong>UX/UI : rendre vos projets inclusifs et intuitifs</strong></h2>
+      <p>
+        En tant que <b>designer UX/UI</b>, je m’assure que vos projets offrent une expérience utilisateur optimale.
+        Grâce à mes pratiques d’<b>accessibilité web</b>, vos applications seront inclusives et intuitives pour tous les
+        utilisateurs.
 
+      </p>
+
+      <h2 class="mt-10"><strong>💡 Technologies modernes et adaptées</strong></h2>
+
+      <p>
+        Pour répondre aux besoins spécifiques de chaque projet, j’utilise des outils performants tels que <b>React.js,
+          Next.js, Vue.js, Symfony, AdonisJS</b>, et bien plus. Ces technologies garantissent des solutions fiables,
+        évolutives et optimisées.
+      </p>
+
+      <p class="mt-10"><strong>Mon objectif ? Créer :</strong></p>
       <ul class="list-disc list-inside">
         <li>Des <strong>sites web responsives</strong>, optimisés pour tous les écrans ;</li>
         <li>Des <strong>applications performantes</strong>, fiables et faciles à maintenir ;</li>
         <li>Des <strong>expériences utilisateurs uniques</strong>, qui placent vos utilisateurs au centre de
           l’expérience.</li>
       </ul>
-      <br>
 
-      🎯 <strong>Pourquoi collaborer avec moi ?</strong><br>
-      Que vous soyez une PME, une start-up ou un indépendant, je vous accompagne de <strong>A à Z</strong> dans vos
-      projets de développement web et mobile. Qu’il s’agisse d’un <strong>site vitrine</strong>, d’une
-      <strong>plateforme sur mesure</strong>, ou d’une <strong>application mobile</strong>, je suis à vos côtés pour
-      transformer vos idées en réalité digitale.
+      <h2 class="mt-10">🎯 <strong>Pourquoi collaborer avec moi ?</strong></h2>
+      <p>
+        Que vous soyez une PME, une start-up ou un indépendant, je vous accompagne de <strong>A à Z</strong> dans vos
+        projets de développement web et mobile. Qu’il s’agisse d’un <strong>site vitrine</strong>, d’une
+        <strong>plateforme sur mesure</strong>, ou d’une <strong>application mobile</strong>, je suis à vos côtés pour
+        transformer vos idées en réalité digitale.
       </p>
     </div>
 
@@ -287,7 +299,7 @@ Faites passer vos idées au niveau supérieur avec un site qui reflète parfaite
     </div>
   </div>
 
-  <div class="flex justify-center mt-20">
+  <div class="flex justify-center mt-24">
     <button v-if="canLoadMore && type === 'WEB'" @click="loadMoreProjects"
       class="relative border rounded-md border-[#5A3B5D] hover:bg-white ease-in-out duration-300 w-52 h-10 before:content-[''] before:absolute before:bg-[#F2EBF4] before:left-1 before:right-0 before:top-1 before:-z-10 before:h-10 before:w-[13rem] before:rounded">
       <span class="relative z-20">Voir plus de projets</span>
