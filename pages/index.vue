@@ -9,7 +9,7 @@ useHead({
   title: 'Vincent Duguet - Développeur Web Full Stack Freelance',
   meta: [
     // Meta pour le SEO
-    { name: 'description', content: 'Découvrez Vincent Duguet, développeur web Full Stack freelance spécialisé en création de sites web et d’applications mobiles sur mesure.' },
+    { name: 'description', content: 'Vincent Duguet, développeur web & mobile freelance et designer UX/UI, crée des sites web responsives, des applications performantes et des expériences utilisateur accessibles. Depuis 2018, il accompagne startups, PME et indépendants dans leurs projets digitaux sur mesure.' },
     { name: 'keywords', content: 'Vincent Duguet, développeur web, full stack, freelance, création site web, application mobile, React, Symfony, SEO, développeur freelance' },
     { name: 'author', content: 'Vincent Duguet' },
 
@@ -56,7 +56,7 @@ const projects = ref<Project[]>([
   },
   {
     title: 'Harmonie mutelle',
-    text: '<strong>Collaboration avec Harmonie mutuelle</strong> <br><br>Dans le cadre de la refonte du design system d’Harmonie Mutuelle, j\'ai contribué au développement de <strong>nouveaux parcours web</strong> visant à <strong>simplifier l’accès à la prévoyance individuelle</strong> pour les adhérents. L\'objectif principal était de rendre le parcours plus fluide, plus intuitif et totalement <strong>centré sur l’utilisateur</strong>, tout en garantissant une expérience optimale sur <strong>mobile et desktop.</strong> <br><br> Ce projet de refonte des parcours web pour la <strong>prévoyance individuelle</strong> chez <strong>Harmonie Mutuelle</strong> est un exemple parfait de l’application de l’UX design et des pratiques de développement moderne. Grâce à une <strong>interface responsive, centrée sur l’utilisateur</strong>, et validée par des tests pratiques, nous avons créé une expérience digitale fluide et accessible, qui répond aux besoins des adhérents d\'Harmonie Mutuelle, tout en respectant les standards de performance ',
+    text: '<strong>Collaboration avec <a href="https://www.harmonie-mutuelle.fr/" class="underline" target="blank">Harmonie mutuelle</a></strong> <br><br>Dans le cadre de la refonte du design system d’Harmonie Mutuelle, j\'ai contribué au développement de <strong>nouveaux parcours web</strong> visant à <strong>simplifier l’accès à la prévoyance individuelle</strong> pour les adhérents. L\'objectif principal était de rendre le parcours plus fluide, plus intuitif et totalement <strong>centré sur l’utilisateur</strong>, tout en garantissant une expérience optimale sur <strong>mobile et desktop.</strong> <br><br> Ce projet de refonte des parcours web pour la <strong>prévoyance individuelle</strong> chez <strong>Harmonie Mutuelle</strong> est un exemple parfait de l’application de l’UX design et des pratiques de développement moderne. Grâce à une <strong>interface responsive, centrée sur l’utilisateur</strong>, et validée par des tests pratiques, nous avons créé une expérience digitale fluide et accessible, qui répond aux besoins des adhérents d\'Harmonie Mutuelle, tout en respectant les standards de performance ',
     img: 'harmonie.png',
     order: 'xl:order-last',
     btnPosition: 'float-end',
@@ -64,14 +64,14 @@ const projects = ref<Project[]>([
   },
   {
     title: 'MGEN',
-    text: '<strong>Collaboration avec la MGEN - Refonte de l\'interface utilisateur et optimisation du parcours adhérent :</strong><br><br>Au cours de mes deux années de collaboration avec la <strong>MGEN</strong>, j\'ai participé activement à la conception et au développement de plusieurs projets majeurs. Un des projets phares a été la refonte de l\'<strong>interface utilisateur</strong> pour l\'<strong>espace personnel des adhérents</strong>, visant à améliorer l\'<strong>expérience utilisateur</strong>. Cette refonte a permis de simplifier la navigation, augmentant ainsi la <strong>satisfaction des utilisateurs</strong> et l\'<strong>engagement</strong> sur la plateforme.<br><br>J\'ai également travaillé en étroite collaboration avec l\'<strong>équipe de vente</strong> pour créer des <strong>parcours d\'adhésion personnalisés</strong>. L\'objectif était de rendre le processus d\'inscription plus <strong>intuitif</strong> et <strong>efficace</strong>, facilitant ainsi la souscription aux offres de la MGEN. Cette démarche a contribué à <strong>optimiser le parcours client</strong>, générant une <strong>meilleure conversion</strong> et <strong>fidélisation des adhérents</strong>.',
+    text: '<strong>Collaboration avec la <a href="https://www.mgen.fr/" class="underline" target="blank">MGEN</a> - Refonte de l\'interface utilisateur et optimisation du parcours adhérent :</strong><br><br>Au cours de mes deux années de collaboration avec la <strong>MGEN</strong>, j\'ai participé activement à la conception et au développement de plusieurs projets majeurs. Un des projets phares a été la refonte de l\'<strong>interface utilisateur</strong> pour l\'<strong>espace personnel des adhérents</strong>, visant à améliorer l\'<strong>expérience utilisateur</strong>. Cette refonte a permis de simplifier la navigation, augmentant ainsi la <strong>satisfaction des utilisateurs</strong> et l\'<strong>engagement</strong> sur la plateforme.<br><br>J\'ai également travaillé en étroite collaboration avec l\'<strong>équipe de vente</strong> pour créer des <strong>parcours d\'adhésion personnalisés</strong>. L\'objectif était de rendre le processus d\'inscription plus <strong>intuitif</strong> et <strong>efficace</strong>, facilitant ainsi la souscription aux offres de la MGEN. Cette démarche a contribué à <strong>optimiser le parcours client</strong>, générant une <strong>meilleure conversion</strong> et <strong>fidélisation des adhérents</strong>.',
     img: 'mgen.png',
     order: 'xl:order-last',
     btnPosition: 'float-end',
   },
   {
     title: 'Le bon agent',
-    text: '<strong>Développement du Backoffice pour "Le bon agent" - Groupe Arche :</strong><br><br> En 2021, j\'ai développé le <strong>backoffice</strong> du réseau de mandataires immobiliers <strong>\'Le bon agent\'</strong>, intégré au groupe Arche. Ce projet clé a consisté à créer une plateforme centralisée destinée à optimiser la <strong>gestion des mandataires</strong>, des contacts, ainsi que la <strong>synergie entre les différentes entités</strong> du groupe. Le backoffice est conçu pour être un outil puissant et intuitif, permettant aux utilisateurs de travailler de manière plus efficace et coordonnée.<br><br> L\’une des fonctionnalités majeures du système permet de générer des <strong>estimations immobilières personnalisées</strong> en fonction de critères précis envoyés à une API, offrant ainsi des rapports dynamiques et détaillés au format <strong>PDF</strong>. Ce processus améliore la <strong>rapidité</strong> et la <strong>précision</strong> des estimations, tout en simplifiant le workflow des utilisateurs.<br><br>Le projet a été développé avec des technologies de pointe telles que <strong>ReactJS</strong>, <strong>Redux</strong>, et <strong>MaterialUI</strong> pour le front-end, ainsi que <strong>Symfony</strong> pour le back-end, garantissant une plateforme robuste, scalable et performante, adaptée aux besoins évolutifs du réseau de mandataires.',
+    text: '<strong>Développement du Backoffice pour "<a href="https://www.lebonagent.fr/" class="underline" target="blank">le bon agent</a>" - Groupe Arche :</strong><br><br> En 2021, j\'ai développé le <strong>backoffice</strong> du réseau de mandataires immobiliers <strong>\'Le bon agent\'</strong>, intégré au groupe Arche. Ce projet clé a consisté à créer une plateforme centralisée destinée à optimiser la <strong>gestion des mandataires</strong>, des contacts, ainsi que la <strong>synergie entre les différentes entités</strong> du groupe. Le backoffice est conçu pour être un outil puissant et intuitif, permettant aux utilisateurs de travailler de manière plus efficace et coordonnée.<br><br> L\’une des fonctionnalités majeures du système permet de générer des <strong>estimations immobilières personnalisées</strong> en fonction de critères précis envoyés à une API, offrant ainsi des rapports dynamiques et détaillés au format <strong>PDF</strong>. Ce processus améliore la <strong>rapidité</strong> et la <strong>précision</strong> des estimations, tout en simplifiant le workflow des utilisateurs.<br><br>Le projet a été développé avec des technologies de pointe telles que <strong>ReactJS</strong>, <strong>Redux</strong>, et <strong>MaterialUI</strong> pour le front-end, ainsi que <strong>Symfony</strong> pour le back-end, garantissant une plateforme robuste, scalable et performante, adaptée aux besoins évolutifs du réseau de mandataires.',
     img: 'lebonagent.png',
     order: 'xl:order-start',
     btnPosition: 'float-first',
@@ -169,15 +169,16 @@ const loadMoreProjectsMobile = () => {
       <h2 class="mt-10">💻 <strong>Développeur web & mobile depuis 2018</strong></h2>
       <p>
         J’ai débuté ma carrière en développement web en 2018, guidé par une passion pour l’informatique et le design. En
-        2019, j’ai consolidé mes compétences en rejoignant la <b>Wild Code School</b>, une formation en développement
-        web professionnel. Depuis, j’ai mené avec succès des <b>projets variés</b>, maîtrisant chaque étape :
+        2019, j’ai consolidé mes compétences en rejoignant la <strong><a target="blank" class="underline"
+            href="https://www.wildcodeschool.com">Wild Code School</a></strong>, une formation en développement
+        web professionnel. Depuis, j’ai mené avec succès des <strong>projets variés</strong>, maîtrisant chaque étape :
         conception, développement, déploiement, et maintenance.
       </p>
 
       <h2 class="mt-10">🎨<strong>UX/UI : rendre vos projets inclusifs et intuitifs</strong></h2>
       <p>
-        En tant que <b>designer UX/UI</b>, je m’assure que vos projets offrent une expérience utilisateur optimale.
-        Grâce à mes pratiques d’<b>accessibilité web</b>, vos applications seront inclusives et intuitives pour tous les
+        En tant que <strong>designer UX/UI</strong>, je m’assure que vos projets offrent une expérience utilisateur optimale.
+        Grâce à mes pratiques d’<strong>accessibilité web</strong>, vos applications seront inclusives et intuitives pour tous les
         utilisateurs.
 
       </p>
@@ -185,8 +186,8 @@ const loadMoreProjectsMobile = () => {
       <h2 class="mt-10"><strong>💡 Technologies modernes et adaptées</strong></h2>
 
       <p>
-        Pour répondre aux besoins spécifiques de chaque projet, j’utilise des outils performants tels que <b>React.js,
-          Next.js, Vue.js, Symfony, AdonisJS</b>, et bien plus. Ces technologies garantissent des solutions fiables,
+        Pour répondre aux besoins spécifiques de chaque projet, j’utilise des outils modernes comme <strong><a target='blank' class='underline' href='https://fr.react.dev/'>React.js</a>, <a target='blank' class='underline' href='https://nextjs.org/'>Next.js</a>, <a target='blank' class='underline' href='https://vuejs.org/'>Vue.js</a></strong> et <strong><a href='https://nuxt.com/' target='blank' class='underline'>Nuxt.js</a></strong>, adaptés au développement web, mobile et à la création
+        d’applications performantes. Ces technologies garantissent des solutions fiables,
         évolutives et optimisées.
       </p>
 
@@ -222,8 +223,8 @@ const loadMoreProjectsMobile = () => {
 
 <strong><br><br>💡 Une expertise Full Stack pour un projet clé en main</strong>
 <br>Grâce à mes compétences en <strong>front-end</strong> et <strong>back-end</strong>, j’assure un développement complet, couvrant :
-<br>- La création d’interfaces utilisateur avec des frameworks comme <strong>React.js, Vue.js</strong> et <strong>Next.js</strong> ;
-<br>- La gestion des données et des API avec des outils robustes comme <strong>Symfony</strong> ;
+<br>- La création d’interfaces utilisateur avec des frameworks comme <strong><a target='blank' class='underline' href='https://fr.react.dev/'>React.js</a>, <a target='blank' class='underline' href='https://nextjs.org/'>Next.js</a>, <a target='blank' class='underline' href='https://vuejs.org/'>Vue.js</a></strong> et <strong><a href='https://nuxt.com/' target='blank' class='underline'>Nuxt.js</a></strong> ;
+<br>- La gestion des données et des API avec des outils robustes comme <strong><a href='https://symfony.com/' target='blank' class='underline'>Symfony</a> et <a href='https://adonisjs.com/' target='blank' class='underline'>Adonis</a></strong> ;
 <br>- Une attention particulière portée à la <strong>performance</strong>, la <strong>sécurité</strong>, et l’<strong>optimisation SEO</strong>.
 <strong><br><br>🎯 Un site à la hauteur de vos ambitions</strong>
 <br>Chaque projet est unique, tout comme les besoins de vos utilisateurs. Mon objectif ? Concevoir un site web qui soit à la fois <strong>moderne</strong>, <strong>innovant</strong>, et <strong>accessible à tous</strong>, tout en répondant aux exigences techniques les plus élevées.
@@ -236,8 +237,8 @@ Faites passer vos idées au niveau supérieur avec un site qui reflète parfaite
 <br>Que ce soit pour une application <strong>iOS</strong>, <strong>Android</strong>, ou une <strong>solution multiplateforme</strong>, je conçois des expériences modernes qui allient design et fonctionnalités pour répondre aux exigences de votre projet.
 
 <strong><br><br> Mes domaines d’expertise :</strong>
-<br>- <strong>Frameworks multiplateformes</strong> : Développement rapide et efficace avec <strong>React Native</strong>.
-<br>- <strong>Technologies natives</strong> : Création d’applications optimisées pour iOS avec <strong>SwiftUI</strong> ou Android.
+<br>- <strong>Frameworks multiplateformes</strong> : Développement rapide et efficace avec <strong><a href='https://reactnative.dev/' target='blank' class='underline'>React Native</a></strong>.
+<br>- <strong>Technologies natives</strong> : Création d’applications optimisées pour iOS avec <strong><a href='https://developer.apple.com/swift/' target='blank' class='underline'>Swift</a></strong>.
 <br>- <strong>Design attractif et ergonomique</strong> : Interfaces pensées pour séduire et fidéliser vos utilisateurs.
 <br>- <strong>Accessibilité intégrée</strong> : Conformité avec les standards pour des applications inclusives et accessibles à tous.
 
@@ -265,7 +266,7 @@ Faites passer vos idées au niveau supérieur avec un site qui reflète parfaite
 
 <strong><br><br>♿ Accessibilité : des interfaces pour tous</strong>
 <br>Passionné par l’<strong>accessibilité numérique</strong>, je veille à ce que chaque interface soit inclusive et utilisable par tous, quels que soient leurs besoins ou leurs capacités.
-
+<br>Pour garantir des applications accessibles, je respecte les standards<strong> <a class='underline' target'blank' href='https://www.w3.org/WAI/standards-guidelines/wcag/'>WCAG</a></strong>.
 <strong><br><br>🌟 Un design qui raconte une histoire</strong>
 <br>Un bon design ne se limite pas à une belle apparence : il doit <strong>engager</strong>, <strong>raconter une histoire</strong>, et offrir une <strong>expérience utilisateur inoubliable</strong>.
 <br>Je m’assure que chaque projet reflète vos valeurs tout en répondant aux standards les plus élevés en matière de convivialité et d’impact visuel.
