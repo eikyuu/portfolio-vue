@@ -6,28 +6,34 @@ import { ref } from 'vue';
 import Contact from '~/components/Contact.vue';
 
 useHead({
-  title: 'Vincent Duguet - Développeur Web Full Stack Freelance',
+  title: 'Vincent Duguet - Développeur Web et Mobile Full Stack Freelance à Tours',
   meta: [
-    // Meta pour le SEO
-    { name: 'description', content: 'Vincent Duguet, développeur web & mobile freelance et designer UX/UI, crée des sites web responsives, des applications performantes et des expériences utilisateur accessibles. Depuis 2018, il accompagne startups, PME et indépendants dans leurs projets digitaux sur mesure.' },
-    { name: 'keywords', content: 'Vincent Duguet, développeur web, full stack, freelance, création site web, application mobile, React, Symfony, SEO, développeur freelance' },
+    { name: 'description', content: 'Développeur web & mobile freelance, Vincent Duguet conçoit des sites web performants, des applications intuitives et des expériences utilisateur optimisées.' },
+    { name: 'keywords', content: 'Vincent Duguet, développeur web mobile freelance, création site web, application mobile sur mesure, UX/UI, React, Vue.js, Symfony, Next, Nuxt, Swift, SEO' },
     { name: 'author', content: 'Vincent Duguet' },
 
-    // Meta Open Graph (réseaux sociaux)
+    // Open Graph (Facebook, LinkedIn)
     { property: 'og:title', content: 'Vincent Duguet - Développeur Web Full Stack Freelance' },
-    { property: 'og:description', content: 'Découvrez les services de Vincent Duguet, expert en développement web et mobile.' },
-    { property: 'og:image', content: 'man.png' }, // Remplacez par l'URL de votre image
-    { property: 'og:url', content: 'https://vincentduguet.dev' }, // Remplacez par l'URL de votre site
+    { property: 'og:description', content: 'Développeur web & mobile freelance, Vincent Duguet conçoit des sites web performants et des applications intuitives.' },
+    { property: 'og:image', content: 'https://vincentduguet.dev/images/man.png' },
+    { property: 'og:url', content: 'https://vincentduguet.dev' },
     { property: 'og:type', content: 'website' },
+
+    // Twitter Cards
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: 'Vincent Duguet - Développeur Web Full Stack Freelance' },
+    { name: 'twitter:description', content: 'Développeur web & mobile freelance, Vincent Duguet conçoit des sites web performants et des applications intuitives.' },
+    { name: 'twitter:image', content: 'https://vincentduguet.dev/images/man.png' }
   ],
+  htmlAttrs: { lang: 'fr' },
   bodyAttrs: {
     class: 'portfolio'
   },
   script: [
-    { innerHTML: 'console.log(\'Bienvenue sur le portfolio de Vincent Duguet !\')' },
-    // { src: 'https://www.google-analytics.com/analytics.js', async: true, defer: true } // Exemple d'ajout d'un script pour Google Analytics
+    { innerHTML: 'console.log(\'Bienvenue sur le portfolio de Vincent Duguet !\')' }
   ]
-})
+});
+
 
 const type = ref("WEB");
 
