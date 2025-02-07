@@ -156,9 +156,10 @@ const loadMoreProjectsMobile = () => {
 
       <h1 class="uppercase text-[#5A3B5D] text-4xl font-bold">
         Salut, je suis <span class="text-[#FFC800]">Vincent Duguet</span><br>
-        Développeur web & mobile <br>
-        Designer UX/UI
+        Développeur web & mobile Freelance à Tours.
       </h1>
+
+      <h2 class="uppercase text-[#5A3B5D] text-2xl font-bold mt-10">J’accompagne les entreprises et entrepreneurs dans la création de sites web et d’applications <strong>performantes, accessibles et optimisées.</strong></h2>
 
       <p class="mt-10">
         <strong>Passionné par le développement web et le design UX/UI</strong>, je mets mon expertise au service de vos
@@ -166,27 +167,14 @@ const loadMoreProjectsMobile = () => {
           performantes</strong>, et des expériences utilisateurs accessibles.
       </p>
 
-      <h2 class="mt-10">💻 <strong>Développeur web & mobile depuis 2018</strong></h2>
-      <p>
-        J’ai débuté ma carrière en développement web en 2018, guidé par une passion pour l’informatique et le design. En
-        2019, j’ai consolidé mes compétences en rejoignant la <strong><a target="blank" class="underline"
-            href="https://www.wildcodeschool.com">Wild Code School</a></strong>, une formation en développement
-        web professionnel. Depuis, j’ai mené avec succès des <strong>projets variés</strong>, maîtrisant chaque étape :
-        conception, développement, déploiement, et maintenance.
-      </p>
-
-      <h2 class="mt-10">🎨<strong>UX/UI : rendre vos projets inclusifs et intuitifs</strong></h2>
-      <p>
-        En tant que <strong>designer UX/UI</strong>, je m’assure que vos projets offrent une expérience utilisateur optimale.
-        Grâce à mes pratiques d’<strong>accessibilité web</strong>, vos applications seront inclusives et intuitives pour tous les
-        utilisateurs.
-
-      </p>
-
       <h2 class="mt-10"><strong>💡 Technologies modernes et adaptées</strong></h2>
 
       <p>
-        Pour répondre aux besoins spécifiques de chaque projet, j’utilise des outils modernes comme <strong><a target='blank' class='underline' href='https://fr.react.dev/'>React.js</a>, <a target='blank' class='underline' href='https://nextjs.org/'>Next.js</a>, <a target='blank' class='underline' href='https://vuejs.org/'>Vue.js</a></strong> et <strong><a href='https://nuxt.com/' target='blank' class='underline'>Nuxt.js</a></strong>, adaptés au développement web, mobile et à la création
+        Pour répondre aux besoins spécifiques de chaque projet, j’utilise des outils modernes comme <strong><a
+            target='blank' class='underline' href='https://fr.react.dev/'>React.js</a>, <a target='blank'
+            class='underline' href='https://nextjs.org/'>Next.js</a>, <a target='blank' class='underline'
+            href='https://vuejs.org/'>Vue.js</a></strong> et <strong><a href='https://nuxt.com/' target='blank'
+            class='underline'>Nuxt.js</a></strong>, adaptés au développement web, mobile et à la création
         d’applications performantes. Ces technologies garantissent des solutions fiables,
         évolutives et optimisées.
       </p>
