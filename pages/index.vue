@@ -180,7 +180,8 @@ const loadMoreProjectsMobile = () => {
             target='blank' class='underline' href='https://fr.react.dev/'>React.js</a>, <a target='blank'
             class='underline' href='https://nextjs.org/'>Next.js</a>, <a target='blank' class='underline'
             href='https://vuejs.org/'>Vue.js</a></strong> et <strong><a href='https://nuxt.com/' target='blank'
-            class='underline'>Nuxt.js</a></strong>, adaptés au développement web, mobile et à la création
+            class='underline'>Nuxt.js</a></strong>, ou <strong><a href='https://wordpress.com/' target='blank'
+              class='underline'>Wordpress</a></strong>, adaptés au développement web, mobile et à la création
         d’applications performantes. Ces technologies garantissent des solutions fiables,
         évolutives et optimisées.
       </p>
