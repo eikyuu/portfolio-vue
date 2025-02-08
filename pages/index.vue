@@ -239,7 +239,7 @@ Faites passer vos idées au niveau supérieur avec un site qui reflète parfaite
 
 <strong><br><br>💡 Un accompagnement à chaque étape</strong>
 <br>De la <strong>conception</strong> à l’<strong>implémentation</strong>, en passant par les <strong>tests</strong> et le <strong>déploiement sur les stores</strong>, je prends en charge toutes les phases du développement.
-<br>Mon approche garantit :
+<br><br><strong>Mon approche garantit :</strong>
 <br>- Une <strong>expérience utilisateur fluide</strong> et engageante ;
 <br>- Une <strong>performance optimale</strong>, même pour les projets les plus exigeants ;
 <br>- Une <strong>sécurité renforcée</strong> pour protéger les données de vos utilisateurs.
