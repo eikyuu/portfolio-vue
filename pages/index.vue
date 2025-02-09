@@ -4,6 +4,7 @@ import ProjectCard from '~/components/ProjectCard.vue';
 import TitleUnder from '~/components/TitleUnder.vue';
 import { ref } from 'vue';
 import Contact from '~/components/Contact.vue';
+import Button from '~/components/Button.vue';
 
 useHead({
   title: 'Vincent Duguet - Développeur Web et Mobile Full Stack Freelance à Tours',
@@ -126,7 +127,7 @@ const projectsMobile = ref<Project[]>([
   },
 ]);
 
-const itemsPerPage = 3;
+const itemsPerPage = 2;
 const currentPage = ref(1);
 
 const displayedProjects = computed(() => {
@@ -157,7 +158,12 @@ const loadMoreProjectsMobile = () => {
 </script>
 
 <template>
-  <div class="flex flex-col items-center xl:flex-row mb-10 md:mb-20">
+
+
+
+
+
+  <section class="flex flex-col xl:flex-row mb-20 md:mb-20">
     <div class="xl:w-3/6 bg-number bg-cover mb-4 xl:pr-10">
 
       <h1 class="uppercase text-[#5A3B5D] text-4xl font-bold">
@@ -165,7 +171,8 @@ const loadMoreProjectsMobile = () => {
         Développeur web & mobile Freelance à Tours.
       </h1>
 
-      <h2 class="uppercase text-[#5A3B5D] text-2xl font-bold mt-10">J’accompagne les entreprises et entrepreneurs dans la création de sites web et d’applications <strong>performantes, accessibles et optimisées.</strong></h2>
+      <h2 class="uppercase text-[#5A3B5D] text-2xl font-bold mt-10">J’accompagne les entreprises et entrepreneurs dans
+        la création de sites web et d’applications <strong>performantes, accessibles et optimisées.</strong></h2>
 
       <p class="mt-10">
         <strong>Passionné par le développement web et le design UX/UI</strong>, je mets mon expertise au service de vos
@@ -181,7 +188,7 @@ const loadMoreProjectsMobile = () => {
             class='underline' href='https://nextjs.org/'>Next.js</a>, <a target='blank' class='underline'
             href='https://vuejs.org/'>Vue.js</a></strong> et <strong><a href='https://nuxt.com/' target='blank'
             class='underline'>Nuxt.js</a></strong>, ou <strong><a href='https://wordpress.com/' target='blank'
-              class='underline'>Wordpress</a></strong>, adaptés au développement web, mobile et à la création
+            class='underline'>Wordpress</a></strong>, adaptés au développement web, mobile et à la création
         d’applications performantes. Ces technologies garantissent des solutions fiables,
         évolutives et optimisées.
       </p>
@@ -201,15 +208,18 @@ const loadMoreProjectsMobile = () => {
         <strong>plateforme sur mesure</strong>, ou d’une <strong>application mobile</strong>, je suis à vos côtés pour
         transformer vos idées en réalité digitale.
       </p>
+      <Button class="mb-5" text="Voir mes collaborations" link="/portfolio"/>
+
     </div>
 
     <NuxtImg src="man.png" width="768" height="1060" fit="fill"
       alt="un homme barbu avec des lunettes qui est developpeur" />
-  </div>
+  </section>
 
   <TitleUnder title="Je suis un expert" class="" />
 
-  <ExpertiseCard title="Développement Web sur mesure"
+  <ExpertiseCard link="/developpement-web-vue-react-symfony-adonis" title="Développement Web sur mesure"
+    textBtn="J’ai besoin d’un expert en Développement Web →"
     text="Offrez à vos utilisateurs un <strong>site web moderne, performant et personnalisé</strong>.
 <br>Que ce soit pour un <strong>site vitrine</strong>, une <strong>plateforme interactive</strong>, ou une <strong>application web complexe</strong>, je mets mon expertise au service de votre projet pour créer des expériences utilisateur :
 <br>- <strong>Fluides</strong> : Une navigation intuitive et rapide ;
@@ -225,9 +235,10 @@ const loadMoreProjectsMobile = () => {
 <br>Chaque projet est unique, tout comme les besoins de vos utilisateurs. Mon objectif ? Concevoir un site web qui soit à la fois <strong>moderne</strong>, <strong>innovant</strong>, et <strong>accessible à tous</strong>, tout en répondant aux exigences techniques les plus élevées.
 
 Faites passer vos idées au niveau supérieur avec un site qui reflète parfaitement votre vision et dépasse les attentes de vos utilisateurs." img="web.svg"
-    class="mt-10 md:mt-20" />
+    class="mt-20 md:mt-20" />
 
-  <ExpertiseCard title="Développement Mobile sur mesure"
+  <ExpertiseCard link="/developpement-mobile-react-native-flutter-swift-kotlin" title="Développement Mobile sur mesure"
+    textBtn="Je veux une application mobile performante →"
     text="Offrez à vos utilisateurs une <strong>application mobile intuitive, performante</strong> et adaptée à leurs besoins.
 <br>Que ce soit pour une application <strong>iOS</strong>, <strong>Android</strong>, ou une <strong>solution multiplateforme</strong>, je conçois des expériences modernes qui allient design et fonctionnalités pour répondre aux exigences de votre projet.
 
@@ -247,9 +258,10 @@ Faites passer vos idées au niveau supérieur avec un site qui reflète parfaite
 <strong><br><br>🎯 Un projet mobile qui se distingue</strong>
 <br>Votre application mérite de se démarquer par son <strong>efficacité</strong>, sa <strong>simplicité</strong>, et sa <strong>capacité à engager</strong> vos utilisateurs.
 <br>Que vous visiez un lancement rapide ou une solution sur mesure à long terme, je suis là pour transformer vos idées en une application innovante et impactante."
-    img="mobile.svg" class="mt-10 md:mt-20" />
+    img="mobile.svg" class="mt-20 md:mt-20" />
 
-  <ExpertiseCard title="Design UX/UI centré sur vos utilisateurs"
+  <ExpertiseCard link="/design-ux-ui-figma" title="Design UX/UI centré sur vos utilisateurs"
+    textBtn="Je veux un design qui me ressemble →"
     text="Créez des expériences mémorables grâce à des <strong>interfaces modernes, intuitives</strong> et <strong>centrées sur l’utilisateur</strong>.
 <br>Chaque projet commence par une analyse approfondie de vos besoins et de ceux de vos utilisateurs.
 <br>Mon objectif ? Concilier <strong>esthétisme</strong>, <strong>simplicité</strong>, et <strong>efficacité</strong> pour concevoir des designs qui répondent aux attentes tout en restant impactants.
@@ -261,15 +273,16 @@ Faites passer vos idées au niveau supérieur avec un site qui reflète parfaite
 
 <strong><br><br>♿ Accessibilité : des interfaces pour tous</strong>
 <br>Passionné par l’<strong>accessibilité numérique</strong>, je veille à ce que chaque interface soit inclusive et utilisable par tous, quels que soient leurs besoins ou leurs capacités.
-<br>Pour garantir des applications accessibles, je respecte les standards<strong> <a class='underline' target'blank' href='https://www.w3.org/WAI/standards-guidelines/wcag/'>WCAG</a></strong>.
+<br>Pour garantir des applications accessibles, je respecte les standards<strong> <a class='underline' target='blank' href='https://www.w3.org/WAI/standards-guidelines/wcag/'>WCAG</a></strong>.
 <strong><br><br>🌟 Un design qui raconte une histoire</strong>
 <br>Un bon design ne se limite pas à une belle apparence : il doit <strong>engager</strong>, <strong>raconter une histoire</strong>, et offrir une <strong>expérience utilisateur inoubliable</strong>.
 <br>Je m’assure que chaque projet reflète vos valeurs tout en répondant aux standards les plus élevés en matière de convivialité et d’impact visuel.
 
 <strong><br><br>🎯 Transformons vos idées en expériences uniques</strong>
-<br>Faites de votre projet une référence en design UX/UI avec des solutions modernes, accessibles, et pensées pour durer." img="design.svg" class="mt-10 mb-10 md:mt-20 md:mb-20" />
+<br>Faites de votre projet une référence en design UX/UI avec des solutions modernes, accessibles, et pensées pour durer." img="design.svg"
+    class="mt-20 mb-20 md:mt-20 md:mb-20" />
 
-  <TitleUnder title="Mes collaborations" class="mb-10 md:mb-20" />
+  <!-- <TitleUnder title="Mes collaborations" class="mb-20 md:mb-20" />
 
   <div class="relative flex justify-center mb-20">
     <button class="absolute z-10 left-0  w-[50%] skew-x-[-8deg] rounded-md"
@@ -288,6 +301,7 @@ Faites passer vos idées au niveau supérieur avec un site qui reflète parfaite
         :btnPosition="project.btnPosition" :link="project.link" class="mb-20" />
     </div>
   </div>
+
   <div v-else>
     <div v-for="(project, index) in displayedProjectsMobile" :key="index">
       <ProjectCard :title="project.title" :text="project.text" :img="project.img" :order="project.order"
@@ -296,35 +310,14 @@ Faites passer vos idées au niveau supérieur avec un site qui reflète parfaite
   </div>
 
   <div class="flex justify-center mt-24">
-    <button v-if="canLoadMore && type === 'WEB'" @click="loadMoreProjects"
-      class="relative border rounded-md border-[#5A3B5D] hover:bg-white ease-in-out duration-300 w-52 h-10 before:content-[''] before:absolute before:bg-[#F2EBF4] before:left-1 before:right-0 before:top-1 before:-z-10 before:h-10 before:w-[13rem] before:rounded">
-      <span class="relative z-20">Voir plus de projets</span>
-    </button>
 
-    <button v-if="canLoadMoreMobile && type === 'MOBILE'" @click="loadMoreProjectsMobile"
-      class="relative border rounded-md border-[#5A3B5D] hover:bg-white ease-in-out duration-300 w-52 h-10 before:content-[''] before:absolute before:bg-[#F2EBF4] before:left-1 before:right-0 before:top-1 before:-z-10 before:h-10 before:w-[13rem] before:rounded">
-      <span class="relative z-20">Voir plus de projets</span>
-    </button>
-  </div>
+    <Button v-if="canLoadMore && type === 'WEB'" @click="loadMoreProjects" text="Voir plus de projets"
+      color="bg-[#F2EBF4]" />
 
-  <TitleUnder title="Discutons de vos projets" class="mt-20 mb-20" />
+    <Button v-if="canLoadMoreMobile && type === 'MOBILE'" @click="loadMoreProjectsMobile" text="Voir plus de projets"
+      color="bg-[#F2EBF4]" />
 
-  <div class="flex flex-col items-center xl:flex-row">
-    <div class=" bg-number bg-opacity-85 bg-cover mb-4">
-      <p class="xl:pr-10 ">📩 Vous avez un projet de développement web ou mobile en tête ? Vous souhaitez
-        améliorer
-        l’expérience utilisateur de votre site ou application ? Vous avez besoin d’un développeur freelance pour vous
-        accompagner dans la création de votre projet ? N’hésitez pas à me contacter pour discuter de vos besoins et
-        échanger sur les solutions que je peux vous apporter.
-        <br><br>🚀 Je suis disponible pour des missions de développement web et mobile, de design UX/UI, de conseil en
-        stratégie digitale, ou pour toute autre collaboration qui pourrait vous aider à atteindre vos objectifs.
-        <br><br>📞 Vous pouvez me joindre par email à l’adresse <a href="mailto:vincent.duguet.pro@gmail.com"
-          class="text-[#FFC800]">vincent.duguet.pro@gmail.com</a> ou via LinkedIn. Je suis impatient de discuter avec
-        vous et de
-        contribuer à la réussite de votre projet.
-      </p>
-    </div>
-  </div>
+  </div> -->
 
   <Contact />
 

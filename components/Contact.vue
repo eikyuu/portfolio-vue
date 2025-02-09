@@ -1,6 +1,30 @@
 <template>
-    <div class="bg-white z-0 relative shadow-lg pr-5 pb-5 pl-5 items-center rounded-xl mt-20">
-        <h2 class="font-bold text-[#5A3B5D] text-xl mb-4">Contactez-moi</h2>
+
+    <TitleUnder title="Discutons de vos projets" class="mt-20 mb-20" />
+
+    <div class="flex flex-col items-center xl:flex-row">
+        <div class=" bg-number bg-opacity-85 bg-cover mb-4">
+            <p class="xl:pr-10 ">📩 Vous avez un projet de développement web ou mobile en tête ? Vous souhaitez
+                améliorer
+                l’expérience utilisateur de votre site ou application ? Vous avez besoin d’un développeur freelance pour
+                vous
+                accompagner dans la création de votre projet ? N’hésitez pas à me contacter pour discuter de vos besoins
+                et
+                échanger sur les solutions que je peux vous apporter.
+                <br><br>🚀 Je suis disponible pour des missions de développement web et mobile, de design UX/UI, de
+                conseil en
+                stratégie digitale, ou pour toute autre collaboration qui pourrait vous aider à atteindre vos objectifs.
+                <br><br>📞 Vous pouvez me joindre par email à l’adresse <a href="mailto:vincent.duguet.pro@gmail.com"
+                    class="text-[#FFC800]">vincent.duguet.pro@gmail.com</a> ou via LinkedIn. Je suis impatient de
+                discuter avec
+                vous et de
+                contribuer à la réussite de votre projet.
+            </p>
+        </div>
+    </div>
+
+    <div class="bg-white z-0 relative  shadow-xl shadow-[#F2EBF4] p-5 items-center rounded-xl mt-20">
+        <h2 class="font-bold text-[#5A3B5D] text-xl">Contactez-moi</h2>
         <form @submit.prevent="handleSubmit">
             <!-- subject -->
             <div class="mb-4">
