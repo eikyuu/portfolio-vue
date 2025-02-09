@@ -202,17 +202,17 @@ const loadMoreProjectsMobile = () => {
       </ul>
 
       <h2 class="mt-10">🎯 <strong>Pourquoi collaborer avec moi ?</strong></h2>
-      <p>
+      <p class="mb-5">
         Que vous soyez une PME, une start-up ou un indépendant, je vous accompagne de <strong>A à Z</strong> dans vos
         projets de développement web et mobile. Qu’il s’agisse d’un <strong>site vitrine</strong>, d’une
         <strong>plateforme sur mesure</strong>, ou d’une <strong>application mobile</strong>, je suis à vos côtés pour
         transformer vos idées en réalité digitale.
       </p>
-      <Button class="mb-5" text="Voir mes collaborations" link="/portfolio"/>
+      <Button text="Voir mes collaborations" link="/portfolio"/>
 
     </div>
 
-    <NuxtImg src="man.png" width="768" height="1060" fit="fill"
+    <NuxtImg class="mt-5 md:md-0" src="man.png" width="768" height="1060" fit="fill"
       alt="un homme barbu avec des lunettes qui est developpeur" />
   </section>
 
