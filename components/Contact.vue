@@ -1,6 +1,6 @@
 <template>
 
-    <TitleUnder title="Discutons de vos projets" class="mt-20 mb-20" />
+    <TitleUnder title="Discutons de vos projets" class="mb-20" />
 
     <div class="flex flex-col items-center xl:flex-row">
         <div class=" bg-number bg-opacity-85 bg-cover mb-4">

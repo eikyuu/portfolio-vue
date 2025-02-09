@@ -1,6 +1,6 @@
 <template>
 
-    <div class="shadow-xl shadow-[#F2EBF4] p-5 flex flex-col xl:flex-row items-center border-b-8 border-[#FFC800]">
+    <div class="shadow-xl shadow-[#F2EBF4] p-5 flex flex-col xl:flex-row items-center border-b-8 border-[#FFC800] mb-20">
 
         <NuxtImg :src="img" width="480" height="220" alt="Un logo violet et jaune" />
 
