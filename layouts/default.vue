@@ -35,7 +35,7 @@
 
 
   <!-- header mobile -->
-  <header class="md:hidden">
+  <!-- <header class="md:hidden">
     <nav class="bg-[#5A3B5D] p-4 fixed bottom-0 left-0 right-0 flex items-center justify-around z-50">
       <NuxtLink to="/">
         <NuxtImg src="house.svg" width="30" height="30" alt="Un logo violet et jaune" />
@@ -47,7 +47,7 @@
         <NuxtImg src="send.svg" width="30" height="30" alt="Un logo violet et jaune" />
       </NuxtLink>
     </nav>
-  </header>
+  </header> -->
 
   <main class="max-w-screen-2xl mx-auto p-4 md:p-0 md:px-4 text-sm md:text-base leading-5 md:leading-8">
     <slot />
