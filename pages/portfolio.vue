@@ -1,4 +1,5 @@
 <template>
+
   <section>
     <TitleUnder title="Mes collaborations" class="mb-20" />
 
@@ -7,7 +8,7 @@
         :class="type === 'WEB' ? 'bg-[#FFC800] h-10' : 'bg-[#F2EBF4] h-10'" type="button" @click="onClick('WEB')">Projet
         web</button>
 
-      <button class="absolute z-0 right-0 w-[51%] skew-x-[-8deg] rounded-md"
+      <button class="absolute z-10 right-0 w-[51%] skew-x-[-8deg] rounded-md"
         :class="type === 'MOBILE' ? 'bg-[#FFC800] h-10' : 'bg-[#F2EBF4] h-10'" type="button"
         @click="onClick('MOBILE')">Projet
         mobile</button>
@@ -30,13 +31,14 @@
     <div class="flex justify-center mt-24">
 
       <Button v-if="canLoadMore && type === 'WEB'" @click="loadMoreProjects" text="Voir plus de projets"
-        color="bg-[#F2EBF4]" blank="_blank"/>
+        color="bg-[#F2EBF4]" blank="_blank" />
 
       <Button v-if="canLoadMoreMobile && type === 'MOBILE'" @click="loadMoreProjectsMobile" text="Voir plus de projets"
-        color="bg-[#F2EBF4]" blank="_blank"/>
+        color="bg-[#F2EBF4]" blank="_blank" />
 
     </div>
   </section>
+
 </template>
 
 

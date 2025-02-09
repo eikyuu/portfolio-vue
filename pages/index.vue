@@ -282,44 +282,6 @@ Faites passer vos idées au niveau supérieur avec un site qui reflète parfaite
 <br>Faites de votre projet une référence en design UX/UI avec des solutions modernes, accessibles, et pensées pour durer." img="design.svg"
     class="mt-20 mb-20 md:mt-20 md:mb-20" />
 
-  <TitleUnder title="Mes collaborations" class="mb-20 md:mb-20" />
-
-  <div class="relative flex justify-center mb-20">
-    <button class="absolute z-10 left-0  w-[50%] skew-x-[-8deg] rounded-md"
-      :class="type === 'WEB' ? 'bg-[#FFC800] h-10' : 'bg-[#F2EBF4] h-10'" type="button" @click="onClick('WEB')">Projet
-      web</button>
-
-    <button class="absolute z-0 right-0 w-[51%] skew-x-[-8deg] rounded-md"
-      :class="type === 'MOBILE' ? 'bg-[#FFC800] h-10' : 'bg-[#F2EBF4] h-10'" type="button"
-      @click="onClick('MOBILE')">Projet
-      mobile</button>
-  </div>
-
-  <div v-if="type === 'WEB'">
-    <div v-for="(project, index) in displayedProjects" :key="index">
-      <ProjectCard :title="project.title" :text="project.text" :img="project.img" :order="project.order"
-        :btnPosition="project.btnPosition" :link="project.link" class="mb-20" />
-    </div>
-  </div>
-  <div v-else>
-    <div v-for="(project, index) in displayedProjectsMobile" :key="index">
-      <ProjectCard :title="project.title" :text="project.text" :img="project.img" :order="project.order"
-        :btnPosition="project.btnPosition" :link="project.link" class="mb-20" />
-    </div>
-  </div>
-
-  <div class="flex justify-center mt-24">
-    <button v-if="canLoadMore && type === 'WEB'" @click="loadMoreProjects"
-      class="relative border rounded-md border-[#5A3B5D] hover:bg-white ease-in-out duration-300 w-52 h-10 before:content-[''] before:absolute before:bg-[#F2EBF4] before:left-1 before:right-0 before:top-1 before:-z-10 before:h-10 before:w-[13rem] before:rounded">
-      <span class="relative z-20">Voir plus de projets</span>
-    </button>
-
-    <button v-if="canLoadMoreMobile && type === 'MOBILE'" @click="loadMoreProjectsMobile"
-      class="relative border rounded-md border-[#5A3B5D] hover:bg-white ease-in-out duration-300 w-52 h-10 before:content-[''] before:absolute before:bg-[#F2EBF4] before:left-1 before:right-0 before:top-1 before:-z-10 before:h-10 before:w-[13rem] before:rounded">
-      <span class="relative z-20">Voir plus de projets</span>
-    </button>
-  </div>
-
   <Contact />
 
 </template>
