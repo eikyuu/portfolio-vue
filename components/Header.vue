@@ -56,7 +56,7 @@
     { label: 'Développement Web', to: '/developpement-web-vue-react-symfony-adonis' },
     { label: 'Développement Mobile', to: '/developpement-mobile-react-native-flutter-swift-kotlin' },
     { label: 'Design UX/UI', to: '/design-ux-ui-figma' },
-    { label: 'Mes collaborations & projets', to: '/mes-collaborations-projets' },
+    { label: 'Mes Collaborations & Projets', to: '/mes-collaborations-projets' },
     { label: 'Contact', to: '/contact' },
     // { label: 'Keyed child', onClick: () => router.push(`/parent/reload-${(Math.random() * 100).toFixed()}`) },
     // { label: 'Non-Keyed child', onClick: () => router.push(`/parent/static-${(Math.random() * 100).toFixed()}`) },
