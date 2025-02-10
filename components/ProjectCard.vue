@@ -10,7 +10,7 @@
                 'flex flex-col items-center xl:items-start xl:pr-10': order === 'flex flex-col items-center xl:items-start xl:order-last',
                 'flex flex-col items-center xl:items-start xl:pl-10': order !== 'flex flex-col items-center xl:items-start xl:order-last'
             }">
-                <h3 class="font-bold text-[#5A3B5D] text-xl mb-20">{{ props.title }}</h3>
+                <h3 class="font-bold text-[#5A3B5D] text-xl mb-10">{{ props.title }}</h3>
                 <p class="mb-20" v-html="props.text"></p>
                 <Button class="mb-5" v-if="link" text="Découvrir le projet" blank="_blank" :link="props.link ?? ''" :class="`xl:${btnPosition}`" />
             </div>

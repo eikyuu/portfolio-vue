@@ -3,12 +3,12 @@
 
   <section>
 
-    <div class="relative flex justify-center">
-      <button class="absolute z-10 left-0  w-[50%] skew-x-[-8deg] rounded-md"
+    <div class=" flex justify-center">
+      <button class="w-[50%] skew-x-[-8deg] rounded-md"
         :class="type === 'WEB' ? 'bg-[#FFC800] h-10' : 'bg-[#F2EBF4] h-10'" type="button" @click="onClick('WEB')">Projet
         web</button>
 
-      <button class="absolute z-10 right-0 w-[51%] skew-x-[-8deg] rounded-md"
+      <button class="w-[50%] skew-x-[-8deg] rounded-md"
         :class="type === 'MOBILE' ? 'bg-[#FFC800] h-10' : 'bg-[#F2EBF4] h-10'" type="button"
         @click="onClick('MOBILE')">Projet
         mobile</button>
