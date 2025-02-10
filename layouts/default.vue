@@ -33,7 +33,6 @@
 
   </header>
 
-
   <!-- header mobile -->
   <!-- <header class="md:hidden">
     <nav class="bg-[#5A3B5D] p-4 fixed bottom-0 left-0 right-0 flex items-center justify-around z-50">
@@ -53,10 +52,6 @@
     <slot />
   </main>   
   
-  <!-- <Footer /> -->
-
-  <footer class=" text-[#FFC800] text-sm md:text-base text-center mt-20 mb-20">
-    <p>© 2025 Vincent Duguet - Développeur Web & Mobile Freelance à Tours</p>
-  </footer>
+  <Footer />
 
 </template>

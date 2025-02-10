@@ -3,7 +3,7 @@
 
   <section>
 
-    <div class=" flex justify-center">
+    <div class=" flex justify-center mb-20">
       <button class="w-[50%] skew-x-[-8deg] rounded-md"
         :class="type === 'WEB' ? 'bg-[#FFC800] h-10' : 'bg-[#F2EBF4] h-10'" type="button" @click="onClick('WEB')">Projet
         web</button>
@@ -17,14 +17,14 @@
     <div v-if="type === 'WEB'">
       <div v-for="(project, index) in displayedProjects" :key="index">
         <ProjectCard :title="project.title" :text="project.text" :img="project.img" :order="project.order"
-          :btnPosition="project.btnPosition" :link="project.link" class="mb-20 mt-20" />
+          :btnPosition="project.btnPosition" :link="project.link" class="mb-20" />
       </div>
     </div>
 
     <div v-else>
       <div v-for="(project, index) in displayedProjectsMobile" :key="index">
         <ProjectCard :title="project.title" :text="project.text" :img="project.img" :order="project.order"
-          :btnPosition="project.btnPosition" :link="project.link" class="mb-20 mt-20" />
+          :btnPosition="project.btnPosition" :link="project.link" class="mb-20" />
       </div>
     </div>
 
