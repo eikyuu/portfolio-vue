@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import ExpertiseCard from '~/components/ExpertiseCard.vue';
-import ProjectCard from '~/components/ProjectCard.vue';
 import TitleUnder from '~/components/TitleUnder.vue';
 import { ref } from 'vue';
 import Contact from '~/components/Contact.vue';
