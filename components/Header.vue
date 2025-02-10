@@ -5,7 +5,7 @@
         <div class="flex justify-between h-16 items-center">
           <!-- Logo -->
           <div class="flex-shrink-0">
-            <router-link to="/" class="text-xl font-bold text-[#5A3B5D]">VINCENTDUGUET.DEV</router-link>
+            <NuxtLink to="/" class="text-xl font-bold text-[#5A3B5D]">VINCENTDUGUET.DEV</NuxtLink>
           </div>
 
           <!-- Menu pour les grands écrans -->
@@ -56,7 +56,7 @@
     { label: 'Développement Web', to: '/developpement-web-vue-react-symfony-adonis' },
     { label: 'Développement Mobile', to: '/developpement-mobile-react-native-flutter-swift-kotlin' },
     { label: 'Design UX/UI', to: '/design-ux-ui-figma' },
-    { label: 'Portfolio', to: '/portfolio' },
+    { label: 'Mes collaborations & projets', to: '/mes-collaborations-projets' },
     { label: 'Contact', to: '/contact' },
     // { label: 'Keyed child', onClick: () => router.push(`/parent/reload-${(Math.random() * 100).toFixed()}`) },
     // { label: 'Non-Keyed child', onClick: () => router.push(`/parent/static-${(Math.random() * 100).toFixed()}`) },

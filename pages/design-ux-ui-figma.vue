@@ -66,7 +66,7 @@
     </a> pour une consultation gratuite !
   </p>
 </article>" 
-img="design.svg" class="mt-20 md:mt-20" />
+img="design.svg" />
     <Contact />
   </section>
 </template>

@@ -1,5 +1,78 @@
 <template>
-    <TitleUnder title="Mes collaborations" class="mb-20" />
+
+    <article class="mb-20">
+  <!-- Titre principal -->
+  <TitleUnder title="Mes Collaborations : Partenariats Stratégiques et Expériences Enrichissantes" class="mb-20" />
+
+  <!-- Introduction -->
+  <p>
+    Au fil des années, j'ai eu la chance de travailler avec des entreprises, des startups et des individus passionnés dans divers secteurs d'activité. Chaque collaboration a été une opportunité d'apprentissage, de croissance et de création de valeur commune. Découvrez ci-dessous quelques-uns de mes partenariats marquants.
+  </p>
+
+  <!-- Sous-titre : Secteurs d'expertise -->
+  <h2 class="text-2xl font-semibold mt-5 mb-3">Collaborations dans des Secteurs Variés</h2>
+
+  <p>
+    Mon expertise s'étend à plusieurs domaines, ce qui m'a permis de collaborer avec des acteurs clés dans différents secteurs :
+  </p>
+
+  <ul class="list-disc pl-5 mt-3">
+    <li><strong>Tech & Innovation :</strong> Développement de solutions technologiques avancées pour des startups innovantes.</li>
+    <li><strong>E-commerce :</strong> Optimisation des plateformes de commerce électronique pour améliorer l'expérience client.</li>
+    <li><strong>Marketing Digital :</strong> Conception de stratégies digitales performantes avec des agences spécialisées.</li>
+    <li><strong>Éducation :</strong> Création de plateformes éducatives interactives pour des institutions scolaires et universitaires.</li>
+  </ul>
+
+  <!-- Sous-titre : Exemples de Collaborations -->
+  <h2 class="text-2xl font-semibold mt-5 mb-3">Quelques Collaborations Marquantes</h2>
+
+  <p>
+    Voici quelques exemples concrets de projets sur lesquels j'ai eu le plaisir de travailler :
+  </p>
+
+  <div class="mt-3">
+    <h3 class="text-lg font-semibold">Projet 1 : Startup Tech</h3>
+    <p>
+      Collaboration avec une startup spécialisée dans l'intelligence artificielle pour développer une application mobile permettant de simplifier la gestion des données utilisateur. Technologies utilisées : React Native, Node.js.
+    </p>
+  </div>
+
+  <div class="mt-3">
+    <h3 class="text-lg font-semibold">Projet 2 : Plateforme E-commerce</h3>
+    <p>
+      Refonte complète d'une boutique en ligne pour une marque de mode française. Objectifs : améliorer la conversion et l'expérience utilisateur. Outils utilisés : Shopify, Figma.
+    </p>
+  </div>
+
+  <div class="mt-3">
+    <h3 class="text-lg font-semibold">Projet 3 : Agence de Marketing</h3>
+    <p>
+      Conception et développement de campagnes publicitaires ciblées pour des clients B2B. Résultats : augmentation significative du taux de clics et de leads générés.
+    </p>
+  </div>
+
+  <!-- Sous-titre : Valeurs et Approche -->
+  <h2 class="text-2xl font-semibold mt-5 mb-3">Ma Philosophie de Collaboration</h2>
+
+  <p>
+    Chaque projet est unique, et je m'efforce de bâtir des relations de confiance basées sur :
+  </p>
+
+  <ul class="list-disc pl-5 mt-3">
+    <li><strong>L'écoute active :</strong> Comprendre vos besoins et objectifs pour proposer des solutions adaptées.</li>
+    <li><strong>La transparence :</strong> Communication claire et régulière tout au long du processus.</li>
+    <li><strong>L'innovation :</strong> Proposer des idées créatives et des technologies de pointe pour dépasser vos attentes.</li>
+    <li><strong>La qualité :</strong> Livrer des résultats professionnels et durables.</li>
+  </ul>
+
+  <!-- Call to Action (CTA) -->
+  <p class="mt-5">
+    Intéressé(e) par une collaboration ? 
+    <NuxtLink to="/contact" title="Contactez-moi pour discuter de votre projet" class="text-[#FFC800] font-bold hover:underline">
+      Contactez-moi dès maintenant
+    </NuxtLink> pour explorer comment nous pouvons travailler ensemble !
+  </p>
+</article>
 
   <section>
 
