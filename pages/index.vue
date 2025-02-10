@@ -207,7 +207,7 @@ const loadMoreProjectsMobile = () => {
         <strong>plateforme sur mesure</strong>, ou d’une <strong>application mobile</strong>, je suis à vos côtés pour
         transformer vos idées en réalité digitale.
       </p>
-      <Button text="Voir mes collaborations" link="/portfolio"/>
+      <Button text="Voir mes collaborations & projets" link="/mes-collaborations-projets"/>
 
     </div>
 
