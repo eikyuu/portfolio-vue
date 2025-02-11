@@ -2,9 +2,12 @@
 
     <TitleUnder title="Discutons de vos projets" class="mb-20" />
 
+
     <div class="flex flex-col items-center xl:flex-row">
-        <div class=" bg-number bg-opacity-85 bg-cover mb-4">
-            <p class="xl:pr-10 ">📩 Vous avez un projet de développement web ou mobile en tête ? Vous souhaitez
+        <div class=" bg-number bg-opacity-85 bg-cover mb-4 flex flex-col items-center xl:flex-row xl:justify-between">
+            <NuxtImg class="rounded-md mb-10 xl:mb-0" src="contct.jpg" width="640" height="426" alt="Un logo violet et jaune" />
+
+            <p class="xl:pr-10 xl:w-1/2 ">📩 Vous avez un projet de développement web ou mobile en tête ? Vous souhaitez
                 améliorer
                 l’expérience utilisateur de votre site ou application ? Vous avez besoin d’un développeur freelance pour
                 vous

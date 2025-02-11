@@ -66,7 +66,9 @@
     </a> pour une consultation gratuite !
   </p>
 </article>" 
-img="design.svg" />
+img="book.jpg"
+width="600"
+height="600" />
     <Contact />
   </section>
 </template>

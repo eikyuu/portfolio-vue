@@ -67,7 +67,9 @@
     </a> pour une consultation gratuite !
   </p>
 </article>" 
-img="mobile.svg" />
+img="tel.jpg"
+width="600"
+height="600" />
     <Contact />
   </section>
 </template>

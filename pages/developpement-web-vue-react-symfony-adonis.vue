@@ -10,7 +10,6 @@
 
     </div>
 
-
     <ExpertiseCard link="/contact" textBtn="J’ai besoin d’un expert en Développement Web →" text="<article>
   <p>
     Vous cherchez à créer une application web performante, moderne et évolutive ? Avec une expertise solide dans les frameworks frontend tels que 
@@ -65,7 +64,11 @@
     </a> pour une consultation gratuite !
   </p>
 </article>" 
-img="web.svg"/>
+img="dev.jpg"
+width="600"
+height="600"
+
+/>
     <Contact />
   </section>
 </template>

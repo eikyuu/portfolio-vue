@@ -211,7 +211,7 @@ const loadMoreProjectsMobile = () => {
 
     </div>
 
-    <NuxtImg class="mt-5 md:md-0" src="man.png" width="768" height="1060" fit="fill"
+    <NuxtImg class="mt-5 md:mt-0" src="man.png" width="768" height="1060" fit="fill"
       alt="un homme barbu avec des lunettes qui est developpeur" />
   </section>
 
