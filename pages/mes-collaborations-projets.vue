@@ -2,7 +2,7 @@
 
     <article class="mb-20">
   <!-- Titre principal -->
-  <TitleUnder title="Mes Collaborations : Partenariats Stratégiques et Expériences Enrichissantes" class="mb-20" />
+  <TitleUnder title="Mes Collaborations : Partenariats Stratégiques et Expériences Enrichissantes" class="mb-10 xl:mb-20" />
 
   <!-- Introduction -->
   <p>
