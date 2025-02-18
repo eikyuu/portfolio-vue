@@ -22,5 +22,8 @@ export default defineNuxtConfig({
     public: {
       apiBase: process.env.API_BASE,
     }
-  }
+  },
+  app: {
+    pageTransition: { name: 'page', mode: 'out-in' }
+  },
 })

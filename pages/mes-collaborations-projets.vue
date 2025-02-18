@@ -1,4 +1,5 @@
 <template>
+<div>
 
     <article class="mb-20">
   <!-- Titre principal -->
@@ -111,6 +112,9 @@
 
     </div>
   </section>
+
+</div>
+
 
 </template>
 
