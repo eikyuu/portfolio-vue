@@ -211,8 +211,8 @@ const loadMoreProjectsMobile = () => {
 
     </div>
 
-    <NuxtImg class="mt-5 md:mt-0" src="man.png" width="768" height="1060" fit="fill"
-      alt="un homme barbu avec des lunettes qui est developpeur" />
+    <NuxtImg class="mt-5 md:mt-0" src="homme-barbu-devant-ordinateur.png" width="768" height="1060" fit="fill" loading="lazy" format="webp"
+      alt="Un homme barbu avec des lunettes devant un ordinateur" />
   </section>
 
   <TitleUnder title="Je suis un expert" class="" />

@@ -5,7 +5,17 @@
 
     <div class="flex flex-col items-center xl:flex-row">
         <div class=" bg-number bg-opacity-85 bg-cover mb-4 flex flex-col items-center xl:flex-row xl:justify-between">
-            <NuxtImg class="rounded-md mb-10 xl:mb-0" src="contct.jpg" width="640" height="426" alt="Un logo violet et jaune" />
+
+
+            <figure>
+                <NuxtImg class="rounded-md mb-10 xl:mb-0" src="bulle-de-contact-vert-fond-jaune.jpg" width="640"
+                    height="426" format="webp" loading="lazy"
+                    alt="Bulle de contact verte sur fond jaune symbolisant une interaction utilisateur engageante" />
+                <span class="sr-only">
+                    Cette image représente une bulle de conversation vert fluo sur un fond jaune vif, conçue pour
+                    inciter à l'interaction et à la communication.
+                </span>
+            </figure>
 
             <p class="xl:pr-10 xl:w-1/2 ">📩 Vous avez un projet de développement web ou mobile en tête ? Vous souhaitez
                 améliorer

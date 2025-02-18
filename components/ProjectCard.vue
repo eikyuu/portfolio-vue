@@ -4,7 +4,7 @@
 
         <div class="flex flex-col xl:flex-row justify-center items-center">
             <NuxtImg :src="img" width="600" height="600" :class="`${order} rounded-md mb-20`" fit="cover"
-                alt="une image qui represente un projet" />
+                alt="Une image qui représente un projet web ou mobile" />
 
             <div :class="{
                 'flex flex-col items-center xl:items-start xl:pr-10': order === 'flex flex-col items-center xl:items-start xl:order-last',
