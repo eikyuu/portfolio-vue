@@ -1,7 +1,5 @@
 <template>
   <section>
-
-
     <div class="block flex justify-center">
       <h1
         class="mb-10 xl:mb-20 relative inline-block before:content-[''] before:absolute before:bg-[#FFC800] before:top-[1rem] before:md:top-[1rem] before:left-0 before:right-0 before:h-[0.8rem] before:md:h-[1.5rem] before:transform before:scale-100 before:skew-x-[-8deg] before:-z-10 rounded-xl before:rounded">
@@ -70,3 +68,14 @@
     <Contact />
   </section>
 </template>
+
+<script setup lang="ts">
+useSeoMeta({
+  title: 'Design UX/UI : Création d\'Expériences Utilisateurs Exceptionnelles',
+  ogTitle: 'Design UX/UI : Création d\'Expériences Utilisateurs Exceptionnelles',
+  description: 'Vous souhaitez offrir une expérience utilisateur fluide, engageante et mémorable ? En tant que designer UX/UI expérimenté, je vous accompagne dans la conception d\'interfaces intuitives et fonctionnelles qui répondent aux besoins de vos utilisateurs et atteignent vos objectifs commerciaux.',
+  ogDescription: 'Vous souhaitez offrir une expérience utilisateur fluide, engageante et mémorable ? En tant que designer UX/UI expérimenté, je vous accompagne dans la conception d\'interfaces intuitives et fonctionnelles qui répondent aux besoins de vos utilisateurs et atteignent vos objectifs commerciaux.',
+  ogImage: 'https://vincentduguet.dev/images/homme-barbu-devant-ordinateur.png',
+  twitterCard: 'summary_large_image',
+})
+</script>

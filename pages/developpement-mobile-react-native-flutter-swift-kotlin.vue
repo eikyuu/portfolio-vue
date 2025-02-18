@@ -1,7 +1,5 @@
 <template>
   <section>
-
-
     <div class="block flex justify-center">
         <h1
             class="mb-10 xl:mb-20 relative inline-block before:content-[''] before:absolute before:bg-[#FFC800] before:top-[1rem] before:md:top-[1rem] before:left-0 before:right-0 before:h-[0.8rem] before:md:h-[1.5rem] before:transform before:scale-100 before:skew-x-[-8deg] before:-z-10 rounded-xl before:rounded">
@@ -73,3 +71,14 @@ height="600" />
     <Contact />
   </section>
 </template>
+
+<script setup lang="ts">
+useSeoMeta({
+  title: 'Développement Mobile sur Mesure : React Native, Flutter, Swift, Kotlin',
+  ogTitle: 'Développement Mobile sur Mesure : React Native, Flutter, Swift, Kotlin',
+  description: 'Vous souhaitez développer une application mobile performante, moderne et accessible sur iOS et Android ? Avec une expertise solide dans les frameworks cross-platform tels que React Native, Flutter et Ionic, ainsi que dans les solutions natives comme Swift pour iOS et Kotlin/Java pour Android, je vous accompagne dans la réalisation de votre projet de A à Z.',
+  ogDescription: 'Vous souhaitez développer une application mobile performante, moderne et accessible sur iOS et Android ? Avec une expertise solide dans les frameworks cross-platform tels que React Native, Flutter et Ionic, ainsi que dans les solutions natives comme Swift pour iOS et Kotlin/Java pour Android, je vous accompagne dans la réalisation de votre projet de A à Z.',
+  ogImage: 'https://vincentduguet.dev/images/homme-barbu-devant-ordinateur.png',
+  twitterCard: 'summary_large_image',
+})
+</script>
