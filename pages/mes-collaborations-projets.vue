@@ -21,7 +21,7 @@
     <li><strong>Tech & Innovation :</strong> Développement de solutions technologiques avancées pour des startups innovantes.</li>
     <li><strong>E-commerce :</strong> Optimisation des plateformes de commerce électronique pour améliorer l'expérience client.</li>
     <li><strong>Marketing Digital :</strong> Conception de stratégies digitales performantes avec des agences spécialisées.</li>
-    <li><strong>Éducation :</strong> Création de plateformes éducatives interactives pour des institutions scolaires et universitaires.</li>
+    <!-- <li><strong>Éducation :</strong> Création de plateformes éducatives interactives pour des institutions scolaires et universitaires.</li> -->
   </ul>
 
   <!-- Sous-titre : Exemples de Collaborations -->
@@ -32,24 +32,18 @@
   </p>
 
   <div class="mt-3">
-    <h3 class="text-lg font-semibold">Projet 1 : Startup Tech</h3>
-    <p>
-      Collaboration avec une startup spécialisée dans l'intelligence artificielle pour développer une application mobile permettant de simplifier la gestion des données utilisateur. Technologies utilisées : React Native, Node.js.
-    </p>
+    <h3 class="text-lg font-semibold mb-3">Projet 1 : {{ projects[2].title }}</h3>
+    <p v-html="projects[2].text"></p>
   </div>
 
   <div class="mt-3">
-    <h3 class="text-lg font-semibold">Projet 2 : Plateforme E-commerce</h3>
-    <p>
-      Refonte complète d'une boutique en ligne pour une marque de mode française. Objectifs : améliorer la conversion et l'expérience utilisateur. Outils utilisés : Shopify, Figma.
-    </p>
+  <h3 class="text-lg font-semibold mb-3">Projet 2 : {{ projects[3].title }}</h3>
+  <p v-html="projects[3].text"></p>
   </div>
 
   <div class="mt-3">
-    <h3 class="text-lg font-semibold">Projet 3 : Agence de Marketing</h3>
-    <p>
-      Conception et développement de campagnes publicitaires ciblées pour des clients B2B. Résultats : augmentation significative du taux de clics et de leads générés.
-    </p>
+    <h3 class="text-lg font-semibold mb-3">Projet 3 : {{ projectsMobile[0].title }}</h3>
+    <p v-html="projectsMobile[0].text"></p>
   </div>
 
   <!-- Sous-titre : Valeurs et Approche -->
@@ -191,7 +185,7 @@ const projects = ref<Project[]>([
 const projectsMobile = ref<Project[]>([
   {
     title: 'B’COWORKER',
-    text: '<strong>Amélioration et optimisation d\'une application de gestion de coworking</strong>\n\n<br>Mon rôle a consisté à :\n<br>- <strong>Implémenter de nouvelles fonctionnalités</strong>, notamment un calendrier interactif permettant de :\n    - Visualiser toutes les réservations en temps réel ;\n    - Bloquer des dates spécifiques pour la gestion des disponibilités ;\n    - Appliquer divers filtres pour l\'administration (types de réservation, disponibilités, etc.).\n<br>- <strong>Corriger des bugs</strong> existants pour améliorer la stabilité et les performances de l\'application.\n<br>- <strong>Faire évoluer la codebase</strong> pour faciliter les futures itérations et maintenir une structure solide et performante.\n\n<strong>Technologies utilisées :</strong>\n<br>- Flutter : pour une interface utilisateur moderne et fluide.\n<br>- Firebase : pour le back-end, incluant la gestion des données en temps réel, l\'authentification, et le stockage.\n\nCe projet démontre ma capacité à travailler sur des applications complexes, à optimiser leur fonctionnement et à ajouter des fonctionnalités clés répondant aux besoins des utilisateurs et des administrateurs.',
+    text: '<strong>Amélioration et optimisation d\'une application de gestion de coworking</strong>\n\n<br>Mon rôle a consisté à :\n<br>- <strong>Implémenter de nouvelles fonctionnalités</strong>, notamment un calendrier interactif permettant de :\n<br>- Visualiser toutes les réservations en temps réel ;\n<br>- Bloquer des dates spécifiques pour la gestion des disponibilités ;\n<br>- Appliquer divers filtres pour l\'administration (types de réservation, disponibilités, etc.).\n<br>- <strong>Corriger des bugs</strong> existants pour améliorer la stabilité et les performances de l\'application.\n<br>- <strong>Faire évoluer la codebase</strong> pour faciliter les futures itérations et maintenir une structure solide et performante.\n\n<strong><br>Technologies utilisées :</strong>\n<br>- Flutter : pour une interface utilisateur moderne et fluide.\n<br>- Firebase : pour le back-end, incluant la gestion des données en temps réel, l\'authentification, et le stockage.\n\nCe projet démontre ma capacité à travailler sur des applications complexes, à optimiser leur fonctionnement et à ajouter des fonctionnalités clés répondant aux besoins des utilisateurs et des administrateurs.',
     img: 'bcoworker.png',
     order: 'xl:order-start',
     btnPosition: 'float-first',
