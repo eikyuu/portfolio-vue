@@ -59,20 +59,18 @@ const nav = [
   { label: 'Design UX/UI', to: '/design-ux-ui-figma' },
   { label: 'Mes Collaborations & Projets', to: '/mes-collaborations-projets' },
   { label: 'Contact', to: '/contact' },
-  // { label: 'Keyed child', onClick: () => router.push(`/parent/reload-${(Math.random() * 100).toFixed()}`) },
-  // { label: 'Non-Keyed child', onClick: () => router.push(`/parent/static-${(Math.random() * 100).toFixed()}`) },
 ]
 
 const isOpen = ref<boolean>(false);
-const componentRef = ref()
-const excludeRef = ref()
+const componentRef = ref<HTMLElement | null>(null)
+const excludeRef = ref<HTMLElement | null>(null)
 
 useClickOutside(
-  componentRef,
+  componentRef as Ref<HTMLElement>,
   () => {
     isOpen.value = false
   },
-  excludeRef
+  excludeRef as Ref<HTMLElement>
 )
 
 </script>
