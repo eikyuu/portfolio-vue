@@ -1,7 +1,7 @@
 <template>
-    <section>
-      <Contact />
-    </section>
+  <section>
+    <Contact />
+  </section>
 </template>
 
 <script setup lang="ts">
@@ -14,4 +14,3 @@ useSeoMeta({
   twitterCard: 'summary_large_image',
 })
 </script>
-  

@@ -37,8 +37,8 @@ useHead({
 
 <template>
   <div>
-    <section class="flex flex-col xl:flex-row mb-20 md:mb-20">
-      <div class="xl:w-3/6 bg-number bg-cover mb-4 xl:pr-10">
+    <section class="flex flex-col xl:flex-row items-center place-content-between mb-20 md:mb-20">
+      <div class="xl:w-3/6 bg-number bg-cover mb-4">
 
         <h1 class="uppercase text-[#5A3B5D] text-4xl font-bold">
           Salut, je suis <span class="text-[#FFC800]">Vincent Duguet</span><br>
@@ -87,8 +87,11 @@ useHead({
 
       </div>
 
-      <NuxtImg class="mt-5 md:mt-0" src="homme-barbu-devant-ordinateur.png" width="768" height="1060" fit="fill"
-        loading="lazy" format="webp" alt="Un homme barbu avec des lunettes devant un ordinateur" />
+      <div>
+        <NuxtImg class="mt-5 md:mt-0 object-cover rounded-md" src="homme-barbu-devant-ordinateur.png"
+          sizes="sm:50vw md:400px xl:742px" width="600" height="600" loading="lazy" format="webp"
+          alt="Un homme barbu avec des lunettes devant un ordinateur" />
+      </div>
     </section>
 
     <TitleUnder title="Je suis un expert" class="" />
