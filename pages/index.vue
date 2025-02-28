@@ -90,7 +90,7 @@ useHead({
       <div>
         <NuxtImg class="mt-5 md:mt-0 object-cover rounded-md" src="homme-barbu-devant-ordinateur.png"
           sizes="sm:50vw md:400px xl:742px" width="600" height="600" loading="lazy" format="webp"
-          alt="Un homme barbu avec des lunettes devant un ordinateur" />
+          alt="Un homme barbu avec des lunettes devant un ordinateur" placeholder />
       </div>
     </section>
 
