@@ -112,7 +112,7 @@ useHead({
 <strong><br><br>🎯 Un site à la hauteur de vos ambitions</strong>
 <br>Chaque projet est unique, tout comme les besoins de vos utilisateurs. Mon objectif ? Concevoir un site web qui soit à la fois <strong>moderne</strong>, <strong>innovant</strong>, et <strong>accessible à tous</strong>, tout en répondant aux exigences techniques les plus élevées.
 
-Faites passer vos idées au niveau supérieur avec un site qui reflète parfaitement votre vision et dépasse les attentes de vos utilisateurs." img="web.svg"
+Faites passer vos idées au niveau supérieur avec un site qui reflète parfaitement votre vision et dépasse les attentes de vos utilisateurs." img="svg/web.svg"
       class="mt-20 md:mt-20" />
 
     <ExpertiseCard link="/developpement-mobile-react-native-flutter-swift-kotlin"
@@ -135,7 +135,7 @@ Faites passer vos idées au niveau supérieur avec un site qui reflète parfaite
 
 <strong><br><br>🎯 Un projet mobile qui se distingue</strong>
 <br>Votre application mérite de se démarquer par son <strong>efficacité</strong>, sa <strong>simplicité</strong>, et sa <strong>capacité à engager</strong> vos utilisateurs.
-<br>Que vous visiez un lancement rapide ou une solution sur mesure à long terme, je suis là pour transformer vos idées en une application innovante et impactante." img="mobile.svg" class="mt-20 md:mt-20" />
+<br>Que vous visiez un lancement rapide ou une solution sur mesure à long terme, je suis là pour transformer vos idées en une application innovante et impactante." img="svg/mobile.svg" class="mt-20 md:mt-20" />
 
     <ExpertiseCard link="/design-ux-ui-figma" title="Design UX/UI centré sur vos utilisateurs"
       textBtn="Je veux un design qui me ressemble →"
@@ -156,7 +156,7 @@ Faites passer vos idées au niveau supérieur avec un site qui reflète parfaite
 <br>Je m’assure que chaque projet reflète vos valeurs tout en répondant aux standards les plus élevés en matière de convivialité et d’impact visuel.
 
 <strong><br><br>🎯 Transformons vos idées en expériences uniques</strong>
-<br>Faites de votre projet une référence en design UX/UI avec des solutions modernes, accessibles, et pensées pour durer." img="design.svg"
+<br>Faites de votre projet une référence en design UX/UI avec des solutions modernes, accessibles, et pensées pour durer." img="svg/design.svg"
       class="mt-20 mb-20 md:mt-20 md:mb-20" />
 
     <Contact />

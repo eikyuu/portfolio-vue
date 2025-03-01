@@ -9,7 +9,7 @@
         </div>
 
         <!-- Menu pour les grands écrans -->
-        <div class="hidden md:block">
+        <div class="hidden lg:block">
           <div class="ml-10 flex items-baseline space-x-4">
 
             <ul class="flex justify-center text-[#5A3B5D] text-base gap-8">
@@ -22,7 +22,7 @@
         </div>
 
         <!-- Bouton Hamburger -->
-        <div class="-mr-2 flex md:hidden">
+        <div class="flex lg:hidden">
           <button ref="excludeRef" @click="isOpen = !isOpen" type="button"
             class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
             <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -35,7 +35,7 @@
     </nav>
 
     <!-- Menu Mobile -->
-    <div v-if="isOpen" ref="componentRef" class="md:hidden">
+    <div v-if="isOpen" ref="componentRef" class="lg:hidden">
       <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
         <ul>
           <li v-for="item in nav" :key="item.to"
