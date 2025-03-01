@@ -1,35 +1,77 @@
 <template>
+    <section class="text-orange-900 max-w-xs mx-auto p-4 bg-white shadow-md rounded-md font-mono">
 
-    <h1>Ice coffee</h1>
+        <div class="space-y-4">
+            <NuxtImg src="daily-ui-challenges/coffee-ui.jpg" class="rounded-xl object-cover" format="webp" loading="lazy" width="300" height="300" alt="Coffee" />
 
-    <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex est vel velit, recusandae veniam sequi voluptatem fugiat natus laborum consectetur adipisci, a quos ut excepturi corporis accusantium eveniet quas totam!
-    </p>
+            <h1 class="text-2xl font-bold">Ice Coffee</h1>
 
-    <p>Cup size</p>
+            <p class="text-sm">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex est vel velit, recusandae veniam sequi
+                voluptatem fugiat natus laborum consectetur adipisci.
+            </p>
+        </div>
 
-    <div>
-        <button>Small</button>
-        <button>Medium</button>
-        <button>Large</button>
-    </div>
+        <div class="flex flex-row justify-between mt-4">
+            <div>
+                <p class="text-xl font-semibold mb-2">Cup size</p>
+                <div class="space-x-2">
+                    <button class="rounded-full border h-8 w-8" @click="size = 'S'"
+                        :class="{ 'bg-orange-900 text-white': size === 'S' }">S</button>
+                    <button class="rounded-full border h-8 w-8" @click="size = 'M'"
+                        :class="{ 'bg-orange-900 text-white': size === 'M' }">M</button>
+                    <button class="rounded-full border h-8 w-8" @click="size = 'L'"
+                        :class="{ 'bg-orange-900 text-white': size === 'L' }">L</button>
+                </div>
+            </div>
 
+            <div>
+                <p class="text-xl font-semibold mb-2">Amount</p>
+                <div class="flex items-center space-x-2">
+                    <button class="rounded-full border h-8 w-8 active:bg-orange-900 active:text-white"
+                        @click="decrement">-</button>
+                    <p>{{ amout }}</p>
+                    <button class="rounded-full border h-8 w-8 active:bg-orange-900 active:text-white"
+                        @click="increment">+</button>
+                </div>
+            </div>
+        </div>
 
-    <p>Amount</p>
+        <div class="flex justify-between items-center mt-20">
+            <div>
+                <p class="text-sm font-normal">Total price</p>
+                <p class="font-bold text-xl">${{ price }}</p>
+            </div>
 
-    <div>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-    </div>
+            <button class="border rounded-full bg-orange-900 py-2 px-6 text-white hover:bg-white hover:text-orange-900 transition delay-150 duration-300">Order now</button>
+        </div>
 
-    <p>Total price</p>
-    <p>$16</p>
-
-    <button>Order</button>
+    </section>
 
 </template>
 
 <script setup lang="ts">
+
+const priceBySize = {
+    S: 10,
+    M: 12,
+    L: 15
+}
+const size = ref<'S' | 'M' | 'L'>('M')
+
+const price = computed(() => priceBySize[size.value] * amout.value)
+
+const amout = ref(0)
+
+
+const increment = () => {
+    amout.value++
+}
+
+const decrement = () => {
+    if (amout.value > 1) {
+        amout.value--
+    }
+}
 
 </script>
