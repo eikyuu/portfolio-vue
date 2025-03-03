@@ -1,113 +1,124 @@
 <template>
-<div>
+  <div>
 
     <article class="mb-20">
-  <!-- Titre principal -->
-  <TitleUnder title="Mes Collaborations : Partenariats Stratégiques et Expériences Enrichissantes" class="mb-10 xl:mb-20" />
+      <!-- Titre principal -->
+      <TitleUnder title="Mes Collaborations : Partenariats Stratégiques et Expériences Enrichissantes"
+        class="mb-10 xl:mb-20" />
 
-  <!-- Introduction -->
-  <p>
-    Au fil des années, j'ai eu la chance de travailler avec des entreprises, des startups et des individus passionnés dans divers secteurs d'activité. Chaque collaboration a été une opportunité d'apprentissage, de croissance et de création de valeur commune. Découvrez ci-dessous quelques-uns de mes partenariats marquants.
-  </p>
+      <!-- Introduction -->
+      <p>
+        Au fil des années, j'ai eu la chance de travailler avec des entreprises, des startups et des individus
+        passionnés dans divers secteurs d'activité. Chaque collaboration a été une opportunité d'apprentissage, de
+        croissance et de création de valeur commune. Découvrez ci-dessous quelques-uns de mes partenariats marquants.
+      </p>
 
-  <!-- Sous-titre : Secteurs d'expertise -->
-  <h2 class="text-2xl font-semibold mt-5 mb-3">Collaborations dans des Secteurs Variés</h2>
+      <!-- Sous-titre : Secteurs d'expertise -->
+      <h2 class="text-2xl font-semibold mt-5 mb-3">Collaborations dans des Secteurs Variés</h2>
 
-  <p>
-    Mon expertise s'étend à plusieurs domaines, ce qui m'a permis de collaborer avec des acteurs clés dans différents secteurs :
-  </p>
+      <p>
+        Mon expertise s'étend à plusieurs domaines, ce qui m'a permis de collaborer avec des acteurs clés dans
+        différents secteurs :
+      </p>
 
-  <ul class="list-disc pl-5 mt-3">
-    <li><strong>Tech & Innovation :</strong> Développement de solutions technologiques avancées pour des startups innovantes.</li>
-    <li><strong>E-commerce :</strong> Optimisation des plateformes de commerce électronique pour améliorer l'expérience client.</li>
-    <li><strong>Marketing Digital :</strong> Conception de stratégies digitales performantes avec des agences spécialisées.</li>
-    <!-- <li><strong>Éducation :</strong> Création de plateformes éducatives interactives pour des institutions scolaires et universitaires.</li> -->
-  </ul>
+      <ul class="list-disc pl-5 mt-3">
+        <li><strong>Tech & Innovation :</strong> Développement de solutions technologiques avancées pour des startups
+          innovantes.</li>
+        <li><strong>E-commerce :</strong> Optimisation des plateformes de commerce électronique pour améliorer
+          l'expérience client.</li>
+        <li><strong>Marketing Digital :</strong> Conception de stratégies digitales performantes avec des agences
+          spécialisées.</li>
+        <!-- <li><strong>Éducation :</strong> Création de plateformes éducatives interactives pour des institutions scolaires et universitaires.</li> -->
+      </ul>
 
-  <!-- Sous-titre : Exemples de Collaborations -->
-  <h2 class="text-2xl font-semibold mt-5 mb-3">Quelques Collaborations Marquantes</h2>
+      <!-- Sous-titre : Exemples de Collaborations -->
+      <h2 class="text-2xl font-semibold mt-5 mb-3">Quelques Collaborations Marquantes</h2>
 
-  <p>
-    Voici quelques exemples concrets de projets sur lesquels j'ai eu le plaisir de travailler :
-  </p>
+      <p>
+        Voici quelques exemples concrets de projets sur lesquels j'ai eu le plaisir de travailler :
+      </p>
 
-  <div class="mt-3">
-    <h3 class="text-lg font-semibold mb-3">Projet 1 : {{ projects[2].title }}</h3>
-    <p v-html="projects[2].text"></p>
-  </div>
-
-  <div class="mt-3">
-  <h3 class="text-lg font-semibold mb-3">Projet 2 : {{ projects[3].title }}</h3>
-  <p v-html="projects[3].text"></p>
-  </div>
-
-  <div class="mt-3">
-    <h3 class="text-lg font-semibold mb-3">Projet 3 : {{ projectsMobile[0].title }}</h3>
-    <p v-html="projectsMobile[0].text"></p>
-  </div>
-
-  <!-- Sous-titre : Valeurs et Approche -->
-  <h2 class="text-2xl font-semibold mt-5 mb-3">Ma Philosophie de Collaboration</h2>
-
-  <p>
-    Chaque projet est unique, et je m'efforce de bâtir des relations de confiance basées sur :
-  </p>
-
-  <ul class="list-disc pl-5 mt-3">
-    <li><strong>L'écoute active :</strong> Comprendre vos besoins et objectifs pour proposer des solutions adaptées.</li>
-    <li><strong>La transparence :</strong> Communication claire et régulière tout au long du processus.</li>
-    <li><strong>L'innovation :</strong> Proposer des idées créatives et des technologies de pointe pour dépasser vos attentes.</li>
-    <li><strong>La qualité :</strong> Livrer des résultats professionnels et durables.</li>
-  </ul>
-
-  <!-- Call to Action (CTA) -->
-  <p class="mt-5">
-    Intéressé(e) par une collaboration ? 
-    <NuxtLink to="/contact" title="Contactez-moi pour discuter de votre projet" class="text-[#FFC800] font-bold hover:underline">
-      Contactez-moi dès maintenant
-    </NuxtLink> pour explorer comment nous pouvons travailler ensemble !
-  </p>
-</article>
-
-  <section>
-
-    <div class=" flex justify-center mb-20">
-      <button class="w-[50%] skew-x-[-8deg] rounded-md"
-        :class="type === 'WEB' ? 'bg-[#FFC800] h-10' : 'bg-[#F2EBF4] h-10'" type="button" @click="onClick('WEB')">Projet
-        web</button>
-
-      <button class="w-[50%] skew-x-[-8deg] rounded-md"
-        :class="type === 'MOBILE' ? 'bg-[#FFC800] h-10' : 'bg-[#F2EBF4] h-10'" type="button"
-        @click="onClick('MOBILE')">Projet
-        mobile</button>
-    </div>
-
-    <div v-if="type === 'WEB'">
-      <div v-for="(project, index) in displayedProjects" :key="index">
-        <ProjectCard :title="project.title" :text="project.text" :img="project.img" :order="project.order"
-          :btnPosition="project.btnPosition" :link="project.link" class="mb-20" />
+      <div class="mt-3">
+        <h3 class="text-lg font-semibold mb-3">Projet 1 : {{ projects[2].title }}</h3>
+        <p v-html="projects[2].text"></p>
       </div>
-    </div>
 
-    <div v-else>
-      <div v-for="(project, index) in displayedProjectsMobile" :key="index">
-        <ProjectCard :title="project.title" :text="project.text" :img="project.img" :order="project.order"
-          :btnPosition="project.btnPosition" :link="project.link" class="mb-20" />
+      <div class="mt-3">
+        <h3 class="text-lg font-semibold mb-3">Projet 2 : {{ projects[3].title }}</h3>
+        <p v-html="projects[3].text"></p>
       </div>
-    </div>
 
-    <div class="flex justify-center mt-24">
+      <div class="mt-3">
+        <h3 class="text-lg font-semibold mb-3">Projet 3 : {{ projectsMobile[0].title }}</h3>
+        <p v-html="projectsMobile[0].text"></p>
+      </div>
 
-      <Button v-if="canLoadMore && type === 'WEB'" @click="loadMoreProjects" text="Voir plus de projets"
-        color="bg-[#F2EBF4]" blank="_blank" />
+      <!-- Sous-titre : Valeurs et Approche -->
+      <h2 class="text-2xl font-semibold mt-5 mb-3">Ma Philosophie de Collaboration</h2>
 
-      <Button v-if="canLoadMoreMobile && type === 'MOBILE'" @click="loadMoreProjectsMobile" text="Voir plus de projets"
-        color="bg-[#F2EBF4]" blank="_blank" />
+      <p>
+        Chaque projet est unique, et je m'efforce de bâtir des relations de confiance basées sur :
+      </p>
 
-    </div>
-  </section>
+      <ul class="list-disc pl-5 mt-3">
+        <li><strong>L'écoute active :</strong> Comprendre vos besoins et objectifs pour proposer des solutions adaptées.
+        </li>
+        <li><strong>La transparence :</strong> Communication claire et régulière tout au long du processus.</li>
+        <li><strong>L'innovation :</strong> Proposer des idées créatives et des technologies de pointe pour dépasser vos
+          attentes.</li>
+        <li><strong>La qualité :</strong> Livrer des résultats professionnels et durables.</li>
+      </ul>
 
-</div>
+      <!-- Call to Action (CTA) -->
+      <p class="mt-5">
+        Intéressé(e) par une collaboration ?
+        <NuxtLink to="/contact" title="Contactez-moi pour discuter de votre projet"
+          class="text-[#FFC800] font-bold hover:underline">
+          Contactez-moi dès maintenant
+        </NuxtLink> pour explorer comment nous pouvons travailler ensemble !
+      </p>
+    </article>
+
+    <section>
+
+      <div class=" flex justify-center mb-20">
+        <button class="w-[50%] skew-x-[-8deg] rounded-md"
+          :class="type === 'WEB' ? 'bg-[#FFC800] h-10' : 'bg-[#F2EBF4] h-10'" type="button"
+          @click="onClick('WEB')">Projet
+          web</button>
+
+        <button class="w-[50%] skew-x-[-8deg] rounded-md"
+          :class="type === 'MOBILE' ? 'bg-[#FFC800] h-10' : 'bg-[#F2EBF4] h-10'" type="button"
+          @click="onClick('MOBILE')">Projet
+          mobile</button>
+      </div>
+
+      <div v-if="type === 'WEB'">
+        <div v-for="(project, index) in displayedProjects" :key="index">
+          <ProjectCard :title="project.title" :text="project.text" :img="project.img" :order="project.order"
+            :btnPosition="project.btnPosition" :link="project.link" class="mb-20" />
+        </div>
+      </div>
+
+      <div v-else>
+        <div v-for="(project, index) in displayedProjectsMobile" :key="index">
+          <ProjectCard :title="project.title" :text="project.text" :img="project.img" :order="project.order"
+            :btnPosition="project.btnPosition" :link="project.link" class="mb-20" />
+        </div>
+      </div>
+
+      <div class="flex justify-center mt-24">
+
+        <Button v-if="canLoadMore && type === 'WEB'" @click="loadMoreProjects" text="Voir plus de projets"
+          color="bg-[#F2EBF4]" blank="_blank" />
+
+        <Button v-if="canLoadMoreMobile && type === 'MOBILE'" @click="loadMoreProjectsMobile"
+          text="Voir plus de projets" color="bg-[#F2EBF4]" blank="_blank" />
+
+      </div>
+    </section>
+
+  </div>
 
 </template>
 <script setup lang="ts">
@@ -137,6 +148,14 @@ interface Project {
 }
 
 const projects = ref<Project[]>([
+  {
+    title: 'Chatbot IA - ICF Habitat',
+    text: '<strong>Développement d’un chatbot basé sur l’intelligence artificielle générative 🏡🤖</strong><br><br>En tant que <strong>développeur front-end</strong>, j’ai contribué à la création d’un agent conversationnel sécurisé et performant pour <strong>ICF Habitat</strong>. Ce chatbot, basé sur <strong>ChatGPT-4</strong> et d’autres technologies avancées, permet aux collaborateurs d’optimiser l’accès à l’information et la gestion documentaire.<br><br><strong>Fonctionnalités clés du projet :</strong><br>  - <strong>Interface intuitive :</strong> Développement de l’UI avec <strong>Angular</strong> pour une expérience fluide et accessible.<br>  - <strong>Intégration de l’IA :</strong> Connexion avec <strong>Azure OpenAI, ChatGPT-4 et Langchain</strong> pour des échanges dynamiques.<br>  - <strong>Sécurité renforcée :</strong> Utilisation de <strong>Entra ID</strong> pour l’authentification et gestion des accès.<br>  - <strong>Génération de contenu :</strong> Capacité à produire des images via <strong>DALL·E</strong> et à analyser des documents en temps réel.<br>  - <strong>Déploiement cloud :</strong> Hébergement sur <strong>Azure</strong> pour une intégration fluide dans l’écosystème IT d’ICF Habitat.<br><br>',
+    img: 'chatbot-icf-habitat.webp',
+    order: 'xl:order-start',
+    btnPosition: 'float-first',
+    link: 'https://www.apside.com/fr/projets/realisation-ia-gen-icf-habitat/'
+  },
   {
     title: 'Suismespattes',
     text: '<strong>La plateforme collaborative pour voyager avec son chien 🐾</strong><br><br>Unique développeur de <strong>Suis Mes Pattes</strong>, une plateforme innovante et gratuite conçue pour les passionnés de voyages avec leur chien. Ce projet allie <strong>technologie moderne</strong> et <strong>expérience utilisateur optimale</strong>, en mettant l’accent sur la <strong>communauté</strong> et l’<strong>entraide</strong>.<br><br><strong>Fonctionnalités clés du projet :</strong><br>  - <strong>Recherche de destinations :</strong> Les utilisateurs peuvent trouver des lieux adaptés aux chiens, que ce soit pour des balades en forêt, des sorties en ville ou des moments de détente au restaurant.<br>  - <strong>Partage communautaire :</strong> Chaque membre peut ajouter ses découvertes, noter les destinations et contribuer à enrichir la plateforme.<br>  - <strong>Organisation des sorties :</strong> Possibilité de créer des groupes pour planifier des activités avec des amis et leurs chiens.<br>  - <strong>Boutique en ligne :</strong> Une sélection soignée de produits pour les chiens et leurs maîtres, centralisée dans un espace dédié.<br><br>',
