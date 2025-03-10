@@ -26,4 +26,9 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: 'page', mode: 'out-in' }
   },
+  nitro: {
+    prerender: {
+      routes: ['/blog/UX-UI-et-Accessibilite-Pourquoi-un-Bon-Design-Fait-Toute-la-Difference']
+    }
+  }
 })

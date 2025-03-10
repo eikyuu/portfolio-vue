@@ -59,6 +59,7 @@ const nav = [
   { label: 'Design UX/UI', to: '/design-ux-ui-figma' },
   { label: 'Mes Collaborations & Projets', to: '/mes-collaborations-projets' },
   { label: 'Contact', to: '/contact' },
+  { label: 'Blog', to: '/blog' },
 ]
 
 const isOpen = ref<boolean>(false);
