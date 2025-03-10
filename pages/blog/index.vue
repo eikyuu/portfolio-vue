@@ -35,13 +35,24 @@
 
 </template>
 
+
+
 <script setup lang="ts">
 import Button from '@/components/Button.vue';
 import { ref } from 'vue'
 
-const title = ref('Blog de Vincent Duguet')
+interface Article {
+    title: string;
+    slug: string;
+    image: string;
+    publishedDate: string;
+    time: string;
+    resume: string;
+}
 
-const articles = [
+const title = ref('Blog Tech & Design : UX, Développement et SEO 🚀')
+
+const articles : Article[] = [
   { title: "🎨 UX/UI et Accessibilité : Pourquoi un Bon Design Fait Toute la Différence", slug: "UX-UI-et-Accessibilite-Pourquoi-un-Bon-Design-Fait-Toute-la-Difference", image : '/book.jpg', publishedDate : "10/03/2025", time :"5", resume : "Un site ou une application bien conçus ne se limitent pas à un beau design. L’expérience utilisateur (UX) et l’interface utilisateur (UI) influencent directement l’engagement, la conversion et la fidélisation des utilisateurs..."}
 ];
 

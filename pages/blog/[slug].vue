@@ -17,12 +17,22 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { useRoute } from 'vue-router';
 
 const route = useRoute();
 
-const blogs = {
+interface Blog {
+  title: string;
+  meta?: string;
+  alt?: string;
+  content: string;
+}
+ interface Blogs {
+  [key: string]: Blog;
+}
+
+const blogs :Blogs = {
   "UX-UI-et-Accessibilite-Pourquoi-un-Bon-Design-Fait-Toute-la-Difference": { 
     title: "🎨 UX/UI et Accessibilité : Pourquoi un Bon Design Fait Toute la Différence", 
     meta: "Découvrez pourquoi l’UX/UI et l’accessibilité sont essentiels dans la conception web et mobile, et comment optimiser vos interfaces pour une meilleure expérience utilisateur.",

@@ -43,7 +43,7 @@
   </ul>
 
   <!-- Sous-titre : Processus de Développement -->
-  <h2 class='text-2xl font-semibold mt-5 mb-3'>Notre Approche de Développement</h2>
+  <h2 class='text-2xl font-semibold mt-5 mb-3'>Mon Approche de Développement</h2>
 
   <p>
     Mon approche repose sur une analyse approfondie de vos besoins, suivie d'une architecture technique adaptée et d'une mise en œuvre rigoureuse. Les étapes clés incluent :
