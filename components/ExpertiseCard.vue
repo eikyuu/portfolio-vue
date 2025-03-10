@@ -6,7 +6,9 @@
 
         <div class="flex flex-col items-center xl:items-start xl:pl-10 mt-10">
             <h3 v-if="props.title" class="font-bold text-[#5A3B5D] text-xl mb-10">{{ props.title }}</h3>
-            <div class="expertise-text" v-html="props.text"></div>
+            <div class="expertise-text">
+                <slot></slot>
+            </div>
             <Button v-if="props.link" class="my-5" :text="props.textBtn" :link="props.link" />
         </div>
     </div>
@@ -19,7 +21,6 @@ import Button from './Button.vue';
 interface Props {
     img: string;
     title?: string;
-    text: string;
     btnPosition?: 'float-end' | 'float-first',
     link?: string;
     textBtn: string;
