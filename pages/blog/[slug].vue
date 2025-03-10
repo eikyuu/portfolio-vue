@@ -9,7 +9,7 @@
     </div>
 
     <article>
-      <NuxtImg :src="`${route.params.slug}.jpg`" alt="Image de l'article" class="mb-8 w-full h-full object-cover rounded-md " />
+      <NuxtImg :src="`${route.params.slug}.jpg`" :alt="blogs[route.params.slug].alt" class="mb-8 w-full h-full object-cover rounded-md" format="webp" loading="lazy" placeholder/>
       <div v-if="blog.content" v-html="blog.content" class="space-y-4"></div>
       <p v-else>Article introuvable.</p>
     </article>
@@ -26,7 +26,7 @@ const blogs = {
   "UX-UI-et-Accessibilite-Pourquoi-un-Bon-Design-Fait-Toute-la-Difference": { 
     title: "🎨 UX/UI et Accessibilité : Pourquoi un Bon Design Fait Toute la Différence", 
     meta: "Découvrez pourquoi l’UX/UI et l’accessibilité sont essentiels dans la conception web et mobile, et comment optimiser vos interfaces pour une meilleure expérience utilisateur.",
-    image : '/book.jpg',
+    alt: "Un homme avec un handicape travaillant sur un ordinateur portable",
     content: `
 <h2 class='font-bold text-2xl'>Pourquoi l’UX/UI Est Indispensable en Développement Web et Mobile ?</h2>
 <p>Un site ou une application bien conçus ne se limitent pas à un beau design. L’expérience utilisateur (UX) et l’interface utilisateur (UI) influencent directement l’engagement, la conversion et la fidélisation des utilisateurs.</p>
