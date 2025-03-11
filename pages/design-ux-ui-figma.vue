@@ -80,7 +80,7 @@ useSeoMeta({
   ogTitle: 'Design UX/UI : Création d\'Expériences Utilisateurs Exceptionnelles',
   description: 'Vous souhaitez offrir une expérience utilisateur fluide, engageante et mémorable ? En tant que designer UX/UI expérimenté, je vous accompagne dans la conception d\'interfaces intuitives et fonctionnelles qui répondent aux besoins de vos utilisateurs et atteignent vos objectifs commerciaux.',
   ogDescription: 'Vous souhaitez offrir une expérience utilisateur fluide, engageante et mémorable ? En tant que designer UX/UI expérimenté, je vous accompagne dans la conception d\'interfaces intuitives et fonctionnelles qui répondent aux besoins de vos utilisateurs et atteignent vos objectifs commerciaux.',
-  ogImage: 'https://vincentduguet.dev/images/homme-barbu-devant-ordinateur.png',
+  ogImage: 'https://vincentduguet.dev/homme-barbu-devant-ordinateur.png',
   twitterCard: 'summary_large_image',
   keywords: 'design UX/UI, expérience utilisateur, interfaces intuitives, Figma, Photoshop, Illustrator, wireframes, prototypes, accessibilité, user testing',
   author: 'Vincent Duguet',

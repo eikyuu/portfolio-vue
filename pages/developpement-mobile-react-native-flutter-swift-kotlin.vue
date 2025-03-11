@@ -94,7 +94,7 @@ useSeoMeta({
   ogTitle: 'Développement Mobile sur Mesure : React Native, Flutter, Swift, Kotlin',
   description: 'Développez une application mobile performante et moderne pour iOS et Android avec un expert en frameworks cross-platform (React Native, Flutter) et développement natif (Swift, Kotlin).',
   ogDescription: 'Développez une application mobile performante et moderne pour iOS et Android avec un expert en frameworks cross-platform (React Native, Flutter) et développement natif (Swift, Kotlin).',
-  ogImage: 'https://vincentduguet.dev/images/homme-barbu-devant-ordinateur.png',
+  ogImage: 'https://vincentduguet.dev/homme-barbu-devant-ordinateur.png',
   twitterCard: 'summary_large_image',
 });
 </script>

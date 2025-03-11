@@ -80,7 +80,7 @@
     ogTitle: 'Développement WordPress : Sites Web Performants et Sur Mesure',
     description: 'Vous cherchez à créer un site web performant, moderne et facile à gérer ? En tant que développeur WordPress expérimenté, je vous accompagne dans la conception de sites web sur mesure, optimisés pour les performances et adaptés à vos besoins spécifiques.',
     ogDescription: 'Vous cherchez à créer un site web performant, moderne et facile à gérer ? En tant que développeur WordPress expérimenté, je vous accompagne dans la conception de sites web sur mesure, optimisés pour les performances et adaptés à vos besoins spécifiques.',
-    ogImage: 'https://vincentduguet.dev/images/homme-barbu-devant-ordinateur.png',
+    ogImage: 'https://vincentduguet.dev/homme-barbu-devant-ordinateur.png',
     twitterCard: 'summary_large_image',
     keywords: 'développement WordPress, sites web performants, thèmes personnalisés, plugins WordPress, WooCommerce, optimisation SEO, développement sur mesure',
     author: 'Vincent Duguet',

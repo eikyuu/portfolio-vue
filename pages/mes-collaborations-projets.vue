@@ -127,7 +127,7 @@ useSeoMeta({
   ogTitle: 'Mes Collaborations : Partenariats Stratégiques et Expériences Enrichissantes',
   description: 'Découvrez mes collaborations avec des entreprises, des startups et des individus passionnés dans divers secteurs d\'activité. Chaque projet est une opportunité d\'apprentissage, de croissance et de création de valeur commune.',
   ogDescription: 'Découvrez mes collaborations avec des entreprises, des startups et des individus passionnés dans divers secteurs d\'activité. Chaque projet est une opportunité d\'apprentissage, de croissance et de création de valeur commune.',
-  ogImage: 'https://vincentduguet.dev/images/homme-barbu-devant-ordinateur.png',
+  ogImage: 'https://vincentduguet.dev/homme-barbu-devant-ordinateur.png',
   twitterCard: 'summary_large_image',
 })
 

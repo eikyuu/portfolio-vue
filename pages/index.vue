@@ -14,7 +14,7 @@ useHead({
     // Open Graph (Facebook, LinkedIn)
     { property: 'og:title', content: 'Vincent Duguet - Développeur Web Full Stack Freelance' },
     { property: 'og:description', content: 'Développeur web & mobile freelance, Vincent Duguet conçoit des sites web performants et des applications intuitives.' },
-    { property: 'og:image', content: 'https://vincentduguet.dev/images/homme-barbu-devant-ordinateur.png' },
+    { property: 'og:image', content: 'https://vincentduguet.dev/homme-barbu-devant-ordinateur.png' },
     { property: 'og:url', content: 'https://vincentduguet.dev' },
     { property: 'og:type', content: 'website' },
 
@@ -22,7 +22,7 @@ useHead({
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:title', content: 'Vincent Duguet - Développeur Web Full Stack Freelance' },
     { name: 'twitter:description', content: 'Développeur web & mobile freelance, Vincent Duguet conçoit des sites web performants et des applications intuitives.' },
-    { name: 'twitter:image', content: 'https://vincentduguet.dev/images/homme-barbu-devant-ordinateur.png' }
+    { name: 'twitter:image', content: 'https://vincentduguet.dev/homme-barbu-devant-ordinateur.png' }
   ],
   htmlAttrs: { lang: 'fr' },
   bodyAttrs: {

@@ -86,7 +86,7 @@ useSeoMeta({
   ogTitle: 'Développement Web sur mesure : Vue, React, Next.js, Nuxt.js & Symfony, Adonis.js',
   description: 'Vous cherchez à créer une application web performante, moderne et évolutive ? Avec une expertise solide dans les frameworks frontend tels que Vue.js, React.js, Next.js et Nuxt.js, ainsi que dans les solutions backend comme Symfony, Node.js et Adonis.js, je vous accompagne dans la réalisation de votre projet de A à Z.',
   ogDescription: 'Vous cherchez à créer une application web performante, moderne et évolutive ? Avec une expertise solide dans les frameworks frontend tels que Vue.js, React.js, Next.js et Nuxt.js, ainsi que dans les solutions backend comme Symfony, Node.js et Adonis.js, je vous accompagne dans la réalisation de votre projet de A à Z.',
-  ogImage: 'https://vincentduguet.dev/images/homme-barbu-devant-ordinateur.png',
+  ogImage: 'https://vincentduguet.dev/homme-barbu-devant-ordinateur.png',
   twitterCard: 'summary_large_image',
   keywords: 'développement web, Vue.js, React.js, Next.js, Nuxt.js, Symfony, Node.js, Adonis.js, application web performante, développement sur mesure',
   author: 'Vincent Duguet',
