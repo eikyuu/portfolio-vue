@@ -61,9 +61,9 @@
         <!-- Call to Action (CTA) -->
         <p class="mt-5">
           Prêt(e) à transformer votre idée en une expérience utilisateur exceptionnelle ?
-          <a href="/contact" title="Contactez-moi pour discuter de votre projet" class="text-[#FFC800] font-bold hover:underline">
+          <NuxtLink href="/contact" title="Contactez-moi pour discuter de votre projet" class="text-[#FFC800] font-bold hover:underline">
             Contactez-moi dès maintenant
-          </a> pour une consultation gratuite !
+          </NuxtLink> pour une consultation gratuite !
         </p>
       </article>
     </ExpertiseCard>

@@ -17,7 +17,7 @@
                 </span>
             </figure>
 
-            <p class="xl:pr-10 xl:w-1/2 ">📩 Vous avez un projet de développement web ou mobile en tête ? Vous souhaitez
+            <p class="xl:pr-10 xl:w-1/2 xl:pl-5">📩 Vous avez un projet de développement web ou mobile en tête ? Vous souhaitez
                 améliorer
                 l’expérience utilisateur de votre site ou application ? Vous avez besoin d’un développeur freelance pour
                 vous
