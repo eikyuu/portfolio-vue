@@ -1,6 +1,6 @@
 <template>
 
-    <div class="shadow-xl shadow-[#F2EBF4] p-5 flex flex-col xl:flex-row items-center border-b-8 border-[#FFC800] mb-20">
+    <div class="bg-white rounded-md shadow-xl shadow-[#F2EBF4] p-5 flex flex-col xl:flex-row items-center border-b-8 border-[#FFC800] mb-20">
 
         <NuxtImg class="rounded-md" :src="img" :width="width" :height="height" format="webp" loading="lazy" alt="Une image qui représente un service" placeholder/>
 

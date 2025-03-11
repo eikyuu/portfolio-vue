@@ -13,7 +13,7 @@ export default {
       backgroundImage: {
         'number': "url('/number-35.png')",
         'footer-texture': "url('/img/footer-texture.png')",
-      }
+      },
     },
   },
   plugins: [],

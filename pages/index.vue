@@ -77,7 +77,7 @@ useHead({
         </ul>
 
         <h2 class="mt-10">🎯 <strong>Pourquoi collaborer avec moi ?</strong></h2>
-        <p class="mb-5">
+        <p class="mb-10">
           Que vous soyez une PME, une start-up ou un indépendant, je vous accompagne de <strong>A à Z</strong> dans vos
           projets de développement web et mobile. Qu’il s’agisse d’un <strong>site vitrine</strong>, d’une
           <strong>plateforme sur mesure</strong>, ou d’une <strong>application mobile</strong>, je suis à vos côtés pour
