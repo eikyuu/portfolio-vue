@@ -31,7 +31,7 @@ export default defineNuxtConfig({
       routes: [
         '/blog/UX-UI-et-Accessibilite-Pourquoi-un-Bon-Design-Fait-Toute-la-Difference',
         '/developpement-web-vue-react-symfony-adonis',
-        '/developpement-mobile-react-native-flutter-swift-kotlin',
+        '/developpement-mobile-react-native-swift',
         '/developpement-wordpress-sur-mesure',
         '/design-ux-ui-figma',
         '/mes-collaborations-projets',

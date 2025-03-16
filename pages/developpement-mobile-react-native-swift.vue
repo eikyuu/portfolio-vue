@@ -3,7 +3,7 @@
     <div class="block flex justify-center">
       <h1
         class="mb-5 xl:mb-20 relative inline-block before:content-[''] before:absolute before:bg-[#FFC800] before:top-[1rem] before:md:top-[1rem] before:left-0 before:right-0 before:h-[0.8rem] before:md:h-[1.5rem] before:transform before:scale-100 before:skew-x-[-8deg] before:-z-10 rounded-xl before:rounded">
-        <span class="relative text-[#5A3B5D] font-bold text-2xl md:text-3xl xl:text-4xl">Développement Mobile sur Mesure : React Native, Flutter, Swift, Kotlin</span>
+        <span class="relative text-[#5A3B5D] font-bold text-2xl md:text-3xl xl:text-4xl">Développement Mobile sur Mesure : React Native, Swift</span>
       </h1>
 
     </div>
@@ -14,7 +14,7 @@
       <!-- Section Cross-Platform -->
       <section id="cross-platform" class="space-y-5 mb-5">
         <h2 class="font-bold mb-5">
-          Expert en frameworks cross-platform (React Native, Flutter) et développement natif (Swift, Kotlin).
+          Expert en framework cross-platform React Native et développement natif Swift.
         </h2>
         <Button text="Contactez-moi pour une consultation gratuite" link="/contact" />
 
@@ -27,15 +27,12 @@
           <li>
             <strong>React Native</strong> : Un framework JavaScript puissant pour des applications réactives et performantes.
           </li>
-          <li>
-            <strong>Flutter</strong> : Un SDK basé sur Dart, idéal pour des interfaces utilisateur fluides et personnalisables.
-          </li>
         </ul>
       </section>
 
       <!-- Section Développement Natif -->
       <section id="developpement-natif" class="space-y-5 mb-5">
-        <h2 class="font-bold">Développement Natif : Performances Optimales pour iOS et Android</h2>
+        <h2 class="font-bold">Développement Natif : Performances Optimales pour iOS</h2>
         <p>
           Pour des projets nécessitant des performances maximales ou des intégrations spécifiques, le développement
           natif reste la solution idéale. Je maîtrise :
@@ -43,9 +40,6 @@
         <ul class="list-disc list-inside">
           <li>
             <strong>Swift</strong> : Le langage officiel d'Apple pour des applications iOS rapides, sécurisées et intuitives.
-          </li>
-          <li>
-            <strong>Kotlin/Java</strong> : Des solutions robustes pour des applications Android modernes, évolutives et performantes.
           </li>
         </ul>
       </section>
@@ -90,10 +84,10 @@
 
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Développement Mobile sur Mesure : React Native, Flutter, Swift, Kotlin',
-  ogTitle: 'Développement Mobile sur Mesure : React Native, Flutter, Swift, Kotlin',
-  description: 'Développez une application mobile performante et moderne pour iOS et Android avec un expert en frameworks cross-platform (React Native, Flutter) et développement natif (Swift, Kotlin).',
-  ogDescription: 'Développez une application mobile performante et moderne pour iOS et Android avec un expert en frameworks cross-platform (React Native, Flutter) et développement natif (Swift, Kotlin).',
+  title: 'Développement Mobile sur Mesure : React Native, Swift',
+  ogTitle: 'Développement Mobile sur Mesure : React Native, Swift',
+  description: 'Développez une application mobile performante et moderne pour iOS et Android avec un expert en frameworks cross-platform (React Native) et développement natif (Swift).',
+  ogDescription: 'Développez une application mobile performante et moderne pour iOS et Android avec un expert en frameworks cross-platform (React Native) et développement natif (Swift).',
   ogImage: 'https://vincentduguet.dev/homme-barbu-devant-ordinateur.png',
   twitterCard: 'summary_large_image',
 });

@@ -55,7 +55,7 @@ import { ref } from 'vue';
 const nav = [
   { label: 'Accueil', to: '/' },
   { label: 'Développement Web', to: '/developpement-web-vue-react-symfony-adonis' },
-  { label: 'Développement Mobile', to: '/developpement-mobile-react-native-flutter-swift-kotlin' },
+  { label: 'Développement Mobile', to: '/developpement-mobile-react-native-swift' },
   { label: 'Développement WordPress', to: '/developpement-wordpress-sur-mesure' },
   { label: 'Design UX/UI', to: '/design-ux-ui-figma' },
   { label: 'Mes Collaborations & Projets', to: '/mes-collaborations-projets' },

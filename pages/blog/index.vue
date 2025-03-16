@@ -11,7 +11,7 @@
 
             <ul class="flex flex-col xl:flex-row flex-wrap items-center md:justify-between gap-8 shadow-xl md:shadow-[#F2EBF4] md:p-10">
                 <li v-for="article in articles" :key="article.slug" class=" bg-[#F2EBF4]/20 rounded-md  w-full md:w-[25rem] md:h-[35rem] shadow-md shadow-[#F2EBF4]">
-                    <NuxtLink :to="`/blog/${article.slug}`" class="flex flex-col items-center justify-between p-5 h-full">
+                    <NuxtLink :to="`/blog/${article.slug}`" prefetch class="flex flex-col items-center justify-between p-5 h-full">
 
                             <NuxtImg :src="article.image" alt="Article 1" class="mb-2 w-full h-60 object-cover" />
                             <h2 class="text-lg font-bold">{{ article.title }}</h2>

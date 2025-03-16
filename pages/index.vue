@@ -135,7 +135,7 @@ useHead({
       attentes de vos utilisateurs.
     </ExpertiseCard>
 
-    <ExpertiseCard link="/developpement-mobile-react-native-flutter-swift-kotlin"
+    <ExpertiseCard link="/developpement-mobile-react-native-swift"
       title="Développement Mobile sur mesure" textBtn="Je veux une application mobile performante →"
       img="svg/mobile.svg" class="mt-20 md:mt-20">
 
