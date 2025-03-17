@@ -66,7 +66,7 @@ import { ref } from 'vue';
 
 const services = [
   { label: 'Création de Site Internet', to: '/developpement-web-vue-react-symfony-adonis' },
-  { label: 'Création d\'application Mobile', to: '/developpement-mobile-react-native-swift' },
+  { label: 'Création d\'Application Mobile', to: '/developpement-mobile-react-native-swift' },
   { label: 'WordPress', to: '/developpement-wordpress-sur-mesure' },
 ]
 
