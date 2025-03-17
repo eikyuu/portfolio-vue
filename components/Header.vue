@@ -65,9 +65,9 @@
 import { ref } from 'vue';
 
 const services = [
-  { label: 'Développement Web', to: '/developpement-web-vue-react-symfony-adonis' },
-  { label: 'Développement Mobile', to: '/developpement-mobile-react-native-swift' },
-  { label: 'Développement WordPress', to: '/developpement-wordpress-sur-mesure' },
+  { label: 'Création de Site Internet', to: '/developpement-web-vue-react-symfony-adonis' },
+  { label: 'Création d\'application mobile', to: '/developpement-mobile-react-native-swift' },
+  { label: 'WordPress', to: '/developpement-wordpress-sur-mesure' },
 ]
 
 const nav = [
