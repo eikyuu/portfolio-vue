@@ -66,7 +66,7 @@ import { ref } from 'vue';
 
 const services = [
   { label: 'Création de Site Internet', to: '/developpement-web-vue-react-symfony-adonis' },
-  { label: 'Création d\'application mobile', to: '/developpement-mobile-react-native-swift' },
+  { label: 'Création d\'application Mobile', to: '/developpement-mobile-react-native-swift' },
   { label: 'WordPress', to: '/developpement-wordpress-sur-mesure' },
 ]
 
@@ -91,12 +91,16 @@ useClickOutside(
 
 const onmouseenter = () => {
   const dropdown = document.querySelector('.dropdown-content')
-  dropdown.classList.toggle('hidden')  
+  if (dropdown) {
+    dropdown.classList.toggle('hidden')
+  }
 }
 
 const onmouseleave = () => {
   const dropdown = document.querySelector('.dropdown-content')
-  dropdown.classList.add('hidden')
+  if (dropdown) {
+    dropdown.classList.add('hidden')
+  }
 }
 
 </script>
