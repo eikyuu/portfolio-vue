@@ -101,7 +101,7 @@ useHead({
       </div>
     </section>
 
-    <TitleUnder title="Je suis un expert" class="" />
+    <TitleUnder title="Je suis un expert" tag="h2" />
 
     <ExpertiseCard link="/developpement-web-vue-react-symfony-adonis" title="Développement Web sur mesure"
       textBtn="J’ai besoin d’un expert en Développement Web →" img="svg/web.svg" class="mt-20 md:mt-20">
