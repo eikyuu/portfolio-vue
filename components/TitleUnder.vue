@@ -2,7 +2,7 @@
     <div class="block flex justify-center">
       <component
         :is="tag"
-        class="mb-5 xl:mb-20 relative inline-block before:content-[''] before:absolute before:bg-[#FFC800] 
+        class="mb-5 relative inline-block before:content-[''] before:absolute before:bg-[#FFC800] 
         before:top-[1rem] before:md:top-[1rem] before:left-0 before:right-0 before:h-[0.8rem] before:md:h-[1.5rem] 
         before:transform before:scale-100 before:skew-x-[-8deg] before:-z-10 rounded-xl before:rounded"
       >

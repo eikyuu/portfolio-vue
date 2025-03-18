@@ -1,7 +1,7 @@
 <template>
   <section>
     <!-- Titre principal avec effet de surlignage -->
-    <TitleUnder title="Création de Site Internet" tag="h1" />
+    <TitleUnder title="Création de Site Internet" tag="h1" class="mb-20"  />
 
     <!-- Carte d'expertise -->
     <ExpertiseCard link="/contact" textBtn="J’ai besoin d’un expert en Développement Web →" img="dev.jpg" width="600" height="600" alt="Expert en développement web">
