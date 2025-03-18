@@ -68,10 +68,10 @@ const services = [
   { label: 'Création de Site Internet', to: '/developpement-web-vue-react-symfony-adonis' },
   { label: 'Création d\'Application Mobile', to: '/developpement-mobile-react-native-swift' },
   { label: 'WordPress', to: '/developpement-wordpress-sur-mesure' },
+  { label: 'Design UX/UI', to: '/design-ux-ui-figma' },
 ]
 
 const nav = [
-  { label: 'Design UX/UI', to: '/design-ux-ui-figma' },
   { label: 'Mes Collaborations & Projets', to: '/mes-collaborations-projets' },
   { label: 'Contact', to: '/contact' },
   { label: 'Blog', to: '/blog' },
