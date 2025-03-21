@@ -1,9 +1,13 @@
 <template>
   <section>
     
-    <TitleUnder title="Création d'Application Mobile" tag="h1" class="mb-20"  />
+    <TitleUnder title="Création d'Application Mobile" tag="h1" class=" mb-10 xl:mb-20"  />
 
-    <ExpertiseCard link="/contact" textBtn="Je veux une application mobile performante →" img="tel.jpg" width="600"
+    <ExpertiseCard 
+      link="/contact" 
+      text-btn="Je veux une application mobile performante →" 
+      img="tel.jpg" 
+      width="600"
       height="600">
 
       <!-- Section Cross-Platform -->

@@ -1,7 +1,7 @@
 <template>
     <section>
       <!-- Titre principal avec effet de surlignage -->
-      <TitleUnder title="WordPress : Sites Web Performants et Sur Mesure" tag="h1" class="mb-20"  />
+      <TitleUnder title="WordPress : Sites Web Performants et Sur Mesure" tag="h1" class=" mb-10 xl:mb-20"   />
 
       <!-- Carte d'expertise -->
       <ExpertiseCard link="/contact" textBtn="Je veux un site WordPress performant →" img="wordpress.jpg" width="600" height="600" alt="Développement WordPress sur mesure">

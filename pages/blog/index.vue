@@ -1,7 +1,6 @@
 <template>
     <section>
         <TitleUnder :title="title" tag="h1" />
-
             <ul class="flex flex-col xl:flex-row flex-wrap items-center md:justify-between gap-8 shadow-xl md:shadow-[#F2EBF4] md:p-10">
                 <li v-for="article in articles" :key="article.slug" class=" bg-[#F2EBF4]/20 rounded-md  w-full md:w-[25rem] md:h-[35rem] shadow-md shadow-[#F2EBF4]">
                     <NuxtLink :to="`/blog/${article.slug}`" prefetch class="flex flex-col items-center justify-between p-5 h-full">
@@ -14,8 +13,7 @@
 
                             <div class="flex justify-between w-full mt-5">
                                 <p class="text-sm text-[#5A3B5D]">Publié le {{article.publishedDate}}</p>
-                                <p class="text-sm text-[#5A3B5D]">Temps de lecture : {{article.time}} min</p>
-                            </div>
+                                <p class="text-sm text-[#5A3B5D]">Temps de lecture : {{article.time}} min</p></div>
 
                             <Button class="mt-5" text="Lire la suite" />
 
@@ -23,12 +21,8 @@
                 </li>
                
             </ul>
-
     </section>
-
 </template>
-
-
 
 <script setup lang="ts">
 import Button from '@/components/Button.vue';

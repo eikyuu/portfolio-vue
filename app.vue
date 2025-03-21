@@ -9,4 +9,7 @@
 
 <script setup lang="ts">
 import { Analytics } from '@vercel/analytics/nuxt';
+useHead({
+  htmlAttrs: { lang: 'fr' },
+});
 </script>
