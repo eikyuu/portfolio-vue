@@ -148,11 +148,19 @@ interface Project {
 
 const projects = ref<Project[]>([
   {
+    title: 'I love my dog',
+    text: '<strong>Développement du site web pour I love my dog 🐶</strong><br><br>En tant que <strong>développeur wordpress freelance</strong>, j’ai eu l’opportunité de créer le site web de <strong>I love my dog</strong>, une éducatice canin à Tours. Ce projet a été conçu pour offrir une interface conviviale et informative, permettant aux propriétaires de chiens de trouver facilement des conseils et des services adaptés à leurs besoins.<br><br>Le site a été développé sur la plateforme <strong>WordPress</strong>, garantissant une gestion facile du contenu et une évolutivité pour l’avenir. J’ai également intégré des fonctionnalités telles que des formulaires de contact, des galeries d’images et un blog pour partager des conseils et astuces sur l’éducation canine.<br><br>Ce projet démontre ma capacité à créer des sites web attrayants et fonctionnels, tout en répondant aux besoins spécifiques de mes clients.',
+    img: 'ilovemydog.jpg',
+    order: 'xl:order-start',
+    btnPosition: 'float-first',
+    link: 'https://i-love-my-dog.fr/'
+  },
+  {
     title: 'Chatbot IA - ICF Habitat',
     text: '<strong>Développement d’un chatbot basé sur l’intelligence artificielle générative 🏡🤖</strong><br><br>En tant que <strong>développeur front-end</strong>, j’ai contribué à la création d’un agent conversationnel sécurisé et performant pour <strong>ICF Habitat</strong>. Ce chatbot, basé sur <strong>ChatGPT-4</strong> et d’autres technologies avancées, permet aux collaborateurs d’optimiser l’accès à l’information et la gestion documentaire.<br><br><strong>Fonctionnalités clés du projet :</strong><br>  - <strong>Interface intuitive :</strong> Développement de l’UI avec <strong>Angular</strong> pour une expérience fluide et accessible.<br>  - <strong>Intégration de l’IA :</strong> Connexion avec <strong>Azure OpenAI, ChatGPT-4 et Langchain</strong> pour des échanges dynamiques.<br>  - <strong>Sécurité renforcée :</strong> Utilisation de <strong>Entra ID</strong> pour l’authentification et gestion des accès.<br>  - <strong>Génération de contenu :</strong> Capacité à produire des images via <strong>DALL·E</strong> et à analyser des documents en temps réel.<br>  - <strong>Déploiement cloud :</strong> Hébergement sur <strong>Azure</strong> pour une intégration fluide dans l’écosystème IT d’ICF Habitat.<br><br>',
     img: 'chatbot-icf-habitat.webp',
-    order: 'xl:order-start',
-    btnPosition: 'float-first',
+    order: 'xl:order-last',
+    btnPosition: 'float-end',
     link: 'https://www.apside.com/fr/projets/realisation-ia-gen-icf-habitat/'
   },
   {
