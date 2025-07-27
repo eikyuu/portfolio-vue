@@ -74,6 +74,9 @@
 
 <script setup lang="ts">
 import { reactive, ref } from "vue";
+import { Resend } from 'resend';
+
+const resend = new Resend('re_1234567890');
 
 useHead({
   htmlAttrs: { lang: 'fr' },
@@ -82,18 +85,18 @@ useHead({
 const config = useRuntimeConfig()
 
 const postMessage = async (form: { message: string; email: string; subject: string; }): Promise<any> => {
-    try {
-        const response = await fetch(`${config.public.apiBase}contact`, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(form),
-        });
-        return await response.json();
-    } catch (err) {
-        console.error(err);
-    }
+  try {
+    const data = await resend.emails.send({
+      from: 'Vincent Duguet <onboarding@resend.dev>',
+      to: ['vincent.duguet.pro@gmail.com'],
+      subject: form.subject,
+      html: form.message,
+    });
+
+    return data;
+  } catch (error) {
+    return { error };
+  }
 }
 
 // Données du formulaire
