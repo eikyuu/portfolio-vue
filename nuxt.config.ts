@@ -20,7 +20,7 @@ export default defineNuxtConfig({
     apiSecret:  process.env.API_SECRET,
     // Keys within public, will be also exposed to the client-side
     public: {
-      apiBase: process.env.API_BASE,
+      apiBase: process.env.API_BASE || 'http://localhost:3000',
     }
   },
   app: {
