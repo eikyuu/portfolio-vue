@@ -88,7 +88,7 @@ const postMessage = async (form: { message: string; email: string; subject: stri
     try {
 
         const config = useRuntimeConfig()
-        const { data, error } = await $fetch(`${config.public.apiBase}/api/send`, {
+        const { data, error } = await $fetch(`${config.public.apiBase}/send`, {
             method: 'POST',
             body: form,
         });
