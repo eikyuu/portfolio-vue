@@ -69,34 +69,33 @@
 
         <!-- Message de succès -->
         <p v-if="successMessage" class="text-green-500 mt-4">{{ successMessage }}</p>
+        <p v-if="error" class="text-red-500 mt-4">{{ error }}</p>
     </div>
 </template>
 
 <script setup lang="ts">
 import { reactive, ref } from "vue";
-import { Resend } from 'resend';
-
-const resend = new Resend('re_1234567890');
 
 useHead({
   htmlAttrs: { lang: 'fr' },
 });
 
-const config = useRuntimeConfig()
+const successMessage = ref("");
+const error = ref("");
+
 
 const postMessage = async (form: { message: string; email: string; subject: string; }): Promise<any> => {
-  try {
-    const data = await resend.emails.send({
-      from: 'Vincent Duguet <onboarding@resend.dev>',
-      to: ['vincent.duguet.pro@gmail.com'],
-      subject: form.subject,
-      html: form.message,
-    });
+    try {
+        const { data, error } = await $fetch('/api/send', {
+            method: 'POST',
+            body: form,
+        });
 
-    return data;
-  } catch (error) {
-    return { error };
-  }
+        successMessage.value = "Votre message a été envoyé avec succès !";
+        return data;
+    } catch (err) {
+        error.value = 'Une erreur est survenue lors de l\'envoi du message';
+    }
 }
 
 // Données du formulaire
@@ -116,9 +115,6 @@ const errors = reactive<{
     email: null,
     message: null,
 });
-
-// Message de succès
-const successMessage = ref("");
 
 // Validation simple
 const validate = () => {
@@ -159,8 +155,6 @@ const handleSubmit = () => {
     if (validate()) {
         // Envoi du formulaire
         postMessage(form);
-        successMessage.value = "Votre message a été envoyé avec succès !";
-
         // Réinitialisation du formulaire
         form.subject = "";
         form.email = "";
