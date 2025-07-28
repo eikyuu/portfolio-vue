@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
-
+  ssr: true,
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -27,8 +27,10 @@ export default defineNuxtConfig({
     pageTransition: { name: 'page', mode: 'out-in' }
   },
   nitro: {
+    preset: 'vercel',
     prerender: {
       routes: [
+        '/api/send',
         '/blog/UX-UI-et-Accessibilite-Pourquoi-un-Bon-Design-Fait-Toute-la-Difference',
         '/developpement-web-vue-react-symfony-adonis',
         '/developpement-mobile-react-native-swift',
