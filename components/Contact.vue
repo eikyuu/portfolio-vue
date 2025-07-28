@@ -74,6 +74,7 @@
 </template>
 
 <script setup lang="ts">
+import { createClient } from "@supabase/supabase-js";
 import { reactive, ref } from "vue";
 
 useHead({
@@ -86,13 +87,13 @@ const error = ref("");
 
 const postMessage = async (form: { message: string; email: string; subject: string; }): Promise<any> => {
     try {
-
         const config = useRuntimeConfig()
-        const { data, error } = await $fetch(`${config.public.apiBase}/send`, {
-            method: 'POST',
-            body: form,
-        });
+        const supabase = createClient(config.public.supabaseUrl, config.public.supabaseKey)
+        const { data, error } = await supabase.functions.invoke('resend-email', {
+            body: { name: 'Functions' },
+        })
 
+        
         successMessage.value = "Votre message a été envoyé avec succès !";
         return data;
     } catch (err) {
