@@ -30,7 +30,6 @@ export default defineNuxtConfig({
     preset: 'vercel',
     prerender: {
       routes: [
-        '/api/send',
         '/blog/UX-UI-et-Accessibilite-Pourquoi-un-Bon-Design-Fait-Toute-la-Difference',
         '/developpement-web-vue-react-symfony-adonis',
         '/developpement-mobile-react-native-swift',
