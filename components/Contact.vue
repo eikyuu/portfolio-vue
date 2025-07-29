@@ -90,7 +90,7 @@ const postMessage = async (form: { message: string; email: string; subject: stri
         const config = useRuntimeConfig()
         const supabase = createClient(config.public.supabaseUrl, config.public.supabaseKey)
         const { data, error } = await supabase.functions.invoke('resend-email', {
-            body: { name: 'Functions' },
+            body: form,
         })
 
         

@@ -17,12 +17,12 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     // The private keys which are only available within server-side
-    apiSecret:  process.env.API_SECRET,
+    resendSecret: process.env.RESEND_SECRET,
     // Keys within public, will be also exposed to the client-side
     public: {
       apiBase: process.env.API_BASE || 'http://localhost:3000',
       supabaseUrl: process.env.SUPABASE_URL,
-      supabaseKey: process.env.SUPABASE_KEY,
+      supabaseKey: process.env.SUPABASE_ANON_KEY,
     }
   },
   app: {
