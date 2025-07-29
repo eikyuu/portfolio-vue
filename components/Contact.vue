@@ -1,5 +1,5 @@
 <template>
-    <TitleUnder title="Discutons de vos projets" tag="h2" class=" mb-10 xl:mb-20"  />
+    <TitleUnder title="Discutons de vos projets" tag="h2" class=" mb-10 mt-10 xl:mb-20"  />
     <div class="flex flex-col items-center xl:flex-row">
         <div class=" bg-number bg-opacity-85 bg-cover mb-4 flex flex-col items-center xl:flex-row xl:justify-between">
             <figure>
