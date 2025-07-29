@@ -1,7 +1,6 @@
 // Follow this setup guide to integrate the Deno language server with your editor:
 // https://deno.land/manual/getting_started/setup_your_environment
 // This enables autocomplete, go to definition, etc.
-import { corsHeaders } from '../../../_shared/corsHeaders'
 
 const RESEND_API_KEY = Deno.env.get('RESEND_API_KEY')
 
@@ -11,7 +10,8 @@ const handler = async (_request: Request): Promise<Response> => {
   const res = await fetch('https://api.resend.com/emails', {
     method: 'POST',
     headers: {
-      ...corsHeaders,
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
       'Content-Type': 'application/json',
       Authorization: `Bearer ${RESEND_API_KEY}`,
     },
@@ -28,7 +28,8 @@ const handler = async (_request: Request): Promise<Response> => {
   return new Response(JSON.stringify(data), {
     status: 200,
     headers: {
-      ...corsHeaders,
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
       'Content-Type': 'application/json',
     },
   })
