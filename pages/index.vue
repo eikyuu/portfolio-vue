@@ -45,7 +45,13 @@ useHead({
           Développeur web & mobile Freelance à Tours.
         </h1>
 
-        <h2 class="uppercase text-[#5A3B5D] text-2xl font-bold mt-10">J’accompagne les entreprises et entrepreneurs dans
+        <div class="block lg:hidden flex items-center justify-center mt-10 mb-10">
+          <NuxtImg class="xl:mt-0 object-cover rounded-md " src="homme-barbu-sur-fond-jaune.png"
+            sizes="sm:50vw md:400px xl:742px" width="500" height="500" loading="lazy" format="webp"
+            alt="Un homme barbu avec des lunettes devant un ordinateur" />
+        </div>
+
+        <h2 class="uppercase text-[#5A3B5D] text-2xl font-bold mt-0 md:mt-10">J’accompagne les entreprises et entrepreneurs dans
           la création de sites web et d’applications <strong>performantes, accessibles et optimisées.</strong></h2>
 
         <p class="mt-10">
@@ -94,7 +100,7 @@ useHead({
 
       </div>
 
-      <div>
+      <div class="hidden lg:block">
         <NuxtImg class="mt-20 xl:mt-0 object-cover rounded-md" src="homme-barbu-sur-fond-jaune.png"
           sizes="sm:50vw md:400px xl:742px" width="500" height="500" loading="lazy" format="webp"
           alt="Un homme barbu avec des lunettes devant un ordinateur" />
