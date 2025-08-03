@@ -11,22 +11,26 @@
         <!-- service dropdown -->
         <div class="dropdown relative block ml-10 hidden xl:block" @mouseenter="onmouseenter" @mouseleave="onmouseleave">
           <button class="dropbtn text-[#5A3B5D]">Services</button>
-          <div class="dropdown-content hidden absolute z-50 bg-white text-[#5A3B5D]">
-            <ul class="flex flex-col justify-center items-center w-max text-[#5A3B5D] text-base gap-8 rounded-md shadow-md p-4">
-              <li v-for="item in services" :key="item.to" class="w-full hover:bg-gray-50 text-gray-700 block px-3 py-2 rounded-md text-base font-medium">
-                <NuxtLink :to="item.to">{{ item.label }}</NuxtLink>
+          <div class="dropdown-content hidden absolute z-50 bg-white text-[#5A3B5D] w-max rounded-md shadow-md">
+            <ul class="flex flex-col justify-center items-center text-[#5A3B5D] text-base gap-8 rounded-md shadow-md p-4">
+              <li v-for="item in services" :key="item.to" class="w-full">
+                <NuxtLink :to="item.to" class=" hover:bg-gray-50 text-gray-700 block px-3 py-2 rounded-md text-base font-medium">
+                  {{ item.label }}
+                </NuxtLink>
               </li>
             </ul>
           </div>
         </div>
 
         <!-- Menu pour les grands écrans -->
-        <div class="hidden xl:block">
+        <div class="space-x-4 xl:block">
           <div class="ml-10 flex items-baseline space-x-4">
 
             <ul class="flex justify-center text-[#5A3B5D] text-base gap-8">
               <li v-for="item in nav" :key="item.to">
-                <NuxtLink :to="item.to">{{ item.label }}</NuxtLink>
+                <NuxtLink :to="item.to" class="w-full hover:bg-gray-50 text-gray-700 block px-3 py-2 rounded-md text-base font-medium">
+                  {{ item.label }}
+                </NuxtLink>
               </li>
             </ul>
 
@@ -50,9 +54,10 @@
     <div v-if="isOpen" ref="componentRef" class="xl:hidden">
       <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
         <ul>
-          <li v-for="item in [...services, ...nav]" :key="item.to"
-            class="hover:bg-gray-50 text-gray-700 block px-3 py-2 rounded-md text-base font-medium">
-            <NuxtLink :to="item.to">{{ item.label }}</NuxtLink>
+          <li v-for="item in [...services, ...nav]" :key="item.to">
+            <NuxtLink :to="item.to" class="w-full hover:bg-gray-50 text-gray-700 block px-3 py-2 rounded-md text-base font-medium">
+              {{ item.label }}
+            </NuxtLink>
           </li>
         </ul>
       </div>

@@ -6,9 +6,8 @@
     <ExpertiseCard 
       link="/contact" 
       text-btn="Je veux une application mobile performante →" 
-      img="tel.jpg" 
-      width="600"
-      height="600">
+      img="svg/mobile.svg" 
+      alt="Développement mobile sur mesure">
 
       <!-- Section Cross-Platform -->
       <section id="cross-platform" class="space-y-5 mb-5">

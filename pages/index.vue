@@ -104,7 +104,7 @@ useHead({
     <TitleUnder title="Je suis un expert" tag="h2" />
 
     <ExpertiseCard link="/developpement-web-vue-react-symfony-adonis" title="Développement Web sur mesure"
-      textBtn="J’ai besoin d’un expert en Développement Web →" img="svg/web.svg" class="mt-20 md:mt-20">
+      text-btn="J’ai besoin d’un expert en Développement Web →" img="svg/web.svg" class="mt-20 md:mt-20">
       Offrez à vos utilisateurs un <strong>site web moderne, performant et personnalisé</strong>.
       <br>Que ce soit pour un <strong>site vitrine</strong>, une <strong>plateforme interactive</strong>, ou une
       <strong>application web complexe</strong>, je mets mon expertise au service de votre projet pour créer des
@@ -136,7 +136,7 @@ useHead({
     </ExpertiseCard>
 
     <ExpertiseCard link="/developpement-mobile-react-native-swift"
-      title="Développement Mobile sur mesure" textBtn="Je veux une application mobile performante →"
+      title="Développement Mobile sur mesure" text-btn="Je veux une application mobile performante →"
       img="svg/mobile.svg" class="mt-20 md:mt-20">
 
       Offrez à vos utilisateurs une <strong>application mobile intuitive, performante</strong> et adaptée à leurs
@@ -172,7 +172,7 @@ useHead({
     </ExpertiseCard>
 
     <ExpertiseCard link="/design-ux-ui-figma" title="Design UX/UI centré sur vos utilisateurs"
-      textBtn="Je veux un design qui me ressemble →" img="svg/design.svg" class="mt-20 mb-20 md:mt-20 md:mb-20">
+      text-btn="Je veux un design qui me ressemble →" img="svg/design.svg" class="mt-20 mb-20 md:mt-20 md:mb-20">
       Créez des expériences mémorables grâce à des <strong>interfaces modernes, intuitives</strong> et <strong>centrées
         sur l’utilisateur</strong>.
       <br>Chaque projet commence par une analyse approfondie de vos besoins et de ceux de vos utilisateurs.
