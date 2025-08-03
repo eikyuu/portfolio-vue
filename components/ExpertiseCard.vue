@@ -2,7 +2,7 @@
 
     <div class="bg-white rounded-md shadow-xl shadow-[#F2EBF4] p-5 flex flex-col xl:flex-row items-center border-b-8 border-[#FFC800] ">
 
-        <NuxtImg class="rounded-md" :src="img" :width="width" :height="height" format="webp" loading="lazy" alt="Une image qui représente un service" placeholder/>
+        <NuxtImg class="rounded-md" :src="img" :width="width" :height="height" format="webp" loading="lazy" alt="Une image qui représente un service" />
 
         <div class="flex flex-col items-center xl:items-start xl:pl-10 mt-10">
             <h3 v-if="props.title" class="font-bold text-[#5A3B5D] text-xl mb-10">{{ props.title }}</h3>

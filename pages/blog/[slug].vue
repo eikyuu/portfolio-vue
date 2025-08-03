@@ -9,7 +9,7 @@
     </div>
 
     <article>
-      <NuxtImg :src="`/${route.params.slug}.jpg`" :alt="blogs[route.params.slug].alt" class="mb-8 w-full h-full object-cover rounded-md" format="webp" loading="lazy" placeholder/>
+      <NuxtImg :src="`/${route.params.slug}.jpg`" :alt="blogs[route.params.slug].alt" class="mb-8 w-full h-full object-cover rounded-md" format="webp" loading="lazy"/>
       <div v-if="blog.content" v-html="blog.content" class="space-y-4"></div>
       <p v-else>Article introuvable.</p>
     </article>
