@@ -23,7 +23,7 @@
         </div>
 
         <!-- Menu pour les grands écrans -->
-        <div class="space-x-4 xl:block">
+        <div class="space-x-4 hidden xl:block">
           <div class="ml-10 flex items-baseline space-x-4">
 
             <ul class="flex justify-center text-[#5A3B5D] text-base gap-8">
