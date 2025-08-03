@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mt-20 md:mt-32">
 
     <article class="mb-20">
       <!-- Titre principal -->

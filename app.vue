@@ -1,6 +1,7 @@
 <template>
     <Analytics />
   <div>
+
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
@@ -12,4 +13,6 @@ import { Analytics } from '@vercel/analytics/nuxt';
 useHead({
   htmlAttrs: { lang: 'fr' },
 });
+
+
 </script>

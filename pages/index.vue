@@ -36,7 +36,7 @@ useHead({
 </script>
 
 <template>
-  <div>
+  <div class="mt-20 md:mt-32">
     <section class="flex flex-col xl:flex-row items-center place-content-between mb-20 md:mb-20">
       <div class="xl:w-3/6 bg-number bg-cover mb-4">
 
@@ -95,7 +95,7 @@ useHead({
       </div>
 
       <div>
-        <NuxtImg class="mt-20 xl:mt-0 object-cover rounded-md" src="homme-barbu-devant-ordinateur.png"
+        <NuxtImg class="mt-20 xl:mt-0 object-cover rounded-md" src="homme-barbu-sur-fond-jaune.png"
           sizes="sm:50vw md:400px xl:742px" width="500" height="500" loading="lazy" format="webp"
           alt="Un homme barbu avec des lunettes devant un ordinateur" placeholder />
       </div>

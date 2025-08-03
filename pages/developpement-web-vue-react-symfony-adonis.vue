@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="mt-20 md:mt-32">
     <!-- Titre principal avec effet de surlignage -->
     <TitleUnder title="Création de Site Internet" tag="h1" class=" mb-10 xl:mb-20"   />
 
