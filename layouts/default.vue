@@ -38,7 +38,7 @@ const startLoading = () => {
       // Petite pause à 100% avant de disparaître
 setTimeout(() => {
   isLoading.value = false
-      }, 500)
+      }, 1000)
     }
   }, 50) // Met à jour toutes les 50ms
 }
