@@ -5,7 +5,7 @@
     <TitleUnder title="Design UX/UI : Création d'Expériences Utilisateurs Exceptionnelles" tag="h1" class=" mb-10 xl:mb-20"  />
 
     <!-- Carte d'expertise -->
-    <ExpertiseCard text-btn="Je veux un design qui me ressemble →" img="svg/design.svg" alt="Design UX/UI pour des expériences utilisateur exceptionnelles">
+    <ExpertiseCard link="/contact" text-btn="Je veux un design qui me ressemble →" img="svg/design.svg" alt="Design UX/UI pour des expériences utilisateur exceptionnelles">
       <article>
         <!-- Introduction -->
         <p class="mb-4">

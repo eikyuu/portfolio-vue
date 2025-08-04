@@ -111,6 +111,7 @@ useHead({
     <TitleUnder title="Je suis un expert" tag="h2" />
 
     <ExpertiseCard title="Développement Web sur mesure"
+      link="/developpement-web-vue-react-symfony-adonis"
       text-btn="J’ai besoin d’un expert en Développement Web →" img="svg/web.svg" class="mt-20 md:mt-20">
       Offrez à vos utilisateurs un <strong>site web moderne, performant et personnalisé</strong>.
       <br>Que ce soit pour un <strong>site vitrine</strong>, une <strong>plateforme interactive</strong>, ou une
@@ -142,8 +143,8 @@ useHead({
       attentes de vos utilisateurs.
     </ExpertiseCard>
 
-    <ExpertiseCard title="Développement Mobile sur mesure" text-btn="Je veux une application mobile performante →"
-      img="svg/mobile.svg" class="mt-20 md:mt-20">
+    <ExpertiseCard title="Développement Mobile sur mesure" link="/developpement-mobile-react-native-swift"
+      text-btn="Je veux une application mobile performante →" img="svg/mobile.svg" class="mt-20 md:mt-20">
 
       Offrez à vos utilisateurs une <strong>application mobile intuitive, performante</strong> et adaptée à leurs
       besoins.
@@ -177,8 +178,9 @@ useHead({
       idées en une application innovante et impactante.
     </ExpertiseCard>
 
-    <ExpertiseCard title="Design UX/UI centré sur vos utilisateurs"
-      text-btn="Je veux un design qui me ressemble →" img="svg/design.svg" class="mt-20 mb-20 md:mt-20 md:mb-20">
+    <ExpertiseCard title="Design UX/UI centré sur vos utilisateurs" link="/design-ux-ui-figma"
+      text-btn="Je veux un design qui me ressemble →" img="svg/design.svg"
+      class="mt-20 mb-20 md:mt-20 md:mb-20">
       Créez des expériences mémorables grâce à des <strong>interfaces modernes, intuitives</strong> et <strong>centrées
         sur l’utilisateur</strong>.
       <br>Chaque projet commence par une analyse approfondie de vos besoins et de ceux de vos utilisateurs.
@@ -208,6 +210,38 @@ useHead({
       <br>Faites de votre projet une référence en design UX/UI avec des solutions modernes, accessibles, et pensées pour
       durer.
     </ExpertiseCard>
+
+
+    <ExpertiseCard 
+  title="Création de Sites WordPress Performants & Sur-Mesure" 
+  link="/developpement-wordpress-sur-mesure"
+  text-btn="Créer mon site WordPress sur-mesure →" 
+  img="svg/web.svg"
+  class="mt-20 mb-20 md:mt-20 md:mb-20"
+>
+  Boostez votre présence en ligne avec un <strong>site WordPress rapide, responsive</strong> et <strong>optimisé pour le SEO</strong>.  
+  <br>Chaque projet démarre par une <strong>analyse stratégique</strong> de vos objectifs, de votre audience cible et de votre secteur.
+  <br>Mon approche combine <strong>design UX/UI</strong>, <strong>performance technique</strong> et <strong>optimisation SEO</strong> pour créer des expériences engageantes et durables.
+
+  <strong><br><br>🎨 Un processus de conception orienté résultats :</strong>
+  <br>1. <strong>Recherche utilisateur</strong> : Compréhension fine de vos utilisateurs pour créer une interface pertinente et intuitive.
+  <br>2. <strong>Wireframes & prototypes</strong> : Validation rapide des idées grâce à des maquettes interactives.
+  <br>3. <strong>Design system cohérent</strong> : Uniformité visuelle et ergonomique sur tous les supports.
+
+  <strong><br><br>♿ Accessibilité & conformité WCAG</strong>
+  <br>Tous les sites sont conçus pour être <strong>accessibles à tous</strong>, selon les normes <a class="underline" target="blank" href="https://www.w3.org/WAI/standards-guidelines/wcag/">WCAG</a>. 
+  <br>Parce qu’un bon site WordPress est un site inclusif.
+
+  <strong><br><br>🔍 Optimisation SEO native</strong>
+  <br>Structure HTML, performance, responsive design, et bonnes pratiques SEO intégrées dès la conception pour <strong>maximiser votre visibilité sur Google</strong>.
+
+  <strong><br><br>🌟 Un design qui valorise votre marque</strong>
+  <br>Un site WordPress n’est pas qu’un outil : c’est une <strong>expérience immersive</strong> qui doit <strong>raconter votre histoire</strong> et captiver vos visiteurs dès les premières secondes.
+
+  <strong><br><br>🚀 Donnons vie à votre projet WordPress</strong>
+  <br>Profitez d’un <strong>accompagnement complet</strong> pour transformer vos idées en un <strong>site web professionnel, performant et évolutif</strong>.
+</ExpertiseCard>
+
 
     <Contact />
   </div>

@@ -4,6 +4,7 @@
     <TitleUnder title="Création d'Application Mobile" tag="h1" class=" mb-10 xl:mb-20"  />
 
     <ExpertiseCard 
+      link="/contact"
       text-btn="Je veux une application mobile performante →" 
       img="svg/mobile.svg" 
       alt="Développement mobile sur mesure">
@@ -72,7 +73,6 @@
           Contactez-moi dès aujourd'hui pour une <strong>consultation gratuite</strong> et découvrez comment je peux vous aider à concrétiser votre vision avec des technologies de pointe.
         </p>
       </section>
-
 
     </ExpertiseCard>
 

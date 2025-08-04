@@ -4,7 +4,7 @@
       <TitleUnder title="WordPress : Sites Web Performants et Sur Mesure" tag="h1" class=" mb-10 xl:mb-20"   />
 
       <!-- Carte d'expertise -->
-      <ExpertiseCard text-btn="Je veux un site WordPress performant →" img="svg/web.svg" alt="Développement WordPress sur mesure">
+      <ExpertiseCard link="/contact" text-btn="Je veux un site WordPress performant →" img="svg/web.svg" alt="Développement WordPress sur mesure">
         <article>
           <!-- Introduction -->
           <p>

@@ -4,7 +4,7 @@
     <TitleUnder title="Création de Site Internet" tag="h1" class=" mb-10 xl:mb-20"   />
 
     <!-- Carte d'expertise -->
-    <ExpertiseCard text-btn="J’ai besoin d’un expert en Développement Web →" img="svg/web.svg" alt="Expert en développement web">
+    <ExpertiseCard link="/contact" text-btn="J’ai besoin d’un expert en Développement Web →" img="svg/web.svg" alt="Expert en développement web">
       <article>
         <!-- Introduction -->
         <p class="mb-4">
