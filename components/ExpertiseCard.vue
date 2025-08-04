@@ -9,7 +9,7 @@
             <div class="expertise-text">
                 <slot></slot>
             </div>
-            <Button v-if="props.link" class="my-5" :text="props.textBtn" :link="props.link" />
+            <ZcalEmbed class="my-5" :text="props.textBtn" />
         </div>
     </div>
 
@@ -21,8 +21,6 @@ import Button from './Button.vue';
 interface Props {
     img: string;
     title?: string;
-    btnPosition?: 'float-end' | 'float-first',
-    link?: string;
     textBtn: string;
     width?: string
     height?: string;

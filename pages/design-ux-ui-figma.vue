@@ -14,7 +14,7 @@
           besoins de vos utilisateurs et atteignent vos objectifs commerciaux.
         </p>
 
-        <Button text="Contactez-moi pour une consultation gratuite" link="/contact"  />
+        <ZcalEmbed text="Contactez-moi pour une consultation gratuite" />
 
         <!-- Section Design UX -->
         <h2 class="text-2xl font-semibold mt-5 mb-3">Design UX : Comprendre et Satisfaire les Utilisateurs</h2>
@@ -69,7 +69,6 @@
 </template>
 
 <script setup lang="ts">
-import Button from '~/components/Button.vue';
 // Métadonnées SEO avec useSeoMeta
 useSeoMeta({
   title: 'Design UX/UI : Création d\'Expériences Utilisateurs Exceptionnelles',

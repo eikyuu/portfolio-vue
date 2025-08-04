@@ -95,7 +95,8 @@ useHead({
 
         <div class="flex flex-col md:flex-row gap-5 items-center">
           <Button text="Voir mes collaborations & projets" link="/mes-collaborations-projets" />
-          <Button text="Contactez-moi pour une consultation gratuite" link="/contact" />
+          <ZcalEmbed text="Contactez-moi pour une consultation gratuite" />
+
         </div>
 
       </div>

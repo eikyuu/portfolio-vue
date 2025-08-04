@@ -16,7 +16,7 @@
           réalisation de votre projet de A à Z.
         </p>
 
-        <Button text="Contactez-moi pour une consultation gratuite" link="/contact" />
+        <ZcalEmbed text="Contactez-moi pour une consultation gratuite" />
 
         <!-- Section Frontend -->
         <h2 class="text-2xl font-semibold mt-5 mb-3">Frontend : Des Interfaces Utilisateurs Modernes et Réactives</h2>

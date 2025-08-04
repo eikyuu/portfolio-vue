@@ -14,7 +14,8 @@
         <h2 class="font-bold mb-5">
           Expert en framework cross-platform React Native et développement natif Swift.
         </h2>
-        <Button text="Contactez-moi pour une consultation gratuite" link="/contact" />
+
+        <ZcalEmbed text="Contactez-moi pour une consultation gratuite" />
 
         <h2 class="font-bold">Cross-Platform : Une Solution Unique pour iOS et Android</h2>
         <p>

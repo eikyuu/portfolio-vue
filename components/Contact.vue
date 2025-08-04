@@ -31,7 +31,10 @@
         </div>
     </div>
 
-    <div class="bg-white z-0 relative  shadow-xl shadow-[#F2EBF4] p-5 items-center rounded-xl mt-20">
+    <ZcalEmbed class="mt-5" text="Je suis disponible pour une consultation gratuite" />
+
+
+    <div class="bg-white z-0 relative  shadow-xl shadow-[#F2EBF4] p-5 items-center rounded-xl mt-10">
         <h2 class="font-bold text-[#5A3B5D] text-xl">Contactez-moi</h2>
         <form @submit.prevent="handleSubmit">
             <!-- subject -->
@@ -71,6 +74,7 @@
         <p v-if="successMessage" class="text-green-500 mt-4">{{ successMessage }}</p>
         <p v-if="error" class="text-red-500 mt-4">{{ error }}</p>
     </div>
+
 </template>
 
 <script setup lang="ts">
