@@ -1,63 +1,72 @@
 <template>
   <div>
-    <!-- Trigger button -->
-
+    <!-- Bouton d'ouverture -->
     <Button :text="text" :calendar="true" @click="isOpen = true" />
 
-    <!-- Overlay + Modal -->
+    <!-- Overlay + Modale -->
     <transition name="fade">
       <div
         v-if="isOpen"
-        class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 px-2"
-        @click.self="isOpen = false"
+        class="fixed inset-0 z-50 bg-black bg-opacity-50 flex items-center justify-center"
       >
+        <!-- Container scrollable sur mobile -->
         <div
-          class="bg-white rounded-md shadow-md w-full max-w-[1260px] max-h-[95vh] overflow-scroll relative"
+          class="bg-white rounded-xl shadow-xl w-full max-w-4xl h-[90vh] xl:h-[1060px] flex flex-col"
+          :class="{ 'mx-2': isMobile }"
+          @click.self="isOpen = false"
         >
+          <!-- Header -->
           <div class="flex justify-between items-center px-4 py-2 border-b">
             <h2 class="text-lg font-semibold">{{ text }}</h2>
             <button @click="isOpen = false" class="text-gray-600 hover:text-black text-2xl">&times;</button>
           </div>
-          <div class="w-full">
+
+          <!-- Contenu scrollable -->
+          <div class="flex-1 overflow-auto">
             <iframe
               :src="`${link}?embed=1&embedType=iframe`"
               loading="lazy"
-              scrolling="no"
-              :style="iframeStyle"
-              id="zcal-invite"
+              scrolling="yes"
               class="w-full"
-            />
+              :style="`border:none; height:100%; min-height:600px;`"
+              id="zcal-invite"
+            ></iframe>
           </div>
-        </div>  
+        </div>
       </div>
     </transition>
   </div>
 </template>
 
-<script setup>
-import { ref, computed } from 'vue'
+<script setup lang="ts">
+import { ref, onMounted, watch } from 'vue'
+import Button from './Button.vue';
 
 const props = defineProps({
-  link: {
-    type: String,
-    default: 'https://zcal.co/i/FCOozu0P',
-  },
-  height: {
-    type: Number,
-    default: 920,
-  },
-  text: {
-    type: String,
-    default: 'Planifier une réunion',
-  },
+  link: { type: String, default: 'https://zcal.co/i/FCOozu0P' },
+  text: { type: String, default: 'Planifier une réunion' },
 })
 
 const isOpen = ref(false)
+const isMobile = ref(false)
 
-const iframeStyle = computed(() =>
-  `border:none; height:${props.height}px;`
-)
+onMounted(() => {
+  const update = () => {
+    isMobile.value = window.innerWidth < 768
+  }
+  update()
+  window.addEventListener('resize', update)
+})
 
+// Bloquer le scroll du body quand la modale est ouverte
+watch(isOpen, (open) => {
+  const body = document.body
+  if (open) {
+    body.classList.add('overflow-hidden')
+  } else {
+    body.classList.remove('overflow-hidden')
+  }
+})
 </script>
 
 <style scoped>
