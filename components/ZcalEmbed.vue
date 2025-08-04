@@ -44,7 +44,7 @@ import Button from './Button.vue';
 
 const props = defineProps({
   link: { type: String, default: 'https://zcal.co/i/FCOozu0P' },
-  text: { type: String, default: 'Planifier une réunion' },
+  text: { type: String, default: 'Planifie un rendez-vous pour bénéficier d\'une consultation gratuite.' },
 })
 
 const isOpen = ref(false)

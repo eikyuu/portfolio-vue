@@ -5,7 +5,7 @@
     <TitleUnder title="Design UX/UI : Création d'Expériences Utilisateurs Exceptionnelles" tag="h1" class=" mb-10 xl:mb-20"  />
 
     <!-- Carte d'expertise -->
-    <ExpertiseCard link="/contact" text-btn="Je veux un design qui me ressemble →" img="svg/design.svg" alt="Design UX/UI pour des expériences utilisateur exceptionnelles">
+    <ExpertiseCard text-btn="Je veux un design qui me ressemble →" img="svg/design.svg" alt="Design UX/UI pour des expériences utilisateur exceptionnelles">
       <article>
         <!-- Introduction -->
         <p class="mb-4">
@@ -14,7 +14,7 @@
           besoins de vos utilisateurs et atteignent vos objectifs commerciaux.
         </p>
 
-        <ZcalEmbed text="Contactez-moi pour une consultation gratuite" />
+        <ZcalEmbed />
 
         <!-- Section Design UX -->
         <h2 class="text-2xl font-semibold mt-5 mb-3">Design UX : Comprendre et Satisfaire les Utilisateurs</h2>

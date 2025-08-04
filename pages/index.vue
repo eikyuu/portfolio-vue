@@ -95,7 +95,7 @@ useHead({
 
         <div class="flex flex-col md:flex-row gap-5 items-center">
           <Button text="Voir mes collaborations & projets" link="/mes-collaborations-projets" />
-          <ZcalEmbed text="Contactez-moi pour une consultation gratuite" />
+          <ZcalEmbed />
 
         </div>
 
@@ -110,7 +110,7 @@ useHead({
 
     <TitleUnder title="Je suis un expert" tag="h2" />
 
-    <ExpertiseCard link="/developpement-web-vue-react-symfony-adonis" title="Développement Web sur mesure"
+    <ExpertiseCard title="Développement Web sur mesure"
       text-btn="J’ai besoin d’un expert en Développement Web →" img="svg/web.svg" class="mt-20 md:mt-20">
       Offrez à vos utilisateurs un <strong>site web moderne, performant et personnalisé</strong>.
       <br>Que ce soit pour un <strong>site vitrine</strong>, une <strong>plateforme interactive</strong>, ou une
@@ -142,8 +142,7 @@ useHead({
       attentes de vos utilisateurs.
     </ExpertiseCard>
 
-    <ExpertiseCard link="/developpement-mobile-react-native-swift"
-      title="Développement Mobile sur mesure" text-btn="Je veux une application mobile performante →"
+    <ExpertiseCard title="Développement Mobile sur mesure" text-btn="Je veux une application mobile performante →"
       img="svg/mobile.svg" class="mt-20 md:mt-20">
 
       Offrez à vos utilisateurs une <strong>application mobile intuitive, performante</strong> et adaptée à leurs
@@ -178,7 +177,7 @@ useHead({
       idées en une application innovante et impactante.
     </ExpertiseCard>
 
-    <ExpertiseCard link="/design-ux-ui-figma" title="Design UX/UI centré sur vos utilisateurs"
+    <ExpertiseCard title="Design UX/UI centré sur vos utilisateurs"
       text-btn="Je veux un design qui me ressemble →" img="svg/design.svg" class="mt-20 mb-20 md:mt-20 md:mb-20">
       Créez des expériences mémorables grâce à des <strong>interfaces modernes, intuitives</strong> et <strong>centrées
         sur l’utilisateur</strong>.

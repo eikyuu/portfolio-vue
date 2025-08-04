@@ -4,7 +4,6 @@
     <TitleUnder title="Création d'Application Mobile" tag="h1" class=" mb-10 xl:mb-20"  />
 
     <ExpertiseCard 
-      link="/contact" 
       text-btn="Je veux une application mobile performante →" 
       img="svg/mobile.svg" 
       alt="Développement mobile sur mesure">
@@ -15,7 +14,7 @@
           Expert en framework cross-platform React Native et développement natif Swift.
         </h2>
 
-        <ZcalEmbed text="Contactez-moi pour une consultation gratuite" />
+        <ZcalEmbed/>
 
         <h2 class="font-bold">Cross-Platform : Une Solution Unique pour iOS et Android</h2>
         <p>

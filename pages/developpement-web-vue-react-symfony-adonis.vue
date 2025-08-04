@@ -4,7 +4,7 @@
     <TitleUnder title="Création de Site Internet" tag="h1" class=" mb-10 xl:mb-20"   />
 
     <!-- Carte d'expertise -->
-    <ExpertiseCard link="/contact" text-btn="J’ai besoin d’un expert en Développement Web →" img="svg/web.svg" alt="Expert en développement web">
+    <ExpertiseCard text-btn="J’ai besoin d’un expert en Développement Web →" img="svg/web.svg" alt="Expert en développement web">
       <article>
         <!-- Introduction -->
         <p class="mb-4">
@@ -16,7 +16,7 @@
           réalisation de votre projet de A à Z.
         </p>
 
-        <ZcalEmbed text="Contactez-moi pour une consultation gratuite" />
+        <ZcalEmbed />
 
         <!-- Section Frontend -->
         <h2 class="text-2xl font-semibold mt-5 mb-3">Frontend : Des Interfaces Utilisateurs Modernes et Réactives</h2>
