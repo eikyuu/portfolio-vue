@@ -44,7 +44,7 @@ const props = defineProps({
   },
   height: {
     type: Number,
-    default: 870,
+    default: 920,
   },
   text: {
     type: String,
