@@ -67,14 +67,14 @@ class="xl:mt-0 object-cover rounded-md " src="homme-barbu-sur-fond-jaune.png"
         <h2 class="mt-10"><strong>💡 Technologies modernes et adaptées</strong></h2>
 
         <p>
-          Pour répondre aux besoins spécifiques de chaque projet, j’utilise des outils modernes comme <strong><a
-              target='blank' class="underline" to='https://fr.react.dev/'>React.js</a>,
-            <NuxtLink target='blank' class="underline" to='https://nextjs.org/'>Next.js</NuxtLink>,
-            <NuxtLink target='blank' class="underline" to='https://vuejs.org/'>Vue.js</NuxtLink>
+          Pour répondre aux besoins spécifiques de chaque projet, j’utilise des outils modernes comme <strong>
+            <NuxtLink class="underline" target="_blank" to='https://fr.react.dev/'>React.js</NuxtLink>,
+            <NuxtLink class="underline" target="_blank" to='https://nextjs.org/'>Next.js</NuxtLink>,
+            <NuxtLink class="underline" target="_blank" to='https://vuejs.org/'>Vue.js</NuxtLink>
           </strong> et <strong>
-            <NuxtLink to='https://nuxt.com/' target='blank' class="underline">Nuxt.js</NuxtLink>
+            <NuxtLink to='https://nuxt.com/' target="_blank" class="underline">Nuxt.js</NuxtLink>
           </strong>, ou <strong>
-            <NuxtLink to='https://wordpress.com/' target='blank' class="underline">Wordpress</NuxtLink>
+            <NuxtLink to='https://wordpress.com/' target="_blank" class="underline">Wordpress</NuxtLink>
           </strong>, adaptés au développement web, mobile et à la création
           d’applications performantes. Ces technologies garantissent des solutions fiables,
           évolutives et optimisées.
