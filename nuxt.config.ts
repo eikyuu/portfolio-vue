@@ -13,7 +13,7 @@ export default defineNuxtConfig({
   image: {
     // Options
   },
-  modules: ['@nuxt/image', '@nuxtjs/html-validator', '@nuxt/eslint'],
+  modules: ['@nuxt/image', '@nuxtjs/html-validator', '@nuxt/eslint','@vueuse/motion/nuxt'],
 
   runtimeConfig: {
     // The private keys which are only available within server-side
@@ -23,6 +23,22 @@ export default defineNuxtConfig({
       apiBase: process.env.API_BASE || 'http://localhost:3000',
       supabaseUrl: process.env.SUPABASE_URL,
       supabaseKey: process.env.SUPABASE_ANON_KEY,
+      motion: {
+        directives: {
+          'pop-bottom': {
+            initial: {
+              scale: 0,
+              opacity: 0,
+              y: 100,
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              y: 0,
+            }
+          }
+        }
+      }
     }
   },
   app: {

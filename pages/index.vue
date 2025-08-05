@@ -37,7 +37,7 @@ useHead({
 
 <template>
   <div class="mt-20 md:mt-32">
-    <section class="flex flex-col xl:flex-row items-center place-content-between mb-20 md:mb-20">
+    <section v-motion-slide-visible-once-top :duration="500" :delay="100" class="flex flex-col xl:flex-row items-center place-content-between mb-20 md:mb-20">
       <div class="xl:w-3/6 bg-number bg-cover mb-4">
 
         <h1 class="uppercase text-[#5A3B5D] text-4xl font-bold">
@@ -110,9 +110,12 @@ useHead({
 
     <TitleUnder title="Je suis un expert" tag="h2" />
 
-    <ExpertiseCard title="Développement Web sur mesure"
+    <ExpertiseCard 
+      title="Développement Web sur mesure"
       link="/developpement-web-vue-react-symfony-adonis"
-      text-btn="J’ai besoin d’un expert en Développement Web →" img="svg/web.svg" class="mt-20 md:mt-20">
+      text-btn="J’ai besoin d’un expert en Développement Web →" 
+      img="svg/web.svg" 
+      class="mt-20 md:mt-20">
       Offrez à vos utilisateurs un <strong>site web moderne, performant et personnalisé</strong>.
       <br>Que ce soit pour un <strong>site vitrine</strong>, une <strong>plateforme interactive</strong>, ou une
       <strong>application web complexe</strong>, je mets mon expertise au service de votre projet pour créer des
@@ -143,8 +146,12 @@ useHead({
       attentes de vos utilisateurs.
     </ExpertiseCard>
 
-    <ExpertiseCard title="Développement Mobile sur mesure" link="/developpement-mobile-react-native-swift"
-      text-btn="Je veux une application mobile performante →" img="svg/mobile.svg" class="mt-20 md:mt-20">
+    <ExpertiseCard 
+      title="Développement Mobile sur mesure" 
+      link="/developpement-mobile-react-native-swift"
+      text-btn="Je veux une application mobile performante →" 
+      img="svg/mobile.svg" 
+      class="mt-20 md:mt-20">
 
       Offrez à vos utilisateurs une <strong>application mobile intuitive, performante</strong> et adaptée à leurs
       besoins.
@@ -178,8 +185,11 @@ useHead({
       idées en une application innovante et impactante.
     </ExpertiseCard>
 
-    <ExpertiseCard title="Design UX/UI centré sur vos utilisateurs" link="/design-ux-ui-figma"
-      text-btn="Je veux un design qui me ressemble →" img="svg/design.svg"
+    <ExpertiseCard 
+      title="Design UX/UI centré sur vos utilisateurs" 
+      link="/design-ux-ui-figma"
+      text-btn="Je veux un design qui me ressemble →" 
+      img="svg/design.svg"
       class="mt-20 mb-20 md:mt-20 md:mb-20">
       Créez des expériences mémorables grâce à des <strong>interfaces modernes, intuitives</strong> et <strong>centrées
         sur l’utilisateur</strong>.
@@ -213,11 +223,11 @@ useHead({
 
 
     <ExpertiseCard 
-  title="Création de Sites WordPress Performants & Sur-Mesure" 
-  link="/developpement-wordpress-sur-mesure"
-  text-btn="Créer mon site WordPress sur-mesure →" 
-  img="svg/web.svg"
-  class="mt-20 mb-20 md:mt-20 md:mb-20"
+      title="Création de Sites WordPress Performants & Sur-Mesure" 
+      link="/developpement-wordpress-sur-mesure"
+      text-btn="Créer mon site WordPress sur-mesure →" 
+      img="svg/web.svg"
+      class="mt-20 mb-20 md:mt-20 md:mb-20"
 >
   Boostez votre présence en ligne avec un <strong>site WordPress rapide, responsive</strong> et <strong>optimisé pour le SEO</strong>.  
   <br>Chaque projet démarre par une <strong>analyse stratégique</strong> de vos objectifs, de votre audience cible et de votre secteur.

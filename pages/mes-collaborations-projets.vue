@@ -1,7 +1,7 @@
 <template>
   <div class="mt-20 md:mt-32">
 
-    <article class="mb-20">
+    <article v-motion-slide-visible-once-top :duration="500" :delay="100" class="mb-20">
       <!-- Titre principal -->
       <TitleUnder title="Mes Collaborations : Partenariats Stratégiques et Expériences Enrichissantes" tag="h1" class=" mb-10 xl:mb-20"   />
 
@@ -95,14 +95,14 @@
       <div v-if="type === 'WEB'">
         <div v-for="(project, index) in displayedProjects" :key="index">
           <ProjectCard :title="project.title" :text="project.text" :img="project.img" :order="project.order"
-            :btnPosition="project.btnPosition" :link="project.link" class="mb-20" />
+            :btnPosition="project.btnPosition" :link="project.link" v-motion-slide-visible-once-top :duration="500" :delay="100" class="mb-20" />
         </div>
       </div>
 
       <div v-else>
         <div v-for="(project, index) in displayedProjectsMobile" :key="index">
           <ProjectCard :title="project.title" :text="project.text" :img="project.img" :order="project.order"
-            :btnPosition="project.btnPosition" :link="project.link" class="mb-20" />
+            :btnPosition="project.btnPosition" :link="project.link" v-motion-slide-visible-once-top :duration="500" :delay="100" class="mb-20" />
         </div>
       </div>
 

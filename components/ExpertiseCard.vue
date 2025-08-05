@@ -1,6 +1,10 @@
 <template>
 
-    <div class="bg-white rounded-md shadow-xl shadow-[#F2EBF4] p-5 flex flex-col xl:flex-row items-center border-b-8 border-[#FFC800] ">
+    <div class="bg-white rounded-md shadow-xl shadow-[#F2EBF4] p-5 flex flex-col xl:flex-row items-center border-b-8 border-[#FFC800]"
+    v-motion-slide-visible-once-top
+    :duration="500"
+    :delay="100"
+    >
 
         <NuxtImg class="rounded-md" :src="img" width="240" height="110" format="webp" loading="lazy" alt="Une image qui représente un service" fit="cover" />
 

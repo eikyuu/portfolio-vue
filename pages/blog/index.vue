@@ -1,5 +1,5 @@
 <template>
-    <section class="mt-20 md:mt-32">
+    <section v-motion-slide-visible-once-top :duration="500" :delay="100" class="mt-20 md:mt-32">
         <TitleUnder :title="title" tag="h1" />
             <ul class="flex flex-col xl:flex-row flex-wrap items-center md:justify-between gap-8 shadow-xl md:shadow-[#F2EBF4] md:p-10">
                 <li v-for="article in articles" :key="article.slug" class=" bg-[#F2EBF4]/20 rounded-md  w-full md:w-[25rem] md:h-[35rem] shadow-md shadow-[#F2EBF4]">
