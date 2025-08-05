@@ -36,7 +36,7 @@
               >
                 <NuxtLink
                   :to="item.to"
-                  class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-50"
+                  class="block px-3 py-2 rounded-md text-[#5A3B5D] hover:bg-gray-50"
                 >
                   {{ item.label }}
                 </NuxtLink>
@@ -53,7 +53,7 @@
           >
             <NuxtLink
               :to="item.to"
-              class="block rounded-md text-gray-700 hover:bg-gray-50 font-medium"
+              class="block rounded-md text-[#5A3B5D] hover:bg-gray-50 font-medium"
             >
               {{ item.label }}
             </NuxtLink>

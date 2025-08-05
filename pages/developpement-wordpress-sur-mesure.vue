@@ -54,9 +54,14 @@
           <!-- Call to Action (CTA) -->
           <p class="mt-5">
             Prêt(e) à lancer votre projet WordPress ?
-            <NuxtLink to="/contact" title="Contactez-moi pour discuter de votre projet" class="text-[#FFC800] font-bold hover:underline">
-              Contactez-moi dès maintenant
-            </NuxtLink> pour une consultation gratuite !
+            <NuxtLink 
+            to="/contact" 
+            title="Contactez-moi pour discuter de votre projet" 
+            aria-label="Contactez-moi pour discuter de votre projet"
+            class="text-[#FFC800] font-bold hover:underline hover:translate-x-1 transition-all duration-300"
+          >
+            Contactez-moi dès maintenant
+          </NuxtLink> pour une consultation gratuite !
           </p>
         </article>
       </ExpertiseCard>

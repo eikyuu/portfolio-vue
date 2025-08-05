@@ -3,9 +3,7 @@
 
   <Header />
 
-  <main class="w-[90vw] xl:max-w-screen-2xl mx-auto p-4 md:p-0 md:px-4 text-sm md:text-base leading-5 md:leading-8">
-    <!-- <Loader v-if="isLoading" :progress="loadingProgress"/> -->
-
+  <main class="w-[90vw] xl:max-w-screen-2xl mx-auto md:p-0 md:px-4 text-sm md:text-base leading-5 md:leading-8">
     <slot />
   </main>   
   

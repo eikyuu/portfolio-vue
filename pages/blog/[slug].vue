@@ -13,6 +13,7 @@
       <div v-if="blog.content" v-html="blog.content" class="space-y-4"></div>
       <p v-else>Article introuvable.</p>
     </article>
+    <router-link to="/blog" class="text-blue-600 hover:underline mt-10 block">← Retour au blog</router-link>
 
   </div>
 </template>

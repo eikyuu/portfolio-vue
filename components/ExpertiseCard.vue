@@ -15,7 +15,7 @@
         format="webp"
         loading="lazy"
         fit="cover"
-        alt="Illustration du service proposé"
+        :alt="`Illustration du service proposé - ${props.title}`"
       />
   
       <div class="flex flex-col items-center xl:items-start xl:pl-10 text-center xl:text-left">

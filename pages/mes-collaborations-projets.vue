@@ -1,133 +1,180 @@
 <template>
-  <div class="mt-20 md:mt-32">
-
-    <article v-motion-slide-visible-once-top :duration="500" :delay="100" class="mb-20">
-      <!-- Titre principal -->
-      <TitleUnder title="Mes Collaborations : Partenariats Stratégiques et Expériences Enrichissantes" tag="h1" class=" mb-10 xl:mb-20"   />
+  <main class="mt-20 md:mt-32" role="main" id="main-content">
+    <article
+      v-motion-slide-visible-once-top
+      :duration="500"
+      :delay="100"
+      class="mb-20 mx-auto px-4"
+    >
+      <!-- Titre principal SEO (H1) -->
+      <TitleUnder
+        title="Mes Collaborations : Partenariats Stratégiques et Expériences Enrichissantes"
+        tag="h1"
+        class="mb-10 xl:mb-20"
+      />
 
       <!-- Introduction -->
-      <p>
+      <p class="text-base leading-relaxed">
         Au fil des années, j'ai eu la chance de travailler avec des entreprises, des startups et des individus
         passionnés dans divers secteurs d'activité. Chaque collaboration a été une opportunité d'apprentissage, de
         croissance et de création de valeur commune. Découvrez ci-dessous quelques-uns de mes partenariats marquants.
       </p>
 
-      <!-- Sous-titre : Secteurs d'expertise -->
-      <h2 class="text-2xl font-semibold mt-5 mb-3">Collaborations dans des Secteurs Variés</h2>
+      <!-- Secteurs -->
+      <section aria-labelledby="secteurs-expertise">
+        <h2 id="secteurs-expertise" class="text-2xl font-semibold mt-10 mb-3">Collaborations dans des Secteurs Variés</h2>
+        <p>
+          Mon expertise s'étend à plusieurs domaines, ce qui m'a permis de collaborer avec des acteurs clés dans
+          différents secteurs :
+        </p>
 
-      <p>
-        Mon expertise s'étend à plusieurs domaines, ce qui m'a permis de collaborer avec des acteurs clés dans
-        différents secteurs :
-      </p>
+        <ul class="list-disc pl-6 mt-4 space-y-1">
+          <li>
+            <strong>Tech & Innovation :</strong> Développement de solutions technologiques avancées pour des startups
+            innovantes.
+          </li>
+          <li>
+            <strong>E-commerce :</strong> Optimisation des plateformes de commerce électronique pour améliorer
+            l'expérience client.
+          </li>
+          <li>
+            <strong>Marketing Digital :</strong> Conception de stratégies digitales performantes avec des agences
+            spécialisées.
+          </li>
+        </ul>
+      </section>
 
-      <ul class="list-disc pl-5 mt-3">
-        <li><strong>Tech & Innovation :</strong> Développement de solutions technologiques avancées pour des startups
-          innovantes.</li>
-        <li><strong>E-commerce :</strong> Optimisation des plateformes de commerce électronique pour améliorer
-          l'expérience client.</li>
-        <li><strong>Marketing Digital :</strong> Conception de stratégies digitales performantes avec des agences
-          spécialisées.</li>
-        <!-- <li><strong>Éducation :</strong> Création de plateformes éducatives interactives pour des institutions scolaires et universitaires.</li> -->
-      </ul>
+      <!-- Projets marquants -->
+      <section aria-labelledby="collaborations-marquantes" class="mt-10">
+        <h2 id="collaborations-marquantes" class="text-2xl font-semibold mb-3">Quelques Collaborations Marquantes</h2>
+        <p>Voici quelques exemples concrets de projets sur lesquels j'ai eu le plaisir de travailler :</p>
 
-      <!-- Sous-titre : Exemples de Collaborations -->
-      <h2 class="text-2xl font-semibold mt-5 mb-3">Quelques Collaborations Marquantes</h2>
+        <div class="mt-5 space-y-6">
+          <div>
+            <h3 class="text-lg font-semibold">Projet 1 : {{ projects[2].title }}</h3>
+            <p v-html="projects[2].text" />
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold">Projet 2 : {{ projects[3].title }}</h3>
+            <p v-html="projects[3].text" />
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold">Projet 3 : {{ projectsMobile[0].title }}</h3>
+            <p v-html="projectsMobile[0].text" />
+          </div>
+        </div>
+      </section>
 
-      <p>
-        Voici quelques exemples concrets de projets sur lesquels j'ai eu le plaisir de travailler :
-      </p>
+      <!-- Philosophie -->
+      <section aria-labelledby="philosophie-collaboration" class="mt-10">
+        <h2 id="philosophie-collaboration" class="text-2xl font-semibold mb-3">Ma Philosophie de Collaboration</h2>
+        <p>
+          Chaque projet est unique, et je m'efforce de bâtir des relations de confiance basées sur :
+        </p>
 
-      <div class="mt-3">
-        <h3 class="text-lg font-semibold mb-3">Projet 1 : {{ projects[2].title }}</h3>
-        <p v-html="projects[2].text"></p>
-      </div>
+        <ul class="list-disc pl-6 mt-4 space-y-1">
+          <li><strong>L'écoute active :</strong> Comprendre vos besoins et objectifs pour proposer des solutions adaptées.</li>
+          <li><strong>La transparence :</strong> Communication claire et régulière tout au long du processus.</li>
+          <li><strong>L'innovation :</strong> Proposer des idées créatives et des technologies de pointe pour dépasser vos attentes.</li>
+          <li><strong>La qualité :</strong> Livrer des résultats professionnels et durables.</li>
+        </ul>
+      </section>
 
-      <div class="mt-3">
-        <h3 class="text-lg font-semibold mb-3">Projet 2 : {{ projects[3].title }}</h3>
-        <p v-html="projects[3].text"></p>
-      </div>
-
-      <div class="mt-3">
-        <h3 class="text-lg font-semibold mb-3">Projet 3 : {{ projectsMobile[0].title }}</h3>
-        <p v-html="projectsMobile[0].text"></p>
-      </div>
-
-      <!-- Sous-titre : Valeurs et Approche -->
-      <h2 class="text-2xl font-semibold mt-5 mb-3">Ma Philosophie de Collaboration</h2>
-
-      <p>
-        Chaque projet est unique, et je m'efforce de bâtir des relations de confiance basées sur :
-      </p>
-
-      <ul class="list-disc pl-5 mt-3">
-        <li><strong>L'écoute active :</strong> Comprendre vos besoins et objectifs pour proposer des solutions adaptées.
-        </li>
-        <li><strong>La transparence :</strong> Communication claire et régulière tout au long du processus.</li>
-        <li><strong>L'innovation :</strong> Proposer des idées créatives et des technologies de pointe pour dépasser vos
-          attentes.</li>
-        <li><strong>La qualité :</strong> Livrer des résultats professionnels et durables.</li>
-      </ul>
-
-      <!-- Call to Action (CTA) -->
-      <p class="mt-5">
+      <!-- CTA -->
+      <p class="mt-6 text-base font-medium">
         Intéressé(e) par une collaboration ?
-        <NuxtLink to="/contact" title="Contactez-moi pour discuter de votre projet"
-          class="text-[#FFC800] font-bold hover:underline">
+        <NuxtLink
+          to="/contact"
+          title="Contactez-moi pour discuter de votre projet"
+          class="text-[#FFC800] font-bold hover:underline focus:outline focus:outline-2 focus:outline-[#FFC800]"
+        >
           Contactez-moi dès maintenant
         </NuxtLink> pour explorer comment nous pouvons travailler ensemble !
       </p>
     </article>
 
-    <section>
+    <!-- Section de filtres : Projet Web ou Mobile -->
+    <section aria-labelledby="type-projet" class="mx-auto px-4">
+      <h2 id="type-projet" class="sr-only">Choisissez le type de projet à afficher</h2>
 
-      <div class=" flex justify-center mb-20">
-        <button class="w-[50%] skew-x-[-8deg] rounded-md" aria-label="Projet web" 
-          :class="type === 'WEB' ? 'bg-[#FFC800] h-10' : 'bg-[#F2EBF4] h-10'" type="button"
-          @click="onClick('WEB')">Projet
-          web</button>
+      <div class="flex justify-center gap-2 mb-12" role="tablist">
+        <button
+          type="button"
+          class="w-[50%] skew-x-[-8deg] rounded-md h-10 focus:outline focus:outline-2 focus:outline-[#FFC800]"
+          :class="type === 'WEB' ? 'bg-[#FFC800]' : 'bg-[#F2EBF4]'"
+          :aria-selected="type === 'WEB'"
+          role="tab"
+          @click="onClick('WEB')"
+        >
+          Projet web
+        </button>
 
-        <button class="w-[50%] skew-x-[-8deg] rounded-md" aria-label="Projet mobile"
-          :class="type === 'MOBILE' ? 'bg-[#FFC800] h-10' : 'bg-[#F2EBF4] h-10'" type="button"
-          @click="onClick('MOBILE')">Projet
-          mobile</button>
+        <button
+          type="button"
+          class="w-[50%] skew-x-[-8deg] rounded-md h-10 focus:outline focus:outline-2 focus:outline-[#FFC800]"
+          :class="type === 'MOBILE' ? 'bg-[#FFC800]' : 'bg-[#F2EBF4]'"
+          :aria-selected="type === 'MOBILE'"
+          role="tab"
+          @click="onClick('MOBILE')"
+        >
+          Projet mobile
+        </button>
       </div>
 
-      <div v-if="type === 'WEB'">
-        <div v-for="(project, index) in displayedProjects" :key="index">
-          <ProjectCard :title="project.title" :text="project.text" :img="project.img" :order="project.order"
-            :btnPosition="project.btnPosition" :link="project.link" v-motion-slide-visible-once-top :duration="500" :delay="100" class="mb-20" />
+      <!-- Projets affichés -->
+      <div v-if="type === 'WEB'" role="tabpanel" aria-labelledby="projet-web">
+        <div
+          v-for="(project, index) in displayedProjects"
+          :key="index"
+          class="mb-20"
+        >
+          <ProjectCard
+            v-bind="project"
+            v-motion-slide-visible-once-top
+            :duration="500"
+            :delay="100"
+            :order="project.order"
+          />
         </div>
       </div>
 
-      <div v-else>
-        <div v-for="(project, index) in displayedProjectsMobile" :key="index">
-          <ProjectCard :title="project.title" :text="project.text" :img="project.img" :order="project.order"
-            :btnPosition="project.btnPosition" :link="project.link" v-motion-slide-visible-once-top :duration="500" :delay="100" class="mb-20" />
+      <div v-else role="tabpanel" aria-labelledby="projet-mobile">
+        <div
+          v-for="(project, index) in displayedProjectsMobile"
+          :key="index"
+          class="mb-20"
+        >
+          <ProjectCard
+            v-bind="project"
+            v-motion-slide-visible-once-top
+            :duration="500"
+            :delay="100"
+            :order="project.order"
+          />
         </div>
       </div>
 
+      <!-- Bouton de chargement -->
       <div class="flex justify-center mt-24">
-
-        <Button 
-        v-if="canLoadMore && type === 'WEB'" 
-        @click="loadMoreProjects" 
-        text="Voir plus de projets"
-        colors="bg-[#F2EBF4]" 
-        aria-label="Voir plus de projets" />
-
-        <Button 
-        v-if="canLoadMoreMobile && type === 'MOBILE'" 
-        @click="loadMoreProjectsMobile"
-        text="Voir plus de projets" 
-        colors="bg-[#F2EBF4]" 
-        aria-label="Voir plus de projets" />
-
+        <Button
+          v-if="canLoadMore && type === 'WEB'"
+          @click="loadMoreProjects"
+          text="Voir plus de projets"
+          colors="bg-[#F2EBF4]"
+          aria-label="Voir plus de projets Web"
+        />
+        <Button
+          v-if="canLoadMoreMobile && type === 'MOBILE'"
+          @click="loadMoreProjectsMobile"
+          text="Voir plus de projets"
+          colors="bg-[#F2EBF4]"
+          aria-label="Voir plus de projets Mobile"
+        />
       </div>
     </section>
-
-  </div>
-
+  </main>
 </template>
+
 <script setup lang="ts">
 useSeoMeta({
   title: 'Mes Collaborations : Partenariats Stratégiques et Expériences Enrichissantes',
