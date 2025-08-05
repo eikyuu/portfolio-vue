@@ -16,23 +16,28 @@
             <div>
                 <p class="text-xl font-semibold mb-2">Cup size</p>
                 <div class="space-x-2">
-                    <button class="rounded-full border h-8 w-8" @click="size = 'S'"
-                        :class="{ 'bg-orange-900 text-white': size === 'S' }">S</button>
-                    <button class="rounded-full border h-8 w-8" @click="size = 'M'"
-                        :class="{ 'bg-orange-900 text-white': size === 'M' }">M</button>
-                    <button class="rounded-full border h-8 w-8" @click="size = 'L'"
-                        :class="{ 'bg-orange-900 text-white': size === 'L' }">L</button>
+                    <button
+                        class="rounded-full border h-8 w-8" :class="{ 'bg-orange-900 text-white': size === 'S' }"
+                        type="button" @click="size = 'S'">S</button>
+                    <button
+                        class="rounded-full border h-8 w-8" :class="{ 'bg-orange-900 text-white': size === 'M' }"
+                        type="button" @click="size = 'M'">M</button>
+                    <button
+                        class="rounded-full border h-8 w-8" :class="{ 'bg-orange-900 text-white': size === 'L' }"
+                        type="button" @click="size = 'L'">L</button>
                 </div>
             </div>
 
             <div>
                 <p class="text-xl font-semibold mb-2">Amount</p>
                 <div class="flex items-center space-x-2">
-                    <button class="rounded-full border h-8 w-8 active:bg-orange-900 active:text-white"
-                        @click="decrement">-</button>
+                    <button
+                        class="rounded-full border h-8 w-8 active:bg-orange-900 active:text-white"
+                        type="button" @click="decrement">-</button>
                     <p>{{ amout }}</p>
-                    <button class="rounded-full border h-8 w-8 active:bg-orange-900 active:text-white"
-                        @click="increment">+</button>
+                    <button
+                        class="rounded-full border h-8 w-8 active:bg-orange-900 active:text-white"
+                        type="button" @click="increment">+</button>
                 </div>
             </div>
         </div>
@@ -43,7 +48,9 @@
                 <p class="font-bold text-xl">${{ price }}</p>
             </div>
 
-            <button class="border rounded-full bg-orange-900 py-2 px-6 text-white hover:bg-white hover:text-orange-900 transition delay-150 duration-300">Order now</button>
+            <button
+                class="border rounded-full bg-orange-900 py-2 px-6 text-white hover:bg-white hover:text-orange-900 transition delay-150 duration-300"
+                type="button">Order now</button>
         </div>
 
     </section>

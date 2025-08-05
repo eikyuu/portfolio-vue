@@ -14,7 +14,7 @@
                 <slot></slot>
             </div>
 
-            <Button class="mt-5" :text="props.textBtn" target="_self" :link="props.link ?? ''" :aria-label="props.textBtn" />
+            <Button class="mt-5" :text="props.textBtn" target="_self" :link="props.link ?? ''" :aria-label="props.textBtn" type="button" />
         </div>
     </div>
 

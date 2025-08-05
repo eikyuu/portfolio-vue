@@ -31,7 +31,7 @@
         ></span>
       </div>
   
-      <button class="mt-6 px-6 py-2 bg-teal-300 text-black rounded-lg">Next</button>
+      <button type="button" class="mt-6 px-6 py-2 bg-teal-300 text-black rounded-lg">Next</button>
     </section>
   </template>
   
