@@ -37,12 +37,14 @@ useHead({
 
 <template>
   <div class="mt-20 md:mt-32">
-    <section v-motion-slide-visible-once-top :duration="500" :delay="100" class="flex flex-col xl:flex-row items-center place-content-between mb-20 md:mb-20">
+    <section class="flex flex-col xl:flex-row items-center place-content-between mb-20 md:mb-20">
       <div class="xl:w-3/6 bg-number bg-cover mb-4">
 
-        <h1 class="uppercase text-[#5A3B5D] text-4xl font-bold">
-          Salut, je suis <span class="text-[#FFC800]">Vincent Duguet</span><br>
-          Développeur web & mobile Freelance à Tours.
+        <div v-motion-slide-visible-once-top :duration="500" :delay="100">
+
+          <h1 class="uppercase text-[#5A3B5D] text-4xl font-bold">
+            Salut, je suis <span class="text-[#FFC800]">Vincent Duguet</span><br>
+            Développeur web & mobile Freelance à Tours.
         </h1>
 
         <div class="block lg:hidden flex items-center justify-center mt-10 mb-10">
@@ -93,10 +95,10 @@ useHead({
           transformer vos idées en réalité digitale.
         </p>
 
+        </div>
         <div class="flex flex-col md:flex-row gap-5 items-center">
           <Button text="Voir mes collaborations & projets" link="/mes-collaborations-projets" />
-          <ZcalEmbed />
-
+          <ZcalEmbed  />
         </div>
 
       </div>

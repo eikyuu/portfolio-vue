@@ -15,8 +15,6 @@
           Expert en framework cross-platform React Native et développement natif Swift.
         </h2>
 
-        <ZcalEmbed/>
-
         <h2 class="font-bold">Cross-Platform : Une Solution Unique pour iOS et Android</h2>
         <p>
           Les frameworks cross-platform permettent de développer des applications mobiles compatibles avec plusieurs

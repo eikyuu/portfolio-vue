@@ -14,8 +14,6 @@
           besoins de vos utilisateurs et atteignent vos objectifs commerciaux.
         </p>
 
-        <ZcalEmbed />
-
         <!-- Section Design UX -->
         <h2 class="text-2xl font-semibold mt-5 mb-3">Design UX : Comprendre et Satisfaire les Utilisateurs</h2>
         <p>

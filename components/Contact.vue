@@ -33,7 +33,6 @@
 
     <ZcalEmbed class="mt-5" text="Je suis disponible pour une consultation gratuite" />
 
-
     <div class="bg-white z-0 relative  shadow-xl shadow-[#F2EBF4] p-5 items-center rounded-xl mt-10">
         <h2 class="font-bold text-[#5A3B5D] text-xl">Contactez-moi</h2>
         <form @submit.prevent="handleSubmit">

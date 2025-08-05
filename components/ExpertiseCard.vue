@@ -1,7 +1,7 @@
 <template>
 
     <div class="bg-white rounded-md shadow-xl shadow-[#F2EBF4] p-5 flex flex-col xl:flex-row items-center border-b-8 border-[#FFC800]"
-    v-motion-slide-visible-once-top
+    v-motion-slide-visible-top
     :duration="500"
     :delay="100"
     >

@@ -4,7 +4,7 @@
     <Button :text="text" :calendar="true" @click="isOpen = true" />
 
     <!-- Overlay + Modale -->
-    <transition name="fade">
+    <transition name="fade" v-motion-slide-visible-once-top :duration="500" :delay="100" >
       <div
         v-if="isOpen"
         class="fixed inset-0 z-50 bg-black bg-opacity-50 flex items-center justify-center"
