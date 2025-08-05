@@ -4,72 +4,76 @@
       <TitleUnder title="WordPress : Sites Web Performants et Sur Mesure" tag="h1" class=" mb-10 xl:mb-20"   />
 
       <!-- Carte d'expertise -->
-      <ExpertiseCard link="/contact" text-btn="Je veux un site WordPress performant →" img="svg/web.svg" alt="Développement WordPress sur mesure">
-        <article>
-          <!-- Introduction -->
-          <p>
-            Vous cherchez à créer un site web performant, moderne et facile à gérer ? En tant que développeur WordPress
-            expérimenté, je vous accompagne dans la conception de sites web sur mesure, optimisés pour les performances et
-            adaptés à vos besoins spécifiques.
-          </p>
-  
-          <!-- Section Développement WordPress -->
-          <h2 class="text-2xl font-semibold mt-5 mb-3">Développement WordPress : Pourquoi Choisir cette Plateforme ?</h2>
-          <p>
-            WordPress est la plateforme de gestion de contenu (CMS) la plus populaire au monde, offrant une flexibilité
-            inégalée et une grande communauté de support. Voici ce que je propose :
-          </p>
-          <ul class="list-disc pl-5 mt-3">
-            <li><strong>Sites vitrines et blogs :</strong> Création de sites web attractifs et faciles à mettre à jour.</li>
-            <li><strong>E-commerce :</strong> Intégration de WooCommerce pour des boutiques en ligne performantes.</li>
-            <li><strong>Personnalisation :</strong> Développement de thèmes et plugins sur mesure pour répondre à vos besoins spécifiques.</li>
-            <li><strong>Optimisation :</strong> Amélioration des performances et du référencement (SEO) de votre site.</li>
-          </ul>
-  
-          <!-- Section Technologies Utilisées -->
-          <h2 class="text-2xl font-semibold mt-5 mb-3">Technologies et Outils Utilisés</h2>
-          <p>
-            Pour garantir des sites web performants et sécurisés, j'utilise les technologies et outils suivants :
-          </p>
-          <ul class="list-disc pl-5 mt-3">
-            <li><strong>Thèmes personnalisés :</strong> Développement de thèmes WordPress sur mesure pour une expérience unique.</li>
-            <li><strong>Plugins premium :</strong> Intégration de plugins fiables pour étendre les fonctionnalités de votre site.</li>
-            <li><strong>HTML5, CSS3, JavaScript :</strong> Pour des interfaces modernes et réactives.</li>
-            <li><strong>PHP et MySQL :</strong> Pour un backend robuste et sécurisé.</li>
-          </ul>
-  
-          <!-- Section Processus de Développement -->
-          <h2 class="text-2xl font-semibold mt-5 mb-3">Notre Approche de Développement WordPress</h2>
-          <p>
-            Mon approche repose sur une méthodologie structurée et centrée sur vos besoins. Les étapes clés incluent :
-          </p>
-          <ol class="list-decimal pl-5 mt-3">
-            <li><strong>Analyse des besoins :</strong> Comprendre vos objectifs et vos exigences techniques.</li>
-            <li><strong>Conception :</strong> Création de maquettes et de wireframes pour visualiser la structure du site.</li>
-            <li><strong>Développement :</strong> Implémentation des fonctionnalités et intégration des designs.</li>
-            <li><strong>Tests :</strong> Vérification des performances, de la sécurité et de la compatibilité.</li>
-            <li><strong>Déploiement :</strong> Mise en ligne et formation pour la gestion du site.</li>
-          </ol>
-  
-          <!-- Call to Action (CTA) -->
-          <p class="mt-5">
-            Prêt(e) à lancer votre projet WordPress ?
-            <NuxtLink 
-            to="/contact" 
-            title="Contactez-moi pour discuter de votre projet" 
-            aria-label="Contactez-moi pour discuter de votre projet"
-            class="text-[#FFC800] font-bold hover:underline hover:translate-x-1 transition-all duration-300"
-          >
-            Contactez-moi dès maintenant
-          </NuxtLink> pour une consultation gratuite !
-          </p>
-        </article>
-      </ExpertiseCard>
-  
-      <!-- Composant Contact -->
-      <Contact />
-    </section>
-  </template>
+      <ExpertiseCard
+  link="/contact"
+  text-btn="Je veux un site WordPress performant →"
+  img="svg/web.svg"
+  alt="Développement WordPress sur mesure"
+>
+  <article>
+    <!-- Introduction -->
+    <p>
+      Vous cherchez à créer un <strong>site WordPress rapide, moderne et facile à gérer</strong> ? En tant que
+      <strong>développeur WordPress freelance</strong>, je conçois des sites web <strong>sur mesure</strong>,
+      <strong>optimisés pour les performances</strong> et adaptés à vos objectifs.
+    </p>
+
+    <!-- Section Développement WordPress -->
+    <h2 class="text-2xl font-semibold mt-5 mb-3">Pourquoi choisir WordPress pour votre projet ?</h2>
+    <p>
+      WordPress est le CMS le plus utilisé au monde, apprécié pour sa <strong>flexibilité</strong>,
+      sa <strong>facilité de gestion</strong> et sa large communauté. Voici ce que je vous propose :
+    </p>
+    <ul class="list-disc pl-5 mt-3">
+      <li><strong>Site vitrine & blog :</strong> Un design impactant, responsive et facilement administrable.</li>
+      <li><strong>Boutique en ligne :</strong> Mise en place de <a href="https://woocommerce.com/" class="underline" target="_blank">WooCommerce</a> pour vendre efficacement.</li>
+      <li><strong>Thèmes & plugins sur mesure :</strong> Développés selon vos besoins spécifiques.</li>
+      <li><strong>Optimisation SEO & performance :</strong> Pour un site rapide et bien positionné sur Google.</li>
+    </ul>
+
+    <!-- Section Technologies Utilisées -->
+    <h2 class="text-2xl font-semibold mt-5 mb-3">Technologies & outils utilisés</h2>
+    <p>
+      Pour garantir un site WordPress <strong>fiable, sécurisé et évolutif</strong>, j’utilise les meilleurs standards techniques :
+    </p>
+    <ul class="list-disc pl-5 mt-3">
+      <li><strong>Thèmes personnalisés</strong> codés proprement pour une identité unique</li>
+      <li><strong>Plugins premium & développés maison</strong> pour des fonctionnalités puissantes</li>
+      <li><strong>HTML5, CSS3, JavaScript</strong> pour des interfaces modernes et responsives</li>
+      <li><strong>PHP & MySQL</strong> pour une base solide et sécurisée</li>
+    </ul>
+
+    <!-- Section Processus -->
+    <h2 class="text-2xl font-semibold mt-5 mb-3">Une approche structurée & orientée résultats</h2>
+    <p>
+      Mon processus de création WordPress est basé sur la collaboration, la rigueur et l’écoute :
+    </p>
+    <ol class="list-decimal pl-5 mt-3">
+      <li><strong>Analyse :</strong> Compréhension de vos enjeux, de votre audience et de vos objectifs.</li>
+      <li><strong>Conception UX/UI :</strong> Wireframes & prototypes Figma avant développement.</li>
+      <li><strong>Développement sur mesure :</strong> Frontend & backend alignés à vos besoins.</li>
+      <li><strong>Tests & optimisation :</strong> Accessibilité, compatibilité, vitesse, SEO, sécurité.</li>
+      <li><strong>Mise en ligne & formation :</strong> Accompagnement à la prise en main du back-office.</li>
+    </ol>
+
+    <!-- Call to Action -->
+    <p class="mt-5">
+      🎯 Prêt(e) à lancer votre site WordPress sur-mesure ?
+      <NuxtLink 
+        to="/contact" 
+        title="Contactez-moi pour discuter de votre projet WordPress"
+        aria-label="Contactez-moi pour discuter de votre projet WordPress"
+        class="text-[#FFC800] font-bold hover:underline hover:translate-x-1 transition-all duration-300"
+      >
+        Contactez-moi dès maintenant
+      </NuxtLink>
+      pour une <strong>consultation gratuite</strong> !
+    </p>
+  </article>
+</ExpertiseCard>
+
+  </section>
+</template>
   
   <script setup lang="ts">
   // Métadonnées SEO avec useSeoMeta

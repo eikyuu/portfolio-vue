@@ -5,70 +5,68 @@
     <TitleUnder title="Design UX/UI : Création d'Expériences Utilisateurs Exceptionnelles" tag="h1" class=" mb-10 xl:mb-20"  />
 
     <!-- Carte d'expertise -->
-    <ExpertiseCard link="/contact" text-btn="Je veux un design qui me ressemble →" img="svg/design.svg" alt="Design UX/UI pour des expériences utilisateur exceptionnelles">
-      <article>
-        <!-- Introduction -->
-        <p class="mb-4">
-          Vous souhaitez offrir une expérience utilisateur fluide, engageante et mémorable ? En tant que designer UX/UI
-          expérimenté, je vous accompagne dans la conception d'interfaces intuitives et fonctionnelles qui répondent aux
-          besoins de vos utilisateurs et atteignent vos objectifs commerciaux.
-        </p>
+    <ExpertiseCard 
+  link="/contact" 
+  text-btn="Je veux un design qui me ressemble →" 
+  img="svg/design.svg" 
+  alt="Design UX/UI pour des expériences utilisateur exceptionnelles"
+>
+  <article>
+    <!-- Introduction -->
+    <p class="mb-4">
+      Offrez à vos utilisateurs une expérience fluide, engageante et mémorable. En tant que designer UX/UI expérimenté, je crée des interfaces intuitives et esthétiques qui répondent à vos objectifs business tout en plaçant vos utilisateurs au cœur du processus.
+    </p>
 
-        <!-- Section Design UX -->
-        <h2 class="text-2xl font-semibold mt-5 mb-3">Design UX : Comprendre et Satisfaire les Utilisateurs</h2>
-        <p>
-          Le design UX se concentre sur l'expérience globale de l'utilisateur. Voici comment je travaille pour créer des
-          solutions centrées sur vos utilisateurs :
-        </p>
-        <ul class="list-disc pl-5 mt-3">
-          <li><strong>Recherche utilisateur :</strong> Analyse des comportements, besoins et attentes grâce à des entretiens, questionnaires et tests.</li>
-          <li><strong>Wireframes et prototypes :</strong> Création de maquettes basse et haute fidélité pour visualiser les interactions.</li>
-          <li><strong>User testing :</strong> Validation des concepts avec des utilisateurs réels pour garantir leur efficacité.</li>
-          <li><strong>Accessibilité :</strong> Conception d'interfaces inclusives conformes aux standards WCAG.</li>
-        </ul>
+    <!-- Design UX -->
+    <h2 class="text-2xl font-semibold mt-5 mb-3">Design UX : Comprendre & satisfaire vos utilisateurs</h2>
+    <p>
+      L'expérience utilisateur est la clé du succès. Voici comment je conçois des solutions centrées sur vos besoins réels :
+    </p>
+    <ul class="list-disc pl-5 mt-3">
+      <li><strong>Recherche utilisateur :</strong> Entretiens, questionnaires et tests pour analyser comportements et attentes.</li>
+      <li><strong>Wireframes & prototypes :</strong> Maquettes basse et haute fidélité pour visualiser les parcours utilisateurs.</li>
+      <li><strong>Tests utilisateurs :</strong> Validation avec des utilisateurs réels pour garantir l’efficacité.</li>
+      <li><strong>Accessibilité :</strong> Interfaces inclusives respectant les normes WCAG.</li>
+    </ul>
 
-        <!-- Section Design UI -->
-        <h2 class="text-2xl font-semibold mt-5 mb-3">Design UI : Interfaces Visuelles Modernes et Attractives</h2>
-        <p>
-          Le design UI donne vie à votre produit grâce à des interfaces visuellement attrayantes et cohérentes. Je
-          travaille avec les outils suivants :
-        </p>
-        <ul class="list-disc pl-5 mt-3">
-          <li><strong>Figma :</strong> Outil collaboratif pour concevoir et partager des designs interactifs.</li>
-          <li><strong>Photoshop & Illustrator :</strong> Pour la retouche d'images et la création de graphismes complexes.</li>
-        </ul>
+    <!-- Design UI -->
+    <h2 class="text-2xl font-semibold mt-5 mb-3">Design UI : Des interfaces modernes, attractives et cohérentes</h2>
+    <p>
+      Le design visuel donne vie à votre produit grâce à une identité forte et une ergonomie travaillée. J’utilise :
+    </p>
+    <ul class="list-disc pl-5 mt-3">
+      <li><strong>Figma :</strong> Pour créer et partager des designs interactifs et collaboratifs.</li>
+      <li><strong>Photoshop & Illustrator :</strong> Pour retouche d’images et créations graphiques avancées.</li>
+    </ul>
 
-        <!-- Section Processus de Design -->
-        <h2 class="text-2xl font-semibold mt-5 mb-3">Notre Approche de Design UX/UI</h2>
-        <p>
-          Mon approche repose sur une méthodologie itérative et centrée sur l'utilisateur. Les étapes clés incluent :
-        </p>
-        <ol class="list-decimal pl-5 mt-3">
-          <li><strong>Découverte :</strong> Comprendre vos objectifs et ceux de vos utilisateurs.</li>
-          <li><strong>Réalisation de wireframes :</strong> Création de structures basiques pour définir la navigation.</li>
-          <li><strong>Prototypage :</strong> Développement d'une version interactive du produit.</li>
-          <li><strong>Tests utilisateurs :</strong> Validation des concepts auprès de vrais utilisateurs.</li>
-          <li><strong>Refinements finals :</strong> Ajout de détails visuels et livraison des assets finaux.</li>
-        </ol>
+    <!-- Processus -->
+    <h2 class="text-2xl font-semibold mt-5 mb-3">Une démarche itérative et centrée utilisateur</h2>
+    <p>
+      Mon approche repose sur la collaboration et l’amélioration continue. Les étapes clés :
+    </p>
+    <ol class="list-decimal pl-5 mt-3">
+      <li><strong>Découverte :</strong> Analyse de vos objectifs et des besoins utilisateurs.</li>
+      <li><strong>Wireframing :</strong> Conception des structures et parcours.</li>
+      <li><strong>Prototypage :</strong> Création d’une version interactive pour tests.</li>
+      <li><strong>Tests utilisateurs :</strong> Recueil de feedbacks réels pour ajustements.</li>
+      <li><strong>Finitions :</strong> Ajout des détails visuels et livraison des assets prêts à l’usage.</li>
+    </ol>
 
-        <!-- Call to Action (CTA) -->
-        <p class="mt-5">
-          Prêt(e) à transformer votre idée en une expérience utilisateur exceptionnelle ?
-          <NuxtLink 
-            to="/contact" 
-            title="Contactez-moi pour discuter de votre projet" 
-            aria-label="Contactez-moi pour discuter de votre projet"
-            class="text-[#FFC800] font-bold hover:underline hover:translate-x-1 transition-all duration-300"
-          >
-            Contactez-moi dès maintenant
-          </NuxtLink> pour une consultation gratuite !
-          
-        </p>
-      </article>
-    </ExpertiseCard>
+    <!-- CTA -->
+    <p class="mt-5">
+      Prêt(e) à donner vie à un design unique qui vous ressemble ?
+      <NuxtLink
+        to="/contact"
+        title="Contactez-moi pour discuter de votre projet"
+        aria-label="Contactez-moi pour discuter de votre projet"
+        class="text-[#FFC800] font-bold hover:underline hover:translate-x-1 transition-all duration-300"
+      >
+        Contactez-moi dès maintenant
+      </NuxtLink> pour une consultation gratuite et sans engagement !
+    </p>
+  </article>
+</ExpertiseCard>
 
-    <!-- Composant Contact -->
-    <Contact />
   </section>
 </template>
 
