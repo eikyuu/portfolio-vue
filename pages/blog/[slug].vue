@@ -182,7 +182,7 @@ const blogs :Blogs = {
 
 <p>🧪 <strong>Essayez dès aujourd’hui :</strong> Explorez des solutions comme <a href="https://wordpress.com/" target="_blank" rel="noopener">WordPress.com</a> pour une approche clé en main, ou <a href="https://wordpress.org/" target="_blank" rel="noopener">WordPress.org</a> pour une flexibilité maximale. La seule limite est votre imagination.</p>
    `}
-];
+  };
 
 useSeoMeta({
   title: blogs[route.params.slug as string]?.title || 'Article introuvable',
