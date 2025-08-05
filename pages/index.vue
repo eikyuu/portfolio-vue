@@ -68,13 +68,13 @@ class="xl:mt-0 object-cover rounded-md " src="homme-barbu-sur-fond-jaune.png"
 
         <p>
           Pour répondre aux besoins spécifiques de chaque projet, j’utilise des outils modernes comme <strong><a
-              target='blank' class='underline' to='https://fr.react.dev/'>React.js</a>,
-            <NuxtLink target='blank' class='underline' to='https://nextjs.org/'>Next.js</NuxtLink>,
-            <NuxtLink target='blank' class='underline' to='https://vuejs.org/'>Vue.js</NuxtLink>
+              target='blank' class="underline" to='https://fr.react.dev/'>React.js</a>,
+            <NuxtLink target='blank' class="underline" to='https://nextjs.org/'>Next.js</NuxtLink>,
+            <NuxtLink target='blank' class="underline" to='https://vuejs.org/'>Vue.js</NuxtLink>
           </strong> et <strong>
-            <NuxtLink to='https://nuxt.com/' target='blank' class='underline'>Nuxt.js</NuxtLink>
+            <NuxtLink to='https://nuxt.com/' target='blank' class="underline">Nuxt.js</NuxtLink>
           </strong>, ou <strong>
-            <NuxtLink to='https://wordpress.com/' target='blank' class='underline'>Wordpress</NuxtLink>
+            <NuxtLink to='https://wordpress.com/' target='blank' class="underline">Wordpress</NuxtLink>
           </strong>, adaptés au développement web, mobile et à la création
           d’applications performantes. Ces technologies garantissent des solutions fiables,
           évolutives et optimisées.
@@ -136,19 +136,19 @@ class="mt-20 xl:mt-0 object-cover rounded-md" src="homme-barbu-sur-fond-jaune.pn
       <br>Grâce à mes compétences en <strong>front-end</strong> et <strong>back-end</strong>, j’assure un développement
       complet, couvrant :
       <br>- La création d’interfaces utilisateur avec des frameworks comme <strong><a
-target='blank' class='underline'
+target='blank' class="underline"
           href='https://fr.react.dev/'>React.js</a>, <a
-target='blank' class='underline'
+target='blank' class="underline"
           href='https://nextjs.org/'>Next.js</a>, <a
-target='blank' class='underline'
+target='blank' class="underline"
           href='https://vuejs.org/'>Vue.js</a></strong> et <strong><a
 href='https://nuxt.com/' target='blank'
-          class='underline'>Nuxt.js</a></strong> ;
+          class="underline">Nuxt.js</a></strong> ;
       <br>- La gestion des données et des API avec des outils robustes comme <strong><a
 href='https://symfony.com/'
-          target='blank' class='underline'>Symfony</a> et <a
+          target='blank' class="underline">Symfony</a> et <a
 href='https://adonisjs.com/' target='blank'
-          class='underline'>Adonis</a></strong> ;
+          class="underline">Adonis</a></strong> ;
       <br>- Une attention particulière portée à la <strong>performance</strong>, la <strong>sécurité</strong>, et
       l’<strong>optimisation SEO</strong>.
       <strong><br><br>🎯 Un site à la hauteur de vos ambitions</strong>
@@ -175,9 +175,9 @@ href='https://adonisjs.com/' target='blank'
 
       <strong><br><br> Mes domaines d’expertise :</strong>
       <br>- <strong>Frameworks multiplateformes</strong> : Développement rapide et efficace avec <strong><a
-          href='https://reactnative.dev/' target='blank' class='underline'>React Native</a></strong>.
+          href='https://reactnative.dev/' target='blank' class="underline">React Native</a></strong>.
       <br>- <strong>Technologies natives</strong> : Création d’applications optimisées pour iOS avec <strong><a
-          href='https://developer.apple.com/swift/' target='blank' class='underline'>Swift</a></strong>.
+          href='https://developer.apple.com/swift/' target='blank' class="underline">Swift</a></strong>.
       <br>- <strong>Design attractif et ergonomique</strong> : Interfaces pensées pour séduire et fidéliser vos
       utilisateurs.
       <br>- <strong>Accessibilité intégrée</strong> : Conformité avec les standards pour des applications inclusives et
@@ -223,7 +223,7 @@ href='https://adonisjs.com/' target='blank'
       <br>Passionné par l’<strong>accessibilité numérique</strong>, je veille à ce que chaque interface soit inclusive
       et utilisable par tous, quels que soient leurs besoins ou leurs capacités.
       <br>Pour garantir des applications accessibles, je respecte les standards<strong> <a
-class='underline'
+class="underline"
           target='blank' href='https://www.w3.org/WAI/standards-guidelines/wcag/'>WCAG</a></strong>.
       <strong><br><br>🌟 Un design qui raconte une histoire</strong>
       <br>Un bon design ne se limite pas à une belle apparence : il doit <strong>engager</strong>, <strong>raconter une

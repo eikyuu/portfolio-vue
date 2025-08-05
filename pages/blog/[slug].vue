@@ -38,7 +38,7 @@ const blogs :Blogs = {
     meta: "Découvrez pourquoi l’UX/UI et l’accessibilité sont essentiels dans la conception web et mobile, et comment optimiser vos interfaces pour une meilleure expérience utilisateur.",
     alt: "Un homme avec un handicape travaillant sur un ordinateur portable",
     content: `
-<h2 class='font-bold text-2xl'>Pourquoi l’UX/UI Est Indispensable en Développement Web et Mobile ?</h2>
+<h2 class="font-bold text-2xl">Pourquoi l’UX/UI Est Indispensable en Développement Web et Mobile ?</h2>
 <p>Un site ou une application bien conçus ne se limitent pas à un beau design. L’expérience utilisateur (UX) et l’interface utilisateur (UI) influencent directement l’engagement, la conversion et la fidélisation des utilisateurs.</p>
 
 <p>Un bon design doit être :</p>
@@ -48,10 +48,10 @@ const blogs :Blogs = {
   <li>✅ Accessible : Adapté aux personnes en situation de handicap.</li>
 </ul>
 
-<h2 class='font-bold text-2xl'>🎯 L’Accessibilité : Un Enjeu Majeur</h2>
+<h2 class="font-bold text-2xl">🎯 L’Accessibilité : Un Enjeu Majeur</h2>
 <p>L’accessibilité numérique garantit que tout le monde puisse utiliser une interface, y compris les personnes ayant des limitations visuelles, motrices ou cognitives.</p>
 
-<h2 class='font-bold text-2xl'>Quelques bonnes pratiques UX/UI pour améliorer l’accessibilité :</h2>
+<h2 class="font-bold text-2xl">Quelques bonnes pratiques UX/UI pour améliorer l’accessibilité :</h2>
 <ul>
   <li>🟢 Contraste élevé entre le texte et l’arrière-plan.</li>
   <li>🟢 Navigation clavier et compatibilité avec les lecteurs d’écran.</li>
@@ -60,7 +60,7 @@ const blogs :Blogs = {
   <li>🎯 Conseil SEO : Google valorise les sites accessibles. Optimiser l’UX/UI améliore aussi votre référencement !</li>
 </ul>
 
-<h2 class='font-bold text-2xl'>Exemples d’Optimisation UX/UI en Développement</h2>
+<h2 class="font-bold text-2xl">Exemples d’Optimisation UX/UI en Développement</h2>
 <p>J’ai appliqué ces principes dans mes projets pour optimiser l’expérience utilisateur :</p>
 <ul>
   <li>🖥️ Design Mobile-First : Un site web pensé d’abord pour mobile assure une navigation optimale.</li>
@@ -68,7 +68,7 @@ const blogs :Blogs = {
   <li>🚀 Temps de chargement réduit : Un site rapide réduit le taux de rebond et améliore l’expérience globale.</li>
 </ul>
 
-<h2 class='font-bold text-2xl'>Pourquoi Intégrer l’UX/UI dans Votre Stratégie Digitale ?</h2>
+<h2 class="font-bold text-2xl">Pourquoi Intégrer l’UX/UI dans Votre Stratégie Digitale ?</h2>
 <p>Un design centré sur l’utilisateur, combiné à une bonne accessibilité, garantit :</p>
 <ul>
   <li>🔹 Une meilleure rétention des visiteurs.</li>
@@ -80,16 +80,16 @@ const blogs :Blogs = {
 `
   },
   "IA-et-Creation-de-Contenu-Revolution-ou-Illusion": {
-    "title": "🤖 IA et Création de Contenu : Révolution ou Illusion ?",
-    "meta": "L’IA transforme la création de contenu : découvrez ses applications, ses limites, et comment l’exploiter pour booster votre stratégie digitale.",
-    "alt": "Une forme de tête avec de multiples yeux",
-    "content": `
-<h2 class='font-bold text-2xl'>🚀 L’IA et la Création de Contenu : Une Révolution Silencieuse</h2>
+    title: "🤖 IA et Création de Contenu : Révolution ou Illusion ?",
+    meta: "L’IA transforme la création de contenu : découvrez ses applications, ses limites, et comment l’exploiter pour booster votre stratégie digitale.",
+    alt: "Une forme de tête avec de multiples yeux",
+    content: `
+<h2 class="font-bold text-2xl">🚀 L’IA et la Création de Contenu : Une Révolution Silencieuse</h2>
 <p>L’intelligence artificielle (IA) est en train de bouleverser le monde de la création de contenu. De la rédaction d’articles à la génération d’images, en passant par le montage vidéo automatisé, elle s’impose comme un levier stratégique pour les créateurs, les marketeurs et les entreprises. Ce phénomène s’accélère avec l’arrivée de modèles de langage avancés comme ChatGPT ou Gemini, capables de produire du contenu pertinent, structuré et adapté à des cibles spécifiques.</p>
 
 <p>Selon une étude de <em>Gartner</em>, d’ici 2026, plus de 80 % du contenu marketing des grandes entreprises sera généré au moins partiellement par l’IA. Un chiffre qui témoigne de l’ampleur du changement en cours.</p>
 
-<h2 class='font-bold text-2xl'>📚 Études de Cas et Exemples Concrets de l’IA dans la Création de Contenu</h2>
+<h2 class="font-bold text-2xl">📚 Études de Cas et Exemples Concrets de l’IA dans la Création de Contenu</h2>
 <p>Les outils d’IA ne sont plus des gadgets expérimentaux : ils sont déjà intégrés à des processus métiers réels. Voici trois cas d’usage concrets :</p>
 
 <ul>
@@ -100,10 +100,10 @@ const blogs :Blogs = {
 
 <p>Ces exemples illustrent à quel point l’IA n’est pas seulement utile pour gagner du temps : elle permet aussi d’innover dans les formats et les stratégies éditoriales.</p>
 
-<h2 class='font-bold text-2xl'>⚖️ Avantages et Limites de l’IA en Création de Contenu</h2>
+<h2 class="font-bold text-2xl">⚖️ Avantages et Limites de l’IA en Création de Contenu</h2>
 <p>Bien que prometteuse, l’IA dans la création de contenu n’est pas une solution magique. Voici un aperçu des bénéfices et des limites à connaître avant de l’adopter à grande échelle.</p>
 
-<h3 class='font-semibold text-xl'>✅ Avantages de l’IA pour les créateurs et les marketeurs</h3>
+<h3 class="font-semibold text-xl">✅ Avantages de l’IA pour les créateurs et les marketeurs</h3>
 <ul>
   <li>📈 <strong>Gain de temps :</strong> rédaction accélérée, production de visuels automatisée, traduction instantanée.</li>
   <li>🧠 <strong>Idéation assistée :</strong> brainstorming, structure d’article, plan de campagne marketing générés automatiquement.</li>
@@ -111,7 +111,7 @@ const blogs :Blogs = {
   <li>🌍 <strong>Scalabilité :</strong> adaptation rapide du contenu à différentes langues ou personas.</li>
 </ul>
 
-<h3 class='font-semibold text-xl'>⚠️ Limites et risques à anticiper</h3>
+<h3 class="font-semibold text-xl">⚠️ Limites et risques à anticiper</h3>
 <ul>
   <li>❌ <strong>Manque de créativité humaine :</strong> les textes peuvent manquer d’originalité ou de ton personnel.</li>
   <li>❌ <strong>Qualité variable :</strong> les modèles peuvent générer des erreurs factuelles ou de syntaxe.</li>
@@ -121,7 +121,7 @@ const blogs :Blogs = {
 
 <p>L’approche la plus efficace reste une hybridation : combiner la puissance de l’IA avec l’expertise humaine pour garantir pertinence, qualité et authenticité.</p>
 
-<h2 class='font-bold text-2xl'>🎯 Conclusion : Pourquoi Vous Devriez Tester l’IA dès Aujourd’hui</h2>
+<h2 class="font-bold text-2xl">🎯 Conclusion : Pourquoi Vous Devriez Tester l’IA dès Aujourd’hui</h2>
 <p>Qu’on le veuille ou non, l’IA est déjà au cœur des nouvelles pratiques de création de contenu. Elle ne remplacera pas les créateurs, mais elle redéfinit leur rôle : plus stratégiques, plus créatifs, mieux armés face à la pression de produire vite et bien.</p>
 
 <p>💡 <strong>Conseil SEO :</strong> intégrer des outils d’IA dans votre stratégie éditoriale peut améliorer significativement vos performances SEO (volume, fréquence, pertinence des mots-clés).</p>
@@ -132,16 +132,16 @@ const blogs :Blogs = {
 `
   },
   "Pourquoi-WordPress-Domine-la-Creation-de-Sites-Web-en-2025": {
-    "title": "💡 Pourquoi WordPress Domine la Création de Sites Web en 2025",
-    "meta": "Découvrez comment WordPress s’est imposé comme l’outil incontournable pour créer des sites web en 2025 : cas concrets, avantages, limites et conseils pratiques pour l’adopter.",
-    "alt": "Capture d'écran d’un tableau de bord WordPress moderne utilisé pour créer un site web professionnel",
-    "content": `
-<h2 class='font-bold text-2xl'>🚀 WordPress en 2025 : Le Leader Incontesté de la Création de Sites Web</h2>
+    title : "💡 Pourquoi WordPress Domine la Création de Sites Web en 2025",
+    meta: "Découvrez comment WordPress s’est imposé comme l’outil incontournable pour créer des sites web en 2025 : cas concrets, avantages, limites et conseils pratiques pour l’adopter.",
+    alt: "Capture d'écran d’un tableau de bord WordPress moderne utilisé pour créer un site web professionnel",
+    content: `
+<h2 class="font-bold text-2xl">🚀 WordPress en 2025 : Le Leader Incontesté de la Création de Sites Web</h2>
 <p>En 2025, <strong>WordPress</strong> reste la plateforme de création de sites web la plus utilisée au monde, représentant plus de 43 % des sites actifs selon les dernières statistiques. Initialement conçu comme un simple outil de blogging, WordPress est devenu un <em>CMS (Content Management System)</em> ultra-flexible, plébiscité aussi bien par les indépendants que par les grandes entreprises.</p>
 
 <p>Son succès s'explique par une combinaison d’accessibilité, de personnalisation et d’une communauté internationale active. De l’e-commerce à la presse en ligne, WordPress permet aujourd’hui de construire des expériences digitales riches, sans obliger à écrire une seule ligne de code. Une révolution silencieuse, mais redoutablement efficace.</p>
 
-<h2 class='font-bold text-2xl'>📚 Études de Cas : L’Impact de WordPress sur les Projets Digitaux</h2>
+<h2 class="font-bold text-2xl">📚 Études de Cas : L’Impact de WordPress sur les Projets Digitaux</h2>
 <p>Pour illustrer l’importance croissante de WordPress, voici trois exemples concrets d'utilisation réussie :</p>
 
 <ul>
@@ -152,9 +152,9 @@ const blogs :Blogs = {
 
 <p>Ces cas démontrent la flexibilité du CMS : qu’il s’agisse de branding, de commerce ou d’éducation, WordPress s’adapte à tous les contextes sans sacrifier la performance ni l’esthétique.</p>
 
-<h2 class='font-bold text-2xl'>⚖️ Avantages et Limites de WordPress en 2025</h2>
+<h2 class="font-bold text-2xl">⚖️ Avantages et Limites de WordPress en 2025</h2>
 
-<h3 class='font-semibold text-xl'>✅ Les atouts majeurs de WordPress</h3>
+<h3 class="font-semibold text-xl">✅ Les atouts majeurs de WordPress</h3>
 <ul>
   <li>🛠️ <strong>Personnalisation totale :</strong> Des milliers de thèmes et plugins pour façonner un site unique, sans coder.</li>
   <li>📱 <strong>Responsive design :</strong> La majorité des thèmes sont mobiles-friendly par défaut, essentiels pour l’expérience utilisateur.</li>
@@ -163,7 +163,7 @@ const blogs :Blogs = {
   <li>💰 <strong>Faible coût de lancement :</strong> De nombreux hébergeurs proposent des installations gratuites ou en un clic pour WordPress.</li>
 </ul>
 
-<h3 class='font-semibold text-xl'>⚠️ Les limites à connaître</h3>
+<h3 class="font-semibold text-xl">⚠️ Les limites à connaître</h3>
 <ul>
   <li>🔄 <strong>Maintenance régulière :</strong> Nécessité de mettre à jour fréquemment le noyau WordPress, les thèmes et les plugins pour éviter les failles de sécurité.</li>
   <li>🐌 <strong>Temps de chargement :</strong> Un site mal optimisé avec trop de plugins peut devenir lent, impactant l’expérience utilisateur et le SEO.</li>
@@ -173,7 +173,7 @@ const blogs :Blogs = {
 
 <p>WordPress est un outil puissant, mais il exige rigueur et stratégie pour livrer des résultats professionnels à long terme.</p>
 
-<h2 class='font-bold text-2xl'>📢 Conclusion : Lancez-Vous avec WordPress et Bâtissez Votre Présence en Ligne</h2>
+<h2 class="font-bold text-2xl">📢 Conclusion : Lancez-Vous avec WordPress et Bâtissez Votre Présence en Ligne</h2>
 <p>WordPress ne cesse d’évoluer. En 2025, il reste une valeur sûre pour qui souhaite créer un site professionnel, blog, portfolio ou boutique en ligne. Avec ses nombreux outils, sa compatibilité SEO, et sa communauté florissante, il permet à chacun de devenir acteur du web.</p>
 
 <p>Que vous soyez entrepreneur, créateur de contenu ou responsable marketing, ignorer WordPress serait une erreur stratégique. Il est temps de passer à l’action.</p>
@@ -182,18 +182,18 @@ const blogs :Blogs = {
 
 <p>🧪 <strong>Essayez dès aujourd’hui :</strong> Explorez des solutions comme <a href="https://wordpress.com/" target="_blank" rel="noopener">WordPress.com</a> pour une approche clé en main, ou <a href="https://wordpress.org/" target="_blank" rel="noopener">WordPress.org</a> pour une flexibilité maximale. La seule limite est votre imagination.</p>
    `}
-};
+];
 
 useSeoMeta({
-  title: blogs[route.params.slug]?.title || 'Article introuvable',
-  ogTitle: blogs[route.params.slug]?.title || 'Article introuvable',
-  description: blogs[route.params.slug]?.meta || '',
-  ogDescription: blogs[route.params.slug]?.meta || '',
+  title: blogs[route.params.slug as string]?.title || 'Article introuvable',
+  ogTitle: blogs[route.params.slug as string]?.title || 'Article introuvable',
+  description: blogs[route.params.slug as string]?.meta || '',
+  ogDescription: blogs[route.params.slug as string]?.meta || '',
   ogImage: 'https://vincentduguet.dev/book.jpg',
   twitterCard: 'summary_large_image',
 });
 
-const blog = blogs[route.params.slug] || { title: "Article introuvable", content: "" };
+const blog = blogs[route.params.slug as string] || { title: "Article introuvable", content: "" };
 </script>
 
 <style scoped>
