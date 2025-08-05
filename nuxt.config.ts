@@ -48,6 +48,8 @@ export default defineNuxtConfig({
     prerender: {
       routes: [
         '/blog/UX-UI-et-Accessibilite-Pourquoi-un-Bon-Design-Fait-Toute-la-Difference',
+        '/blog/IA-et-Creation-de-Contenu-Revolution-ou-Illusion',
+        '/blog/IA-et-Creation-de-Contenu-Revolution-ou-Illusion',
         '/developpement-web-vue-react-symfony-adonis',
         '/developpement-mobile-react-native-swift',
         '/developpement-wordpress-sur-mesure',

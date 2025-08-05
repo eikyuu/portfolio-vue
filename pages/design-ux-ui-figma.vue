@@ -69,8 +69,8 @@
 <script setup lang="ts">
 // Métadonnées SEO avec useSeoMeta
 useSeoMeta({
-  title: 'Design UX/UI : Création d\'Expériences Utilisateurs Exceptionnelles',
-  ogTitle: 'Design UX/UI : Création d\'Expériences Utilisateurs Exceptionnelles',
+  title: 'Design UX/UI : Création d\'Expériences Utilisateurs',
+  ogTitle: 'Design UX/UI : Création d\'Expériences Utilisateurs',
   description: 'Vous souhaitez offrir une expérience utilisateur fluide, engageante et mémorable ? En tant que designer UX/UI expérimenté, je vous accompagne dans la conception d\'interfaces intuitives et fonctionnelles qui répondent aux besoins de vos utilisateurs et atteignent vos objectifs commerciaux.',
   ogDescription: 'Vous souhaitez offrir une expérience utilisateur fluide, engageante et mémorable ? En tant que designer UX/UI expérimenté, je vous accompagne dans la conception d\'interfaces intuitives et fonctionnelles qui répondent aux besoins de vos utilisateurs et atteignent vos objectifs commerciaux.',
   ogImage: 'https://vincentduguet.dev/homme-barbu-devant-ordinateur.png',
