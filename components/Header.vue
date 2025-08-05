@@ -10,7 +10,7 @@
 
         <!-- service dropdown -->
         <div class="dropdown relative block ml-10 hidden xl:block" @mouseenter="onmouseenter" @mouseleave="onmouseleave">
-          <button class="dropbtn text-[#5A3B5D]">Services</button>
+          <button class="dropbtn text-[#5A3B5D]" aria-label="Services">Services</button>
           <div class="dropdown-content hidden absolute z-50 bg-white text-[#5A3B5D] w-max rounded-md shadow-md">
             <ul class="flex flex-col justify-center items-center text-[#5A3B5D] text-base gap-8 rounded-md shadow-md p-4">
               <li v-for="item in services" :key="item.to" class="w-full">
@@ -39,7 +39,7 @@
 
         <!-- Bouton Hamburger -->
         <div class="flex xl:hidden">
-          <button ref="excludeRef" @click="isOpen = !isOpen" type="button"
+          <button ref="excludeRef" @click="isOpen = !isOpen" type="button" aria-label="Menu"
             class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
             <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
               stroke="currentColor" aria-hidden="true">

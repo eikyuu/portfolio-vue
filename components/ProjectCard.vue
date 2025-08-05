@@ -12,7 +12,15 @@
             }">
                 <h3 class="font-bold text-[#5A3B5D] text-xl mb-10">{{ props.title }}</h3>
                 <p class="mb-20" v-html="props.text"></p>
-                <Button class="mb-5" v-if="link" text="Découvrir le projet" blank="_blank" :link="props.link ?? ''" :class="`xl:${btnPosition}`" />
+                <Button 
+                class="mb-5" 
+                v-if="link" 
+                text="Découvrir le projet" 
+                target="_blank" 
+                :link="props.link ?? ''" 
+                :class="`xl:${btnPosition}`" 
+                aria-label="Découvrir le projet" 
+                />
             </div>
         </div>
     </div>

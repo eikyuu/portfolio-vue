@@ -48,7 +48,8 @@ useHead({
         </h1>
 
         <div class="block lg:hidden flex items-center justify-center mt-10 mb-10">
-          <NuxtImg class="xl:mt-0 object-cover rounded-md " src="homme-barbu-sur-fond-jaune.png"
+          <NuxtImg
+class="xl:mt-0 object-cover rounded-md " src="homme-barbu-sur-fond-jaune.png"
             sizes="sm:50vw md:400px xl:742px" width="500" height="500" loading="lazy" format="webp"
             alt="Un homme barbu avec des lunettes devant un ordinateur" />
         </div>
@@ -97,14 +98,19 @@ useHead({
 
         </div>
         <div class="flex flex-col md:flex-row gap-5 items-center">
-          <Button text="Voir mes collaborations & projets" link="/mes-collaborations-projets" />
-          <ZcalEmbed  />
+          <Button 
+            text="Voir mes collaborations & projets" 
+            link="/mes-collaborations-projets" 
+            aria-label="Voir mes collaborations & projets"
+          />
+          <ZcalEmbed />
         </div>
 
       </div>
 
       <div class="hidden lg:block">
-        <NuxtImg class="mt-20 xl:mt-0 object-cover rounded-md" src="homme-barbu-sur-fond-jaune.png"
+        <NuxtImg
+class="mt-20 xl:mt-0 object-cover rounded-md" src="homme-barbu-sur-fond-jaune.png"
           sizes="sm:50vw md:400px xl:742px" width="500" height="500" loading="lazy" format="webp"
           alt="Un homme barbu avec des lunettes devant un ordinateur" />
       </div>
@@ -129,13 +135,19 @@ useHead({
       <strong><br><br>💡 Une expertise Full Stack pour un projet clé en main</strong>
       <br>Grâce à mes compétences en <strong>front-end</strong> et <strong>back-end</strong>, j’assure un développement
       complet, couvrant :
-      <br>- La création d’interfaces utilisateur avec des frameworks comme <strong><a target='blank' class='underline'
-          href='https://fr.react.dev/'>React.js</a>, <a target='blank' class='underline'
-          href='https://nextjs.org/'>Next.js</a>, <a target='blank' class='underline'
-          href='https://vuejs.org/'>Vue.js</a></strong> et <strong><a href='https://nuxt.com/' target='blank'
+      <br>- La création d’interfaces utilisateur avec des frameworks comme <strong><a
+target='blank' class='underline'
+          href='https://fr.react.dev/'>React.js</a>, <a
+target='blank' class='underline'
+          href='https://nextjs.org/'>Next.js</a>, <a
+target='blank' class='underline'
+          href='https://vuejs.org/'>Vue.js</a></strong> et <strong><a
+href='https://nuxt.com/' target='blank'
           class='underline'>Nuxt.js</a></strong> ;
-      <br>- La gestion des données et des API avec des outils robustes comme <strong><a href='https://symfony.com/'
-          target='blank' class='underline'>Symfony</a> et <a href='https://adonisjs.com/' target='blank'
+      <br>- La gestion des données et des API avec des outils robustes comme <strong><a
+href='https://symfony.com/'
+          target='blank' class='underline'>Symfony</a> et <a
+href='https://adonisjs.com/' target='blank'
           class='underline'>Adonis</a></strong> ;
       <br>- Une attention particulière portée à la <strong>performance</strong>, la <strong>sécurité</strong>, et
       l’<strong>optimisation SEO</strong>.
@@ -210,7 +222,8 @@ useHead({
       <strong><br><br>♿ Accessibilité : des interfaces pour tous</strong>
       <br>Passionné par l’<strong>accessibilité numérique</strong>, je veille à ce que chaque interface soit inclusive
       et utilisable par tous, quels que soient leurs besoins ou leurs capacités.
-      <br>Pour garantir des applications accessibles, je respecte les standards<strong> <a class='underline'
+      <br>Pour garantir des applications accessibles, je respecte les standards<strong> <a
+class='underline'
           target='blank' href='https://www.w3.org/WAI/standards-guidelines/wcag/'>WCAG</a></strong>.
       <strong><br><br>🌟 Un design qui raconte une histoire</strong>
       <br>Un bon design ne se limite pas à une belle apparence : il doit <strong>engager</strong>, <strong>raconter une

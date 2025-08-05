@@ -81,12 +81,12 @@
     <section>
 
       <div class=" flex justify-center mb-20">
-        <button class="w-[50%] skew-x-[-8deg] rounded-md"
+        <button class="w-[50%] skew-x-[-8deg] rounded-md" aria-label="Projet web" 
           :class="type === 'WEB' ? 'bg-[#FFC800] h-10' : 'bg-[#F2EBF4] h-10'" type="button"
           @click="onClick('WEB')">Projet
           web</button>
 
-        <button class="w-[50%] skew-x-[-8deg] rounded-md"
+        <button class="w-[50%] skew-x-[-8deg] rounded-md" aria-label="Projet mobile"
           :class="type === 'MOBILE' ? 'bg-[#FFC800] h-10' : 'bg-[#F2EBF4] h-10'" type="button"
           @click="onClick('MOBILE')">Projet
           mobile</button>
@@ -108,11 +108,19 @@
 
       <div class="flex justify-center mt-24">
 
-        <Button v-if="canLoadMore && type === 'WEB'" @click="loadMoreProjects" text="Voir plus de projets"
-          color="bg-[#F2EBF4]" blank="_blank" />
+        <Button 
+        v-if="canLoadMore && type === 'WEB'" 
+        @click="loadMoreProjects" 
+        text="Voir plus de projets"
+        colors="bg-[#F2EBF4]" 
+        aria-label="Voir plus de projets" />
 
-        <Button v-if="canLoadMoreMobile && type === 'MOBILE'" @click="loadMoreProjectsMobile"
-          text="Voir plus de projets" color="bg-[#F2EBF4]" blank="_blank" />
+        <Button 
+        v-if="canLoadMoreMobile && type === 'MOBILE'" 
+        @click="loadMoreProjectsMobile"
+        text="Voir plus de projets" 
+        colors="bg-[#F2EBF4]" 
+        aria-label="Voir plus de projets" />
 
       </div>
     </section>

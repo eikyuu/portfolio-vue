@@ -61,11 +61,13 @@
             </div>
 
             <!-- Bouton -->
-            <button 
-                type="submit" aria-label="Envoyer le message"
-                class="relative border rounded-md border-[#5A3B5D] hover:bg-white ease-in-out duration-300 w-52 h-10 before:content-[''] before:absolute before:bg-[#FFC800] before:left-1 before:right-0 before:top-1 before:-z-10 before:h-10 before:w-[13rem] before:rounded  ">
-                Envoyer 
-            </button>
+
+            <Button 
+                type="submit" 
+                aria-label="Envoyer le message"
+                text="Envoyer le message"
+                color="secondary"
+            />
 
         </form>
 

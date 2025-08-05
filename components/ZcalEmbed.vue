@@ -4,7 +4,7 @@
     <Button :text="text" :calendar="true" @click="isOpen = true" />
 
     <!-- Overlay + Modale -->
-    <transition name="fade" v-motion-slide-visible-once-top :duration="500" :delay="100" >
+    <transition v-motion-slide-visible-once-top name="fade" :duration="500" :delay="100" >
       <div
         v-if="isOpen"
         class="fixed inset-0 z-50 bg-black bg-opacity-50 flex items-center justify-center"
@@ -18,19 +18,19 @@
           <!-- Header -->
           <div class="flex justify-between items-center px-4 py-2 border-b">
             <h2 class="text-lg font-semibold">{{ text }}</h2>
-            <button @click="isOpen = false" class="text-gray-600 hover:text-black text-2xl">&times;</button>
+            <button class="text-gray-600 hover:text-black text-2xl" aria-label="Fermer" type="button" @click="isOpen = false" >&times;</button>
           </div>
 
           <!-- Contenu scrollable -->
           <div class="flex-1 overflow-auto">
             <iframe
+              id="zcal-invite"
               :src="`${link}?embed=1&embedType=iframe`"
               loading="lazy"
               scrolling="yes"
               class="w-full"
               :style="`border:none; height:100%; min-height:600px;`"
-              id="zcal-invite"
-            ></iframe>
+            />
           </div>
         </div>
       </div>

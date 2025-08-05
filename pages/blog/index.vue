@@ -15,7 +15,7 @@
                                 <p class="text-sm text-[#5A3B5D]">Publié le {{article.publishedDate}}</p>
                                 <p class="text-sm text-[#5A3B5D]">Temps de lecture : {{article.time}} min</p></div>
 
-                            <Button class="mt-5" text="Lire la suite" />
+                            <Button class="mt-5" text="Lire la suite" aria-label="Lire la suite" link="`/blog/${article.slug}`" />
 
                     </NuxtLink>
                 </li>
