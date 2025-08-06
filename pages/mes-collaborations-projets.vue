@@ -1,97 +1,65 @@
 <template>
   <main class="mt-20 md:mt-32" role="main" id="main-content">
     <article
-      v-motion-slide-visible-once-top
-      :duration="500"
-      :delay="100"
-      class="mb-20 mx-auto px-4"
-    >
-      <!-- Titre principal SEO (H1) -->
-      <TitleUnder
-        title="Mes Collaborations : Partenariats Stratégiques et Expériences Enrichissantes"
-        tag="h1"
-        class="mb-10 xl:mb-20"
-      />
+  v-motion-slide-visible-once-top
+  :duration="500"
+  :delay="100"
+  class="mb-20 mx-auto px-4"
+>
+  <!-- Titre principal -->
+  <TitleUnder
+    title="Collaborations professionnelles : projets et expertises"
+    tag="h1"
+    class="mb-10 xl:mb-20"
+  />
 
-      <!-- Introduction -->
-      <p class="text-base leading-relaxed">
-        Au fil des années, j'ai eu la chance de travailler avec des entreprises, des startups et des individus
-        passionnés dans divers secteurs d'activité. Chaque collaboration a été une opportunité d'apprentissage, de
-        croissance et de création de valeur commune. Découvrez ci-dessous quelques-uns de mes partenariats marquants.
-      </p>
+  <!-- Introduction -->
+  <p class="text-base leading-relaxed">
+    J’ai collaboré avec des entreprises, startups et indépendants dans divers secteurs, en alliant UX/UI, développement et stratégie digitale. Chaque mission est une opportunité de créer de la valeur.
+  </p>
 
-      <!-- Secteurs -->
-      <section aria-labelledby="secteurs-expertise">
-        <h2 id="secteurs-expertise" class="text-2xl font-semibold mt-10 mb-3">Collaborations dans des Secteurs Variés</h2>
-        <p>
-          Mon expertise s'étend à plusieurs domaines, ce qui m'a permis de collaborer avec des acteurs clés dans
-          différents secteurs :
-        </p>
+  <!-- Secteurs -->
+  <section aria-labelledby="secteurs-activite">
+    <h2 id="secteurs-activite" class="text-2xl font-semibold mt-10 mb-3">
+      Domaines d’intervention
+    </h2>
+    <ul class="list-disc pl-6 mt-4 space-y-1">
+      <li><strong>Tech :</strong> Solutions web et mobile pour startups innovantes.</li>
+      <li><strong>E-commerce :</strong> Optimisation de l’expérience d’achat en ligne.</li>
+      <li><strong>Marketing digital :</strong> UX/UI pour campagnes et tunnels de conversion.</li>
+    </ul>
+  </section>
 
-        <ul class="list-disc pl-6 mt-4 space-y-1">
-          <li>
-            <strong>Tech & Innovation :</strong> Développement de solutions technologiques avancées pour des startups
-            innovantes.
-          </li>
-          <li>
-            <strong>E-commerce :</strong> Optimisation des plateformes de commerce électronique pour améliorer
-            l'expérience client.
-          </li>
-          <li>
-            <strong>Marketing Digital :</strong> Conception de stratégies digitales performantes avec des agences
-            spécialisées.
-          </li>
-        </ul>
-      </section>
+  <!-- Philosophie -->
+  <section aria-labelledby="valeurs" class="mt-10">
+    <h2 id="valeurs" class="text-2xl font-semibold mb-3">Ma vision du partenariat</h2>
+    <ul class="list-disc pl-6 mt-4 space-y-1">
+      <li><strong>Écoute :</strong> Comprendre vos enjeux réels.</li>
+      <li><strong>Clarté :</strong> Communication fluide et transparente.</li>
+      <li><strong>Innovation :</strong> Des solutions modernes et sur mesure.</li>
+      <li><strong>Qualité :</strong> Des résultats durables et soignés.</li>
+    </ul>
+  </section>
 
-      <!-- Projets marquants -->
-      <section aria-labelledby="collaborations-marquantes" class="mt-10">
-        <h2 id="collaborations-marquantes" class="text-2xl font-semibold mb-3">Quelques Collaborations Marquantes</h2>
-        <p>Voici quelques exemples concrets de projets sur lesquels j'ai eu le plaisir de travailler :</p>
+  <!-- Appel à l'action -->
+  <section aria-labelledby="cta-collaboration" class="mt-10">
+    <h2 id="cta-collaboration" class="sr-only">Contact</h2>
+    <p class="text-base font-medium">
+      Un projet en tête ?
+      <NuxtLink
+        to="/contact"
+        title="Discuter de votre projet"
+        class="text-[#FFC800] font-bold hover:underline focus:outline focus:outline-2 focus:outline-[#FFC800]"
+      >
+        Parlons-en dès maintenant
+      </NuxtLink>
+      .
+    </p>
+  </section>
+</article>
 
-        <div class="mt-5 space-y-6">
-          <div>
-            <h3 class="text-lg font-semibold">Projet 1 : {{ projects[2].title }}</h3>
-            <p v-html="projects[2].text" />
-          </div>
-          <div>
-            <h3 class="text-lg font-semibold">Projet 2 : {{ projects[3].title }}</h3>
-            <p v-html="projects[3].text" />
-          </div>
-          <div>
-            <h3 class="text-lg font-semibold">Projet 3 : {{ projectsMobile[0].title }}</h3>
-            <p v-html="projectsMobile[0].text" />
-          </div>
-        </div>
-      </section>
 
-      <!-- Philosophie -->
-      <section aria-labelledby="philosophie-collaboration" class="mt-10">
-        <h2 id="philosophie-collaboration" class="text-2xl font-semibold mb-3">Ma Philosophie de Collaboration</h2>
-        <p>
-          Chaque projet est unique, et je m'efforce de bâtir des relations de confiance basées sur :
-        </p>
 
-        <ul class="list-disc pl-6 mt-4 space-y-1">
-          <li><strong>L'écoute active :</strong> Comprendre vos besoins et objectifs pour proposer des solutions adaptées.</li>
-          <li><strong>La transparence :</strong> Communication claire et régulière tout au long du processus.</li>
-          <li><strong>L'innovation :</strong> Proposer des idées créatives et des technologies de pointe pour dépasser vos attentes.</li>
-          <li><strong>La qualité :</strong> Livrer des résultats professionnels et durables.</li>
-        </ul>
-      </section>
-
-      <!-- CTA -->
-      <p class="mt-6 text-base font-medium">
-        Intéressé(e) par une collaboration ?
-        <NuxtLink
-          to="/contact"
-          title="Contactez-moi pour discuter de votre projet"
-          class="text-[#FFC800] font-bold hover:underline focus:outline focus:outline-2 focus:outline-[#FFC800]"
-        >
-          Contactez-moi dès maintenant
-        </NuxtLink> pour explorer comment nous pouvons travailler ensemble !
-      </p>
-    </article>
 
     <!-- Section de filtres : Projet Web ou Mobile -->
     <section aria-labelledby="type-projet" class="mx-auto px-4">
