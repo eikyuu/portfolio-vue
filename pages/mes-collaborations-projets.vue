@@ -1,143 +1,92 @@
 <template>
   <main class="mt-20 md:mt-32" role="main" id="main-content">
-    <article
-  v-motion-slide-visible-once-top
-  :duration="500"
-  :delay="100"
-  class="mb-20 mx-auto px-4"
->
-  <!-- Titre principal -->
-  <TitleUnder
-    title="Collaborations professionnelles : projets et expertises"
-    tag="h1"
-    class="mb-10 xl:mb-20"
-  />
+    <article v-motion-slide-visible-once-top :duration="500" :delay="100" class="mb-20 mx-auto px-4">
+      <!-- Titre principal -->
+      <TitleUnder title="Collaborations professionnelles : projets et expertises" tag="h1" class="mb-10 xl:mb-20" />
 
-  <!-- Introduction -->
-  <p class="text-base leading-relaxed">
-    J’ai collaboré avec des entreprises, startups et indépendants dans divers secteurs, en alliant UX/UI, développement et stratégie digitale. Chaque mission est une opportunité de créer de la valeur.
-  </p>
+      <!-- Introduction -->
+      <p class="text-base leading-relaxed">
+        J’ai collaboré avec des entreprises, startups et indépendants dans divers secteurs, en alliant UX/UI,
+        développement et stratégie digitale. Chaque mission est une opportunité de créer de la valeur.
+      </p>
 
-  <!-- Secteurs -->
-  <section aria-labelledby="secteurs-activite">
-    <h2 id="secteurs-activite" class="text-2xl font-semibold mt-10 mb-3">
-      Domaines d’intervention
-    </h2>
-    <ul class="list-disc pl-6 mt-4 space-y-1">
-      <li><strong>Tech :</strong> Solutions web et mobile pour startups innovantes.</li>
-      <li><strong>E-commerce :</strong> Optimisation de l’expérience d’achat en ligne.</li>
-      <li><strong>Marketing digital :</strong> UX/UI pour campagnes et tunnels de conversion.</li>
-    </ul>
-  </section>
+      <!-- Secteurs -->
+      <section aria-labelledby="secteurs-activite">
+        <h2 id="secteurs-activite" class="text-2xl font-semibold mt-10 mb-3">
+          Domaines d’intervention
+        </h2>
+        <ul class="list-disc pl-6 mt-4 space-y-1">
+          <li><strong>Tech :</strong> Solutions web et mobile pour startups innovantes.</li>
+          <li><strong>E-commerce :</strong> Optimisation de l’expérience d’achat en ligne.</li>
+          <li><strong>Marketing digital :</strong> UX/UI pour campagnes et tunnels de conversion.</li>
+        </ul>
+      </section>
 
-  <!-- Philosophie -->
-  <section aria-labelledby="valeurs" class="mt-10">
-    <h2 id="valeurs" class="text-2xl font-semibold mb-3">Ma vision du partenariat</h2>
-    <ul class="list-disc pl-6 mt-4 space-y-1">
-      <li><strong>Écoute :</strong> Comprendre vos enjeux réels.</li>
-      <li><strong>Clarté :</strong> Communication fluide et transparente.</li>
-      <li><strong>Innovation :</strong> Des solutions modernes et sur mesure.</li>
-      <li><strong>Qualité :</strong> Des résultats durables et soignés.</li>
-    </ul>
-  </section>
+      <!-- Philosophie -->
+      <section aria-labelledby="valeurs" class="mt-10">
+        <h2 id="valeurs" class="text-2xl font-semibold mb-3">Ma vision du partenariat</h2>
+        <ul class="list-disc pl-6 mt-4 space-y-1">
+          <li><strong>Écoute :</strong> Comprendre vos enjeux réels.</li>
+          <li><strong>Clarté :</strong> Communication fluide et transparente.</li>
+          <li><strong>Innovation :</strong> Des solutions modernes et sur mesure.</li>
+          <li><strong>Qualité :</strong> Des résultats durables et soignés.</li>
+        </ul>
+      </section>
 
-  <!-- Appel à l'action -->
-  <section aria-labelledby="cta-collaboration" class="mt-10">
-    <h2 id="cta-collaboration" class="sr-only">Contact</h2>
-    <p class="text-base font-medium">
-      Un projet en tête ?
-      <NuxtLink
-        to="/contact"
-        title="Discuter de votre projet"
-        class="text-[#FFC800] font-bold hover:underline focus:outline focus:outline-2 focus:outline-[#FFC800]"
-      >
-        Parlons-en dès maintenant
-      </NuxtLink>
-      .
-    </p>
-  </section>
-</article>
-
-
-
-
+      <!-- Appel à l'action -->
+      <section aria-labelledby="cta-collaboration" class="mt-10">
+        <h2 id="cta-collaboration" class="sr-only">Contact</h2>
+        <p class="text-base font-medium">
+          Un projet en tête ?
+          <NuxtLink to="/contact" title="Discuter de votre projet"
+            class="text-[#FFC800] font-bold hover:underline focus:outline focus:outline-2 focus:outline-[#FFC800]">
+            Parlons-en dès maintenant
+          </NuxtLink>
+          .
+        </p>
+      </section>
+    </article>
     <!-- Section de filtres : Projet Web ou Mobile -->
     <section aria-labelledby="type-projet" class="mx-auto px-4">
       <h2 id="type-projet" class="sr-only">Choisissez le type de projet à afficher</h2>
 
       <div class="flex justify-center gap-2 mb-12" role="tablist">
-        <button
-          type="button"
+        <button type="button"
           class="w-[50%] skew-x-[-8deg] rounded-md h-10 focus:outline focus:outline-2 focus:outline-[#FFC800]"
-          :class="type === 'WEB' ? 'bg-[#FFC800]' : 'bg-[#F2EBF4]'"
-          :aria-selected="type === 'WEB'"
-          role="tab"
-          @click="onClick('WEB')"
-        >
+          :class="type === 'WEB' ? 'bg-[#FFC800]' : 'bg-[#F2EBF4]'" :aria-selected="type === 'WEB'" role="tab"
+          @click="onClick('WEB')">
           Projet web
         </button>
 
-        <button
-          type="button"
+        <button type="button"
           class="w-[50%] skew-x-[-8deg] rounded-md h-10 focus:outline focus:outline-2 focus:outline-[#FFC800]"
-          :class="type === 'MOBILE' ? 'bg-[#FFC800]' : 'bg-[#F2EBF4]'"
-          :aria-selected="type === 'MOBILE'"
-          role="tab"
-          @click="onClick('MOBILE')"
-        >
+          :class="type === 'MOBILE' ? 'bg-[#FFC800]' : 'bg-[#F2EBF4]'" :aria-selected="type === 'MOBILE'" role="tab"
+          @click="onClick('MOBILE')">
           Projet mobile
         </button>
       </div>
 
       <!-- Projets affichés -->
       <div v-if="type === 'WEB'" role="tabpanel" aria-labelledby="projet-web">
-        <div
-          v-for="(project, index) in displayedProjects"
-          :key="index"
-          class="mb-20"
-        >
-          <ProjectCard
-            v-bind="project"
-            v-motion-slide-visible-once-top
-            :duration="500"
-            :delay="100"
-            :order="project.order"
-          />
+        <div v-for="(project, index) in displayedProjects" :key="index" class="mb-20">
+          <ProjectCard v-bind="project" v-motion-slide-visible-once-top :duration="500" :delay="100"
+            :order="project.order" />
         </div>
       </div>
 
       <div v-else role="tabpanel" aria-labelledby="projet-mobile">
-        <div
-          v-for="(project, index) in displayedProjectsMobile"
-          :key="index"
-          class="mb-20"
-        >
-          <ProjectCard
-            v-bind="project"
-            v-motion-slide-visible-once-top
-            :duration="500"
-            :delay="100"
-            :order="project.order"
-          />
+        <div v-for="(project, index) in displayedProjectsMobile" :key="index" class="mb-20">
+          <ProjectCard v-bind="project" v-motion-slide-visible-once-top :duration="500" :delay="100"
+            :order="project.order" />
         </div>
       </div>
 
       <!-- Bouton de chargement -->
       <div class="flex justify-center mt-24">
-        <Button
-          v-if="canLoadMore && type === 'WEB'"
-          @click="loadMoreProjects"
-          text="Voir plus de projets"
-          colors="bg-[#F2EBF4]"
-          aria-label="Voir plus de projets Web"
-        />
-        <Button
-          v-if="canLoadMoreMobile && type === 'MOBILE'"
-          @click="loadMoreProjectsMobile"
-          text="Voir plus de projets"
-          colors="bg-[#F2EBF4]"
-          aria-label="Voir plus de projets Mobile"
-        />
+        <Button v-if="canLoadMore && type === 'WEB'" @click="loadMoreProjects" text="Voir plus de projets"
+          colors="bg-[#F2EBF4]" aria-label="Voir plus de projets Web" />
+        <Button v-if="canLoadMoreMobile && type === 'MOBILE'" @click="loadMoreProjectsMobile"
+          text="Voir plus de projets" colors="bg-[#F2EBF4]" aria-label="Voir plus de projets Mobile" />
       </div>
     </section>
   </main>
