@@ -55,7 +55,7 @@ export default defineNuxtConfig({
       routes: [
         '/blog/UX-UI-et-Accessibilite-Pourquoi-un-Bon-Design-Fait-Toute-la-Difference',
         '/blog/IA-et-Creation-de-Contenu-Revolution-ou-Illusion',
-        '/blog/IA-et-Creation-de-Contenu-Revolution-ou-Illusion',
+        '/blog/Pourquoi-WordPress-Domine-la-Creation-de-Sites-Web-en-2025',
         '/developpement-web-vue-react-symfony-adonis',
         '/developpement-mobile-react-native-swift',
         '/developpement-wordpress-sur-mesure',

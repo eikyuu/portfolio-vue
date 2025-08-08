@@ -11,7 +11,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import BlogCard from '~/components/blog/BlogCard.vue'
-import { articles } from '~/pages/blog/articles'
+import { articles } from '~/types/articles'
 
 const title = ref('Blog Tech & Design : UX, Développement et SEO 🚀')
 

@@ -2,7 +2,7 @@
 import ExpertiseCard from '~/components/ExpertiseCard.vue'
 import TitleUnder from '~/components/TitleUnder.vue'
 import Button from '~/components/Button.vue'
-import { articles } from '~/pages/blog/articles'
+import { articles } from '~/types/articles'
 
 useHead({
   title: 'Vincent Duguet - Développeur Web et Mobile Full Stack Freelance à Tours',

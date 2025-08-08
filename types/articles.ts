@@ -11,11 +11,11 @@ export const articles : Article[] = [
     resume: "L’intelligence artificielle transforme la création de contenu à grande vitesse. De la rédaction d’articles à la génération de vidéos, elle offre de nouveaux outils aux créateurs et marketeurs. Découvrez ses applications concrètes, ses avantages, ses limites..."
   },
   {
-    "title": "💡 Pourquoi WordPress Domine la Création de Sites Web en 2025",
-    "slug": "Pourquoi-WordPress-Domine-la-Creation-de-Sites-Web-en-2025",
-    "image": "/Pourquoi-WordPress-Domine-la-Creation-de-Sites-Web-en-2025.webp",
-    "publishedDate": "04/08/2025",
-    "time": "6",
-    "resume": "WordPress reste en 2025 la solution de création de sites web la plus puissante et polyvalente du marché. De grandes marques comme Disney, des écoles comme 42, ou des PME tirent parti de ses capacités pour développer leur présence en ligne. Découvrez pourquoi il continue de dominer le web..."
+    title: "💡 Pourquoi WordPress Domine la Création de Sites Web en 2025",
+    slug: "Pourquoi-WordPress-Domine-la-Creation-de-Sites-Web-en-2025",
+    image: "/Pourquoi-WordPress-Domine-la-Creation-de-Sites-Web-en-2025.webp",
+    publishedDate: "04/08/2025",
+    time: "6",
+    resume: "WordPress reste en 2025 la solution de création de sites web la plus puissante et polyvalente du marché. De grandes marques comme Disney, des écoles comme 42, ou des PME tirent parti de ses capacités pour développer leur présence en ligne. Découvrez pourquoi il continue de dominer le web..."
   }
 ];
