@@ -1,5 +1,5 @@
 <template>
-  <section class="mt-20 md:mt-32">
+  <section class="mt-32 ">
     <Contact />
   </section>
 </template>

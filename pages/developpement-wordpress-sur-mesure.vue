@@ -1,15 +1,9 @@
 <template>
-    <section class="mt-20 md:mt-32">
+    <section class="mt-32 ">
       <!-- Titre principal avec effet de surlignage -->
       <TitleUnder title="WordPress : Sites Web Performants et Sur Mesure" tag="h1" class=" mb-10 xl:mb-20"   />
 
       <!-- Carte d'expertise -->
-      <ExpertiseCard
-  link="/contact"
-  text-btn="Je veux un site WordPress performant →"
-  img="svg/web.svg"
-  alt="Développement WordPress sur mesure"
->
   <article>
     <!-- Introduction -->
     <p>
@@ -70,7 +64,6 @@
       pour une <strong>consultation gratuite</strong> !
     </p>
   </article>
-</ExpertiseCard>
 
   </section>
 </template>

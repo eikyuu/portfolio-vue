@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import ExpertiseCard from '~/components/ExpertiseCard.vue'
 import TitleUnder from '~/components/TitleUnder.vue'
-import Contact from '~/components/Contact.vue'
 import Button from '~/components/Button.vue'
+import { articles } from '~/pages/blog/articles'
 
 useHead({
   title: 'Vincent Duguet - Développeur Web et Mobile Full Stack Freelance à Tours',
@@ -41,10 +41,10 @@ useHead({
 </script>
 
 <template>
-  <main class="mt-20 md:mt-32" role="main">
+  <main class="mt-32" role="main">
     <!-- Section d’intro -->
-    <section class="flex flex-col xl:flex-row items-center justify-between mb-20">
-      <div class="xl:w-3/6 bg-number bg-cover mb-4">
+    <section class="flex flex-col lg:flex-row items-center justify-between mb-10 lg:mb-32">
+      <div class="lg:w-3/4 bg-number bg-cover mb-4">
         <div v-motion-slide-visible-once-top :duration="500" :delay="100">
           <h1 class="uppercase text-[#5A3B5D] text-4xl font-bold">
             Salut, je suis <span class="text-[#FFC800]">Vincent Duguet</span><br>
@@ -65,7 +65,7 @@ useHead({
 
           <p class="mt-8">
             <strong>Passionné de développement web et de design UX/UI</strong>, je conçois des solutions
-            digitales centrées utilisateur, responsive, durables et inclusives.
+            numériques centrées utilisateur, responsive, durables et inclusives.
           </p>
 
           <h3 class="mt-10 text-lg font-semibold">💡 Technologies modernes</h3>
@@ -90,151 +90,77 @@ useHead({
             PME, start-up, entrepreneur : je vous accompagne de la stratégie au déploiement, pour un
             <strong>résultat sur-mesure</strong> et <strong>adapté à vos besoins</strong>.
           </p>
+        </div>
 
-          <!-- CTA -->
-          <div class="flex flex-col md:flex-row gap-5 items-center">
-            <Button text="Voir mes collaborations & projets" link="/mes-collaborations-projets"
-              aria-label="Voir mes projets et collaborations" />
-            <ZcalEmbed />
-          </div>
+
+
+        <!-- CTA -->
+        <div class="flex flex-col md:flex-row gap-5 items-center">
+          <Button text="Portfolio" link="/mes-collaborations-projets" aria-label="Voir mon portfolio" />
+          <ZcalEmbed />
         </div>
       </div>
 
+
       <!-- Image desktop -->
       <div class="hidden lg:block">
-        <NuxtImg class="mt-20 xl:mt-0 object-cover rounded-md" src="homme-barbu-sur-fond-jaune.png" width="500"
-          height="500" sizes="sm:50vw md:400px xl:742px" format="webp" loading="lazy"
+        <NuxtImg class="mt-32 lg:mt-0 object-cover rounded-md" src="homme-barbu-sur-fond-jaune.png" width="500"
+          height="500" sizes="sm:50vw md:400px lg:500px" format="webp" loading="lazy"
           alt="Vincent Duguet, développeur freelance devant un ordinateur" />
       </div>
     </section>
 
     <!-- Titre section expertises -->
-    <TitleUnder title="Je suis un expert" tag="h2" />
+    <TitleUnder v-motion-slide-visible-once-top :duration="500" :delay="100" title="Je suis un expert" tag="h2" />
 
     <!-- Cartes Expertise -->
-    <ExpertiseCard title="Développement Web sur mesure" link="/developpement-web-vue-react-symfony-adonis"
-      text-btn="J’ai besoin d’un expert en Développement Web →" img="svg/web.svg" class="mt-20 md:mt-20">
-      Créez un <strong>site web moderne, rapide et personnalisé</strong> pour répondre aux attentes de vos utilisateurs.
-      <br>
-      Que ce soit un <strong>site vitrine</strong>, une <strong>plateforme interactive</strong> ou une
-      <strong>application web complexe</strong>, je conçois des interfaces :
-      <ul class="list-disc list-inside mt-4">
-        <li><strong>Fluides</strong> : navigation intuitive et rapide</li>
-        <li><strong>Esthétiques</strong> : design professionnel et aligné à votre image</li>
-        <li><strong>Accessibles</strong> : respect des standards d’accessibilité (WCAG)</li>
-      </ul>
 
-      <strong class="block mt-6">💡 Une expertise Full Stack complète</strong>
-      <br>
-      Je développe des projets robustes de bout en bout grâce à :
-      <ul class="list-disc list-inside mt-2">
-        <li>Des frameworks modernes : <a href="https://vuejs.org" class="underline" target="_blank">Vue.js</a>,
-          <a href="https://nuxt.com/" class="underline" target="_blank">Nuxt</a>,
-          <a href="https://fr.react.dev" class="underline" target="_blank">React</a>,
-          <a href="https://nextjs.org" class="underline" target="_blank">Next.js</a>
-        </li>
-        <li>Un back-end solide : <a href="https://symfony.com/" class="underline" target="_blank">Symfony</a>,
-          <a href="https://adonisjs.com/" class="underline" target="_blank">AdonisJS</a>
-        </li>
-        <li>Une attention à la <strong>performance</strong>, la <strong>sécurité</strong> et au <strong>SEO</strong>
-        </li>
-      </ul>
+    <section v-motion-slide-visible-once-top :duration="500" :delay="100" class="flex flex-row justify-between flex-wrap mt-10 mb-10 lg:mt-32 lg:mb-32 gap-5">
+      <NuxtLink to="/developpement-web-vue-react-symfony-adonis" class="w-full md:w-[calc(33%-1rem)]">
+        <ExpertiseCard title="Développement Web sur mesure" link="/developpement-web-vue-react-symfony-adonis"
+          text-btn="J’ai besoin d’un expert en Développement Web →" img="svg/web.svg">
+          <p>
+            Créez un <strong>site web moderne, rapide et personnalisé</strong> pour répondre aux attentes de vos
+            utilisateurs.
+          </p>
+        </ExpertiseCard>
+      </NuxtLink>
 
-      <strong class="block mt-6">🎯 Un site web qui reflète vos ambitions</strong>
-      <br>
-      Mon objectif : créer un site <strong>scalable, rapide et accessible</strong>, en parfaite adéquation avec votre
-      vision et les attentes de vos utilisateurs.
-    </ExpertiseCard>
+      <NuxtLink to="/developpement-mobile-react-native-swift" class="w-full md:w-[calc(33%-1rem)]">
 
+        <ExpertiseCard title="Développement Mobile sur mesure" link="/developpement-mobile-react-native-swift"
+          text-btn="Je veux une application mobile performante →" img="svg/mobile.svg">
+          <p>Offrez une <strong>application mobile performante, intuitive et personnalisée</strong> à vos utilisateurs.
+          </p>
+        </ExpertiseCard>
 
-    <ExpertiseCard title="Développement Mobile sur mesure" link="/developpement-mobile-react-native-swift"
-      text-btn="Je veux une application mobile performante →" img="svg/mobile.svg" class="mt-20 md:mt-20">
-      Offrez une <strong>application mobile performante, intuitive et personnalisée</strong> à vos utilisateurs.
-      <br>
-      Que ce soit sur <strong>iOS</strong>, <strong>Android</strong> ou en <strong>cross-platform</strong>, je conçois
-      des expériences mobiles modernes, fluides et évolutives.
+      </NuxtLink>
 
-      <strong class="block mt-6">🚀 Technologies utilisées</strong>
-      <ul class="list-disc list-inside mt-2">
-        <li><strong>React Native</strong> : développement multiplateforme rapide et natif</li>
-        <li><strong>Swift</strong> : performances optimales sur iOS</li>
-        <li><strong>Design UX/UI</strong> : interfaces ergonomiques et attractives</li>
-        <li><strong>Accessibilité</strong> : conformité avec les normes d’inclusion numérique</li>
-      </ul>
+      <NuxtLink to="/developpement-web-vue-react-symfony-adonis" class="w-full md:w-[calc(33%-1rem)]">
+        <ExpertiseCard title="Template WordPress sur mesure" link="/developpement-web-vue-react-symfony-adonis"
+          text-btn="Créer mon site WordPress sur-mesure →" img="svg/web.svg">
+          <p>Offrez à votre entreprise un <strong>site WordPress rapide, responsive et SEO-friendly</strong>, pensé pour
+            convertir.</p>
+        </ExpertiseCard>
+      </NuxtLink>
 
-      <strong class="block mt-6">📱 Un accompagnement de A à Z</strong>
-      <br>
-      De la <strong>conception</strong> à la <strong>mise en ligne sur les stores</strong>, je vous accompagne à chaque
-      étape :
-      <ul class="list-disc list-inside mt-2">
-        <li>Expérience utilisateur fluide</li>
-        <li>Optimisation des performances</li>
-        <li>Sécurité des données</li>
-      </ul>
+    </section>
 
-      <strong class="block mt-6">🎯 Créez une application qui se démarque</strong>
-      <br>
-      Je conçois des solutions mobiles qui génèrent de l’impact et fidélisent vos utilisateurs.
-    </ExpertiseCard>
+    <section v-motion-slide-visible-once-top :duration="500" :delay="100" class="w-full mb-10 lg:mb-32">
+      <NuxtLink to="/developpement-web-vue-react-symfony-adonis" class="w-full">
+        <NuxtImg src="banner.png" alt="Un site web de mariage" class="h-full object-cover rounded-md w-full" />
+      </NuxtLink>
+    </section>
 
+    <TitleUnder v-motion-slide-visible-once-top :duration="500" :delay="100" title="Les articles du blog" tag="h2" />
 
-    <ExpertiseCard title="Création de Sites WordPress Performants & Sur-Mesure"
-      link="/developpement-wordpress-sur-mesure" text-btn="Créer mon site WordPress sur-mesure →" img="svg/web.svg"
-      class="mt-20 mb-20 md:mt-20 md:mb-20">
-      Offrez à votre entreprise un <strong>site WordPress rapide, responsive et SEO-friendly</strong>, pensé pour
-      convertir.
+    <section v-motion-slide-visible-once-top :duration="500" :delay="100" class="mt-10 mb-10 lg:mt-32 lg:mb-32">
 
-      <strong class="block mt-6">📊 Un site aligné sur vos objectifs</strong>
-      <br>
-      Chaque projet débute par une <strong>analyse stratégique</strong> de vos besoins, de votre audience et de votre
-      marché.
+      <div class="flex flex-col flex-wrap md:flex-row justify-between gap-5">
+        <BlogCard v-for="article in articles" :key="article.slug" :article="article" />
+      </div>
 
-      <strong class="block mt-6">🎨 Processus de création :</strong>
-      <ul class="list-disc list-inside mt-2">
-        <li><strong>Recherche utilisateur</strong> : comprendre les attentes de vos visiteurs</li>
-        <li><strong>Prototypes & wireframes</strong> : tester les idées rapidement</li>
-        <li><strong>Design system</strong> : garantir cohérence et évolutivité</li>
-      </ul>
-
-      <strong class="block mt-6">♿ Accessibilité & conformité WCAG</strong>
-      <br>
-      Tous les sites sont conçus pour être <strong>accessibles à tous</strong>, dans le respect des <a class="underline"
-        href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank">standards WCAG</a>.
-
-      <strong class="block mt-6">🔍 SEO intégré dès la conception</strong>
-      <br>
-      Structure sémantique HTML optimisée, rapidité, balises métas bien pensées : votre site est prêt à performer sur
-      Google dès le lancement.
-
-      <strong class="block mt-6">🌟 Un site qui valorise votre image</strong>
-      <br>
-      Créez une présence digitale professionnelle avec un site WordPress <strong>moderne, évolutif</strong> et
-      <strong>aligné à votre identité</strong>.
-    </ExpertiseCard>
-
-
-    <ExpertiseCard title="Design UX/UI centré sur vos utilisateurs" link="/design-ux-ui-figma"
-      text-btn="Je veux un design qui me ressemble →" img="svg/design.svg" class="mt-20 mb-20 md:mt-20 md:mb-20">
-      Concevez des <strong>interfaces élégantes, intuitives et accessibles</strong>, centrées sur les besoins réels de
-      vos utilisateurs.
-
-      <strong class="block mt-6">🎨 Une méthodologie éprouvée :</strong>
-      <ul class="list-disc list-inside mt-2">
-        <li><strong>Recherche utilisateur</strong> : comprendre vos cibles</li>
-        <li><strong>Wireframes & prototypes</strong> : valider les concepts rapidement</li>
-        <li><strong>Design system</strong> : garantir la cohérence et la scalabilité</li>
-      </ul>
-
-      <strong class="block mt-6">♿ Design inclusif & accessible</strong>
-      <br>
-      Je conçois des interfaces conformes aux <a href="https://www.w3.org/WAI/standards-guidelines/wcag/"
-        class="underline" target="_blank">normes WCAG</a> pour que chaque utilisateur puisse naviguer sans obstacle.
-
-      <strong class="block mt-6">🌟 Un design qui raconte une histoire</strong>
-      <br>
-      Mon objectif : créer un design qui <strong>valorise votre marque</strong>, renforce l'engagement et délivre une
-      <strong>expérience utilisateur mémorable</strong>.
-    </ExpertiseCard>
+    </section>
 
   </main>
 </template>

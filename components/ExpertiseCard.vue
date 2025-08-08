@@ -1,6 +1,6 @@
 <template>
     <div
-      class="bg-white rounded-md shadow-xl shadow-[#F2EBF4] p-5 flex flex-col xl:flex-row items-center border-b-8 border-[#FFC800]"
+      class="bg-white rounded-md shadow-xl shadow-[#F2EBF4] flex flex-col items-center justify-between border-b-8 border-[#FFC800] w-full h-full lg:h-[425px] p-5"
       v-motion-slide-visible-top
       :duration="500"
       :delay="100"
@@ -8,7 +8,7 @@
       :aria-labelledby="props.title ? 'service-title' : undefined"
     >
       <NuxtImg
-        class="rounded-md mb-5 xl:mb-0"
+        class="rounded-md mb-5"
         :src="props.img"
         width="240"
         height="110"
@@ -18,7 +18,7 @@
         :alt="`Illustration du service proposé - ${props.title}`"
       />
   
-      <div class="flex flex-col items-center xl:items-start xl:pl-10 text-center xl:text-left">
+      <div class="flex flex-col items-center text-center">
         <h3
           v-if="props.title"
           id="service-title"

@@ -1,84 +1,298 @@
 <template>
-  <section class="mt-20 md:mt-32">
+  <section class="mt-32 ">
     <!-- Titre principal avec effet de surlignage -->
-    <TitleUnder title="Création de Site Internet" tag="h1" class=" mb-10 xl:mb-20"   />
+    <TitleUnder v-motion-slide-visible-once-top :duration="500" :delay="100"
+      title="Un site internet à la hauteur de ton business et tes ambitions" tag="h1" class="mt-10 lg:mb-32" />
 
-    <!-- Carte d'expertise -->
-    <ExpertiseCard
-  link="/contact"
-  text-btn="J’ai besoin d’un expert en Développement Web →"
-  img="svg/web.svg"
-  alt="Expert en développement web"
->
-  <article>
-    <!-- Introduction -->
-    <p class="mb-4">
-      Vous avez un projet d’application web et cherchez un <strong>développeur fullstack</strong> capable de concevoir
-      une solution <strong>moderne, performante et évolutive</strong> ? Fort d’une expertise sur les frameworks
-      frontend comme <strong>Vue.js</strong>, <strong>React.js</strong>, <strong>Next.js</strong> et
-      <strong>Nuxt.js</strong>, ainsi que sur des backends puissants comme <strong>Symfony</strong>,
-      <strong>Node.js</strong> ou <strong>Adonis.js</strong>, je vous accompagne de la conception à la mise en ligne.
-    </p>
+    <article v-motion-slide-visible-once-top :duration="500" :delay="100">
+      <!-- Introduction -->
 
-    <!-- Frontend -->
-    <h2 class="text-2xl font-semibold mt-5 mb-3">Frontend : des interfaces modernes & réactives</h2>
-    <p>
-      Le frontend est votre vitrine digitale. Je développe des interfaces <strong>rapides, intuitives</strong> et
-      <strong>adaptées à tous les écrans</strong> à l’aide des meilleures technologies JavaScript :
-    </p>
-    <ul class="list-disc pl-5 mt-3">
-      <li><strong>Vue.js :</strong> Parfait pour des applications modulaires et dynamiques.</li>
-      <li><strong>React.js :</strong> Idéal pour des interfaces complexes et interactives.</li>
-      <li><strong>Next.js :</strong> Pour un rendu côté serveur, un SEO optimisé et des performances accrues.</li>
-      <li><strong>Nuxt.js :</strong> Pour des sites Vue.js performants, en SSR ou Jamstack.</li>
-    </ul>
+      <p class="mb-10 mt-10 lg:mb-32 lg:mt-32">Un site internet est l’outil idéal pour développer ton business et le faire passer à la vitesse
+        supérieure. Il
+        te permettra d’être visible 24h/24 et 7j/7 en donnant le maximum d’informations à tes lecteurs. Un site internet
+        te permet d’être référencé et visible sur Google pour attirer plus de client.e.s.</p>
 
-    <!-- Backend -->
-    <h2 class="text-2xl font-semibold mt-5 mb-3">Backend : une architecture solide & sécurisée</h2>
-    <p>
-      Le backend structure et fait vivre votre application. J’utilise des frameworks robustes pour gérer efficacement
-      les données, la logique métier et la scalabilité :
-    </p>
-    <ul class="list-disc pl-5 mt-3">
-      <li><strong>Symfony :</strong> Framework PHP éprouvé, idéal pour les applications web robustes et sécurisées.</li>
-      <li><strong>Node.js :</strong> Pour des APIs performantes et des temps de réponse optimisés.</li>
-      <li><strong>Adonis.js :</strong> Alternative élégante à Laravel en Node.js, avec une structure MVC claire.</li>
-    </ul>
+      <div class="flex flex-col md:flex-row items-center justify-between mt-5 w-full">
+        <NuxtImg src="site-web-i-love-my-dog.webp" alt="Un site web avec un chien"
+          class="h-full object-cover rounded-md w-full md:w-1/2" />
+        <div class="w-full md:w-1/2 flex flex-col items-center ">
+          <p class="font-[Anton] text-2xl mt-5 md:mt-0">Tu es au bon endroit si</p>
+          <ul class="list-none pl-5 mt-3">
+            <li class="flex items-center mt-2">
+              <BadgeCheck class="mr-2" />
+              Tu veux faire décoller ton business
+            </li>
+            <li class="flex items-center mt-2 ">
+              <BadgeCheck class="mr-2" />
+              Tu veux passer à la vitesse supérieure
+            </li>
+            <li class="flex items-center mt-2">
+              <BadgeCheck class="mr-2" />
+              Tu veux un site internet qui te ressemble
+            </li>
+            <li class="flex items-center mt-2">
+              <BadgeCheck class="mr-2" />
+              Tu veux être accompagnée
+            </li>
+            <li class="flex items-center mt-2">
+              <BadgeCheck class="mr-2" />
+              Tu veux être fière de ton site internet
+            </li>
+          </ul>
+        </div>
+      </div>
 
-    <!-- Méthodologie -->
-    <h2 class="text-2xl font-semibold mt-5 mb-3">Ma méthode de travail</h2>
-    <p>
-      Chaque projet est unique. Mon approche est collaborative, structurée et orientée résultats, avec un focus sur la
-      qualité du code et l’expérience utilisateur :
-    </p>
-    <ol class="list-decimal pl-5 mt-3">
-      <li><strong>Analyse :</strong> Compréhension des enjeux métier et rédaction du cahier des charges.</li>
-      <li><strong>Architecture technique :</strong> Choix technologiques et structuration du projet.</li>
-      <li><strong>Développement :</strong> Codage clair, maintenable et évolutif selon les meilleures pratiques.</li>
-      <li><strong>Tests & QA :</strong> Contrôles qualité, tests unitaires et optimisation des performances.</li>
-      <li><strong>Déploiement & suivi :</strong> Mise en production, documentation et accompagnement post-lancement.</li>
-    </ol>
+      <TitleUnder v-motion-slide-visible-once-top :duration="500" :delay="100" title="Création de site internet" tag="h2"
+        class="mb-10 mt-10 lg:mb-32 lg:mt-32" />
 
-    <!-- CTA -->
-    <p class="mt-5">
-      🚀 Prêt(e) à concrétiser votre idée avec un <strong>expert en développement web</strong> ?
-      <NuxtLink 
-        to="/contact" 
-        title="Discutons ensemble de votre projet web" 
-        aria-label="Discutons ensemble de votre projet web"
-        class="text-[#FFC800] font-bold hover:underline hover:translate-x-1 transition-all duration-300"
-      >
-        Contactez-moi dès maintenant
-      </NuxtLink>
-      pour une <strong>consultation gratuite</strong> et sans engagement !
-    </p>
-  </article>
-</ExpertiseCard>
+      <div 
+        v-motion-slide-visible-once-top 
+        :duration="500" 
+        :delay="100"
+        class="flex flex-col md:flex-row items-center justify-between w-full">
+        <!-- cards offres -->
+
+        <div
+          class="bg-white rounded-md shadow-xl shadow-[#F2EBF4] flex flex-col justify-between border-b-8 border-[#FFC800] w-full h-full lg:w-[calc(33%-1rem)] p-5 mb-10 lg:mb-0">
+
+          <h2 class="mb-2 font-bold">REFONTE DE SITE</h2>
+
+          <p>À partir de <span class="font-bold text-xl">500€</span> </p>
+          <p class="font-bold mt-5">Facilités de paiement disponibles.</p>
+
+          <p>Pour ceux qui souhaitent que leur site reflète enfin leur personnalité & leurs valeurs.</p>
+
+          <h3 class="font-bold">Analyse du site & plan d’amélioration</h3>
+          <p class="mb-2">Définition des objectifs et axes d’amélioration. Choix des technologies, migration...</p>
+
+          <h3 class="font-bold">Audit stratégique & créatif</h3>
+          <p class="mb-2">Pour redesigner un site adapté à votre personnalité & à vos valeurs.</p>
+
+          <h3 class="font-bold">Refonte complète</h3>
+          <p class="mb-2">Refonte UX/UI pour une expérience utilisateur moderne, fluide et plus proche de votre personnalité. Refonte
+            du site entier (structure, sections, composants).</p>
+
+          <h3 class="font-bold">Mise en place des intégrations de contenu</h3>
+          <p class="mb-2">(textes, images, vidéos)</p>
+
+          <h3 class="font-bold">Refonte stratégique & SEO</h3>
+          <p class="mb-2">Optimisation technique (performances du site, référencement, gestion du contenu).</p>
+
+          <h3 class="font-bold">Accompagnement & Support</h3>
+          <p class="mb-2">Formation pour vous rendre autonome.</p>
+
+          <Button
+            class="mt-5 self-center"
+            text="En savoir plus →"
+            link="/contact"
+            aria-label="Lien vers la page de contact"
+            target="_self"
+            type="button"
+          />
+        </div>
+
+        <div
+        class="bg-white rounded-md shadow-xl shadow-[#F2EBF4] flex flex-col justify-between border-b-8 border-[#FFC800] w-full h-full lg:w-[calc(33%-1rem)] p-5 mb-10 lg:mb-0">
+        <h2 class="mb-2 font-bold">SITE CMS</h2>
+
+          <p>Site one-page = à partir de <span class="font-bold text-xl">500€</span> </p>
+
+          <p>Site Vitrine (5 pages) = à partir de <span class="font-bold text-xl">1000€</span> </p>
+
+          <p>Site e-commerce = à partir de <span class="font-bold text-xl">1500€</span> </p>
+
+          <p class="font-bold mt-5">Facilités de paiement disponibles.</p>
+
+          <p>Pour ceux qui souhaitent devenir autonome rapidement & simplement.</p>
+
+          <h3 class="font-bold ">Audit stratégique & créatif</h3>
+          <p class="mb-2">Pour designer un site adapté à votre personnalité & à vos valeurs. Optimisation et personnalisation de
+            l’expérience utilisateur.</p>
+
+          <h3 class="font-bold">Création d’un site - Framer</h3>
+          <p class="mb-2">Structure optimisée et personnalisable Gestion simplifiée via une interface intuitive.</p>
+
+          <h3 class="font-bold">Contenu administrable</h3>
+          <p class="mb-2">Modification des textes, images et videos, ajout de nouveaux contenus.</p>
+
+          <h3 class="font-bold">Optimisation & SEO</h3>
+          <p class="mb-2">Mise en place des actions de référencement (ajout de Google Analytics, gestion des urls, optimisation des
+            balises html, optimisation des médias).</p>
+
+          <h3 class="font-bold">Accompagnement & Support</h3>
+          <p class="mb-2">Formation pour vous rendre autonome, hébergement et maintenance simplifiée.</p>
+
+
+          <Button
+            class="mt-5 self-center"
+            text="En savoir plus →"
+            link="/contact"
+            aria-label="Lien vers la page de contact"
+            target="_self"
+            type="button"
+          />
+        </div>
+
+
+
+
+
+        <div
+        class="bg-white rounded-md shadow-xl shadow-[#F2EBF4] flex flex-col justify-between border-b-8 border-[#FFC800] w-full h-full lg:w-[calc(33%-1rem)] p-5 lg:mb-0">
+        <h2 class="mb-2 font-bold">SITE SUR-MESURE</h2>
+
+          <p>À partir de <span class="font-bold text-xl">500€</span> </p>
+          <p class="font-bold mt-5">Facilités de paiement disponibles.</p>
+
+          <p >Pour ceux qui souhaitent un site sur-mesure qui répond à tous leurs besoins. Codé à la perfection.</p>
+
+          <h3 class="font-bold">Audit stratégique & créatif</h3>
+          <p class="mb-2">Conception d’un site performant, fluide, interactif et aligné avec votre personnalité et vos valeurs. Choix
+            des technologies les plus adaptées à vos besoins.</p>
+
+          <h3 class="font-bold">Expérience utilisateur ++</h3>
+          <p class="mb-2">Stratégies design UX/UI haut de gamme pour une expérience utilisateur premium (navigation fluide,
+            animations interactives, responsive...).</p>
+
+          <h3 class="font-bold">Développement sur-mesure</h3>
+          <p class="mb-2">Création du site totalement sur-mesure (structure, sections, composants).</p>
+
+          <h3 class="font-bold">Intégrations avancées</h3>
+          <p class="mb-2">Création de plateforme d’administration & de fonctionnalités spécifiques (plugings d’applications externes,
+            création d'API...) pour vous rendre autonome.</p>
+
+          <h3 class="font-bold">Stratégie SEO</h3>
+          <p class="mb-2">Pour un site ultra fluide, référencé et sécurisé. Mise en place des actions de référencement.</p>
+
+          <h3 class="font-bold">Accompagnement stratégique</h3>
+          <p class="mb-2">Un mois supplémentaire pour analyser les performances de votre site & les améliorer.</p>
+
+          <Button
+            class="mt-5 self-center"
+            text="En savoir plus →"
+            link="/contact"
+            aria-label="Lien vers la page de contact"
+            target="_self"
+            type="button"
+          />
+        </div>
+
+      </div>
+
+
+
+      <div 
+      v-motion-slide-visible-right
+        :duration="500" 
+        :delay="100"
+        class="flex flex-col md:flex-row items-center justify-between w-full mt-10 lg:mt-32">
+        <div class="w-full md:w-1/2 mr-0 md:mr-10 mb-10 lg:mb-0">
+          <h2 class="text-2xl font-semibold mb-3">Votre vision. Mon expertise.</h2>
+
+          <p>Un site web unique, conçu pour refléter votre image et atteindre vos objectifs.
+            Design premium, performances optimisées, référencement inclus.</p>
+
+          <p><strong>Résultat : plus de visibilité, plus de clients, plus de ventes.</strong></p>
+
+          <Button
+            class="mt-5 self-center"
+            text="Demander mon devis gratuit →"
+            link="/contact"
+            aria-label="Lien vers la page de contact"
+            target="_self"
+            type="button"
+          />
+        </div>
+        <NuxtImg src="phone.png" alt="Un site web de mariage"
+          class="h-full object-cover rounded-md w-full md:w-1/2 mt-10 md:mt-0" />
+      </div>
+
+      <div 
+      v-motion-slide-visible-left
+        :duration="500" 
+        :delay="100"
+        class="flex flex-col md:flex-row items-center justify-between mt-10 lg:mt-32 w-full">
+        <NuxtImg src="site-web.png" alt="Un site web de mariage"
+          class="h-full object-cover rounded-md w-full md:w-1/2 mt-10 md:mt-0" />
+
+        <div class="w-full md:w-1/2 ml-0 md:ml-10 mt-10 lg:mt-0">
+          <h2 class="text-2xl font-semibold mb-3">Votre site peut être en ligne dès ce mois-ci 🚀</h2>
+
+          <p>À partir de <span class="font-bold text-xl">500€</span> – Paiement flexible possible.</p>
+          <p>Chaque jour sans site, ce sont des clients potentiels qui partent chez vos concurrents.</p>
+
+          <Button
+            class="mt-5 self-center"
+            text="Je lance mon site aujourd’hui →"
+            link="/contact"
+            aria-label="Lien vers la page de contact"
+            target="_self"
+            type="button"
+          />
+        </div>
+      </div>
+
+
+      <div 
+      v-motion-slide-visible-right
+        :duration="500" 
+        :delay="100"
+        class="flex flex-col md:flex-row items-center justify-between mt-10 lg:mt-32 w-full mb-10 lg:mb-0">
+        <div class="w-full md:w-1/2 mr-0 md:mr-10">
+          <!-- Méthodologie -->
+          <h2 class="text-2xl font-semibold mb-3">Votre site, prêt à performer</h2>
+
+          <ul class="list-disc list-inside mb-5">
+            <li>Configuration du CMS WordPress (gestionnaire de contenu le plus utilisé au monde pour la création de
+              site)</li>
+            <li>Mise en forme du design des pages</li>
+            <li>Intégration des contenus (textes, images, mentions légales à fournir…)</li>
+            <li>Formulaire de contact</li>
+            <li>Responsive design (adapté aux formats mobile, tablette, ordinateur)</li>
+            <li>Installation d’une extension pour l’optimisation SEO (améliorer le référencement de votre site sur les
+              moteurs de recherches / pas de rédaction de contenu de vos pages)</li>
+            <li>Optimisation des performances du site (système de cache permettant un chargement rapide des pages)</li>
+            <li>Site sécurisé en HTTPS (certificat SSL permettant une navigation sécurisée pour vos utilisateurs)</li>
+            <li>Assistance par email</li>
+            <li>Guide de prise en main (WordPress)</li>
+          </ul>
+
+          <p>One-page dès <span class="font-bold text-xl">500€</span> | Vitrine dès <span class="font-bold text-xl">1000€</span> | E-commerce dès <span class="font-bold text-xl">1500€</span></p>
+          <p>Gestion simple, design pro, SEO intégré.</p>
+          <p>🚀 Créez, modifiez et faites évoluer votre site en toute autonomie.</p>
+
+          <Button
+            class="mt-5 self-center"
+            text="Créer mon site maintenant →"
+            link="/contact"
+            aria-label="Lien vers la page de contact"
+            target="_self"
+            type="button"
+          />
+        </div>
+        <NuxtImg src="restaurant.png" alt="Un site web de mariage"
+          class="h-full object-cover rounded-md w-full md:w-1/2 mt-10 md:mt-0" />
+      </div>
+
+
+
+      <!-- CTA -->
+      <p class="mt-10 lg:mt-32">
+        🚀 Prêt(e) à concrétiser votre idée avec un <strong>expert en développement web</strong> ?
+        <NuxtLink to="/contact" title="Discutons ensemble de votre projet web"
+          aria-label="Discutons ensemble de votre projet web"
+          class="text-[#FFC800] font-bold hover:underline hover:translate-x-1 transition-all duration-300">
+          Contactez-moi dès maintenant
+        </NuxtLink>
+        pour une <strong>consultation gratuite</strong> et sans engagement !
+      </p>
+    </article>
 
   </section>
 </template>
 
 <script setup lang="ts">
+import { BadgeCheck } from 'lucide-vue-next';
 // Métadonnées SEO avec useSeoMeta
 useSeoMeta({
   title: 'Développement Web sur mesure : Vue, React, Next.js, Nuxt.js & Symfony, Adonis.js',
@@ -93,13 +307,12 @@ useSeoMeta({
 </script>
 
 <style scoped>
-
-
 a {
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #5A3B5D; /* Changement de couleur au survol */
+  color: #5A3B5D;
+  /* Changement de couleur au survol */
 }
 </style>

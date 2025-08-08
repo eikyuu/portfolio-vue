@@ -11,7 +11,7 @@
       >
         <!-- Container scrollable sur mobile -->
         <div
-          class="bg-white rounded-xl shadow-xl w-full max-w-4xl h-[90vh] xl:h-[1060px] flex flex-col"
+          class="bg-white rounded-xl shadow-xl w-full max-w-4xl h-[900px] flex flex-col"
           :class="{ 'mx-2': isMobile }"
           @click.self="isOpen = false"
         >

@@ -1,7 +1,14 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html {
   background-color: #f7fafc;
+  font-family: "Cambria", Georgia, serif;
+  font-size: 14px;
 }
+
+/* h1,h2,h3,h4,h5,h6 {
+  font-family:"Anton", sans-serif;
+} */

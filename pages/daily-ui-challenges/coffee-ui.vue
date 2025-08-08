@@ -42,7 +42,7 @@
             </div>
         </div>
 
-        <div class="flex justify-between items-center mt-20">
+        <div class="flex justify-between items-center mt-32">
             <div>
                 <p class="text-sm font-normal">Total price</p>
                 <p class="font-bold text-xl">${{ price }}</p>

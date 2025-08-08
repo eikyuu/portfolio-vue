@@ -7,7 +7,7 @@
     >
       <div class="flex h-16 items-center justify-between gap-8">
         <!-- Logo -->
-        <NuxtLink to="/" class="text-xl font-bold text-[#5A3B5D]" aria-label="Retour à l’accueil">
+        <NuxtLink to="/" class="text-xl font-bold text-[#5A3B5D] font-bold" aria-label="Retour à l’accueil">
           VINCENTDUGUET.DEV
         </NuxtLink>
 
@@ -23,7 +23,7 @@
             aria-haspopup="true"
             :aria-expanded="showDropdown"
           >
-            Services
+            SERVICES
           </button>
           <div
             v-show="showDropdown"
@@ -123,34 +123,30 @@ useClickOutside(
 
 const services = [
   {
-    label: 'Création de Site Internet',
+    label: 'CRÉATION DE SITE INTERNET',
     to: '/developpement-web-vue-react-symfony-adonis',
   },
   {
-    label: "Création d'Application Mobile",
+    label: "CRÉATION D'APPLICATION MOBILE",
     to: '/developpement-mobile-react-native-swift',
   },
-  {
-    label: 'WordPress',
-    to: '/developpement-wordpress-sur-mesure',
-  },
-  {
-    label: 'Design UX/UI',
-    to: '/design-ux-ui-figma',
-  },
+  // {
+  //   label: 'TEMPLATE WORDPRESS',
+  //   to: '/developpement-wordpress-sur-mesure',
+  // },
 ]
 
 const nav = [
   {
-    label: 'Mes Collaborations & Projets',
+    label: 'PORTFOLIO',
     to: '/mes-collaborations-projets',
   },
   {
-    label: 'Contact',
+    label: 'CONTACT',
     to: '/contact',
   },
   {
-    label: 'Blog',
+    label: 'BLOG',
     to: '/blog',
   },
 ]

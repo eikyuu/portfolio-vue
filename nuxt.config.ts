@@ -13,7 +13,13 @@ export default defineNuxtConfig({
   image: {
     // Options
   },
-  modules: ['@nuxt/image', '@nuxtjs/html-validator', '@nuxt/eslint','@vueuse/motion/nuxt'],
+  modules: [
+    '@nuxt/image',
+    '@nuxtjs/html-validator',
+    '@nuxt/eslint',
+    '@vueuse/motion/nuxt',
+    '@nuxt/fonts'
+  ],
 
   runtimeConfig: {
     // The private keys which are only available within server-side

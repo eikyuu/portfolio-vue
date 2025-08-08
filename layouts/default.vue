@@ -1,13 +1,13 @@
 <template>
   <div>
 
-  <Header />
+    <Header />
 
-  <main class="w-[90vw] xl:max-w-screen-2xl mx-auto md:p-0 md:px-4 text-sm md:text-base leading-5 md:leading-8">
-    <slot />
-  </main>   
-  
-  <Footer />
+    <div class="w-[90vw] md:w-[80vw] xl:max-w-screen-2xl mx-auto md:p-0 md:px-4 text-sm md:text-base leading-5 md:leading-8">
+      <slot />
+    </div>
+
+    <Footer />
   </div>
 
 </template>

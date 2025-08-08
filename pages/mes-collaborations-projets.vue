@@ -1,5 +1,5 @@
 <template>
-  <main class="mt-20 md:mt-32" role="main" id="main-content">
+  <main class="mt-32 " role="main" id="main-content">
     <article v-motion-slide-visible-once-top :duration="500" :delay="100" class="mb-20 mx-auto px-4">
       <!-- Titre principal -->
       <TitleUnder title="Collaborations professionnelles : projets et expertises" tag="h1" class="mb-10 xl:mb-20" />

@@ -1,5 +1,5 @@
 <template>
-  <div v-motion-slide-visible-once-top :duration="500" :delay="100" class="mt-20 md:mt-32">
+  <div v-motion-slide-visible-once-top :duration="500" :delay="100" class="mt-32 ">
 
     <div class="block flex justify-center">
             <h1
