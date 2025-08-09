@@ -1,6 +1,6 @@
 <template>
     <div
-      class="bg-white rounded-md shadow-xl shadow-[#F2EBF4] flex flex-col items-center justify-between border-b-8 border-[#FFC800] w-full h-full lg:h-[425px] p-5"
+      class="bg-white rounded-md shadow-xl shadow-[#F2EBF4] flex flex-col items-center justify-between border-b-8 border-[#FFC800] w-full h-full lg:h-full p-5"
       v-motion-slide-visible-top
       :duration="500"
       :delay="100"
@@ -15,6 +15,7 @@
         format="webp"
         loading="lazy"
         fit="cover"
+        sizes="sm:240px md:240px lg:240px"
         :alt="`Illustration du service proposé - ${props.title}`"
       />
   
