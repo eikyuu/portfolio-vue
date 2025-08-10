@@ -184,32 +184,6 @@
       </div>
 
       <div 
-        v-motion-slide-visible-right
-        :duration="500" 
-        :delay="100"
-        class="flex flex-col md:flex-row items-center justify-between w-full mt-10 lg:mt-32 gap-4 md:gap-8">
-        <div class="w-full md:w-1/2 mb-10 lg:mb-0">
-          <h2 class="text-2xl font-semibold mb-3">Votre vision. Mon expertise.</h2>
-
-          <p>Un site web unique, conçu pour refléter votre image et atteindre vos objectifs.
-            Design premium, performances optimisées, référencement inclus.</p>
-
-          <p><strong>Résultat : plus de visibilité, plus de clients, plus de ventes.</strong></p>
-
-          <Button
-            class="mt-5"
-            text="Demander mon devis gratuit →"
-            link="/contact"
-            aria-label="Lien vers la page de contact"
-            target="_self"
-            type="button"
-          />
-        </div>
-        <NuxtImg src="phone.png" alt="Un site web de mariage"
-          class="h-full object-cover rounded-md w-full md:w-1/2" />
-      </div>
-
-      <div 
         v-motion-slide-visible-left
         :duration="500" 
         :delay="100"
