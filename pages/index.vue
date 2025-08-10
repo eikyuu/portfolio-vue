@@ -65,7 +65,7 @@ useHead({
 
           <p class="mt-8">
             <strong>Passionné de développement web et de design UX/UI</strong>, je conçois des solutions
-            numériques centrées utilisateur, responsive, durables et inclusives.
+            numériques centrées sur l'utilisateur, responsive, durables et inclusives.
           </p>
 
           <h3 class="mt-10 text-lg font-semibold">💡 Technologies modernes</h3>
