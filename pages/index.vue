@@ -146,10 +146,36 @@ useHead({
 
     </section>
 
-    <section v-motion-slide-visible-once-top :duration="500" :delay="100" class="w-full mb-10 lg:mb-32">
+    <section v-motion-slide-visible-left :duration="500" :delay="100" class="w-full mb-10 lg:mb-32">
       <NuxtLink to="/developpement-web-vue-react-symfony-adonis" class="w-full">
         <NuxtImg src="banner.png" alt="Un site web de mariage" class="h-full object-cover rounded-md w-full" />
       </NuxtLink>
+    </section>
+
+    <section 
+        v-motion-slide-visible-right
+        :duration="500" 
+        :delay="100"
+        class="flex flex-col md:flex-row items-center justify-between w-full mt-10 lg:mt-32 gap-4 md:gap-8 mb-10 lg:mb-32">
+        <div class="w-full md:w-1/2 mb-10 lg:mb-0">
+          <h2 class="text-2xl font-semibold mb-3">Votre vision. Mon expertise.</h2>
+
+          <p>Un site web unique, conçu pour refléter votre image et atteindre vos objectifs.
+            Design premium, performances optimisées, référencement inclus.</p>
+
+          <p><strong>Résultat : plus de visibilité, plus de clients, plus de ventes.</strong></p>
+
+          <Button
+            class="mt-5"
+            text="Demander mon devis gratuit →"
+            link="/contact"
+            aria-label="Lien vers la page de contact"
+            target="_self"
+            type="button"
+          />
+        </div>
+        <NuxtImg src="phone.png" alt="Un site web de mariage"
+          class="h-full object-cover rounded-md w-full md:w-1/2" />
     </section>
 
     <TitleUnder v-motion-slide-visible-once-top :duration="500" :delay="100" title="Les articles du blog" tag="h2" />

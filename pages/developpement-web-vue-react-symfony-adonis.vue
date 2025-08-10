@@ -214,8 +214,11 @@
         :duration="500" 
         :delay="100"
         class="flex flex-col md:flex-row items-center justify-between mt-10 lg:mt-32 w-full gap-4 md:gap-8">
-        <NuxtImg src="site-web.png" alt="Un site web de mariage"
-          class="h-full object-cover rounded-md w-full md:w-1/2 order-2 md:order-1" />
+        <NuxtImg 
+          src="site-web-grotte-fee.png" 
+          alt="Un site web de mariage"
+          class="h-full object-cover rounded-md w-full md:w-1/2 order-2 md:order-1" 
+          />
 
         <div class="w-full md:w-1/2 order-1 md:order-2">
           <h2 class="text-2xl font-semibold mb-3">Votre site peut être en ligne dès ce mois-ci 🚀</h2>
