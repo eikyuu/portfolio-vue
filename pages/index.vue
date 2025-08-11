@@ -120,8 +120,7 @@ useHead({
         <ExpertiseCard title="Développement Web sur mesure" link="/developpement-web-vue-react-symfony-adonis"
           text-btn="J’ai besoin d’un expert en Développement Web →" img="svg/web.svg">
           <p>
-            Créez un <strong>site web moderne, rapide et personnalisé</strong> pour répondre aux attentes de vos
-            utilisateurs.
+            Créez un <strong>site web moderne, rapide et personnalisé</strong> pour votre entreprise.
           </p>
         </ExpertiseCard>
       </NuxtLink>
@@ -130,17 +129,15 @@ useHead({
 
         <ExpertiseCard title="Développement Mobile sur mesure" link="/developpement-mobile-react-native-swift"
           text-btn="Je veux une application mobile performante →" img="svg/mobile.svg">
-          <p>Offrez une <strong>application mobile performante, intuitive et personnalisée</strong> à vos utilisateurs.
-          </p>
+          <p>Offrez une <strong>application mobile performante, intuitive et personnalisée.</strong></p>
         </ExpertiseCard>
 
       </NuxtLink>
 
       <NuxtLink to="/developpement-web-vue-react-symfony-adonis" class="w-full md:w-[calc(33%-1rem)]">
-        <ExpertiseCard title="Template WordPress sur mesure" link="/developpement-web-vue-react-symfony-adonis"
-          text-btn="Créer mon site WordPress sur-mesure →" img="svg/web.svg">
-          <p>Offrez à votre entreprise un <strong>site WordPress rapide, responsive et SEO-friendly</strong>, pensé pour
-            convertir.</p>
+        <ExpertiseCard title="Site WordPress sur mesure" link="/developpement-web-vue-react-symfony-adonis"
+          text-btn="Je veux un site WordPress sur-mesure et rapide →" img="svg/web.svg">
+          <p>Offrez à votre entreprise un <strong>site WordPress rapide, responsive et SEO-friendly.</strong></p>
         </ExpertiseCard>
       </NuxtLink>
 
@@ -152,7 +149,6 @@ useHead({
       </NuxtLink>
     </section>
     
-
     <section 
         v-motion-slide-visible-right
         :duration="500" 
@@ -184,135 +180,8 @@ useHead({
         :duration="500" 
         :delay="100"
         class="flex flex-col lg:flex-row items-stretch justify-between w-full gap-4 lg:gap-6">
-        <!-- cards offres -->
 
-        <div
-          class="bg-white rounded-md shadow-xl shadow-[#F2EBF4] flex flex-col justify-between border-b-8 border-[#FFC800] w-full lg:w-1/3 p-5 mb-10 lg:mb-0">
-
-          <div>
-            <h2 class="mb-2 font-bold">REFONTE DE SITE</h2>
-
-            <p>À partir de <span class="font-bold text-xl">500€</span> </p>
-            <p class="font-bold mt-5">Facilités de paiement disponibles.</p>
-
-            <p class="mb-4">Pour ceux qui souhaitent que leur site reflète enfin leur personnalité & leurs valeurs.</p>
-
-            <h3 class="font-bold">Analyse du site & plan d'amélioration</h3>
-            <p class="mb-2">Définition des objectifs et axes d'amélioration. Choix des technologies, migration...</p>
-
-            <h3 class="font-bold">Audit stratégique & créatif</h3>
-            <p class="mb-2">Pour redesigner un site adapté à votre personnalité & à vos valeurs.</p>
-
-            <h3 class="font-bold">Refonte complète</h3>
-            <p class="mb-2">Refonte UX/UI pour une expérience utilisateur moderne, fluide et plus proche de votre personnalité. Refonte
-              du site entier (structure, sections, composants).</p>
-
-            <h3 class="font-bold">Mise en place des intégrations de contenu</h3>
-            <p class="mb-2">(textes, images, vidéos)</p>
-
-            <h3 class="font-bold">Refonte stratégique & SEO</h3>
-            <p class="mb-2">Optimisation technique (performances du site, référencement, gestion du contenu).</p>
-
-            <h3 class="font-bold">Accompagnement & Support</h3>
-            <p class="mb-2">Formation pour vous rendre autonome.</p>
-          </div>
-
-          <Button
-            class="mt-5 self-center"
-            text="En savoir plus →"
-            link="/contact"
-            aria-label="Lien vers la page de contact"
-            target="_self"
-            type="button"
-          />
-        </div>
-
-        <div
-          class="bg-white rounded-md shadow-xl shadow-[#F2EBF4] flex flex-col justify-between border-b-8 border-[#FFC800] w-full lg:w-1/3 p-5 mb-10 lg:mb-0">
-          
-          <div>
-            <h2 class="mb-2 font-bold">SITE CMS</h2>
-
-            <p>Site one-page = à partir de <span class="font-bold text-xl">500€</span> </p>
-
-            <p>Site Vitrine (5 pages) = à partir de <span class="font-bold text-xl">1000€</span> </p>
-
-            <p>Site e-commerce = à partir de <span class="font-bold text-xl">1500€</span> </p>
-
-            <p class="font-bold mt-5">Facilités de paiement disponibles.</p>
-
-            <p class="mb-4">Pour ceux qui souhaitent devenir autonome rapidement & simplement.</p>
-
-            <h3 class="font-bold">Audit stratégique & créatif</h3>
-            <p class="mb-2">Pour designer un site adapté à votre personnalité & à vos valeurs. Optimisation et personnalisation de
-              l'expérience utilisateur.</p>
-
-            <h3 class="font-bold">Création d'un site - Framer</h3>
-            <p class="mb-2">Structure optimisée et personnalisable Gestion simplifiée via une interface intuitive.</p>
-
-            <h3 class="font-bold">Contenu administrable</h3>
-            <p class="mb-2">Modification des textes, images et videos, ajout de nouveaux contenus.</p>
-
-            <h3 class="font-bold">Optimisation & SEO</h3>
-            <p class="mb-2">Mise en place des actions de référencement (ajout de Google Analytics, gestion des urls, optimisation des
-              balises html, optimisation des médias).</p>
-
-            <h3 class="font-bold">Accompagnement & Support</h3>
-            <p class="mb-2">Formation pour vous rendre autonome, hébergement et maintenance simplifiée.</p>
-          </div>
-
-          <Button
-            class="mt-5 self-center"
-            text="En savoir plus →"
-            link="/contact"
-            aria-label="Lien vers la page de contact"
-            target="_self"
-            type="button"
-          />
-        </div>
-
-        <div
-          class="bg-white rounded-md shadow-xl shadow-[#F2EBF4] flex flex-col justify-between border-b-8 border-[#FFC800] w-full lg:w-1/3 p-5 lg:mb-0">
-          
-          <div>
-            <h2 class="mb-2 font-bold">SITE SUR-MESURE</h2>
-
-            <p>À partir de <span class="font-bold text-xl">500€</span> </p>
-            <p class="font-bold mt-5">Facilités de paiement disponibles.</p>
-
-            <p class="mb-4">Pour ceux qui souhaitent un site sur-mesure qui répond à tous leurs besoins. Codé à la perfection.</p>
-
-            <h3 class="font-bold">Audit stratégique & créatif</h3>
-            <p class="mb-2">Conception d'un site performant, fluide, interactif et aligné avec votre personnalité et vos valeurs. Choix
-              des technologies les plus adaptées à vos besoins.</p>
-
-            <h3 class="font-bold">Expérience utilisateur ++</h3>
-            <p class="mb-2">Stratégies design UX/UI haut de gamme pour une expérience utilisateur premium (navigation fluide,
-              animations interactives, responsive...).</p>
-
-            <h3 class="font-bold">Développement sur-mesure</h3>
-            <p class="mb-2">Création du site totalement sur-mesure (structure, sections, composants).</p>
-
-            <h3 class="font-bold">Intégrations avancées</h3>
-            <p class="mb-2">Création de plateforme d'administration & de fonctionnalités spécifiques (plugings d'applications externes,
-              création d'API...) pour vous rendre autonome.</p>
-
-            <h3 class="font-bold">Stratégie SEO</h3>
-            <p class="mb-2">Pour un site ultra fluide, référencé et sécurisé. Mise en place des actions de référencement.</p>
-
-            <h3 class="font-bold">Accompagnement stratégique</h3>
-            <p class="mb-2">Un mois supplémentaire pour analyser les performances de votre site & les améliorer.</p>
-          </div>
-
-          <Button
-            class="mt-5 self-center"
-            text="En savoir plus →"
-            link="/contact"
-            aria-label="Lien vers la page de contact"
-            target="_self"
-            type="button"
-          />
-        </div>
+        <Offres />
 
       </div>
 

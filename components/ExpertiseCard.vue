@@ -1,12 +1,5 @@
 <template>
-    <div
-      class="bg-white rounded-md shadow-xl shadow-[#F2EBF4] flex flex-col items-center justify-between border-b-8 border-[#FFC800] w-full h-full lg:h-full p-5"
-      v-motion-slide-visible-top
-      :duration="500"
-      :delay="100"
-      role="region"
-      :aria-labelledby="props.title ? 'service-title' : undefined"
-    >
+    <CardGoldBorder class="items-center">
       <NuxtImg
         class="rounded-md mb-5"
         :src="props.img"
@@ -41,7 +34,7 @@
           type="button"
         />
       </div>
-    </div>
+    </CardGoldBorder>
   </template>
   
   <script setup lang="ts">
