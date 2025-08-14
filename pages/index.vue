@@ -47,18 +47,25 @@ useHead({
       <div class="lg:w-3/4 bg-number bg-cover mb-4">
         <div v-motion-slide-visible-once-top :duration="500" :delay="100">
           <h1 class="uppercase text-[#5A3B5D] text-4xl font-bold">
-            Salut, je suis <span class="text-[#FFC800]">Vincent Duguet</span><br>
             Développeur web & mobile Freelance à Tours.
           </h1>
 
           <!-- Image mobile -->
-          <div class="block lg:hidden flex justify-center mt-10 mb-10">
-            <NuxtImg class="rounded-md object-cover" src="homme-barbu-sur-fond-jaune.png" width="500" height="500"
-              sizes="sm:50vw md:400px xl:742px" format="webp" loading="lazy"
+          <div class="block lg:hidden flex flex-col justify-center mt-10">
+            <NuxtImg class="rounded-md object-cover floating-animation" src="homme-barbu-sur-fond-jaune.png" width="500"
+              height="500" sizes="sm:50vw md:400px xl:742px" format="webp" loading="lazy"
               alt="Vincent Duguet, développeur freelance devant un ordinateur" />
+            <div class="relative -top-16 glass-effect rounded-2xl p-6" style="transform: none;">
+              <div class="flex items-center space-x-3">
+                <div>
+                  <div class="font-semibold text-gray-800">Vincent Duguet</div>
+                  <div class="text-gray-600">Développeur web & mobile Freelance à Tours</div>
+                </div>
+          </div>
+        </div>
           </div>
 
-          <h2 class="text-[#5A3B5D] text-2xl font-bold mt-10 uppercase">
+          <h2 class="text-[#5A3B5D] text-2xl font-bold xl:mt-10 uppercase">
             J’accompagne les entreprises dans la création de sites et d’applications
             <strong>accessibles</strong>, <strong>performantes</strong> et <strong>optimisées</strong>.
           </h2>
@@ -104,10 +111,20 @@ useHead({
 
       <!-- Image desktop -->
       <div class="hidden lg:block">
-        <NuxtImg class="mt-32 lg:mt-0 object-cover rounded-md" src="homme-barbu-sur-fond-jaune.png" width="500"
-          height="500" sizes="sm:50vw md:400px lg:500px" format="webp" loading="lazy"
+        <NuxtImg class="mt-32 lg:mt-0 object-cover rounded-md floating-animation" src="homme-barbu-sur-fond-jaune.png"
+          width="500" height="500" sizes="sm:50vw md:400px lg:500px" format="webp" loading="lazy"
           alt="Vincent Duguet, développeur freelance devant un ordinateur" />
+        <div class="relative -top-32 glass-effect rounded-2xl p-6" style="transform: none;">
+          <div class="flex items-center space-x-3">
+            <div>
+              <div class="font-semibold text-gray-800">Vincent Duguet</div>
+              <div class="text-gray-600">Développeur web & mobile Freelance à Tours</div>
+            </div>
+          </div>
+        </div>
+
       </div>
+
     </section>
 
     <!-- Titre section expertises -->
@@ -115,7 +132,8 @@ useHead({
 
     <!-- Cartes Expertise -->
 
-    <section v-motion-slide-visible-once-top :duration="500" :delay="100" class="flex flex-row justify-between flex-wrap mt-10 mb-10 lg:mt-32 lg:mb-32 gap-5">
+    <section v-motion-slide-visible-once-top :duration="500" :delay="100"
+      class="flex flex-row justify-between flex-wrap mt-10 mb-10 lg:mt-32 lg:mb-32 gap-5">
       <NuxtLink to="/developpement-web-vue-react-symfony-adonis" class="w-full md:w-[calc(33%-1rem)]">
         <ExpertiseCard title="Développement Web sur mesure" link="/developpement-web-vue-react-symfony-adonis"
           text-btn="J’ai besoin d’un expert en Développement Web →" img="svg/web.svg">
@@ -148,44 +166,32 @@ useHead({
         <NuxtImg src="banner.png" alt="Un site web de mariage" class="h-full object-cover rounded-md w-full" />
       </NuxtLink>
     </section>
-    
-    <section 
-        v-motion-slide-visible-right
-        :duration="500" 
-        :delay="100"
-        class="flex flex-col md:flex-row items-center justify-between w-full mt-10 lg:mt-32 gap-4 md:gap-8 mb-10 lg:mb-32">
-        <div class="w-full md:w-1/2 mb-10 lg:mb-0">
-          <h2 class="text-2xl font-semibold mb-3">Votre vision. Mon expertise.</h2>
 
-          <p>Un site web unique, conçu pour refléter votre image et atteindre vos objectifs.
-            Design premium, performances optimisées, référencement inclus.</p>
+    <section v-motion-slide-visible-right :duration="500" :delay="100"
+      class="flex flex-col md:flex-row items-center justify-between w-full mt-10 lg:mt-32 gap-4 md:gap-8 mb-10 lg:mb-32">
+      <div class="w-full md:w-1/2 mb-10 lg:mb-0">
+        <h2 class="text-2xl font-semibold mb-3">Votre vision. Mon expertise.</h2>
 
-          <p><strong>Résultat : plus de visibilité, plus de clients, plus de ventes.</strong></p>
+        <p>Un site web unique, conçu pour refléter votre image et atteindre vos objectifs.
+          Design premium, performances optimisées, référencement inclus.</p>
 
-          <Button
-            class="mt-5"
-            text="Demander mon devis gratuit →"
-            link="/contact"
-            aria-label="Lien vers la page de contact"
-            target="_self"
-            type="button"
-          />
-        </div>
-        <NuxtImg src="phone.png" alt="Un site web de mariage"
-          class="h-full object-cover rounded-md w-full md:w-1/2" />
+        <p><strong>Résultat : plus de visibilité, plus de clients, plus de ventes.</strong></p>
+
+        <Button class="mt-5" text="Demander mon devis gratuit →" link="/contact"
+          aria-label="Lien vers la page de contact" target="_self" type="button" />
+      </div>
+      <NuxtImg src="phone.png" alt="Un site web de mariage" class="h-full object-cover rounded-md w-full md:w-1/2" />
     </section>
 
-    <div 
-        v-motion-slide-visible-once-top 
-        :duration="500" 
-        :delay="100"
-        class="flex flex-col lg:flex-row items-stretch justify-between w-full gap-4 lg:gap-6">
+    <div v-motion-slide-visible-once-top :duration="500" :delay="100"
+      class="flex flex-col lg:flex-row items-stretch justify-between w-full gap-4 lg:gap-6">
 
-        <Offres />
+      <Offres />
 
-      </div>
+    </div>
 
-    <TitleUnder v-motion-slide-visible-once-top :duration="500" :delay="100" title="Les articles du blog" tag="h2" class="mt-10 lg:mt-32" />
+    <TitleUnder v-motion-slide-visible-once-top :duration="500" :delay="100" title="Les articles du blog" tag="h2"
+      class="mt-10 lg:mt-32" />
 
     <section v-motion-slide-visible-once-top :duration="500" :delay="100" class="mt-10 mb-10 lg:mt-32 lg:mb-32">
 
@@ -208,5 +214,32 @@ useHead({
 .page-leave-to {
   opacity: 0;
   filter: blur(1rem);
+}
+
+.floating-animation {
+  animation: floating 6s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translatey(0px);
+  }
+
+  50% {
+    transform: translatey(-20px);
+  }
+
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15.4px);
+  -webkit-backdrop-filter: blur(15.4px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 </style>

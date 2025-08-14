@@ -3,10 +3,10 @@
 
         <h2 class="mb-2 font-bold">REFONTE DE SITE</h2>
 
+        <p class="mb-4">Pour ceux qui souhaitent que leur site reflète enfin leur personnalité & leurs valeurs.</p>
+
         <p>À partir de <span class="font-bold text-xl">500€</span> </p>
         <p class="font-bold mt-5">Facilités de paiement disponibles.</p>
-
-        <p class="mb-4">Pour ceux qui souhaitent que leur site reflète enfin leur personnalité & leurs valeurs.</p>
 
         <h3 class="font-bold">Analyse du site & plan d'amélioration</h3>
         <p class="mb-2">Définition des objectifs et axes d'amélioration. Choix des technologies, migration...</p>
@@ -36,6 +36,8 @@
 
         <h2 class="mb-2 font-bold">SITE CMS</h2>
 
+        <p class="mb-4">Pour ceux qui souhaitent devenir autonome rapidement & simplement.</p>
+
         <p>Site one-page = à partir de <span class="font-bold text-xl">500€</span> </p>
 
         <p>Site Vitrine (5 pages) = à partir de <span class="font-bold text-xl">1000€</span> </p>
@@ -43,8 +45,6 @@
         <p>Site e-commerce = à partir de <span class="font-bold text-xl">1500€</span> </p>
 
         <p class="font-bold mt-5">Facilités de paiement disponibles.</p>
-
-        <p class="mb-4">Pour ceux qui souhaitent devenir autonome rapidement & simplement.</p>
 
         <h3 class="font-bold">Audit stratégique & créatif</h3>
         <p class="mb-2">Pour designer un site adapté à votre personnalité & à vos valeurs. Optimisation et
@@ -73,11 +73,12 @@
     <CardGoldBorder>
         <h2 class="mb-2 font-bold">SITE SUR-MESURE</h2>
 
-        <p>À partir de <span class="font-bold text-xl">500€</span> </p>
-        <p class="font-bold mt-5">Facilités de paiement disponibles.</p>
-
         <p class="mb-4">Pour ceux qui souhaitent un site sur-mesure qui répond à tous leurs besoins. Codé à la
             perfection.</p>
+
+        <p>À partir de <span class="font-bold text-xl">500€ ou 60€/mois 6 mois d'engagement</span></p>
+
+        <p class="font-bold mt-5">Facilités de paiement disponibles.</p>
 
         <h3 class="font-bold">Audit stratégique & créatif</h3>
         <p class="mb-2">Conception d'un site performant, fluide, interactif et aligné avec votre personnalité et vos
