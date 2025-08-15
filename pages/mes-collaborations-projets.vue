@@ -52,14 +52,14 @@
 
       <div class="flex justify-center gap-2 mb-12" role="tablist">
         <button type="button"
-          class="w-[50%] skew-x-[-8deg] rounded-md h-10 focus:outline focus:outline-2 focus:outline-[#FFC800]"
+          class="w-[50%] skew-x-[-8deg] rounded-xl h-10 focus:outline focus:outline-2 focus:outline-[#FFC800]"
           :class="type === 'WEB' ? 'bg-[#FFC800]' : 'bg-[#F2EBF4]'" :aria-selected="type === 'WEB'" role="tab"
           @click="onClick('WEB')">
           Projet web
         </button>
 
         <button type="button"
-          class="w-[50%] skew-x-[-8deg] rounded-md h-10 focus:outline focus:outline-2 focus:outline-[#FFC800]"
+          class="w-[50%] skew-x-[-8deg] rounded-xl h-10 focus:outline focus:outline-2 focus:outline-[#FFC800]"
           :class="type === 'MOBILE' ? 'bg-[#FFC800]' : 'bg-[#F2EBF4]'" :aria-selected="type === 'MOBILE'" role="tab"
           @click="onClick('MOBILE')">
           Projet mobile

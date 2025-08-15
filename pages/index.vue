@@ -52,10 +52,10 @@ useHead({
 
           <!-- Image mobile -->
           <div class="block lg:hidden flex flex-col justify-center mt-10">
-            <NuxtImg class="rounded-md object-cover floating-animation" src="homme-barbu-sur-fond-jaune.png" width="500"
+            <NuxtImg class="rounded-xl object-cover floating-animation" src="homme-barbu-sur-fond-jaune.png" width="500"
               height="500" sizes="sm:50vw md:400px xl:742px" format="webp" loading="lazy"
               alt="Vincent Duguet, développeur freelance devant un ordinateur" />
-            <div class="relative -top-16 glass-effect rounded-2xl p-6" style="transform: none;">
+            <div class="relative -top-16 glass-effect rounded-xl p-6" style="transform: none;">
               <div class="flex items-center space-x-3">
                 <div>
                   <div class="font-semibold text-gray-800">Vincent Duguet</div>
@@ -111,10 +111,10 @@ useHead({
 
       <!-- Image desktop -->
       <div class="hidden lg:block">
-        <NuxtImg class="mt-32 lg:mt-0 object-cover rounded-md floating-animation" src="homme-barbu-sur-fond-jaune.png"
+        <NuxtImg class="mt-32 lg:mt-0 object-cover rounded-xl floating-animation" src="homme-barbu-sur-fond-jaune.png"
           width="500" height="500" sizes="sm:50vw md:400px lg:500px" format="webp" loading="lazy"
           alt="Vincent Duguet, développeur freelance devant un ordinateur" />
-        <div class="relative -top-32 glass-effect rounded-2xl p-6" style="transform: none;">
+        <div class="relative -top-32 glass-effect rounded-xl p-6" style="transform: none;">
           <div class="flex items-center space-x-3">
             <div>
               <div class="font-semibold text-gray-800">Vincent Duguet</div>
@@ -163,7 +163,7 @@ useHead({
 
     <section v-motion-slide-visible-left :duration="500" :delay="100" class="w-full mb-10 lg:mb-32">
       <NuxtLink to="/developpement-web-vue-react-symfony-adonis" class="w-full">
-        <NuxtImg src="banner.png" alt="Un site web de mariage" class="h-full object-cover rounded-md w-full" />
+        <NuxtImg src="banner.png" alt="Un site web de mariage" class="h-full object-cover rounded-xl w-full" />
       </NuxtLink>
     </section>
 
@@ -180,7 +180,7 @@ useHead({
         <Button class="mt-5" text="Demander mon devis gratuit →" link="/contact"
           aria-label="Lien vers la page de contact" target="_self" type="button" />
       </div>
-      <NuxtImg src="phone.png" alt="Un site web de mariage" class="h-full object-cover rounded-md w-full md:w-1/2" />
+      <NuxtImg src="phone.png" alt="Un site web de mariage" class="h-full object-cover rounded-xl w-full md:w-1/2" />
     </section>
 
     <div v-motion-slide-visible-once-top :duration="500" :delay="100"
@@ -236,7 +236,6 @@ useHead({
 
 .glass-effect {
   background: rgba(255, 255, 255, 0.15);
-  border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(15.4px);
   -webkit-backdrop-filter: blur(15.4px);

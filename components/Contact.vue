@@ -13,7 +13,7 @@
         >
           <figure class="xl:w-1/2">
             <NuxtImg
-              class="rounded-md mb-10 xl:mb-0"
+              class="rounded-xl mb-10 xl:mb-0"
               src="bulle-de-contact-vert-fond-jaune.jpg"
               width="640"
               height="426"

@@ -15,7 +15,7 @@
           loading="lazy"
           alt="Présentation visuelle du projet : {{ title }}"
           :class="imageClasses"
-          class="rounded-md mb-10 xl:mb-0"
+          class="rounded-xl mb-10 xl:mb-0"
         />
   
         <!-- Contenu texte -->

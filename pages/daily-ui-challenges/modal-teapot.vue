@@ -1,10 +1,10 @@
 <template>
     <section>
-        <button type="button" class="bg-[#F2EBF4] p-5 rounded-md" @click="showModal = true">NEED COFFEE</button>
+        <button type="button" class="bg-[#F2EBF4] p-5 rounded-xl" @click="showModal = true">NEED COFFEE</button>
         <div v-if="showModal" class="modal" @click="showModal = false">
             <div
                 class="modal-overlay flex justify-center items-center bg-black bg-opacity-50 fixed top-0 left-0 w-full h-full">
-                <div class="bg-white w-[80vw] p-4 rounded-md flex flex-col" @click.stop>
+                <div class="bg-white w-[80vw] p-4 rounded-xl flex flex-col" @click.stop>
                     <button type="button" class="bg-[#F2EBF4] h-10 w-10 rounded-full self-end" @click="showModal = false">X</button>
 
                     <div class="flex flex-col items-center space-y-5">

@@ -27,7 +27,7 @@
           </button>
           <div
             v-show="showDropdown"
-            class="absolute bg-white text-[#5A3B5D] w-max rounded-md shadow-md z-50"
+            class="absolute bg-white text-[#5A3B5D] w-max rounded-xl shadow-md z-50"
           >
             <ul class="flex flex-col text-base gap-2 p-4">
               <li
@@ -36,7 +36,7 @@
               >
                 <NuxtLink
                   :to="item.to"
-                  class="block px-3 py-2 rounded-md text-[#5A3B5D] hover:bg-gray-50"
+                  class="block px-3 py-2 rounded-xl text-[#5A3B5D] hover:bg-gray-50"
                 >
                   {{ item.label }}
                 </NuxtLink>
@@ -53,7 +53,7 @@
           >
             <NuxtLink
               :to="item.to"
-              class="block rounded-md text-[#5A3B5D] hover:bg-gray-50 font-medium"
+              class="block rounded-xl text-[#5A3B5D] hover:bg-gray-50 font-medium"
             >
               {{ item.label }}
             </NuxtLink>
@@ -69,7 +69,7 @@
             aria-label="Menu mobile"
             :aria-expanded="isOpen"
             aria-controls="mobile-menu"
-            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#FFC800]"
+            class="inline-flex items-center justify-center p-2 rounded-xl text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#FFC800]"
           >
             <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -93,7 +93,7 @@
         >
           <NuxtLink
             :to="item.to"
-            class="block px-3 py-2 rounded-md text-gray-700 hover:bg-gray-50 text-base font-medium"
+            class="block px-3 py-2 rounded-xl text-gray-700 hover:bg-gray-50 text-base font-medium"
             @click="isOpen = false"
           >
             {{ item.label }}

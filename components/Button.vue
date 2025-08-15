@@ -93,7 +93,7 @@
       'inline-flex',
       'items-center',
       'justify-center',
-      'rounded-md',
+      'rounded-xl',
       'border',
       'font-medium',
       'transition-all',

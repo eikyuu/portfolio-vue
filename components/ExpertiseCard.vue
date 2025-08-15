@@ -1,7 +1,7 @@
 <template>
     <CardGoldBorder class="items-center">
       <NuxtImg
-        class="rounded-md mb-5"
+        class="rounded-xl mb-5"
         :src="props.img"
         width="240"
         height="110"

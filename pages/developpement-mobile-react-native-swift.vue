@@ -13,7 +13,7 @@
 
       <div class="flex flex-col md:flex-row items-center justify-between w-full">
         <NuxtImg src="phone.png" alt="Un site web de mariage"
-          class="h-full object-cover rounded-md w-full md:w-1/2 " />
+          class="h-full object-cover rounded-xl w-full md:w-1/2 " />
 
         <div class="w-full md:w-1/2 ml-0 md:ml-10">
           <h2 class="text-2xl font-semibold mb-3">Développement Mobile : Apps iOS & Android performantes avec React

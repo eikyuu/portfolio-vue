@@ -1,5 +1,5 @@
 <template>
-    <section class="text-orange-900 max-w-xs mx-auto p-4 bg-white shadow-md rounded-md font-mono">
+    <section class="text-orange-900 max-w-xs mx-auto p-4 bg-white shadow-md rounded-xl font-mono">
 
         <div class="space-y-4">
             <NuxtImg src="daily-ui-challenges/coffee-ui.jpg" class="rounded-xl object-cover" format="webp" loading="lazy" width="300" height="300" alt="Coffee" />

@@ -15,7 +15,7 @@
 
       <div class="flex flex-col md:flex-row items-center justify-between mt-5 w-full gap-4 md:gap-8">
         <NuxtImg src="site-web-i-love-my-dog.webp" alt="Un site web avec un chien"
-          class="h-full object-cover rounded-md w-full md:w-1/2 flex-shrink-0" />
+          class="h-full object-cover rounded-xl w-full md:w-1/2 flex-shrink-0" />
         <div class="w-full md:w-1/2 flex flex-col items-center flex-shrink-0">
           <p class="font-[Anton] text-2xl mt-5 md:mt-0">Tu es au bon endroit si</p>
           <ul class="list-none pl-5 mt-3 w-full">
@@ -56,7 +56,7 @@
       <div v-motion-slide-visible-left :duration="500" :delay="100"
         class="flex flex-col md:flex-row items-center justify-between mt-10 lg:mt-32 w-full gap-4 md:gap-8">
         <NuxtImg src="site-web-grotte-fee.png" alt="Un site web de mariage"
-          class="h-full object-cover rounded-md w-full md:w-1/2 order-2 md:order-1" />
+          class="h-full object-cover rounded-xl w-full md:w-1/2 order-2 md:order-1" />
 
         <div class="w-full md:w-1/2 order-1 md:order-2">
           <h2 class="text-2xl font-semibold mb-3">Votre site peut être en ligne dès ce mois-ci 🚀</h2>
@@ -99,7 +99,7 @@
             aria-label="Lien vers la page de contact" target="_self" type="button" />
         </div>
         <NuxtImg src="restaurant.png" alt="Un site web de mariage"
-          class="h-full object-cover rounded-md w-full md:w-1/2" />
+          class="h-full object-cover rounded-xl w-full md:w-1/2" />
       </div>
 
       <!-- CTA -->
