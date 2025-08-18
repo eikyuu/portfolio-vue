@@ -86,7 +86,7 @@
             </div>
           </NuxtLink>
 
-          <div class="mt-5 glass-effect p-5 rounded-xl">
+          <div class="glass-effect p-5 rounded-xl">
             <p class="font-semibold">Consultation gratuite</p>
             <p>Je suis disponible pour des missions de développement web et mobile, de design UX/UI, de conseil en stratégie digitale, ou pour toute autre collaboration pour atteindre vos objectifs.</p>
             <ZcalEmbed class="mt-5" text="Réservez maintenant" />
