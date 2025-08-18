@@ -1,8 +1,8 @@
 <template>
   <main class="mt-32 " role="main" id="main-content">
-    <article v-motion-slide-visible-once-top :duration="500" :delay="100" class="mb-20 mx-auto px-4">
+    <article v-motion-slide-visible-once-top :duration="500" :delay="100" class="mb-32 mx-auto px-4">
       <!-- Titre principal -->
-      <TitleUnder title="Collaborations professionnelles : projets et expertises" tag="h1" class="mb-10 xl:mb-20" />
+      <TitleUnder title="Collaborations professionnelles : projets et expertises" tag="h1" class="mb-10 xl:mb-32" />
 
       <!-- Introduction -->
       <p class="text-base leading-relaxed">
@@ -68,14 +68,14 @@
 
       <!-- Projets affichés -->
       <div v-if="type === 'WEB'" role="tabpanel" aria-labelledby="projet-web">
-        <div v-for="(project, index) in displayedProjects" :key="index" class="mb-20">
+        <div v-for="(project, index) in displayedProjects" :key="index" class="mb-32">
           <ProjectCard v-bind="project" v-motion-slide-visible-once-top :duration="500" :delay="100"
             :order="project.order" />
         </div>
       </div>
 
       <div v-else role="tabpanel" aria-labelledby="projet-mobile">
-        <div v-for="(project, index) in displayedProjectsMobile" :key="index" class="mb-20">
+        <div v-for="(project, index) in displayedProjectsMobile" :key="index" class="mb-32">
           <ProjectCard v-bind="project" v-motion-slide-visible-once-top :duration="500" :delay="100"
             :order="project.order" />
         </div>

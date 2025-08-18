@@ -4,7 +4,7 @@
         id="contact-heading"
         title="Discutons de vos projets"
         tag="h2"
-        class="mb-10 mt-10 xl:mb-20"
+        class="mb-10 mt-10 xl:mb-32"
       />
   
       <div class="flex flex-col items-center xl:flex-row">

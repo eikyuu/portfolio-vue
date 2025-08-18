@@ -46,7 +46,7 @@ useHead({
     <section class="flex flex-col lg:flex-row items-center justify-between mb-10 lg:mb-32">
       <div class="lg:w-3/4 bg-number bg-cover mb-4">
         <div v-motion-slide-visible-once-top :duration="500" :delay="100">
-          <h1 class="uppercase text-[#5A3B5D] text-4xl font-bold">
+          <h1 class="uppercase text-[#5A3B5D] text-5xl font-bold">
             Développeur web & mobile Freelance à Tours.
           </h1>
 
@@ -58,11 +58,11 @@ useHead({
             <div class="relative -top-16 glass-effect rounded-xl p-6" style="transform: none;">
               <div class="flex items-center space-x-3">
                 <div>
-                  <div class="font-semibold text-gray-800">Vincent Duguet</div>
-                  <div class="text-gray-600">Développeur web & mobile Freelance à Tours</div>
+                  <p class="font-semibold text-gray-800">Vincent Duguet</p>
+                  <p class="text-gray-600">Développeur web & mobile Freelance à Tours</p>
                 </div>
-          </div>
-        </div>
+              </div>
+            </div>
           </div>
 
           <h2 class="text-[#5A3B5D] text-2xl font-bold xl:mt-10 uppercase">
@@ -183,12 +183,12 @@ useHead({
       <NuxtImg src="phone.png" alt="Un site web de mariage" class="h-full object-cover rounded-xl w-full md:w-1/2" />
     </section>
 
-    <div v-motion-slide-visible-once-top :duration="500" :delay="100"
-      class="flex flex-col lg:flex-row items-stretch justify-between w-full gap-4 lg:gap-6">
+    <TitleUnder v-motion-slide-visible-once-top :duration="500" :delay="100" title="Les offres" tag="h2" />
 
+    <section v-motion-slide-visible-once-top :duration="500" :delay="100"
+      class="flex flex-col lg:flex-row items-stretch justify-between w-full gap-4 lg:gap-6 mt-10 lg:mt-32">
       <Offres />
-
-    </div>
+    </section>
 
     <TitleUnder v-motion-slide-visible-once-top :duration="500" :delay="100" title="Les articles du blog" tag="h2"
       class="mt-10 lg:mt-32" />
@@ -200,6 +200,11 @@ useHead({
       </div>
 
     </section>
+
+    <section v-motion-slide-visible-once-top :duration="500" :delay="100" class="mb-10 lg:mb-32">
+      <Contact />
+    </section>
+    
 
   </main>
 </template>
@@ -233,5 +238,4 @@ useHead({
     transform: translatey(0px);
   }
 }
-
 </style>

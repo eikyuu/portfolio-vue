@@ -3,7 +3,7 @@
     <!-- Titre principal avec effet de surlignage -->
 
     <TitleUnder title="Design UX/UI : Création d'Expériences Utilisateurs Exceptionnelles" tag="h1"
-      class=" mb-10 xl:mb-20" />
+      class=" mb-10 xl:mb-32" />
 
     <article>
       <!-- Introduction -->

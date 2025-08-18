@@ -1,7 +1,7 @@
 <template>
     <section class="mt-32 ">
       <!-- Titre principal avec effet de surlignage -->
-      <TitleUnder title="WordPress : Sites Web Performants et Sur Mesure" tag="h1" class=" mb-10 xl:mb-20"   />
+      <TitleUnder title="WordPress : Sites Web Performants et Sur Mesure" tag="h1" class=" mb-10 xl:mb-32"   />
 
       <!-- Carte d'expertise -->
   <article>
