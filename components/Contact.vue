@@ -37,10 +37,10 @@
             <p>
               📞 Contactez-moi par email à
               <a
-                href="mailto:vincent.duguet.pro@gmail.com"
+                href="mailto:contact@vincentduguet.dev"
                 class="text-[#FFC800] underline focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-[#FFC800]"
               >
-                vincent.duguet.pro@gmail.com
+                contact@vincentduguet.dev
               </a>
               ou via LinkedIn.
             </p>
@@ -48,15 +48,56 @@
         </div>
       </div>
   
-      <ZcalEmbed class="mt-5" text="Je suis disponible pour une consultation gratuite" />
   
       <div
-        class="bg-white z-0 relative shadow-xl shadow-[#F2EBF4] p-5 items-center rounded-xl mt-10 mx-auto"
+        class="bg-number bg-opacity-85 bg-cover z-0 relative shadow-xl shadow-[#F2EBF4] p-5 items-center rounded-xl mt-10 mx-auto flex flex-col xl:flex-row gap-4"
         aria-labelledby="form-title"
       >
-        <h2 id="form-title" class="font-bold text-[#5A3B5D] text-xl mb-4">Contactez-moi</h2>
   
-        <form @submit.prevent="handleSubmit" novalidate aria-describedby="form-instructions">
+
+        <div class="flex flex-col justify-center w-full xl:w-1/2 gap-4">
+          <NuxtLink to="tel:+33659630326" class="flex items-center gap-4">
+            <div class="glass-effect p-4 rounded-xl">
+              <Phone class="w-5 h-5" />
+            </div>
+            <div>
+              <p class="font-semibold">Téléphone</p>
+              <p>06 59 63 03 26</p>
+            </div>
+          </NuxtLink>
+
+          <NuxtLink to="mailto:contact@vincentduguet.dev" class="flex items-center gap-4">
+            <div class="glass-effect p-4 rounded-xl">
+              <Mail class="w-5 h-5" />
+            </div>
+            <div>
+              <p class="font-semibold">Email</p>
+              <p>contact@vincentduguet.dev</p>
+            </div>
+          </NuxtLink>
+
+          <NuxtLink to="https://www.instagram.com/vincentduguet.dev" target="_blank" class="flex items-center gap-4">
+            <div class="glass-effect p-4 rounded-xl">
+              <Instagram class="w-5 h-5" />
+            </div>
+            <div>
+              <p class="font-semibold">Instagram</p>
+              <p>vincentduguet.dev</p>
+            </div>
+          </NuxtLink>
+
+          <div class="mt-5 glass-effect p-5 rounded-xl">
+            <p class="font-semibold">Consultation gratuite</p>
+            <p>Je suis disponible pour des missions de développement web et mobile, de design UX/UI, de conseil en stratégie digitale, ou pour toute autre collaboration pour atteindre vos objectifs.</p>
+            <ZcalEmbed class="mt-5" text="Réservez maintenant" />
+          </div>
+
+        </div>
+
+        
+        <form @submit.prevent="handleSubmit" novalidate aria-describedby="form-instructions" class="w-full xl:w-1/2 glass-effect p-5 rounded-xl">
+          <h2 id="form-title" class="font-bold text-[#5A3B5D] text-xl mb-4">Contactez-moi</h2>
+
           <p id="form-instructions" class="sr-only">Tous les champs sont requis.</p>
   
           <!-- Sujet -->
@@ -121,6 +162,12 @@
   <script setup lang="ts">
   import { reactive, ref } from "vue";
   import { createClient } from "@supabase/supabase-js";
+  import { Phone } from 'lucide-vue-next';
+  import { Mail } from 'lucide-vue-next';
+  import { Linkedin } from 'lucide-vue-next';
+  import { Github } from 'lucide-vue-next';
+  import { Instagram } from 'lucide-vue-next';
+  
   
   useHead({
     htmlAttrs: { lang: "fr" },
