@@ -120,6 +120,13 @@ interface Project {
 
 const projects = ref<Project[]>([
   {
+  title: 'Le chat Bohême',
+    text: '<strong>Un restaurant… avec des chats dedans !</strong> <br><br>En tant que <strong>développeur wordpress freelance</strong>, j’ai eu l’opportunité de créer le site web de <strong>Le chat Bohême</strong>, un restaurant qui accueille des chats dans un environnement convivial et sécurisé. Ce projet a été conçu pour offrir une expérience utilisateur fluide et agréable, tout en mettant l’accent sur la qualité des produits et le service.',
+    img: 'le-chat-boheme.png',
+    order: 'xl:order-start',
+    btnPosition: 'float-first',
+  },
+  {
     title: 'I love my dog',
     text: '<strong>Développement du site web pour I love my dog 🐶</strong><br><br>En tant que <strong>développeur wordpress freelance</strong>, j’ai eu l’opportunité de créer le site web de <strong>I love my dog</strong>, une éducatice canin à Tours. Ce projet a été conçu pour offrir une interface conviviale et informative, permettant aux propriétaires de chiens de trouver facilement des conseils et des services adaptés à leurs besoins.<br><br>Le site a été développé sur la plateforme <strong>WordPress</strong>, garantissant une gestion facile du contenu et une évolutivité pour l’avenir. J’ai également intégré des fonctionnalités telles que des formulaires de contact, des galeries d’images et un blog pour partager des conseils et astuces sur l’éducation canine.<br><br>Ce projet démontre ma capacité à créer des sites web attrayants et fonctionnels, tout en répondant aux besoins spécifiques de mes clients.',
     img: 'ilovemydog.jpg',
