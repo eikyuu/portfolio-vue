@@ -44,9 +44,9 @@ useHead({
   <main class="mt-32" role="main">
     <!-- Section d’intro -->
     <section class="flex flex-col lg:flex-row items-center justify-between mb-10 lg:mb-32">
-      <div class="lg:w-3/4 bg-number bg-cover mb-4">
+      <div class="w-full lg:w-3/4 bg-number bg-cover mb-4">
         <div v-motion-slide-visible-once-top :duration="500" :delay="100">
-          <h1 class="uppercase text-[#5A3B5D] text-5xl font-bold">
+          <h1 class="uppercase text-[#5A3B5D] text-4xl lg:text-5xl font-bold">
             Développeur web & mobile Freelance à Tours.
           </h1>
 

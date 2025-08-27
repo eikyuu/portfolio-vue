@@ -1,5 +1,5 @@
 <template>
-    <CardGoldBorder class="items-center">
+    <CardGoldBorder class="items-center h-full">
       <NuxtImg
         class="rounded-xl mb-5"
         :src="props.img"
