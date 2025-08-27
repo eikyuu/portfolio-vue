@@ -51,7 +51,7 @@ useHead({
           </h1>
 
           <!-- Image mobile -->
-          <div class="block lg:hidden flex flex-col justify-center mt-10">
+          <div class="block lg:hidden flex flex-col justify-center items-center mt-10">
             <NuxtImg class="rounded-xl object-cover floating-animation" src="homme-barbu-sur-fond-jaune.png" width="500"
               height="500" sizes="sm:50vw md:400px xl:742px" format="webp" loading="lazy"
               alt="Vincent Duguet, développeur freelance devant un ordinateur" />
@@ -110,10 +110,10 @@ useHead({
 
 
       <!-- Image desktop -->
-      <div class="hidden lg:block">
-        <NuxtImg class="mt-32 lg:mt-0 object-cover rounded-xl floating-animation" src="homme-barbu-sur-fond-jaune.png"
-          width="500" height="500" sizes="sm:50vw md:400px lg:500px" format="webp" loading="lazy"
-          alt="Vincent Duguet, développeur freelance devant un ordinateur" />
+      <div class="hidden lg:block mx-auto" >
+        <NuxtImg class="mt-32 lg:mt-0 object-cover rounded-xl floating-animation"
+          src="homme-barbu-sur-fond-jaune.png" width="500" height="500" sizes="sm:50vw md:400px lg:500px" format="webp"
+          loading="lazy" alt="Vincent Duguet, développeur freelance devant un ordinateur" />
         <div class="relative -top-32 glass-effect rounded-xl p-6" style="transform: none;">
           <div class="flex items-center space-x-3">
             <div>
