@@ -171,7 +171,7 @@ const projects = ref<Project[]>([
     img: 'suismespattes.png',
     order: 'xl:order-start',
     btnPosition: 'float-first',
-    link: 'https://suismespattes.com/'
+    link: 'https://suismespattes-git-main-eikyuus-projects.vercel.app/'
   },
   {
   title: 'Kahina - Social network',
