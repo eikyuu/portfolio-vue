@@ -48,7 +48,7 @@ export default defineNuxtConfig({
     public: {
       apiBase: process.env.API_BASE_URL || 'http://localhost:3000',
       supabaseUrl: process.env.SUPABASE_URL,
-      supabaseKey: process.env.SUPABASE_ANON_KEY,
+      supabaseKey: process.env.SUPABASE_PUBLISHABLE_KEY,
       motion: {
         directives: {
           'pop-bottom': {

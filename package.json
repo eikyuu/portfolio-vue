@@ -38,6 +38,7 @@
     "nuxt-seo-utils": "^8.1.11",
     "postcss": "^8.4.49",
     "prettier": "^3.5.3",
+    "supabase": "^2.100.1",
     "tailwindcss": "^3.4.17"
   },
   "pnpm": {
