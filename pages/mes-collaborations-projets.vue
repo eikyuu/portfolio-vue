@@ -5,7 +5,7 @@
       aria-labelledby="portfolio-hero-title"
     >
       <div class="w-full lg:w-3/5">
-        <div v-motion-slide-visible-once-top :duration="500" :delay="100">
+        <div v-motion-slide-top :duration="500" :delay="100">
           <p class="text-sm font-semibold uppercase tracking-wider text-brand-purple-300 mb-4">
             Portfolio · Tours
           </p>

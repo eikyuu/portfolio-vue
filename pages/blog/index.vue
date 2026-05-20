@@ -1,5 +1,5 @@
 <template>
-  <main id="main-content" v-motion-slide-visible-once-top :duration="500" :delay="100" class="mt-32">
+  <main id="main-content" v-motion-slide-top :duration="500" :delay="100" class="mt-32">
     <Breadcrumb :items="[{ label: 'Accueil', to: '/' }, { label: 'Blog' }]" />
     <TitleUnder title="Le journal" tag="h1" />
     <p class="text-center text-brand-muted max-w-prose mx-auto mt-6">

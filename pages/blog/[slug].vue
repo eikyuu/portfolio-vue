@@ -1,7 +1,7 @@
 <template>
   <ReadingProgress />
 
-  <main id="main-content" v-motion-slide-visible-once-top :duration="500" :delay="100" class="mt-32">
+  <main id="main-content" v-motion-slide-top :duration="500" :delay="100" class="mt-32">
     <article v-if="blog.content" class="mx-auto max-w-readable">
       <Breadcrumb :items="[{ label: 'Accueil', to: '/' }, { label: 'Blog', to: '/blog' }, { label: blog.title }]" />
 
