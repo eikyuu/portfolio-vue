@@ -53,6 +53,7 @@ import Breadcrumb from '~/components/Breadcrumb.vue'
 import ReadingProgress from '~/components/blog/ReadingProgress.vue'
 import ShareButtons from '~/components/blog/ShareButtons.vue'
 import { blogs, type BlogContent } from '~/data/blogs'
+import { articles } from '~/types/articles'
 
 const route = useRoute()
 const slug = route.params.slug as string
@@ -68,12 +69,36 @@ const blog: BlogContent = blogs[slug as keyof typeof blogs] ?? fallback
 const hasHero = computed(() => slug in blogs)
 const shareUrl = computed(() => `https://vincentduguet.dev/blog/${slug}`)
 
+const meta = articles.find(a => a.slug === slug)
+const publishedIso = (() => {
+  if (!meta) return undefined
+  const m = meta.publishedDate.match(/^(\d{2})\/(\d{2})\/(\d{4})$/)
+  if (!m) return undefined
+  const [, dd, mm, yyyy] = m
+  return `${yyyy}-${mm}-${dd}`
+})()
+
 useSeoMeta({
-  title: blog.title,
-  ogTitle: blog.title,
+  title: `${blog.title} — Blog Vincent Duguet`,
   description: blog.meta,
-  ogDescription: blog.meta,
-  ogImage: 'https://vincentduguet.dev/book.jpg',
+  ogType: 'article',
+  ogLocale: 'fr_FR',
+  ogImage: hasHero.value ? `/${slug}.webp` : '/homme-barbu-devant-ordinateur.png',
   twitterCard: 'summary_large_image',
+  articlePublishedTime: publishedIso,
+  articleAuthor: ['Vincent Duguet'],
 })
+
+if (hasHero.value) {
+  useSchemaOrg([
+    defineArticle({
+      headline: blog.title,
+      description: blog.meta,
+      image: `https://vincentduguet.dev/${slug}.webp`,
+      datePublished: publishedIso,
+      inLanguage: 'fr-FR',
+      author: { '@type': 'Person', name: 'Vincent Duguet', url: 'https://vincentduguet.dev' },
+    }),
+  ])
+}
 </script>

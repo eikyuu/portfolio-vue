@@ -41,7 +41,7 @@ interface Props {
   img: string
   title: string
   text: string
-  order: 'xl:order-last' | ''
+  order: string
   btnPosition?: 'float-end' | 'float-first'
   link?: string
 }

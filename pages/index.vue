@@ -5,45 +5,22 @@ import TitleUnder from '~/components/TitleUnder.vue'
 import Button from '~/components/Button.vue'
 import { articles } from '~/types/articles'
 
-const technos = ['React', 'Angular', 'Vue.js', 'Nuxt', 'Next.js', 'Symfony', 'AdonisJS', 'React Native', 'WordPress']
+const technos = ['React', 'Angular', 'Java/Springboot','Vue.js', 'Nuxt', 'Next.js', 'Symfony',  'AdonisJS', 'React Native', 'WordPress']
 
-useHead({
-  title: 'Vincent Duguet - Développeur Web et Mobile Full Stack Freelance à Tours',
-  meta: [
-    {
-      name: 'description',
-      content:
-        'Développeur web & mobile freelance, Vincent Duguet conçoit des sites performants, des applications intuitives et des expériences utilisateurs accessibles.',
-    },
-    {
-      name: 'keywords',
-      content:
-        'Vincent Duguet, développeur web freelance, application mobile, UX/UI, React, Vue.js, Symfony, Nuxt, Swift, SEO, accessibilité web',
-    },
-    { name: 'author', content: 'Vincent Duguet' },
-    { property: 'og:title', content: 'Vincent Duguet - Développeur Web Full Stack Freelance' },
-    {
-      property: 'og:description',
-      content: 'Sites performants et applications intuitives réalisés par Vincent Duguet, freelance à Tours.',
-    },
-    { property: 'og:image', content: 'https://vincentduguet.dev/homme-barbu-devant-ordinateur.png' },
-    { property: 'og:url', content: 'https://vincentduguet.dev' },
-    { property: 'og:type', content: 'website' },
-    { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:title', content: 'Vincent Duguet - Développeur Web Full Stack Freelance' },
-    {
-      name: 'twitter:description',
-      content: 'Sites performants et applications intuitives réalisés par Vincent Duguet, freelance à Tours.',
-    },
-    { name: 'twitter:image', content: 'https://vincentduguet.dev/homme-barbu-devant-ordinateur.png' },
-  ],
-  htmlAttrs: { lang: 'fr' },
-  bodyAttrs: { class: 'portfolio' },
+useSeoMeta({
+  title: 'Développeur web freelance Tours — Vincent Duguet',
+  description:
+    'Développeur web freelance à Tours, Angular · React · Vue/Nuxt · Java Spring Boot. Création de site internet, app mobile React Native et refonte WordPress.',
+  ogType: 'website',
+  ogLocale: 'fr_FR',
+  ogImage: '/homme-barbu-devant-ordinateur.png',
+  twitterCard: 'summary_large_image',
+  author: 'Vincent Duguet',
 })
 </script>
 
 <template>
-  <main id="main-content" class="mt-32" role="main">
+  <main id="main-content" class="mt-32">
     <!-- Section d’intro -->
     <section class="flex flex-col lg:flex-row items-center justify-between gap-10 mb-16 lg:mb-32"
              aria-labelledby="hero-title">
@@ -111,30 +88,25 @@ useHead({
 
     <section v-motion-slide-visible-once-top :duration="500" :delay="100"
       class="flex flex-row justify-between flex-wrap mt-10 mb-10 lg:mt-32 lg:mb-32 gap-5">
-      <NuxtLink to="/developpement-web-vue-react-symfony-adonis" class="w-full md:w-[calc(33%-1rem)]">
-        <ExpertiseCard title="Développement Web sur mesure" link="/developpement-web-vue-react-symfony-adonis"
-          text-btn="J’ai besoin d’un expert en Développement Web →" img="svg/web.svg">
-          <p>
-            Créez un <strong>site web moderne, rapide et personnalisé</strong> pour votre entreprise.
-          </p>
-        </ExpertiseCard>
-      </NuxtLink>
+      <ExpertiseCard class="w-full md:w-[calc(33%-1rem)]" title="Développement Web sur mesure"
+        link="/developpement-web-vue-react-symfony-adonis"
+        text-btn="J’ai besoin d’un expert en Développement Web →" img="svg/web.svg">
+        <p>
+          Créez un <strong>site web moderne, rapide et personnalisé</strong> pour votre entreprise.
+        </p>
+      </ExpertiseCard>
 
-      <NuxtLink to="/developpement-mobile-react-native-swift" class="w-full md:w-[calc(33%-1rem)]">
+      <ExpertiseCard class="w-full md:w-[calc(33%-1rem)]" title="Développement Mobile sur mesure"
+        link="/developpement-mobile-react-native-swift"
+        text-btn="Je veux une application mobile performante →" img="svg/mobile.svg">
+        <p>Offrez une <strong>application mobile performante, intuitive et personnalisée.</strong></p>
+      </ExpertiseCard>
 
-        <ExpertiseCard title="Développement Mobile sur mesure" link="/developpement-mobile-react-native-swift"
-          text-btn="Je veux une application mobile performante →" img="svg/mobile.svg">
-          <p>Offrez une <strong>application mobile performante, intuitive et personnalisée.</strong></p>
-        </ExpertiseCard>
-
-      </NuxtLink>
-
-      <NuxtLink to="/developpement-web-vue-react-symfony-adonis" class="w-full md:w-[calc(33%-1rem)]">
-        <ExpertiseCard title="Site WordPress sur mesure" link="/developpement-web-vue-react-symfony-adonis"
-          text-btn="Je veux un site WordPress sur-mesure et rapide →" img="svg/web.svg">
-          <p>Offrez à votre entreprise un <strong>site WordPress rapide, responsive et SEO-friendly.</strong></p>
-        </ExpertiseCard>
-      </NuxtLink>
+      <ExpertiseCard class="w-full md:w-[calc(33%-1rem)]" title="Site WordPress sur mesure"
+        link="/developpement-web-vue-react-symfony-adonis"
+        text-btn="Je veux un site WordPress sur-mesure et rapide →" img="svg/web.svg">
+        <p>Offrez à votre entreprise un <strong>site WordPress rapide, responsive et SEO-friendly.</strong></p>
+      </ExpertiseCard>
 
     </section>
 

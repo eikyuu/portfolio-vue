@@ -18,7 +18,11 @@ import Breadcrumb from '~/components/Breadcrumb.vue'
 import { articles } from '~/types/articles'
 
 useSeoMeta({
-  title: 'Le journal — articles UX, dev et stratégie digitale',
-  description: 'Articles courts et concrets sur l’UX/UI, le développement web et la stratégie digitale.',
+  title: 'Blog — UX, développement web et SEO',
+  description:
+    'Articles courts et concrets sur l’UX/UI, le développement web (Angular, Vue, Spring Boot) et la stratégie digitale.',
+  ogLocale: 'fr_FR',
+  ogImage: '/homme-barbu-devant-ordinateur.png',
+  twitterCard: 'summary_large_image',
 })
 </script>

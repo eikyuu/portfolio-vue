@@ -1,8 +1,7 @@
 <template>
-  <header class="bg-white/85 shadow-sm fixed top-0 left-0 right-0 z-50 backdrop-blur-xl border-b border-brand-lavender"
-          role="banner">
+  <header class="bg-white/85 shadow-sm fixed top-0 left-0 right-0 z-50 backdrop-blur-xl border-b border-brand-lavender">
     <nav class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8"
-         role="navigation" aria-label="Menu principal">
+         aria-label="Menu principal">
       <div class="flex h-16 items-center justify-between gap-6">
         <div class="flex items-center gap-3">
           <NuxtLink to="/" class="text-lg font-bold text-brand-purple focus-ring rounded"
@@ -76,7 +75,7 @@
 
     <!-- Menu Mobile -->
     <div
-      v-if="isOpen"
+      v-show="isOpen"
       id="mobile-menu"
       ref="componentRef"
       class="xl:hidden bg-white border-t border-brand-lavender shadow-card"

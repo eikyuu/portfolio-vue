@@ -17,7 +17,7 @@
           </span>
           <span>
             <span class="block font-semibold text-brand-purple">Téléphone</span>
-            <span class="block text-sm text-brand-muted">06 59 63 03 26</span>
+            <span class="block text-sm text-brand-muted">06&nbsp;59&nbsp;63&nbsp;03&nbsp;26</span>
           </span>
         </a>
 

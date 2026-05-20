@@ -1,4 +1,3 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
@@ -15,36 +14,66 @@ export default defineNuxtConfig({
     '@nuxtjs/html-validator',
     '@nuxt/eslint',
     '@vueuse/motion/nuxt',
-    '@nuxt/fonts'
+    '@nuxt/fonts',
+    '@nuxtjs/sitemap',
+    '@nuxtjs/robots',
+    'nuxt-schema-org',
+    'nuxt-og-image',
+    'nuxt-seo-utils',
   ],
 
+  site: {
+    url: 'https://vincentduguet.dev',
+    name: 'Vincent Duguet',
+    description:
+      'Développeur web freelance à Tours, spécialisé Angular, React, Vue, Nuxt et Java Spring Boot. Création de sites et d’applications mobile React Native sur mesure.',
+    defaultLocale: 'fr',
+  },
+
+  sitemap: {
+    exclude: ['/daily-ui-challenges/**'],
+  },
+
+  robots: {
+    disallow: ['/daily-ui-challenges'],
+  },
+
+  ogImage: {
+    defaults: {
+      cacheMaxAgeSeconds: 60 * 60 * 24 * 30,
+    },
+  },
+
   runtimeConfig: {
-    // Keys within public, will be also exposed to the client-side
     public: {
-      apiBase: process.env.API_BASE || 'http://localhost:3000',
+      apiBase: process.env.API_BASE_URL || 'http://localhost:3000',
       supabaseUrl: process.env.SUPABASE_URL,
       supabaseKey: process.env.SUPABASE_ANON_KEY,
       motion: {
         directives: {
           'pop-bottom': {
-            initial: {
-              scale: 0,
-              opacity: 0,
-              y: 100,
-            },
-            visible: {
-              scale: 1,
-              opacity: 1,
-              y: 0,
-            }
-          }
-        }
-      }
-    }
+            initial: { scale: 0, opacity: 0, y: 100 },
+            visible: { scale: 1, opacity: 1, y: 0 },
+          },
+        },
+      },
+    },
   },
+
   app: {
-    pageTransition: { name: 'page', mode: 'out-in' }
+    pageTransition: { name: 'page', mode: 'out-in' },
+    head: {
+      htmlAttrs: { lang: 'fr' },
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
+      ],
+      meta: [
+        { name: 'theme-color', content: '#5A3B5D' },
+      ],
+    },
   },
+
   nitro: {
     prerender: {
       routes: [
@@ -56,36 +85,34 @@ export default defineNuxtConfig({
         '/developpement-wordpress-sur-mesure',
         '/design-ux-ui-figma',
         '/mes-collaborations-projets',
+        '/contact',
         '/blog',
         '/',
-      ]
-    }
+      ],
+    },
   },
+
   htmlValidator: {
     usePrettier: false,
     logLevel: 'verbose',
     failOnError: false,
-    /** A list of routes to ignore (that is, not check validity for). */
     ignore: [/\.(xml|rss|json)$/],
     options: {
       extends: [
         'html-validate:document',
         'html-validate:recommended',
-        'html-validate:standard'
+        'html-validate:standard',
       ],
       rules: {
         'svg-focusable': 'off',
         'no-unknown-elements': 'error',
-        // Conflicts or not needed as we use prettier formatting
         'void-style': 'off',
         'no-trailing-whitespace': 'off',
-        // Conflict with Nuxt defaults
         'require-sri': 'off',
         'attribute-boolean-style': 'off',
         'doctype-style': 'off',
-        // Unreasonable rule
-        'no-inline-style': 'off'
-      }
-    }
-  }
+        'no-inline-style': 'off',
+      },
+    },
+  },
 })

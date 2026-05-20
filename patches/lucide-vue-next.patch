@@ -1,0 +1,84 @@
+diff --git a/dist/cjs/lucide-vue-next.js b/dist/cjs/lucide-vue-next.js
+index 9dff2d8c5538f2885f24144bdabb792d380c7314..cdf258f157f14cff92e83062941d4905687c966f 100644
+--- a/dist/cjs/lucide-vue-next.js
++++ b/dist/cjs/lucide-vue-next.js
+@@ -64,17 +64,22 @@ const Icon = ({
+     [...iconNode.map((child) => vue.h(...child)), ...slots.default ? [slots.default()] : []]
+   );
+ };
++Icon.inheritAttrs = false;
+ 
+-const createLucideIcon = (iconName, iconNode) => (props, { slots, attrs }) => vue.h(
+-  Icon,
+-  {
+-    ...attrs,
+-    ...props,
+-    iconNode,
+-    name: iconName
+-  },
+-  slots
+-);
++const createLucideIcon = (iconName, iconNode) => {
++  const LucideIconComponent = (props, { slots, attrs }) => vue.h(
++    Icon,
++    {
++      ...attrs,
++      ...props,
++      iconNode,
++      name: iconName
++    },
++    slots
++  );
++  LucideIconComponent.inheritAttrs = false;
++  return LucideIconComponent;
++};
+ 
+ const AArrowDown = createLucideIcon("a-arrow-down", [
+   ["path", { d: "m14 12 4 4 4-4", key: "buelq4" }],
+diff --git a/dist/esm/Icon.js b/dist/esm/Icon.js
+index e205d61177a31ce7ae285af60d5dd649b4d4e17e..9618af30a9703d370e4e35b0a0cbc00d04b31915 100644
+--- a/dist/esm/Icon.js
++++ b/dist/esm/Icon.js
+@@ -38,6 +38,7 @@ const Icon = ({
+     [...iconNode.map((child) => h(...child)), ...slots.default ? [slots.default()] : []]
+   );
+ };
++Icon.inheritAttrs = false;
+ 
+ export { Icon as default };
+ //# sourceMappingURL=Icon.js.map
+diff --git a/dist/esm/createLucideIcon.js b/dist/esm/createLucideIcon.js
+index b5601dfaaf709214c3d3155964ddce1d73b72442..41f97eeb1097fc718daf66eb67ed3c00cf013509 100644
+--- a/dist/esm/createLucideIcon.js
++++ b/dist/esm/createLucideIcon.js
+@@ -8,16 +8,20 @@
+ import { h } from 'vue';
+ import Icon from './Icon.js';
+ 
+-const createLucideIcon = (iconName, iconNode) => (props, { slots, attrs }) => h(
+-  Icon,
+-  {
+-    ...attrs,
+-    ...props,
+-    iconNode,
+-    name: iconName
+-  },
+-  slots
+-);
++const createLucideIcon = (iconName, iconNode) => {
++  const LucideIconComponent = (props, { slots, attrs }) => h(
++    Icon,
++    {
++      ...attrs,
++      ...props,
++      iconNode,
++      name: iconName
++    },
++    slots
++  );
++  LucideIconComponent.inheritAttrs = false;
++  return LucideIconComponent;
++};
+ 
+ export { createLucideIcon as default };
+ //# sourceMappingURL=createLucideIcon.js.map

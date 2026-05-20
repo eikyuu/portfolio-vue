@@ -17,6 +17,7 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
 import { ChevronRight } from 'lucide-vue-next'
 
 interface BreadcrumbItem {
@@ -24,5 +25,19 @@ interface BreadcrumbItem {
   to?: string
 }
 
-defineProps<{ items: BreadcrumbItem[] }>()
+const props = defineProps<{ items: BreadcrumbItem[] }>()
+
+const siteUrl = 'https://vincentduguet.dev'
+
+const schemaItems = computed(() =>
+  props.items.map((item, idx) => ({
+    name: item.label,
+    item: item.to ? `${siteUrl}${item.to}` : undefined,
+    position: idx + 1,
+  })),
+)
+
+useSchemaOrg([
+  defineBreadcrumb({ itemListElement: schemaItems.value }),
+])
 </script>

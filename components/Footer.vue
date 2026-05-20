@@ -1,5 +1,5 @@
 <template>
-  <footer role="contentinfo" class="bg-brand-purple text-white mt-32">
+  <footer class="bg-brand-purple text-white mt-32">
     <div class="max-w-screen-2xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-10">
       <div>
         <p class="font-bold text-lg mb-2">Vincent Duguet</p>
@@ -12,10 +12,10 @@
       <nav aria-label="Navigation secondaire" class="text-sm">
         <p class="font-semibold mb-3 uppercase tracking-wide text-white/70 text-xs">Navigation</p>
         <ul class="space-y-2">
-          <li><NuxtLink to="/" class="hover:text-brand-yellow focus-ring rounded">Accueil</NuxtLink></li>
-          <li><NuxtLink to="/mes-collaborations-projets" class="hover:text-brand-yellow focus-ring rounded">Portfolio</NuxtLink></li>
-          <li><NuxtLink to="/blog" class="hover:text-brand-yellow focus-ring rounded">Blog</NuxtLink></li>
-          <li><NuxtLink to="/contact" class="hover:text-brand-yellow focus-ring rounded">Contact</NuxtLink></li>
+          <li><NuxtLink to="/" class="text-white hover:text-brand-yellow focus-ring rounded">Accueil</NuxtLink></li>
+          <li><NuxtLink to="/mes-collaborations-projets" class="text-white hover:text-brand-yellow focus-ring rounded">Portfolio</NuxtLink></li>
+          <li><NuxtLink to="/blog" class="text-white hover:text-brand-yellow focus-ring rounded">Blog</NuxtLink></li>
+          <li><NuxtLink to="/contact" class="text-white hover:text-brand-yellow focus-ring rounded">Contact</NuxtLink></li>
         </ul>
       </nav>
 
