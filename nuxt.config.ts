@@ -81,7 +81,7 @@ export default defineNuxtConfig({
         '/blog/IA-et-Creation-de-Contenu-Revolution-ou-Illusion',
         '/blog/Pourquoi-WordPress-Domine-la-Creation-de-Sites-Web-en-2025',
         '/developpement-web-vue-react-symfony-adonis',
-        '/developpement-mobile-react-native-swift',
+        '/developpement-mobile-react-native',
         '/developpement-wordpress-sur-mesure',
         '/design-ux-ui-figma',
         '/mes-collaborations-projets',

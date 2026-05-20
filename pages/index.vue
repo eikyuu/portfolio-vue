@@ -133,7 +133,7 @@ useSchemaOrg([
       </ExpertiseCard>
 
       <ExpertiseCard class="w-full md:w-[calc(33%-1rem)]" title="Développement Mobile sur mesure"
-        link="/developpement-mobile-react-native-swift"
+        link="/developpement-mobile-react-native"
         text-btn="Je veux une application mobile performante →" img="svg/mobile.svg">
         <p>Offrez une <strong>application mobile performante, intuitive et personnalisée.</strong></p>
       </ExpertiseCard>

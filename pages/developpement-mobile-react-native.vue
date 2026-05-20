@@ -8,7 +8,7 @@
       subtitle="Je conçois et développe des applications mobiles iOS et Android sur mesure, performantes et durables, du cadrage au déploiement sur les stores."
       image="app-mobile.jpg"
       image-alt="Aperçu d’une application mobile iOS et Android sur smartphone"
-      :tech-stack="['React Native', 'Expo', 'TypeScript', 'Swift', 'iOS', 'Android']"
+      :tech-stack="['React Native', 'Expo', 'TypeScript', 'iOS', 'Android']"
     />
 
     <TitleUnder

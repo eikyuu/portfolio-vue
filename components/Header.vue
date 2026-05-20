@@ -122,7 +122,7 @@ const isCurrent = (to: string) => route.path === to
 
 const services = [
   { label: 'Création de site internet', to: '/developpement-web-vue-react-symfony-adonis' },
-  { label: "Création d'application mobile", to: '/developpement-mobile-react-native-swift' },
+  { label: "Création d'application mobile", to: '/developpement-mobile-react-native' },
 ]
 
 const nav = [

@@ -303,8 +303,8 @@ import { BadgeCheck } from 'lucide-vue-next'
 
 const faqItems = [
   {
-    q: 'Quelle techno pour mon site : Vue, React, Symfony, AdonisJS ?',
-    a: 'Le choix dépend de vos contenus, de votre équipe interne et de votre SEO. Vitrine ou marketing : Vue/Nuxt ou React/Next pour la performance et le rendu serveur. Métier ou application : Symfony, AdonisJS ou Spring Boot pour la robustesse côté back. On décide ensemble au cadrage.',
+    q: 'Quelle techno pour mon site : Vue, React, Symfony, Angular ?',
+    a: 'Le choix dépend de vos contenus, de votre équipe interne et de votre SEO. Vitrine ou marketing : Vue/Nuxt ou React/Next pour la performance et le rendu serveur, Angular pour les applications complexes. Métier ou application : Symfony, AdonisJS ou Spring Boot pour la robustesse côté back. On décide ensemble au cadrage.',
   },
   {
     q: 'Combien de temps pour livrer mon site ?',

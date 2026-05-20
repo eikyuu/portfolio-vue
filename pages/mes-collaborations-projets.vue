@@ -18,7 +18,7 @@
 
           <p class="mt-6 text-lg text-brand-muted max-w-readable">
             Une sélection de collaborations menées en freelance ou en équipe, du cadrage au
-            déploiement : sites Vue/Nuxt, applications React Native, refontes WordPress. UX,
+            déploiement : sites React/Angular, API REST Java Springboot, applications React Native, refontes WordPress. UX,
             code propre, performances mesurées.
           </p>
 
