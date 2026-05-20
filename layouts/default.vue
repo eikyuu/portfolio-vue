@@ -13,22 +13,33 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch, onMounted } from 'vue'
+import { ref, watch, onMounted, onUnmounted } from 'vue'
 import { useRoute } from 'vue-router'
 import { useCookie } from 'nuxt/app'
 
 const route = useRoute()
 const isLoading = ref(false)
 const loadingProgress = ref(0)
-let intervalId: NodeJS.Timeout | null = null
+let intervalId: ReturnType<typeof setInterval> | null = null
+let endTimeoutId: ReturnType<typeof setTimeout> | null = null
 
-// Cookie pour stocker les chemins des pages déjà visitées dans la session
 const visitedPages = useCookie<string[]>('visitedPages', { default: () => [] })
+
+const clearTimers = () => {
+  if (intervalId) {
+    clearInterval(intervalId)
+    intervalId = null
+  }
+  if (endTimeoutId) {
+    clearTimeout(endTimeoutId)
+    endTimeoutId = null
+  }
+}
 
 const startLoading = (isFirstLoadForPage = false) => {
   isLoading.value = true
   loadingProgress.value = 0
-  if (intervalId) clearInterval(intervalId)
+  clearTimers()
 
   const duration = isFirstLoadForPage ? 50 : 20
   const endPause = isFirstLoadForPage ? 300 : 100
@@ -38,9 +49,13 @@ const startLoading = (isFirstLoadForPage = false) => {
       const increment = loadingProgress.value < 70 ? 15 : 5
       loadingProgress.value = Math.min(loadingProgress.value + increment, 100)
     } else {
-      if (intervalId) clearInterval(intervalId)
-      setTimeout(() => {
+      if (intervalId) {
+        clearInterval(intervalId)
+        intervalId = null
+      }
+      endTimeoutId = setTimeout(() => {
         isLoading.value = false
+        endTimeoutId = null
       }, endPause)
     }
   }, duration)
@@ -48,22 +63,21 @@ const startLoading = (isFirstLoadForPage = false) => {
 
 const handleRouteChange = (path: string) => {
   if (!visitedPages.value.includes(path)) {
-    // C'est la première fois qu'on visite CETTE page
-    startLoading(true) // On lance le loader "long"
-    // On ajoute la page à la liste des pages visitées
+    startLoading(true)
     visitedPages.value = [...visitedPages.value, path]
   } else {
-    // On a déjà visité cette page, on lance le loader rapide
     startLoading(false)
   }
 }
 
-// Gérer le chargement initial de la toute première page
 onMounted(() => {
   handleRouteChange(route.fullPath)
 })
 
-// Gérer les changements de route suivants
+onUnmounted(() => {
+  clearTimers()
+})
+
 watch(
   () => route.fullPath,
   (newPath, oldPath) => {

@@ -76,7 +76,7 @@
             </div>
           </NuxtLink>
 
-          <NuxtLink to="https://www.instagram.com/vincentduguet.dev" target="_blank" class="flex items-center gap-4">
+          <NuxtLink to="https://www.instagram.com/vincentduguet.dev" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4">
             <div class="glass-effect p-4 rounded-xl">
               <Instagram class="w-5 h-5" />
             </div>
@@ -144,8 +144,9 @@
           <!-- Bouton -->
           <Button
             type="submit"
+            :disabled="isSubmitting"
             aria-label="Envoyer le message"
-            text="Envoyer le message"
+            :text="isSubmitting ? 'Envoi en cours…' : 'Envoyer le message'"
             color="secondary"
           />
         </form>
@@ -161,24 +162,15 @@
 
   <script setup lang="ts">
   import { reactive, ref } from "vue";
-  import { createClient } from "@supabase/supabase-js";
-  import { Phone } from 'lucide-vue-next';
-  import { Mail } from 'lucide-vue-next';
-  import { Linkedin } from 'lucide-vue-next';
-  import { Github } from 'lucide-vue-next';
-  import { Instagram } from 'lucide-vue-next';
-  
-  
-  useHead({
-    htmlAttrs: { lang: "fr" },
-  });
-  
+  import { createClient, type SupabaseClient } from "@supabase/supabase-js";
+  import { Phone, Mail, Instagram } from 'lucide-vue-next';
+
   const form = reactive({
     subject: "",
     email: "",
     message: "",
   });
-  
+
   const errors = reactive<{
     subject: string | null;
     email: string | null;
@@ -188,25 +180,35 @@
     email: null,
     message: null,
   });
-  
+
   const successMessage = ref("");
   const error = ref("");
-  
+  const isSubmitting = ref(false);
+
+  let supabaseClient: SupabaseClient | null = null;
+  const getSupabase = (): SupabaseClient => {
+    if (!supabaseClient) {
+      const config = useRuntimeConfig();
+      supabaseClient = createClient(config.public.supabaseUrl, config.public.supabaseKey);
+    }
+    return supabaseClient;
+  };
+
   const inputClass = (hasError: string | null) =>
     `w-full border rounded p-2 focus:ring-2 focus:ring-[#FFC800] focus:outline-none ${
       hasError ? "border-red-500" : "border-gray-300"
     }`;
-  
+
   const validate = () => {
     let valid = true;
-  
+
     if (!form.subject.trim()) {
       errors.subject = "Le sujet est requis.";
       valid = false;
     } else {
       errors.subject = null;
     }
-  
+
     if (!form.email.trim()) {
       errors.email = "L'email est requis.";
       valid = false;
@@ -216,44 +218,52 @@
     } else {
       errors.email = null;
     }
-  
+
     if (!form.message.trim()) {
       errors.message = "Le message est requis.";
       valid = false;
     } else {
       errors.message = null;
     }
-  
+
     return valid;
   };
-  
-  const postMessage = async (formData: typeof form) => {
+
+  const postMessage = async (formData: typeof form): Promise<boolean> => {
     try {
-      const config = useRuntimeConfig();
-      const supabase = createClient(config.public.supabaseUrl, config.public.supabaseKey);
-  
-      const { data, error: supaError } = await supabase.functions.invoke("resend", {
+      const { error: supaError } = await getSupabase().functions.invoke("resend", {
         body: formData,
       });
-  
+
       if (supaError) throw supaError;
-  
+
       successMessage.value = "Votre message a été envoyé avec succès !";
+      return true;
     } catch (err) {
+      console.error("contact form error", err);
       error.value = "Une erreur est survenue lors de l'envoi du message.";
+      return false;
     }
   };
-  
+
   const handleSubmit = async () => {
+    if (isSubmitting.value) return;
+
     successMessage.value = "";
     error.value = "";
-  
-    if (validate()) {
-      await postMessage(form);
-  
-      form.subject = "";
-      form.email = "";
-      form.message = "";
+
+    if (!validate()) return;
+
+    isSubmitting.value = true;
+    try {
+      const ok = await postMessage(form);
+      if (ok) {
+        form.subject = "";
+        form.email = "";
+        form.message = "";
+      }
+    } finally {
+      isSubmitting.value = false;
     }
   };
   </script>

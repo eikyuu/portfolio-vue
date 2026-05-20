@@ -10,9 +10,6 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  image: {
-    // Options
-  },
   modules: [
     '@nuxt/image',
     '@nuxtjs/html-validator',
@@ -22,8 +19,6 @@ export default defineNuxtConfig({
   ],
 
   runtimeConfig: {
-    // The private keys which are only available within server-side
-    resendSecret: process.env.RESEND_SECRET,
     // Keys within public, will be also exposed to the client-side
     public: {
       apiBase: process.env.API_BASE || 'http://localhost:3000',
