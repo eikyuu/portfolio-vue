@@ -1,5 +1,6 @@
 <template>
   <main id="main-content" class="mt-32 overflow-x-hidden">
+    <Breadcrumb :items="[{ label: 'Accueil', to: '/' }, { label: 'Développement web' }]" />
     <ServiceHero
       eyebrow="Développement web · Tours"
       title-lead="Des sites web qui transforment vos"

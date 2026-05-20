@@ -1,5 +1,6 @@
 <template>
   <main id="main-content" class="mt-32">
+    <Breadcrumb :items="[{ label: 'Accueil', to: '/' }, { label: 'Développement mobile' }]" />
     <ServiceHero
       eyebrow="Application mobile · iOS & Android"
       title-lead="Une app mobile pensée pour"
@@ -265,9 +266,9 @@ const faqItems = [
 ]
 
 useSeoMeta({
-  title: 'Application mobile React Native sur mesure — Tours',
+  title: 'Création d’application mobile React Native à Tours',
   description:
-    'Développeur freelance à Tours, je conçois vos applications mobiles iOS et Android en React Native : performance, accessibilité, design sur mesure.',
+    'Développeur mobile freelance à Tours : création d’applications iOS et Android sur mesure en React Native. Performance, accessibilité, design soigné, du cadrage au store.',
   ogLocale: 'fr_FR',
   ogImage: '/phone.png',
   twitterCard: 'summary_large_image',

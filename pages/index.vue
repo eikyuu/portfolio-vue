@@ -8,15 +8,50 @@ import { articles } from '~/types/articles'
 const technos = ['React', 'Angular', 'Java/Springboot','Vue.js', 'Nuxt', 'Next.js', 'Symfony',  'AdonisJS', 'React Native', 'WordPress']
 
 useSeoMeta({
-  title: 'Développeur web freelance Tours — Vincent Duguet',
+  title: 'Développeur web freelance à Tours — Vincent Duguet',
   description:
-    'Développeur web freelance à Tours, Angular · React · Vue/Nuxt · Java Spring Boot. Création de site internet, app mobile React Native et refonte WordPress.',
+    'Vincent Duguet, développeur web freelance à Tours : création de site internet, application mobile React Native et refonte WordPress. Angular, React, Vue/Nuxt, Java Spring Boot.',
   ogType: 'website',
   ogLocale: 'fr_FR',
   ogImage: '/homme-barbu-devant-ordinateur.png',
   twitterCard: 'summary_large_image',
   author: 'Vincent Duguet',
 })
+
+useSchemaOrg([
+  definePerson({
+    name: 'Vincent Duguet',
+    jobTitle: 'Développeur web freelance',
+    url: 'https://vincentduguet.dev',
+    image: 'https://vincentduguet.dev/homme-barbu-devant-ordinateur.png',
+    sameAs: [
+      'https://www.linkedin.com/in/vincent-duguet/',
+      'https://github.com/eikyuu',
+    ],
+  }),
+  defineLocalBusiness({
+    name: 'Vincent Duguet — Développeur web freelance',
+    description:
+      'Création de sites internet et d’applications mobile sur mesure à Tours. Angular, React, Vue/Nuxt, Java Spring Boot, React Native, WordPress.',
+    url: 'https://vincentduguet.dev',
+    image: 'https://vincentduguet.dev/homme-barbu-devant-ordinateur.png',
+    priceRange: '€€',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Tours',
+      addressRegion: 'Centre-Val de Loire',
+      addressCountry: 'FR',
+    },
+    areaServed: [
+      { '@type': 'City', name: 'Tours' },
+      { '@type': 'Country', name: 'France' },
+    ],
+  }),
+  defineWebSite({
+    name: 'Vincent Duguet',
+    inLanguage: 'fr-FR',
+  }),
+])
 </script>
 
 <template>
@@ -32,13 +67,14 @@ useSeoMeta({
           </p>
 
           <h1 id="hero-title" class="text-brand-purple text-display max-w-readable">
-            Des sites et apps qui livrent :
-            <span class="text-brand-yellow">accessibles, rapides, durables.</span>
+            Développeur web freelance à Tours :
+            <span class="text-brand-yellow">des sites et apps qui livrent.</span>
           </h1>
 
           <p class="mt-6 text-lg text-brand-muted max-w-readable">
-            J’accompagne PME, start-ups et entrepreneurs de la stratégie au déploiement.
-            Design centré utilisateur, code propre, performances mesurées.
+            Création de sites internet et d’applications mobile sur mesure. J’accompagne PME,
+            start-ups et entrepreneurs de la stratégie au déploiement : design centré utilisateur,
+            code propre, performances mesurées.
           </p>
 
           <!-- Image mobile -->
@@ -82,7 +118,7 @@ useSeoMeta({
     </section>
 
     <!-- Titre section expertises -->
-    <TitleUnder v-motion-slide-visible-once-top :duration="500" :delay="100" title="Je suis un expert" tag="h2" />
+    <TitleUnder v-motion-slide-visible-once-top :duration="500" :delay="100" title="Mes expertises : web, mobile et WordPress sur mesure" tag="h2" />
 
     <!-- Cartes Expertise -->
 
@@ -119,10 +155,10 @@ useSeoMeta({
     <section v-motion-slide-visible-right :duration="500" :delay="100"
       class="flex flex-col md:flex-row items-center justify-between w-full mt-10 lg:mt-32 gap-4 md:gap-8 mb-10 lg:mb-32">
       <div class="w-full md:w-1/2 mb-10 lg:mb-0">
-        <h2 class="text-2xl font-semibold mb-3">Votre vision. Mon expertise.</h2>
+        <h2 class="text-2xl font-semibold mb-3">Votre vision, mon expertise de développeur web</h2>
 
         <p>Un site web unique, conçu pour refléter votre image et atteindre vos objectifs.
-          Design premium, performances optimisées, référencement inclus.</p>
+          Design premium, performances optimisées, référencement naturel inclus.</p>
 
         <p><strong>Résultat : plus de visibilité, plus de clients, plus de ventes.</strong></p>
 
@@ -132,14 +168,14 @@ useSeoMeta({
       <NuxtImg src="phone.png" alt="Aperçu d’un site web responsive affiché sur smartphone" class="h-full object-cover rounded-xl w-full md:w-1/2" loading="lazy" />
     </section>
 
-    <TitleUnder v-motion-slide-visible-once-top :duration="500" :delay="100" title="Les offres" tag="h2" />
+    <TitleUnder v-motion-slide-visible-once-top :duration="500" :delay="100" title="Mes offres freelance : du site vitrine à l’application sur mesure" tag="h2" />
 
     <section v-motion-slide-visible-once-top :duration="500" :delay="100"
       class="flex flex-col lg:flex-row items-stretch justify-between w-full gap-4 lg:gap-6 mt-10 lg:mt-32">
       <Offres />
     </section>
 
-    <TitleUnder v-motion-slide-visible-once-top :duration="500" :delay="100" title="Les articles du blog" tag="h2"
+    <TitleUnder v-motion-slide-visible-once-top :duration="500" :delay="100" title="Articles : UX, développement web et SEO" tag="h2"
       class="mt-10 lg:mt-32" />
 
     <section v-motion-slide-visible-once-top :duration="500" :delay="100" class="mt-10 mb-10 lg:mt-32 lg:mb-32">

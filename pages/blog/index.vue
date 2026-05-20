@@ -1,9 +1,10 @@
 <template>
   <main id="main-content" v-motion-slide-top :duration="500" :delay="100" class="mt-32">
     <Breadcrumb :items="[{ label: 'Accueil', to: '/' }, { label: 'Blog' }]" />
-    <TitleUnder title="Le journal" tag="h1" />
+    <TitleUnder title="Blog : UX, développement web et SEO" tag="h1" />
     <p class="text-center text-brand-muted max-w-prose mx-auto mt-6">
-      UX, développement web et stratégie digitale. Articles courts, exemples concrets.
+      Le journal d’un développeur freelance : articles courts et concrets sur l’UX/UI,
+      le développement web (Angular, Vue, Spring Boot) et la stratégie digitale.
     </p>
 
     <div class="flex flex-col flex-wrap md:flex-row gap-5 mt-12 lg:mt-20">
@@ -18,9 +19,9 @@ import Breadcrumb from '~/components/Breadcrumb.vue'
 import { articles } from '~/types/articles'
 
 useSeoMeta({
-  title: 'Blog — UX, développement web et SEO',
+  title: 'Blog développeur freelance — UX, dev web et SEO',
   description:
-    'Articles courts et concrets sur l’UX/UI, le développement web (Angular, Vue, Spring Boot) et la stratégie digitale.',
+    'Le blog de Vincent Duguet, développeur freelance à Tours : articles concrets sur l’UX/UI, le développement web (Angular, Vue, Spring Boot) et le référencement naturel.',
   ogLocale: 'fr_FR',
   ogImage: '/homme-barbu-devant-ordinateur.png',
   twitterCard: 'summary_large_image',

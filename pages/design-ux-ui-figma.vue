@@ -1,8 +1,9 @@
 <template>
-  <section class="mt-32 ">
+  <main id="main-content" class="mt-32">
+    <Breadcrumb :items="[{ label: 'Accueil', to: '/' }, { label: 'Design UX/UI' }]" />
     <!-- Titre principal avec effet de surlignage -->
 
-    <TitleUnder title="Design UX/UI : Création d'Expériences Utilisateurs Exceptionnelles" tag="h1"
+    <TitleUnder title="Designer UX/UI freelance à Tours : interfaces sur mesure" tag="h1"
       class=" mb-10 xl:mb-32" />
 
     <article>
@@ -63,21 +64,19 @@
       </p>
     </article>
 
-  </section>
+  </main>
 </template>
 
 <script setup lang="ts">
-// Métadonnées SEO avec useSeoMeta
 useSeoMeta({
-  title: 'Design UX/UI : Création d\'Expériences Utilisateurs',
-  ogTitle: 'Design UX/UI : Création d\'Expériences Utilisateurs',
-  description: 'Vous souhaitez offrir une expérience utilisateur fluide, engageante et mémorable ? En tant que designer UX/UI expérimenté, je vous accompagne dans la conception d\'interfaces intuitives et fonctionnelles qui répondent aux besoins de vos utilisateurs et atteignent vos objectifs commerciaux.',
-  ogDescription: 'Vous souhaitez offrir une expérience utilisateur fluide, engageante et mémorable ? En tant que designer UX/UI expérimenté, je vous accompagne dans la conception d\'interfaces intuitives et fonctionnelles qui répondent aux besoins de vos utilisateurs et atteignent vos objectifs commerciaux.',
-  ogImage: 'https://vincentduguet.dev/homme-barbu-devant-ordinateur.png',
+  title: 'Designer UX/UI freelance à Tours — Vincent Duguet',
+  description:
+    'Designer UX/UI freelance à Tours : wireframes, prototypes Figma, tests utilisateurs et accessibilité WCAG. Des interfaces intuitives au service de vos objectifs.',
+  ogLocale: 'fr_FR',
+  ogImage: '/homme-barbu-devant-ordinateur.png',
   twitterCard: 'summary_large_image',
-  keywords: 'design UX/UI, expérience utilisateur, interfaces intuitives, Figma, Photoshop, Illustrator, wireframes, prototypes, accessibilité, user testing',
   author: 'Vincent Duguet',
-});
+})
 </script>
 
 <style scoped>

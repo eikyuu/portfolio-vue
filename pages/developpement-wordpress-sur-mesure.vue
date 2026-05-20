@@ -1,5 +1,6 @@
 <template>
   <main id="main-content" class="mt-32">
+    <Breadcrumb :items="[{ label: 'Accueil', to: '/' }, { label: 'WordPress sur mesure' }]" />
     <ServiceHero
       eyebrow="WordPress sur mesure · Tours"
       title-lead="Un site WordPress que vous"
@@ -249,9 +250,9 @@ const faqItems = [
 ]
 
 useSeoMeta({
-  title: 'Refonte site WordPress sur mesure à Tours',
+  title: 'Création et refonte de site WordPress à Tours',
   description:
-    'Refonte de site WordPress sur mesure à Tours : thèmes personnalisés, WooCommerce, optimisation SEO et performances. Vous reprenez la main, sans dépendance.',
+    'Création et refonte de site WordPress sur mesure à Tours : thèmes personnalisés, WooCommerce, optimisation SEO et performances. Vous reprenez la main, sans dépendance.',
   ogLocale: 'fr_FR',
   ogImage: '/homme-barbu-devant-ordinateur.png',
   twitterCard: 'summary_large_image',

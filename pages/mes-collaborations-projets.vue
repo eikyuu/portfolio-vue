@@ -1,5 +1,6 @@
 <template>
   <main id="main-content" class="mt-32">
+    <Breadcrumb :items="[{ label: 'Accueil', to: '/' }, { label: 'Projets' }]" />
     <section
       class="flex flex-col lg:flex-row items-center justify-between gap-10 mb-16 lg:mb-32"
       aria-labelledby="portfolio-hero-title"
@@ -11,12 +12,14 @@
           </p>
 
           <h1 id="portfolio-hero-title" class="text-brand-purple text-display max-w-readable">
-            Des collaborations qui
-            <span class="text-brand-yellow">livrent des résultats.</span>
+            Portfolio : mes projets web et mobile en freelance
+            <span class="text-brand-yellow">à Tours et au-delà.</span>
           </h1>
 
           <p class="mt-6 text-lg text-brand-muted max-w-readable">
-            Une sélection de projets web et mobile menés en freelance ou en équipe, du cadrage au déploiement. UX, code propre, performances mesurées.
+            Une sélection de collaborations menées en freelance ou en équipe, du cadrage au
+            déploiement : sites Vue/Nuxt, applications React Native, refontes WordPress. UX,
+            code propre, performances mesurées.
           </p>
 
           <div class="mt-10 flex flex-col sm:flex-row gap-4 items-start sm:items-center">
