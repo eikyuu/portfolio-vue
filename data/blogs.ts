@@ -12,7 +12,7 @@ export type BlogSlug =
 
 export const blogs: Record<BlogSlug, BlogContent> = {
   "UX-UI-et-Accessibilite-Pourquoi-un-Bon-Design-Fait-Toute-la-Difference": {
-    title: "🎨 UX/UI et Accessibilité : Pourquoi un Bon Design Fait Toute la Différence",
+    title: "UX/UI et accessibilité : pourquoi un bon design fait toute la différence",
     meta: "Découvrez pourquoi l’UX/UI et l’accessibilité sont essentiels dans la conception web et mobile, et comment optimiser vos interfaces pour une meilleure expérience utilisateur.",
     alt: "Un homme avec un handicape travaillant sur un ordinateur portable",
     content: `
@@ -59,7 +59,7 @@ export const blogs: Record<BlogSlug, BlogContent> = {
   },
 
   "IA-et-Creation-de-Contenu-Revolution-ou-Illusion": {
-    title: "🤖 IA et Création de Contenu : Révolution ou Illusion ?",
+    title: "IA et création de contenu : révolution ou illusion ?",
     meta: "L’IA transforme la création de contenu : découvrez ses applications, ses limites, et comment l’exploiter pour booster votre stratégie digitale.",
     alt: "Une forme de tête avec de multiples yeux",
     content: `
@@ -112,7 +112,7 @@ export const blogs: Record<BlogSlug, BlogContent> = {
   },
 
   "Pourquoi-WordPress-Domine-la-Creation-de-Sites-Web-en-2025": {
-    title: "💡 Pourquoi WordPress Domine la Création de Sites Web en 2025",
+    title: "Pourquoi WordPress domine la création de sites web en 2025",
     meta: "Découvrez comment WordPress s’est imposé comme l’outil incontournable pour créer des sites web en 2025 : cas concrets, avantages, limites et conseils pratiques pour l’adopter.",
     alt: "Capture d'écran d’un tableau de bord WordPress moderne utilisé pour créer un site web professionnel",
     content: `

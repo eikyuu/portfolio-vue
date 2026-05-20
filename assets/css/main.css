@@ -1,22 +1,69 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html {
-  background-color: #f7fafc;
-  font-family: "Cambria", Georgia, serif;
-  font-size: 14px;
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html {
+    background-color: #f7fafc;
+    font-family: 'Cambria', Georgia, serif;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    color: theme('colors.brand.ink');
+  }
+
+  a {
+    color: theme('colors.brand.purple');
+    text-underline-offset: 3px;
+  }
+
+  ::selection {
+    background-color: theme('colors.brand.yellow');
+    color: theme('colors.brand.purple');
+  }
+
+  /* Skip link */
+  .skip-link {
+    position: absolute;
+    top: -100px;
+    left: 1rem;
+    background: theme('colors.brand.purple');
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: theme('borderRadius.lg');
+    z-index: 100;
+    transition: top 150ms ease;
+  }
+  .skip-link:focus {
+    top: 1rem;
+    outline: 3px solid theme('colors.brand.yellow');
+  }
 }
 
-/* h1,h2,h3,h4,h5,h6 {
-  font-family:"Anton", sans-serif;
-} */
+@layer components {
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.65);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+  }
+}
 
-.glass-effect {
-  background: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(15.4px);
-  -webkit-backdrop-filter: blur(15.4px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

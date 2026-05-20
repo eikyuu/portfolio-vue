@@ -87,7 +87,6 @@
   // Classes CSS du bouton avec Tailwind et l'effet d'ombre original
   const buttonClasses = computed(() => {
     const baseClasses = [
-      // Structure de base
       'group',
       'relative',
       'inline-flex',
@@ -95,60 +94,45 @@
       'justify-center',
       'rounded-xl',
       'border',
-      'font-medium',
-      'transition-all',
-      'duration-300',
-      'ease-in-out',
-      
-      // Accessibilité
+      'font-semibold',
+      'transition',
+      'duration-200',
+      'ease-out',
       'focus:outline-none',
-      'focus:ring-2',
-      'focus:ring-offset-2',
-      'focus:ring-purple-500',
-      'focus-visible:ring-2',
-      
-      // États désactivés
+      'focus-visible:shadow-focus',
       'disabled:opacity-50',
       'disabled:cursor-not-allowed',
       'disabled:pointer-events-none',
-      
-      // Effet d'ombre décalée (pseudo-élément before)
+      'hover:-translate-y-[2px]',
+      'active:translate-y-0',
       "before:content-['']",
       'before:absolute',
       'before:left-2',
-      'before:right-0', 
+      'before:right-0',
       'before:top-1',
       'before:-z-10',
       'before:h-[calc(100%+2px)]',
       'before:w-full',
       'before:rounded',
-      'before:transition-all',
-      'before:duration-300',
-      'before:ease-in-out'
+      'before:transition',
+      'before:duration-200',
     ];
-    
-    // Classes de couleur avec les couleurs originales
+
     const colorClasses = {
       primary: [
-        'border-[#5A3B5D]',
-        'text-black',
-        'bg-transparent',
-        'hover:bg-white',
-        'before:bg-[#F2EBF4]',
-        'hover:before:bg-[#F2EBF4]',
-        'focus:before:bg-[#E8D5EA]',
-        'active:bg-gray-50'
+        'border-brand-purple',
+        'text-brand-purple',
+        'bg-white',
+        'hover:bg-brand-lavender-soft',
+        'before:bg-brand-lavender',
       ],
       secondary: [
-        'border-[#5A3B5D]',
-        'text-black',
-        'bg-transparent',
-        'hover:bg-white',
-        'before:bg-[#FFC800]',
-        'hover:before:bg-[#FFD633]',
-        'focus:before:bg-[#E6B500]',
-        'active:bg-yellow-50'
-      ]
+        'border-brand-purple',
+        'text-brand-purple',
+        'bg-white',
+        'hover:bg-brand-yellow-100',
+        'before:bg-brand-yellow',
+      ],
     };
     
     // Classes de taille

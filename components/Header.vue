@@ -1,59 +1,55 @@
 <template>
-  <header class="shadow-md fixed top-0 left-0 right-0 z-50 backdrop-blur-xl" role="banner">
-    <nav
-      class="max-w-screen xl:max-w-max mx-auto px-4 sm:px-6 lg:px-8"
-      role="navigation"
-      aria-label="Menu principal"
-    >
-      <div class="flex h-16 items-center justify-between gap-8">
-        <!-- Logo -->
-        <NuxtLink to="/" class="text-xl font-bold text-[#5A3B5D] font-bold" aria-label="Retour à l’accueil">
-          VINCENTDUGUET.DEV
-        </NuxtLink>
+  <header class="bg-white/85 shadow-sm fixed top-0 left-0 right-0 z-50 backdrop-blur-xl border-b border-brand-lavender"
+          role="banner">
+    <nav class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8"
+         role="navigation" aria-label="Menu principal">
+      <div class="flex h-16 items-center justify-between gap-6">
+        <div class="flex items-center gap-3">
+          <NuxtLink to="/" class="text-lg font-bold text-brand-purple focus-ring rounded"
+                    aria-label="Vincent Duguet — Retour à l’accueil">
+            VINCENTDUGUET.DEV
+          </NuxtLink>
+          <AvailabilityBadge variant="compact" class="hidden sm:inline-flex" />
+        </div>
 
-        <!-- Dropdown Services -->
-        <div
-          class="relative hidden xl:block"
-          @mouseenter="showDropdown = true"
-          @mouseleave="showDropdown = false"
-        >
-          <button
-            class="text-[#5A3B5D] font-medium focus:outline-none"
-            type="button"
-            aria-haspopup="true"
-            :aria-expanded="showDropdown"
-          >
-            SERVICES
-          </button>
-          <div
-            v-show="showDropdown"
-            class="absolute bg-white text-[#5A3B5D] w-max rounded-xl shadow-md z-50"
-          >
-            <ul class="flex flex-col text-base gap-2 p-4">
-              <li
-                v-for="item in services"
-                :key="item.to"
-              >
+        <!-- Navigation Desktop -->
+        <ul class="hidden xl:flex items-center gap-2 text-brand-purple text-sm font-semibold uppercase tracking-wide">
+          <li ref="dropdownRef" class="relative">
+            <button
+              type="button"
+              class="flex items-center gap-1 px-3 py-2 rounded-lg hover:bg-brand-lavender focus-ring"
+              aria-haspopup="menu"
+              :aria-expanded="showDropdown"
+              @click="toggleDropdown"
+              @keydown.escape="closeDropdown"
+            >
+              Services
+              <ChevronDown class="w-4 h-4 transition-transform" :class="showDropdown && 'rotate-180'" aria-hidden="true" />
+            </button>
+            <ul
+              v-show="showDropdown"
+              role="menu"
+              class="absolute left-0 top-full mt-1 min-w-[280px] bg-white rounded-xl shadow-card border border-brand-lavender py-2"
+            >
+              <li v-for="item in services" :key="item.to" role="none">
                 <NuxtLink
                   :to="item.to"
-                  class="block px-3 py-2 rounded-xl text-[#5A3B5D] hover:bg-gray-50"
+                  role="menuitem"
+                  class="block px-4 py-2 text-brand-purple hover:bg-brand-lavender focus-ring"
+                  :aria-current="isCurrent(item.to) ? 'page' : undefined"
+                  @click="closeDropdown"
                 >
                   {{ item.label }}
                 </NuxtLink>
               </li>
             </ul>
-          </div>
-        </div>
-
-        <!-- Navigation Desktop -->
-        <ul class="hidden xl:flex items-center gap-8 text-[#5A3B5D] text-base">
-          <li
-            v-for="item in nav"
-            :key="item.to"
-          >
+          </li>
+          <li v-for="item in nav" :key="item.to">
             <NuxtLink
               :to="item.to"
-              class="block rounded-xl text-[#5A3B5D] hover:bg-gray-50 font-medium"
+              :aria-current="isCurrent(item.to) ? 'page' : undefined"
+              class="px-3 py-2 rounded-lg hover:bg-brand-lavender focus-ring transition"
+              :class="isCurrent(item.to) && 'bg-brand-yellow/20 text-brand-purple-700'"
             >
               {{ item.label }}
             </NuxtLink>
@@ -64,16 +60,15 @@
         <div class="xl:hidden">
           <button
             ref="excludeRef"
-            @click="isOpen = !isOpen"
             type="button"
-            aria-label="Menu mobile"
+            :aria-label="isOpen ? 'Fermer le menu' : 'Ouvrir le menu'"
             :aria-expanded="isOpen"
             aria-controls="mobile-menu"
-            class="inline-flex items-center justify-center p-2 rounded-xl text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#FFC800]"
+            class="inline-flex items-center justify-center p-2 rounded-lg text-brand-purple hover:bg-brand-lavender focus-ring"
+            @click="isOpen = !isOpen"
           >
-            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
+            <X v-if="isOpen" class="w-6 h-6" aria-hidden="true" />
+            <Menu v-else class="w-6 h-6" aria-hidden="true" />
           </button>
         </div>
       </div>
@@ -84,16 +79,15 @@
       v-if="isOpen"
       id="mobile-menu"
       ref="componentRef"
-      class="xl:hidden bg-white shadow-md mt-1"
+      class="xl:hidden bg-white border-t border-brand-lavender shadow-card"
     >
-      <ul class="px-4 py-4 space-y-2">
-        <li
-          v-for="item in [...services, ...nav]"
-          :key="item.to"
-        >
+      <ul class="px-4 py-4 space-y-1 text-sm font-semibold uppercase tracking-wide">
+        <li v-for="item in [...services, ...nav]" :key="item.to">
           <NuxtLink
             :to="item.to"
-            class="block px-3 py-2 rounded-xl text-gray-700 hover:bg-gray-50 text-base font-medium"
+            :aria-current="isCurrent(item.to) ? 'page' : undefined"
+            class="block px-3 py-3 rounded-lg text-brand-purple hover:bg-brand-lavender focus-ring"
+            :class="isCurrent(item.to) && 'bg-brand-yellow/20'"
             @click="isOpen = false"
           >
             {{ item.label }}
@@ -105,49 +99,36 @@
 </template>
 
 <script setup lang="ts">
-import { ref, Ref } from 'vue'
+import { ref } from 'vue'
+import type { Ref } from 'vue'
+import { useRoute } from 'vue-router'
+import { ChevronDown, Menu, X } from 'lucide-vue-next'
+
+const route = useRoute()
 
 const isOpen = ref(false)
 const showDropdown = ref(false)
 
 const componentRef = ref<HTMLElement | null>(null)
 const excludeRef = ref<HTMLElement | null>(null)
+const dropdownRef = ref<HTMLElement | null>(null)
 
-useClickOutside(
-  componentRef as Ref<HTMLElement>,
-  () => {
-    isOpen.value = false
-  },
-  excludeRef as Ref<HTMLElement>
-)
+useClickOutside(componentRef as Ref<HTMLElement | null>, () => { isOpen.value = false }, excludeRef as Ref<HTMLElement | null>)
+useClickOutside(dropdownRef as Ref<HTMLElement | null>, () => { showDropdown.value = false })
+
+const toggleDropdown = () => { showDropdown.value = !showDropdown.value }
+const closeDropdown = () => { showDropdown.value = false }
+
+const isCurrent = (to: string) => route.path === to
 
 const services = [
-  {
-    label: 'CRÉATION DE SITE INTERNET',
-    to: '/developpement-web-vue-react-symfony-adonis',
-  },
-  {
-    label: "CRÉATION D'APPLICATION MOBILE",
-    to: '/developpement-mobile-react-native-swift',
-  },
-  // {
-  //   label: 'TEMPLATE WORDPRESS',
-  //   to: '/developpement-wordpress-sur-mesure',
-  // },
+  { label: 'Création de site internet', to: '/developpement-web-vue-react-symfony-adonis' },
+  { label: "Création d'application mobile", to: '/developpement-mobile-react-native-swift' },
 ]
 
 const nav = [
-  {
-    label: 'PORTFOLIO',
-    to: '/mes-collaborations-projets',
-  },
-  {
-    label: 'CONTACT',
-    to: '/contact',
-  },
-  {
-    label: 'BLOG',
-    to: '/blog',
-  },
+  { label: 'Portfolio', to: '/mes-collaborations-projets' },
+  { label: 'Blog', to: '/blog' },
+  { label: 'Contact', to: '/contact' },
 ]
 </script>

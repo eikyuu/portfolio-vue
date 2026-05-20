@@ -1,117 +1,88 @@
 <template>
-    <CardGoldBorder>
+  <CardGoldBorder v-for="offer in offers" :key="offer.id" :highlight="offer.featured" class="relative">
+    <div v-if="offer.featured"
+         class="absolute -top-3 left-1/2 -translate-x-1/2 bg-brand-purple text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">
+      Le plus choisi
+    </div>
 
-        <h2 class="mb-2 font-bold">REFONTE DE SITE</h2>
+    <div>
+      <h3 class="text-h3 text-brand-purple uppercase tracking-wide">{{ offer.name }}</h3>
+      <p class="mt-2 text-brand-muted">{{ offer.tagline }}</p>
 
-        <p class="mb-4">Pour ceux qui souhaitent que leur site reflète enfin leur personnalité & leurs valeurs.</p>
+      <p class="mt-6 text-2xl font-bold text-brand-purple">Sur devis</p>
+      <p class="text-sm text-brand-muted">Facilités de paiement disponibles</p>
 
-        <p>À partir de <span class="font-bold text-xl">500€</span> </p>
-        <p class="font-bold mt-5">Facilités de paiement disponibles.</p>
+      <ul class="mt-6 space-y-3 text-sm">
+        <li v-for="feature in offer.features" :key="feature" class="flex items-start gap-2">
+          <Check class="w-4 h-4 mt-1 text-brand-yellow shrink-0" aria-hidden="true" />
+          <span>{{ feature }}</span>
+        </li>
+      </ul>
+    </div>
 
-        <h3 class="font-bold">Analyse du site & plan d'amélioration</h3>
-        <p class="mb-2">Définition des objectifs et axes d'amélioration. Choix des technologies, migration...</p>
-
-        <h3 class="font-bold">Audit stratégique & créatif</h3>
-        <p class="mb-2">Pour redesigner un site adapté à votre personnalité & à vos valeurs.</p>
-
-        <h3 class="font-bold">Refonte complète</h3>
-        <p class="mb-2">Refonte UX/UI pour une expérience utilisateur moderne, fluide et plus proche de votre
-            personnalité. Refonte
-            du site entier (structure, sections, composants).</p>
-
-        <h3 class="font-bold">Mise en place des intégrations de contenu</h3>
-        <p class="mb-2">(textes, images, vidéos)</p>
-
-        <h3 class="font-bold">Refonte stratégique & SEO</h3>
-        <p class="mb-2">Optimisation technique (performances du site, référencement, gestion du contenu).</p>
-
-        <h3 class="font-bold">Accompagnement & Support</h3>
-        <p class="mb-2">Formation pour vous rendre autonome.</p>
-
-        <Button class="mt-5 self-center" text="En savoir plus →" link="/contact"
-            aria-label="Lien vers la page de contact" target="_self" type="button" />
-    </CardGoldBorder>
-
-    <CardGoldBorder>
-
-        <h2 class="mb-2 font-bold">SITE CMS</h2>
-
-        <p class="mb-4">Pour ceux qui souhaitent devenir autonome rapidement & simplement.</p>
-
-        <p>Site one-page = à partir de <span class="font-bold text-xl">500€</span> </p>
-
-        <p>Site Vitrine (5 pages) = à partir de <span class="font-bold text-xl">1000€</span> </p>
-
-        <p>Site e-commerce = à partir de <span class="font-bold text-xl">1500€</span> </p>
-
-        <p class="font-bold mt-5">Facilités de paiement disponibles.</p>
-
-        <h3 class="font-bold">Audit stratégique & créatif</h3>
-        <p class="mb-2">Pour designer un site adapté à votre personnalité & à vos valeurs. Optimisation et
-            personnalisation de
-            l'expérience utilisateur.</p>
-
-        <h3 class="font-bold">Création d'un site - Framer</h3>
-        <p class="mb-2">Structure optimisée et personnalisable Gestion simplifiée via une interface intuitive.</p>
-
-        <h3 class="font-bold">Contenu administrable</h3>
-        <p class="mb-2">Modification des textes, images et videos, ajout de nouveaux contenus.</p>
-
-        <h3 class="font-bold">Optimisation & SEO</h3>
-        <p class="mb-2">Mise en place des actions de référencement (ajout de Google Analytics, gestion des urls,
-            optimisation des
-            balises html, optimisation des médias).</p>
-
-        <h3 class="font-bold">Accompagnement & Support</h3>
-        <p class="mb-2">Formation pour vous rendre autonome, hébergement et maintenance simplifiée.</p>
-
-
-        <Button class="mt-5 self-center" text="En savoir plus →" link="/contact"
-            aria-label="Lien vers la page de contact" target="_self" type="button" />
-    </CardGoldBorder>
-
-    <CardGoldBorder>
-        <h2 class="mb-2 font-bold">SITE SUR-MESURE</h2>
-
-        <p class="mb-4">Pour ceux qui souhaitent un site sur-mesure qui répond à tous leurs besoins. Codé à la
-            perfection.</p>
-
-        <p>À partir de <span class="font-bold text-xl">500€ ou 60€/mois 6 mois d'engagement</span></p>
-
-        <p class="font-bold mt-5">Facilités de paiement disponibles.</p>
-
-        <h3 class="font-bold">Audit stratégique & créatif</h3>
-        <p class="mb-2">Conception d'un site performant, fluide, interactif et aligné avec votre personnalité et vos
-            valeurs. Choix
-            des technologies les plus adaptées à vos besoins.</p>
-
-        <h3 class="font-bold">Expérience utilisateur ++</h3>
-        <p class="mb-2">Stratégies design UX/UI haut de gamme pour une expérience utilisateur premium (navigation
-            fluide,
-            animations interactives, responsive...).</p>
-
-        <h3 class="font-bold">Développement sur-mesure</h3>
-        <p class="mb-2">Création du site totalement sur-mesure (structure, sections, composants).</p>
-
-        <h3 class="font-bold">Intégrations avancées</h3>
-        <p class="mb-2">Création de plateforme d'administration & de fonctionnalités spécifiques (plugings
-            d'applications externes,
-            création d'API...) pour vous rendre autonome.</p>
-
-        <h3 class="font-bold">Stratégie SEO</h3>
-        <p class="mb-2">Pour un site ultra fluide, référencé et sécurisé. Mise en place des actions de référencement.
-        </p>
-
-        <h3 class="font-bold">Accompagnement stratégique</h3>
-        <p class="mb-2">Un mois supplémentaire pour analyser les performances de votre site & les améliorer.</p>
-
-
-        <Button class="mt-5 self-center" text="En savoir plus →" link="/contact"
-            aria-label="Lien vers la page de contact" target="_self" type="button" />
-    </CardGoldBorder>
+    <Button
+      class="mt-8 self-stretch"
+      :text="`Demander un devis ${offer.name}`"
+      :link="`/contact?offre=${offer.id}`"
+      :aria-label="`Demander un devis pour ${offer.name}`"
+      :color="offer.featured ? 'secondary' : 'primary'"
+    />
+  </CardGoldBorder>
 </template>
 
 <script setup lang="ts">
+import { Check } from 'lucide-vue-next'
 import CardGoldBorder from './CardGoldBorder.vue'
+import Button from './Button.vue'
 
+interface Offer {
+  id: string
+  name: string
+  tagline: string
+  features: string[]
+  featured?: boolean
+}
+
+const offers: Offer[] = [
+  {
+    id: 'refonte',
+    name: 'Refonte de site',
+    tagline: 'Pour ceux qui veulent que leur site reflète enfin leur personnalité et leurs valeurs.',
+    features: [
+      'Analyse du site existant et plan d’amélioration',
+      'Audit stratégique et créatif',
+      'Refonte UX/UI complète : structure, sections, composants',
+      'Intégration des contenus (textes, images, vidéos)',
+      'Optimisation technique et SEO',
+      'Formation pour devenir autonome',
+    ],
+  },
+  {
+    id: 'cms',
+    name: 'Site CMS',
+    tagline: 'Pour devenir autonome rapidement et simplement.',
+    features: [
+      'Audit stratégique et créatif',
+      'Création d’un site avec interface intuitive',
+      'Contenu administrable (textes, images, vidéos)',
+      'SEO : Google Analytics, balises HTML, médias optimisés',
+      'Hébergement et maintenance simplifiée',
+      'Formation pour devenir autonome',
+    ],
+    featured: true,
+  },
+  {
+    id: 'sur-mesure',
+    name: 'Site sur-mesure',
+    tagline: 'Pour un site codé à la perfection qui répond à tous vos besoins.',
+    features: [
+      'Audit stratégique et créatif',
+      'Design UX/UI premium et animations interactives',
+      'Développement 100 % sur-mesure',
+      'Intégrations avancées : API, plugins, plateforme d’admin',
+      'Stratégie SEO complète',
+      'Accompagnement stratégique sur 1 mois supplémentaire',
+    ],
+  },
+]
 </script>

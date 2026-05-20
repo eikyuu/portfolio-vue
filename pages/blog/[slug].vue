@@ -1,38 +1,72 @@
 <template>
-  <div v-motion-slide-visible-once-top :duration="500" :delay="100" class="mt-32 ">
+  <ReadingProgress />
 
-    <div class="block flex justify-center">
-            <h1
-                class="mb-10 xl:mb-32 relative inline-block before:content-[''] before:absolute before:bg-[#FFC800] before:top-[1rem] before:md:top-[1rem] before:left-0 before:right-0 before:h-[0.8rem] before:md:h-[1.5rem] before:transform before:scale-100 before:skew-x-[-8deg] before:-z-10 rounded-xl before:rounded">
-                <span class="relative text-[#5A3B5D] font-bold text-2xl md:text-3xl xl:text-4xl">{{ blog.title }}</span>
-            </h1>
-    </div>
+  <main id="main-content" v-motion-slide-visible-once-top :duration="500" :delay="100" class="mt-32">
+    <article v-if="blog.content" class="mx-auto max-w-readable">
+      <Breadcrumb :items="[{ label: 'Accueil', to: '/' }, { label: 'Blog', to: '/blog' }, { label: blog.title }]" />
 
-    <article v-if="blog.content">
-      <NuxtImg :src="`/${route.params.slug}.webp`" :alt="blog.alt" class="mb-8 w-full h-full object-cover rounded-xl" format="webp" loading="lazy"/>
-      <div v-html="blog.content" class="space-y-4"></div>
+      <header class="mb-10">
+        <h1 class="text-h1 text-brand-purple mb-6">{{ blog.title }}</h1>
+
+        <NuxtImg
+          v-if="hasHero"
+          :src="`/${slug}.webp`"
+          :alt="blog.alt"
+          class="w-full aspect-[16/9] object-cover rounded-2xl shadow-card"
+          format="webp"
+          loading="eager"
+          fetchpriority="high"
+        />
+      </header>
+
+      <div
+        v-html="blog.content"
+        class="prose prose-lg max-w-none prose-headings:text-brand-purple prose-headings:font-bold prose-a:text-brand-purple prose-a:underline prose-strong:text-brand-ink"
+      />
+
+      <footer class="mt-12 pt-6 border-t border-brand-lavender flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+        <ShareButtons :url="shareUrl" :title="blog.title" />
+        <NuxtLink to="/contact"
+                  class="inline-flex items-center gap-2 text-brand-purple font-semibold hover:text-brand-purple-700 focus-ring rounded">
+          Un projet en tête ? Discutons-en
+          <ArrowRight class="w-4 h-4" aria-hidden="true" />
+        </NuxtLink>
+      </footer>
     </article>
-    <p v-else>Article introuvable.</p>
-    <router-link to="/blog" class="text-blue-600 hover:underline mt-10 block">← Retour au blog</router-link>
 
-  </div>
+    <div v-else class="mx-auto max-w-readable text-center py-20">
+      <p class="text-brand-muted">Cet article est introuvable.</p>
+      <NuxtLink to="/blog"
+                class="inline-flex items-center gap-1 mt-6 text-brand-purple hover:text-brand-purple-700 focus-ring rounded">
+        <ArrowLeft class="w-4 h-4" aria-hidden="true" />
+        Retour au blog
+      </NuxtLink>
+    </div>
+  </main>
 </template>
 
 <script setup lang="ts">
-import { useRoute } from 'vue-router';
-import { blogs, type BlogContent } from '~/data/blogs';
+import { computed } from 'vue'
+import { useRoute } from 'vue-router'
+import { ArrowLeft, ArrowRight } from 'lucide-vue-next'
+import Breadcrumb from '~/components/Breadcrumb.vue'
+import ReadingProgress from '~/components/blog/ReadingProgress.vue'
+import ShareButtons from '~/components/blog/ShareButtons.vue'
+import { blogs, type BlogContent } from '~/data/blogs'
 
-const route = useRoute();
-const slug = route.params.slug as string;
+const route = useRoute()
+const slug = route.params.slug as string
 
 const fallback: BlogContent = {
   title: 'Article introuvable',
   meta: '',
   alt: '',
   content: '',
-};
+}
 
-const blog: BlogContent = blogs[slug as keyof typeof blogs] ?? fallback;
+const blog: BlogContent = blogs[slug as keyof typeof blogs] ?? fallback
+const hasHero = computed(() => slug in blogs)
+const shareUrl = computed(() => `https://vincentduguet.dev/blog/${slug}`)
 
 useSeoMeta({
   title: blog.title,
@@ -41,11 +75,5 @@ useSeoMeta({
   ogDescription: blog.meta,
   ogImage: 'https://vincentduguet.dev/book.jpg',
   twitterCard: 'summary_large_image',
-});
+})
 </script>
-
-<style scoped>
-p {
-  white-space: pre-line;
-}
-</style>
