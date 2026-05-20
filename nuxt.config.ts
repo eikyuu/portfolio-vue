@@ -61,7 +61,6 @@ export default defineNuxtConfig({
   },
 
   app: {
-    pageTransition: { name: 'page', mode: 'out-in' },
     head: {
       htmlAttrs: { lang: 'fr' },
       link: [
@@ -80,6 +79,9 @@ export default defineNuxtConfig({
         '/blog/UX-UI-et-Accessibilite-Pourquoi-un-Bon-Design-Fait-Toute-la-Difference',
         '/blog/IA-et-Creation-de-Contenu-Revolution-ou-Illusion',
         '/blog/Pourquoi-WordPress-Domine-la-Creation-de-Sites-Web-en-2025',
+        '/blog/Core-Web-Vitals-et-SEO-Technique-Optimiser-Votre-Site-en-2026',
+        '/blog/React-Native-vs-Flutter-Quel-Framework-Mobile-Choisir-en-2026',
+        '/blog/Developpeur-Web-Freelance-vs-Agence-Que-Choisir-pour-Votre-Projet-Digital',
         '/developpement-web-vue-react-symfony-adonis',
         '/developpement-mobile-react-native',
         '/developpement-wordpress-sur-mesure',

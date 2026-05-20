@@ -56,7 +56,7 @@ With page transitions:
 
 ```vue
 <template>
-  <NuxtPage :transition="{ name: 'fade', mode: 'out-in' }" />
+  <NuxtPage />
 </template>
 ```
 
