@@ -5,7 +5,7 @@
       title-lead="Une app mobile pensée pour"
       title-accent="vos utilisateurs."
       subtitle="Je conçois et développe des applications mobiles iOS et Android sur mesure, performantes et durables, du cadrage au déploiement sur les stores."
-      image="phone.png"
+      image="app-mobile.jpg"
       image-alt="Aperçu d’une application mobile iOS et Android sur smartphone"
       :tech-stack="['React Native', 'Expo', 'TypeScript', 'Swift', 'iOS', 'Android']"
     />
@@ -192,7 +192,7 @@
         />
       </div>
       <NuxtImg
-        src="phone.png"
+        src="app-qui-sort.jpg"
         alt="Application mobile sur smartphone"
         class="h-full object-cover rounded-2xl w-full md:w-1/2 order-1 md:order-2"
         loading="lazy"

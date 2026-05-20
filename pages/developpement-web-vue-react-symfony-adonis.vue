@@ -5,7 +5,7 @@
       title-lead="Des sites web qui transforment vos"
       title-accent="visiteurs en clients."
       subtitle="Création de site internet sur mesure à Tours, du cadrage au déploiement. Code propre, accessibilité, SEO et performances mesurées."
-      image="homme-barbu-devant-ordinateur.png"
+      image="clavier-2.jpg"
       image-alt="Vincent Duguet, développeur web freelance à Tours"
       primary-cta-text="Lancer mon projet web"
       :tech-stack="['Vue / Nuxt', 'React / Next', 'Angular', 'Symfony', 'AdonisJS', 'Spring Boot']"
@@ -26,8 +26,8 @@
       class="flex flex-col md:flex-row items-center justify-between mt-10 lg:mt-32 mb-10 lg:mb-32 w-full gap-4 md:gap-8"
     >
       <NuxtImg
-        src="site-web-i-love-my-dog.webp"
-        alt="Aperçu d’un site web vitrine sur mesure réalisé par Vincent Duguet"
+        src="artisan.jpg"
+        alt="un artisan au travail qui regarde son ordinateur avec sont site web sur l'écran créé par Vincent Duguet, développeur web freelance à Tours"
         class="h-full object-cover rounded-2xl w-full md:w-1/2"
         loading="lazy"
       />

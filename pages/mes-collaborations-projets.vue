@@ -55,7 +55,7 @@
       <div class="hidden lg:block w-2/5">
         <NuxtImg
           class="object-cover rounded-2xl floating-animation"
-          src="homme-barbu-sur-fond-jaune.png"
+          src="team-building.jpg"
           width="500"
           height="500"
           sizes="lg:500px"
